@@ -32,7 +32,7 @@
 \contentsline {section}{\numberline {6.2}Aufarbeitung der Probe}{27}{section.6.2}
 \contentsline {section}{\numberline {6.3}Chlorophyllkataboliten des Brokkoliblattes mithilfe von LC-MS identifiziert}{28}{section.6.3}
 \contentsline {subsection}{\numberline {6.3.1}Auswertung des Chromatogramms}{28}{subsection.6.3.1}
-\contentsline {section}{\numberline {6.4}Reaktionsprodukte}{32}{section.6.4}
+\contentsline {section}{\numberline {6.4}Identifikationd der Reaktionsprodukte mithilfe von LC-MS}{32}{section.6.4}
 \contentsline {part}{\nonumberline Ergebnisse und Diskussion}{33}{part*.33}
 \contentsline {part}{\nonumberline Verweise}{34}{part*.35}
 \contentsline {chapter}{\nonumberline Literaturverzeichnis}{35}{chapter*.36}
