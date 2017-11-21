@@ -25,17 +25,16 @@
 \contentsline {subsection}{\numberline {5.4.3}Bo-DNCC}{18}{subsection.5.4.3}
 \contentsline {section}{\numberline {5.5}Identifikation der Reaktionsprodukte}{20}{section.5.5}
 \contentsline {subsection}{\numberline {5.5.1}Reaktionsprodukt von Bo-DNCC}{20}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Reaktionsprodukt von Bo-NCC-3}{23}{subsection.5.5.2}
-\contentsline {subsection}{\numberline {5.5.3}Reaktionsprodukt von Bo-NCC-1}{25}{subsection.5.5.3}
-\contentsline {chapter}{\numberline {6}Experimente LC-MS}{27}{chapter.6}
-\contentsline {section}{\numberline {6.1}Verwendeter HPLC-Gradient sowie Ger\IeC {\"a}tebeschreibung}{27}{section.6.1}
-\contentsline {section}{\numberline {6.2}Aufarbeitung der Probe}{27}{section.6.2}
-\contentsline {section}{\numberline {6.3}Chlorophyllkataboliten des Brokkoliblattes mithilfe von LC-MS identifiziert}{28}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Auswertung des Chromatogramms}{28}{subsection.6.3.1}
-\contentsline {section}{\numberline {6.4}Identifikationd der Reaktionsprodukte mithilfe von LC-MS}{32}{section.6.4}
-\contentsline {part}{\nonumberline Ergebnisse und Diskussion}{33}{part*.33}
-\contentsline {part}{\nonumberline Verweise}{34}{part*.35}
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{35}{chapter*.36}
-\contentsline {chapter}{Abbildungsverzeichnis}{37}{chapter*.36}
-\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{39}{section*.38}
-\contentsline {part}{\nonumberline Anhang}{40}{part*.41}
+\contentsline {subsection}{\numberline {5.5.2}Reaktionsprodukt von Bo-NCC-3}{24}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Reaktionsprodukt von Bo-NCC-1}{26}{subsection.5.5.3}
+\contentsline {chapter}{\numberline {6}Experimente LC-MS}{29}{chapter.6}
+\contentsline {section}{\numberline {6.1}Verwendeter HPLC-Gradient sowie Ger\IeC {\"a}tebeschreibung}{29}{section.6.1}
+\contentsline {section}{\numberline {6.2}Aufarbeitung der Probe}{29}{section.6.2}
+\contentsline {section}{\numberline {6.3}Chlorophyllkataboliten des Brokkoliblattes mithilfe von LC-MS identifiziert}{30}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Auswertung der Chromatogramme}{30}{subsection.6.3.1}
+\contentsline {section}{\numberline {6.4}Identifikationd der Reaktionsprodukte mithilfe von LC-MS}{35}{section.6.4}
+\contentsline {part}{\nonumberline Ergebnisse und Diskussion}{36}{part*.35}
+\contentsline {part}{\nonumberline Verweise}{37}{part*.37}
+\contentsline {chapter}{Abbildungsverzeichnis}{38}{part*.37}
+\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{40}{section*.39}
+\contentsline {part}{\nonumberline Anhang}{41}{part*.42}
