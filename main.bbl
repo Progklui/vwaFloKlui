@@ -50,7 +50,7 @@
       \list{publisher}{1}{%
         {American Chemical Society}%
       }
-      \strng{namehash}{ac68b03d9bae4f1b128311bafa44418d}
+      \strng{namehash}{815da6bcf4f24b3e26fb625372970c09}
       \strng{fullhash}{815da6bcf4f24b3e26fb625372970c09}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
@@ -89,7 +89,7 @@
       \list{publisher}{1}{%
         {The Royal Society of Chemistry}%
       }
-      \strng{namehash}{eb650d1069f6fb1b13beda7cd0e81006}
+      \strng{namehash}{1da081ef350d9548da8745993141f217}
       \strng{fullhash}{1da081ef350d9548da8745993141f217}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
@@ -132,88 +132,9 @@
       \field{year}{1999}
       \field{pages}{35\bibrangedash 43}
       \range{pages}{9}
-    \endentry
-    \entry{ErsterKatabolit}{article}{}
-      \name{author}{5}{}{%
-        {{hash=9a1c136ec785531aa9dac638b96aec34}{%
-           family={Kräutler},
-           family_i={K\bibinitperiod},
-           given={Dr.\bibnamedelimi Bernhard},
-           given_i={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
-        {{hash=1580fd729ab9670b4b4face9c7876c77}{%
-           family={Jaun},
-           family_i={J\bibinitperiod},
-           given={Dr.\bibnamedelimi Bernhard},
-           given_i={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
-        {{hash=adae6ff844136c90c43ec73777d0c7fc}{%
-           family={Bortlik},
-           family_i={B\bibinitperiod},
-           given={Karlheinz},
-           given_i={K\bibinitperiod}}}%
-        {{hash=fbad43044800a432b17402af62e402e1}{%
-           family={Schellenberg},
-           family_i={S\bibinitperiod},
-           given={Maja},
-           given_i={M\bibinitperiod}}}%
-        {{hash=012f7e6fb9b1ec11d423fd2f611c74f4}{%
-           family={Matile},
-           family_i={M\bibinitperiod},
-           given={Philippe},
-           given_i={P\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {WILEY-VCH Verlag}%
-      }
-      \strng{namehash}{064d6d53fe5f96f801402513ca344e8c}
-      \strng{fullhash}{0232bdd2c6f467ad6bca23c1dcd623e9}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issue}{10}
-      \field{journaltitle}{Angewandte Chemie}
-      \field{title}{Zum Rätsel des Chlorophyllabbaus: Die Konstitution eines secoporphinoiden Kataboliten}
-      \field{volume}{103}
-      \field{year}{1991}
-      \field{pages}{1354\bibrangedash 1357}
-      \range{pages}{4}
-    \endentry
-    \entry{ChlorophyllCataboliteDifferent}{article}{}
-      \name{author}{4}{}{%
-        {{hash=93dad8e7d7c585438b1e08fd57b87e52}{%
-           family={Moser},
-           family_i={M\bibinitperiod},
-           given={Simone},
-           given_i={S\bibinitperiod}}}%
-        {{hash=c2ad285eb682bccdfe2685694db2188f}{%
-           family={Müller},
-           family_i={M\bibinitperiod},
-           given={Thomas},
-           given_i={T\bibinitperiod}}}%
-        {{hash=7d5dca4bbfcafe3ffc62d69f1182f79f}{%
-           family={Oberhuber},
-           family_i={O\bibinitperiod},
-           given={Michael},
-           given_i={M\bibinitperiod}}}%
-        {{hash=10e1edebf83c1dc72586d8f452fa5f76}{%
-           family={Kräutler},
-           family_i={K\bibinitperiod},
-           given={Bernhard},
-           given_i={B\bibinitperiod}}}%
-      }
-      \strng{namehash}{927a6e7344f62a0939dfb29b90c1ae00}
-      \strng{fullhash}{9bbc5697e34b96911cce5f61ff41dc40}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issue}{1}
-      \field{journaltitle}{European Journal of Organic Chemistry}
-      \field{title}{Chlorophyll Catabolites – Chemical and Structural Footprints of a Fascinating Biological Phenomenon}
-      \field{volume}{2009}
-      \field{year}{2009}
-      \field{pages}{21\bibrangedash 31}
-      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1021/ar970225n
+      \endverb
     \endentry
     \entry{DegradationChlorophyll}{article}{}
       \name{author}{3}{}{%
@@ -249,6 +170,122 @@
       \field{year}{1987}
       \field{pages}{255\bibrangedash 302}
       \range{pages}{48}
+      \verb{doi}
+      \verb 10.1111/j.1469-8137.1987.tb00181.x
+      \endverb
+    \endentry
+    \entry{ErsterKatabolit}{article}{}
+      \name{author}{5}{}{%
+        {{hash=9a1c136ec785531aa9dac638b96aec34}{%
+           family={Kräutler},
+           family_i={K\bibinitperiod},
+           given={Dr.\bibnamedelimi Bernhard},
+           given_i={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=1580fd729ab9670b4b4face9c7876c77}{%
+           family={Jaun},
+           family_i={J\bibinitperiod},
+           given={Dr.\bibnamedelimi Bernhard},
+           given_i={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=adae6ff844136c90c43ec73777d0c7fc}{%
+           family={Bortlik},
+           family_i={B\bibinitperiod},
+           given={Karlheinz},
+           given_i={K\bibinitperiod}}}%
+        {{hash=fbad43044800a432b17402af62e402e1}{%
+           family={Schellenberg},
+           family_i={S\bibinitperiod},
+           given={Maja},
+           given_i={M\bibinitperiod}}}%
+        {{hash=012f7e6fb9b1ec11d423fd2f611c74f4}{%
+           family={Matile},
+           family_i={M\bibinitperiod},
+           given={Philippe},
+           given_i={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {WILEY-VCH Verlag}%
+      }
+      \strng{namehash}{0232bdd2c6f467ad6bca23c1dcd623e9}
+      \strng{fullhash}{0232bdd2c6f467ad6bca23c1dcd623e9}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{10}
+      \field{journaltitle}{Angewandte Chemie}
+      \field{title}{Zum Rätsel des Chlorophyllabbaus: Die Konstitution eines secoporphinoiden Kataboliten}
+      \field{volume}{103}
+      \field{year}{1991}
+      \field{pages}{1354\bibrangedash 1357}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1002/ange.19911031020
+      \endverb
+    \endentry
+    \entry{ChlorophyllCataboliteDifferent}{article}{}
+      \name{author}{4}{}{%
+        {{hash=93dad8e7d7c585438b1e08fd57b87e52}{%
+           family={Moser},
+           family_i={M\bibinitperiod},
+           given={Simone},
+           given_i={S\bibinitperiod}}}%
+        {{hash=c2ad285eb682bccdfe2685694db2188f}{%
+           family={Müller},
+           family_i={M\bibinitperiod},
+           given={Thomas},
+           given_i={T\bibinitperiod}}}%
+        {{hash=7d5dca4bbfcafe3ffc62d69f1182f79f}{%
+           family={Oberhuber},
+           family_i={O\bibinitperiod},
+           given={Michael},
+           given_i={M\bibinitperiod}}}%
+        {{hash=10e1edebf83c1dc72586d8f452fa5f76}{%
+           family={Kräutler},
+           family_i={K\bibinitperiod},
+           given={Bernhard},
+           given_i={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{9bbc5697e34b96911cce5f61ff41dc40}
+      \strng{fullhash}{9bbc5697e34b96911cce5f61ff41dc40}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{1}
+      \field{journaltitle}{European Journal of Organic Chemistry}
+      \field{title}{Chlorophyll Catabolites – Chemical and Structural Footprints of a Fascinating Biological Phenomenon}
+      \field{volume}{2009}
+      \field{year}{2009}
+      \field{pages}{21\bibrangedash 31}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1002/ejoc.200890104
+      \endverb
+    \endentry
+    \entry{ChlorophyllKatabolitenalsZeichenReifung}{article}{}
+      \name{author}{1}{}{%
+        {{hash=10e1edebf83c1dc72586d8f452fa5f76}{%
+           family={Kräutler},
+           family_i={K\bibinitperiod},
+           given={Bernhard},
+           given_i={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{10e1edebf83c1dc72586d8f452fa5f76}
+      \strng{fullhash}{10e1edebf83c1dc72586d8f452fa5f76}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{16}
+      \field{journaltitle}{Angewandte Chemie}
+      \field{title}{Der Chlorophyllabbau in höheren Pflanzen – Phyllobiline als weitverbreitete, aber kaum sichtbare Zeichen von Reifung, Seneszenz und Zelltod}
+      \field{volume}{128}
+      \field{year}{2016}
+      \field{pages}{4964\bibrangedash 4990}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1002/ange.201508928
+      \endverb
     \endentry
     \entry{ChlorophyllCatabolitesEnzyme}{article}{}
       \name{author}{2}{}{%
@@ -275,6 +312,9 @@
       \field{year}{2007}
       \field{pages}{237\bibrangedash 260}
       \range{pages}{24}
+      \verb{doi}
+      \verb 10.1007/1-4020-4516-6_17
+      \endverb
     \endentry
     \entry{FCCKatabolit}{article}{}
       \name{author}{4}{}{%
@@ -302,7 +342,7 @@
       \list{publisher}{1}{%
         {WILEY-VCH Verlag}%
       }
-      \strng{namehash}{12b178c402a6cc6bbad7ee7d54ad01f0}
+      \strng{namehash}{559019f5c6c856d4c4d4d0854e657c67}
       \strng{fullhash}{559019f5c6c856d4c4d4d0854e657c67}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
@@ -315,6 +355,9 @@
       \field{year}{1997}
       \field{pages}{401\bibrangedash 404}
       \range{pages}{4}
+      \verb{doi}
+      \verb 10.1002/ange.19971090424
+      \endverb
     \endentry
     \entry{ChlorophyllCatabolites}{article}{}
       \name{author}{4}{}{%
@@ -342,7 +385,7 @@
       \list{publisher}{1}{%
         {WILEY-VCH Verlag}%
       }
-      \strng{namehash}{927a6e7344f62a0939dfb29b90c1ae00}
+      \strng{namehash}{9bbc5697e34b96911cce5f61ff41dc40}
       \strng{fullhash}{9bbc5697e34b96911cce5f61ff41dc40}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
@@ -355,6 +398,9 @@
       \field{year}{2008}
       \field{pages}{21\bibrangedash 31}
       \range{pages}{11}
+      \verb{doi}
+      \verb 10.1002/ejoc.200800804
+      \endverb
     \endentry
     \entry{Chromatographie}{book}{}
       \name{author}{1}{}{%
@@ -440,7 +486,7 @@
            given={Justin\bibnamedelima M.},
            given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
       }
-      \strng{namehash}{d7128fae846ca7344de895829760db04}
+      \strng{namehash}{8303ad75cddc802ecdedf6c1a3329447}
       \strng{fullhash}{8303ad75cddc802ecdedf6c1a3329447}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
@@ -483,7 +529,7 @@
       \list{publisher}{1}{%
         {WILEY-VCH Verlag}%
       }
-      \strng{namehash}{38571c451d8a663b2e88643429d56202}
+      \strng{namehash}{64c07c5b0d270f6db5b0487f4d452f56}
       \strng{fullhash}{64c07c5b0d270f6db5b0487f4d452f56}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
@@ -497,6 +543,9 @@
       \field{year}{2010}
       \field{pages}{877\bibrangedash 880}
       \range{pages}{4}
+      \verb{doi}
+      \verb 10.1002/anie.200906314
+      \endverb
     \endentry
     \entry{RapidScreeningLeafSpray}{article}{}
       \name{author}{2}{}{%
@@ -558,6 +607,9 @@
       \field{year}{2015}
       \field{pages}{1385\bibrangedash 1392}
       \range{pages}{8}
+      \verb{doi}
+      \verb 10.1021/jf5055326
+      \endverb
     \endentry
     \entry{StructureElucidation}{article}{}
       \name{author}{3}{}{%
@@ -592,6 +644,9 @@
       \field{year}{2014}
       \field{pages}{48\bibrangedash 55}
       \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.ijms.2013.12.028
+      \endverb
     \endentry
   \endsortlist
 \endrefsection

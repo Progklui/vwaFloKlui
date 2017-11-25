@@ -36,9 +36,9 @@
 \contentsline {section}{\numberline {6.4}Identifikation von Chl-Kataboliten mithilfe von MS}{31}{section.6.4}
 \contentsline {section}{\numberline {6.5}Chlorophyllkataboliten des Brokkoliblattes mithilfe von LC-MS identifiziert}{32}{section.6.5}
 \contentsline {section}{\numberline {6.6}Identifikation der Reaktionsprodukte mithilfe von LC-MS}{37}{section.6.6}
-\contentsline {part}{\nonumberline Ergebnisse und Diskussion}{43}{part*.40}
-\contentsline {part}{\nonumberline Verweise}{44}{part*.42}
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{45}{chapter*.43}
-\contentsline {chapter}{Abbildungsverzeichnis}{47}{chapter*.43}
-\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{49}{section*.45}
-\contentsline {part}{\nonumberline Anhang}{50}{part*.48}
+\contentsline {part}{\nonumberline Ergebnisse und Diskussion}{43}{part*.41}
+\contentsline {part}{\nonumberline Verweise}{44}{part*.43}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{45}{chapter*.44}
+\contentsline {chapter}{Abbildungsverzeichnis}{47}{chapter*.44}
+\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{49}{section*.46}
+\contentsline {part}{\nonumberline Anhang}{50}{part*.49}

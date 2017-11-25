@@ -85,11 +85,11 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxbibnames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>100</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>10</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxitems</bcf:key>
@@ -2076,38 +2076,39 @@
     <bcf:citekey order="1">DirectPlantTissue</bcf:citekey>
     <bcf:citekey order="2">LeafSpray</bcf:citekey>
     <bcf:citekey order="3">ChlorophyllBreakdown</bcf:citekey>
-    <bcf:citekey order="4">ErsterKatabolit</bcf:citekey>
-    <bcf:citekey order="5">ChlorophyllCataboliteDifferent</bcf:citekey>
+    <bcf:citekey order="4">DegradationChlorophyll</bcf:citekey>
+    <bcf:citekey order="5">ChlorophyllBreakdown</bcf:citekey>
     <bcf:citekey order="6">ChlorophyllBreakdown</bcf:citekey>
-    <bcf:citekey order="7">DegradationChlorophyll</bcf:citekey>
-    <bcf:citekey order="8">ChlorophyllBreakdown</bcf:citekey>
-    <bcf:citekey order="9">ErsterKatabolit</bcf:citekey>
-    <bcf:citekey order="10">ChlorophyllCatabolitesEnzyme</bcf:citekey>
-    <bcf:citekey order="11">FCCKatabolit</bcf:citekey>
-    <bcf:citekey order="12">ChlorophyllCatabolites</bcf:citekey>
+    <bcf:citekey order="7">ErsterKatabolit</bcf:citekey>
+    <bcf:citekey order="8">ChlorophyllCataboliteDifferent</bcf:citekey>
+    <bcf:citekey order="9">ChlorophyllKatabolitenalsZeichenReifung</bcf:citekey>
+    <bcf:citekey order="10">ErsterKatabolit</bcf:citekey>
+    <bcf:citekey order="11">ChlorophyllCatabolitesEnzyme</bcf:citekey>
+    <bcf:citekey order="12">FCCKatabolit</bcf:citekey>
     <bcf:citekey order="13">ChlorophyllCatabolites</bcf:citekey>
-    <bcf:citekey order="14">Chromatographie</bcf:citekey>
+    <bcf:citekey order="14">ChlorophyllCatabolites</bcf:citekey>
     <bcf:citekey order="15">Chromatographie</bcf:citekey>
     <bcf:citekey order="16">Chromatographie</bcf:citekey>
     <bcf:citekey order="17">Chromatographie</bcf:citekey>
-    <bcf:citekey order="18">MassSpectrometry</bcf:citekey>
+    <bcf:citekey order="18">Chromatographie</bcf:citekey>
     <bcf:citekey order="19">MassSpectrometry</bcf:citekey>
     <bcf:citekey order="20">MassSpectrometry</bcf:citekey>
     <bcf:citekey order="21">MassSpectrometry</bcf:citekey>
     <bcf:citekey order="22">MassSpectrometry</bcf:citekey>
     <bcf:citekey order="23">MassSpectrometry</bcf:citekey>
     <bcf:citekey order="24">MassSpectrometry</bcf:citekey>
-    <bcf:citekey order="25">AmbientIonisation</bcf:citekey>
-    <bcf:citekey order="26">PaperSpray</bcf:citekey>
+    <bcf:citekey order="25">MassSpectrometry</bcf:citekey>
+    <bcf:citekey order="26">AmbientIonisation</bcf:citekey>
     <bcf:citekey order="27">PaperSpray</bcf:citekey>
-    <bcf:citekey order="28">RapidScreeningLeafSpray</bcf:citekey>
-    <bcf:citekey order="29">LeafSpray</bcf:citekey>
-    <bcf:citekey order="30">RapidScreeningLeafSpray</bcf:citekey>
-    <bcf:citekey order="31">ChlorophyllCatabolitesBroccoli</bcf:citekey>
-    <bcf:citekey order="32">StructureElucidation</bcf:citekey>
-    <bcf:citekey order="33">ChlorophyllCatabolitesBroccoli</bcf:citekey>
+    <bcf:citekey order="28">PaperSpray</bcf:citekey>
+    <bcf:citekey order="29">RapidScreeningLeafSpray</bcf:citekey>
+    <bcf:citekey order="30">LeafSpray</bcf:citekey>
+    <bcf:citekey order="31">RapidScreeningLeafSpray</bcf:citekey>
+    <bcf:citekey order="32">ChlorophyllCatabolitesBroccoli</bcf:citekey>
+    <bcf:citekey order="33">StructureElucidation</bcf:citekey>
     <bcf:citekey order="34">ChlorophyllCatabolitesBroccoli</bcf:citekey>
-    <bcf:citekey order="35">StructureElucidation</bcf:citekey>
+    <bcf:citekey order="35">ChlorophyllCatabolitesBroccoli</bcf:citekey>
+    <bcf:citekey order="36">StructureElucidation</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>
