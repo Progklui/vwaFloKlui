@@ -28,14 +28,15 @@
 \contentsline {subsection}{\numberline {5.5.2}Reaktionsprodukt von Bo-NCC-3}{23}{subsection.5.5.2}
 \contentsline {subsection}{\numberline {5.5.3}Reaktionsprodukt von Bo-NCC-1}{25}{subsection.5.5.3}
 \contentsline {chapter}{\numberline {6}Experimente LC-MS}{28}{chapter.6}
-\contentsline {section}{\numberline {6.1}Verwendeter HPLC-Gradient sowie Ger\IeC {\"a}tebeschreibung}{28}{section.6.1}
+\contentsline {section}{\numberline {6.1}HPLC-Gradient sowie Ger\IeC {\"a}tebeschreibung}{28}{section.6.1}
 \contentsline {section}{\numberline {6.2}Aufarbeitung der Probe}{28}{section.6.2}
-\contentsline {section}{\numberline {6.3}Chlorophyllkataboliten des Brokkoliblattes mithilfe von LC-MS identifiziert}{29}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Auswertung der Chromatogramme}{29}{subsection.6.3.1}
-\contentsline {section}{\numberline {6.4}Identifikation der Reaktionsprodukte mithilfe von LC-MS}{33}{section.6.4}
-\contentsline {part}{\nonumberline Ergebnisse und Diskussion}{39}{part*.37}
-\contentsline {part}{\nonumberline Verweise}{40}{part*.39}
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{41}{chapter*.40}
-\contentsline {chapter}{Abbildungsverzeichnis}{43}{chapter*.40}
-\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{45}{section*.42}
-\contentsline {part}{\nonumberline Anhang}{46}{part*.45}
+\contentsline {section}{\numberline {6.3}Identifikation von Chl-Kataboliten mithilfe von Online-UV/Vis Spektren}{29}{section.6.3}
+\contentsline {section}{\numberline {6.4}Identifikation von Chl-Kataboliten mithilfe von MS}{29}{section.6.4}
+\contentsline {section}{\numberline {6.5}Chlorophyllkataboliten des Brokkoliblattes mithilfe von LC-MS identifiziert}{30}{section.6.5}
+\contentsline {section}{\numberline {6.6}Identifikation der Reaktionsprodukte mithilfe von LC-MS}{35}{section.6.6}
+\contentsline {part}{\nonumberline Ergebnisse und Diskussion}{41}{part*.39}
+\contentsline {part}{\nonumberline Verweise}{42}{part*.41}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{43}{chapter*.42}
+\contentsline {chapter}{Abbildungsverzeichnis}{45}{chapter*.42}
+\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{47}{section*.44}
+\contentsline {part}{\nonumberline Anhang}{48}{part*.47}
