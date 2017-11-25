@@ -14,29 +14,31 @@
 \contentsline {part}{\nonumberline Experimenteller Teil}{9}{part*.8}
 \contentsline {chapter}{\numberline {4}Allgemeine Arbeits- und Analysemethoden}{10}{chapter.4}
 \contentsline {section}{\numberline {4.1}Herstellung von L\IeC {\"o}sungen f\IeC {\"u}r eine Analyse mit HPLC}{10}{section.4.1}
-\contentsline {section}{\numberline {4.2}Fragmentierungsdiagramme}{10}{section.4.2}
-\contentsline {chapter}{\numberline {5}Experimente MS Leafspray}{11}{chapter.5}
-\contentsline {section}{\numberline {5.1}Massenspektrometer}{11}{section.5.1}
-\contentsline {section}{\numberline {5.2}Versuchsaufbau}{11}{section.5.2}
-\contentsline {section}{\numberline {5.3}Versuchsdurchf\IeC {\"u}hrung}{12}{section.5.3}
-\contentsline {section}{\numberline {5.4}Chlorophyllkataboliten des Brokkoliblattes}{14}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Bo-NCC-1}{14}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Bo-NCC-3}{16}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Bo-DNCC}{18}{subsection.5.4.3}
-\contentsline {section}{\numberline {5.5}Identifikation der Reaktionsprodukte}{20}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Reaktionsprodukt von Bo-DNCC}{20}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Reaktionsprodukt von Bo-NCC-3}{23}{subsection.5.5.2}
-\contentsline {subsection}{\numberline {5.5.3}Reaktionsprodukt von Bo-NCC-1}{25}{subsection.5.5.3}
-\contentsline {chapter}{\numberline {6}Experimente LC-MS}{28}{chapter.6}
-\contentsline {section}{\numberline {6.1}HPLC-Gradient sowie Ger\IeC {\"a}tebeschreibung}{28}{section.6.1}
-\contentsline {section}{\numberline {6.2}Aufarbeitung der Probe}{28}{section.6.2}
-\contentsline {section}{\numberline {6.3}Identifikation von Chl-Kataboliten mithilfe von Online-UV/Vis Spektren}{29}{section.6.3}
-\contentsline {section}{\numberline {6.4}Identifikation von Chl-Kataboliten mithilfe von MS}{29}{section.6.4}
-\contentsline {section}{\numberline {6.5}Chlorophyllkataboliten des Brokkoliblattes mithilfe von LC-MS identifiziert}{30}{section.6.5}
-\contentsline {section}{\numberline {6.6}Identifikation der Reaktionsprodukte mithilfe von LC-MS}{35}{section.6.6}
-\contentsline {part}{\nonumberline Ergebnisse und Diskussion}{41}{part*.39}
-\contentsline {part}{\nonumberline Verweise}{42}{part*.41}
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{43}{chapter*.42}
-\contentsline {chapter}{Abbildungsverzeichnis}{45}{chapter*.42}
-\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{47}{section*.44}
-\contentsline {part}{\nonumberline Anhang}{48}{part*.47}
+\contentsline {section}{\numberline {4.2}Chemikalien und Material}{10}{section.4.2}
+\contentsline {section}{\numberline {4.3}Probenmaterial}{10}{section.4.3}
+\contentsline {section}{\numberline {4.4}Erstellen von Fragmentierungsdiagrammen}{10}{section.4.4}
+\contentsline {chapter}{\numberline {5}Experimente MS-Leafspray}{12}{chapter.5}
+\contentsline {section}{\numberline {5.1}Ger\IeC {\"a}tebeschreibung Massenspektrometer}{12}{section.5.1}
+\contentsline {section}{\numberline {5.2}Versuchsaufbau}{12}{section.5.2}
+\contentsline {section}{\numberline {5.3}Versuchsdurchf\IeC {\"u}hrung}{13}{section.5.3}
+\contentsline {section}{\numberline {5.4}Chlorophyllkataboliten des Brokkoliblattes mithilfe von MS-Leafspray identifiziert}{15}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Bo-NCC-1}{15}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Bo-NCC-3}{17}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Bo-DNCC}{19}{subsection.5.4.3}
+\contentsline {section}{\numberline {5.5}Identifikation der Reaktionsprodukte}{22}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Reaktionsprodukt von Bo-DNCC}{22}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Reaktionsprodukt von Bo-NCC-3}{25}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Reaktionsprodukt von Bo-NCC-1}{27}{subsection.5.5.3}
+\contentsline {chapter}{\numberline {6}Experimente LC-MS}{30}{chapter.6}
+\contentsline {section}{\numberline {6.1}HPLC-Gradient sowie Ger\IeC {\"a}tebeschreibung}{30}{section.6.1}
+\contentsline {section}{\numberline {6.2}Aufarbeitung der Probe}{30}{section.6.2}
+\contentsline {section}{\numberline {6.3}Identifikation von Chl-Kataboliten mithilfe von Online-UV/Vis Spektren}{31}{section.6.3}
+\contentsline {section}{\numberline {6.4}Identifikation von Chl-Kataboliten mithilfe von MS}{31}{section.6.4}
+\contentsline {section}{\numberline {6.5}Chlorophyllkataboliten des Brokkoliblattes mithilfe von LC-MS identifiziert}{32}{section.6.5}
+\contentsline {section}{\numberline {6.6}Identifikation der Reaktionsprodukte mithilfe von LC-MS}{37}{section.6.6}
+\contentsline {part}{\nonumberline Ergebnisse und Diskussion}{43}{part*.40}
+\contentsline {part}{\nonumberline Verweise}{44}{part*.42}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{45}{chapter*.43}
+\contentsline {chapter}{Abbildungsverzeichnis}{47}{chapter*.43}
+\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{49}{section*.45}
+\contentsline {part}{\nonumberline Anhang}{50}{part*.48}
