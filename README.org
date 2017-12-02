@@ -39,5 +39,3 @@ This template is licensed under a [[https://creativecommons.org/licenses/by-sa/3
 - There are *no restrictions* of any kind, however, related to the
   resulting (PDF) document!
 - You may remove the colophon (but it's not recommended).
-
-Quelle des Templates: "https://github.com/novoid/LaTeX-KOMA-template/"
