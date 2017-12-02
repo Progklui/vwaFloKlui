@@ -13,7 +13,7 @@ Die im Moment des Aufrufes fertige Arbeit befindet sich im Dokument -> main.pdf.
 
 - Im Ordner -> /content befinden sich die LaTex Dokumente der einzelnen Kapitel
 - Im Ordner -> /figures befinden sich sämtliche für die Arbeit benötigten Graphiken
-- Im Ordner -> /template befinden sich alle relevanten Dateien, die für LaTex Pakete, den generelen Style der Arbeit und dergleichen verantwortlich sind
+- Im Ordner -> /template befinden sich alle relevanten Dateien, die für LaTex Pakete, den generellen Style der Arbeit und dergleichen verantwortlich sind
 
 Die Datei -> references-biblatex.bib.blg entält alle verwendeten Quellenangaben.
 
