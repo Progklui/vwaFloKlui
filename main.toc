@@ -37,9 +37,22 @@
 \contentsline {section}{\numberline {6.4}Identifikation von Chl-Kataboliten mithilfe von MS}{33}{section.6.4}
 \contentsline {section}{\numberline {6.5}Chlorophyllkataboliten des Brokkoliblattes mithilfe von LC-MS identifiziert}{34}{section.6.5}
 \contentsline {section}{\numberline {6.6}Identifikation der Reaktionsprodukte mithilfe von LC-MS}{39}{section.6.6}
-\contentsline {part}{\nonumberline Ergebnisse und Diskussion}{45}{part*.41}
-\contentsline {part}{\nonumberline Verweise}{46}{part*.43}
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{47}{chapter*.44}
-\contentsline {chapter}{Abbildungsverzeichnis}{49}{chapter*.44}
-\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{51}{section*.46}
-\contentsline {part}{\nonumberline Anhang}{52}{part*.49}
+\contentsline {chapter}{\numberline {7}Strukturaufkl\IeC {\"a}rung der Chl-Kataboliten mit ESI-MS}{45}{chapter.7}
+\contentsline {section}{\numberline {7.1}Identifizierte Chl-Kataboliten}{45}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Bo-DYCC}{45}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Bo-DNCC}{49}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Bo-YCC}{49}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.4}Bo-NCC-3}{52}{subsection.7.1.4}
+\contentsline {subsection}{\numberline {7.1.5}Bo-NCC-1}{52}{subsection.7.1.5}
+\contentsline {section}{\numberline {7.2}Reaktionsprodukte der Chl-Kataboliten}{52}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Reaktionsprodukt von Bo-DYCC}{52}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Reaktionsprodukt von Bo-DNCC}{52}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Reaktionsprodukt von Bo-YCC}{52}{subsection.7.2.3}
+\contentsline {subsection}{\numberline {7.2.4}Reaktionsprodukt von Bo-NCC-3}{59}{subsection.7.2.4}
+\contentsline {subsection}{\numberline {7.2.5}Reaktionsprodukt von Bo-NCC-1}{59}{subsection.7.2.5}
+\contentsline {part}{\nonumberline Ergebnisse und Diskussion}{60}{part*.59}
+\contentsline {part}{\nonumberline Verweise}{61}{part*.61}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{62}{chapter*.62}
+\contentsline {chapter}{Abbildungsverzeichnis}{64}{chapter*.62}
+\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{67}{section*.64}
+\contentsline {part}{\nonumberline Anhang}{69}{part*.67}

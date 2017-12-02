@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.6 $
+% $ biblatex bbl format version 2.7 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,7 +18,7 @@
 
 
 \refsection{0}
-  \sortlist[entry]{none/global}
+  \sortlist[entry]{none/global/}
     \entry{DirectPlantTissue}{article}{}
       \name{author}{5}{}{%
         {{hash=c2ad285eb682bccdfe2685694db2188f}{%
