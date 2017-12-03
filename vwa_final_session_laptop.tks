@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TexmakerSession quickmode="3">
-    <document bookmark3="0" bookmark1="0" hasfocus="false" bookmark2="0" line="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/main.tex" master="true"/>
-    <document bookmark3="0" bookmark1="0" hasfocus="false" bookmark2="0" line="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/allgemeinerTeil/Das_Chlorophyll.tex" master="false"/>
-    <document bookmark3="0" bookmark1="0" hasfocus="false" bookmark2="0" line="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/abstract.tex" master="false"/>
-    <document bookmark3="0" bookmark1="0" hasfocus="false" bookmark2="0" line="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/template/preamble.tex" master="false"/>
-    <document bookmark3="0" bookmark1="0" hasfocus="false" bookmark2="0" line="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/abbrevations.tex" master="false"/>
-    <document bookmark3="0" bookmark1="0" hasfocus="false" bookmark2="0" line="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/references-biblatex.bib" master="false"/>
-    <document bookmark3="0" bookmark1="0" hasfocus="false" bookmark2="0" line="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/Vorwort.tex" master="false"/>
-    <document bookmark3="0" bookmark1="0" hasfocus="false" bookmark2="0" line="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/allgemeinerTeil/HPLC.tex" master="false"/>
-    <document bookmark3="0" bookmark1="0" hasfocus="false" bookmark2="0" line="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/allgemeinerTeil/LC-MS.tex" master="false"/>
-    <document bookmark3="0" bookmark1="0" hasfocus="false" bookmark2="0" line="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/allgemeinerTeil/Themenstellung.tex" master="false"/>
-    <document bookmark3="0" bookmark1="0" hasfocus="false" bookmark2="0" line="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/allgemeinerTeil/Methoden.tex" master="false"/>
-    <document bookmark3="0" bookmark1="0" hasfocus="false" bookmark2="0" line="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/praktischerTeil/Praktischer_Teil_Allgemeine_Arbeitsmethoden.tex" master="false"/>
-    <document bookmark3="0" bookmark1="0" hasfocus="false" bookmark2="0" line="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/praktischerTeil/Kataboliten_MS_Leafspray.tex" master="false"/>
-    <document bookmark3="0" bookmark1="0" hasfocus="false" bookmark2="0" line="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/praktischerTeil/Praktischer_Teil_HPLC_Chlorophyllkataboliten.tex" master="false"/>
-    <document bookmark3="0" bookmark1="0" hasfocus="false" bookmark2="0" line="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/praktischerTeil/Praktischer_Teil_HPLC_Reaktionsprodukte.tex" master="false"/>
-    <document bookmark3="0" bookmark1="0" hasfocus="false" bookmark2="0" line="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/praktischerTeil/Praktischer_Teil_HPLC.tex" master="false"/>
-    <document bookmark3="0" bookmark1="0" hasfocus="false" bookmark2="0" line="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/praktischerTeil/Praktischer_Teil_MS_LeafSpray.tex" master="false"/>
-    <document bookmark3="0" bookmark1="0" hasfocus="true" bookmark2="0" line="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/praktischerTeil/Reaktionsprodukte_MS_Leafspray.tex" master="false"/>
+    <document bookmark3="0" line="0" hasfocus="false" bookmark2="0" master="true" bookmark1="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/main.tex"/>
+    <document bookmark3="0" line="0" hasfocus="true" bookmark2="0" master="false" bookmark1="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/praktischerTeil/Praktischer_Teil_Fragmentierung_MS_genau.tex"/>
+    <document bookmark3="0" line="0" hasfocus="false" bookmark2="0" master="false" bookmark1="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/template/preamble.tex"/>
+    <document bookmark3="0" line="0" hasfocus="false" bookmark2="0" master="false" bookmark1="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/allgemeinerTeil/Das_Chlorophyll.tex"/>
+    <document bookmark3="0" line="0" hasfocus="false" bookmark2="0" master="false" bookmark1="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/abstract.tex"/>
+    <document bookmark3="0" line="0" hasfocus="false" bookmark2="0" master="false" bookmark1="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/abbrevations.tex"/>
+    <document bookmark3="0" line="0" hasfocus="false" bookmark2="0" master="false" bookmark1="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/references-biblatex.bib"/>
+    <document bookmark3="0" line="0" hasfocus="false" bookmark2="0" master="false" bookmark1="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/Vorwort.tex"/>
+    <document bookmark3="0" line="0" hasfocus="false" bookmark2="0" master="false" bookmark1="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/allgemeinerTeil/HPLC.tex"/>
+    <document bookmark3="0" line="0" hasfocus="false" bookmark2="0" master="false" bookmark1="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/allgemeinerTeil/LC-MS.tex"/>
+    <document bookmark3="0" line="0" hasfocus="false" bookmark2="0" master="false" bookmark1="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/allgemeinerTeil/Themenstellung.tex"/>
+    <document bookmark3="0" line="21" hasfocus="false" bookmark2="0" master="false" bookmark1="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/praktischerTeil/Praktischer_Teil_Allgemeine_Arbeitsmethoden.tex"/>
+    <document bookmark3="0" line="0" hasfocus="false" bookmark2="0" master="false" bookmark1="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/allgemeinerTeil/Methoden.tex"/>
+    <document bookmark3="0" line="0" hasfocus="false" bookmark2="0" master="false" bookmark1="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/praktischerTeil/Praktischer_Teil_MS_LeafSpray.tex"/>
+    <document bookmark3="0" line="0" hasfocus="false" bookmark2="0" master="false" bookmark1="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/praktischerTeil/Praktischer_Teil_HPLC_Chlorophyllkataboliten.tex"/>
+    <document bookmark3="0" line="0" hasfocus="false" bookmark2="0" master="false" bookmark1="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/praktischerTeil/Kataboliten_MS_Leafspray.tex"/>
+    <document bookmark3="0" line="22" hasfocus="false" bookmark2="0" master="false" bookmark1="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/praktischerTeil/Praktischer_Teil_HPLC.tex"/>
+    <document bookmark3="0" line="0" hasfocus="false" bookmark2="0" master="false" bookmark1="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/praktischerTeil/Praktischer_Teil_HPLC_Reaktionsprodukte.tex"/>
+    <document bookmark3="0" line="2" hasfocus="false" bookmark2="0" master="false" bookmark1="0" file="/home/adminkluilaptop/Documents/VWA/GitVersion/content/praktischerTeil/Reaktionsprodukte_MS_Leafspray.tex"/>
 </TexmakerSession>
