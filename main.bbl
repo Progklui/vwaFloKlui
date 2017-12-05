@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.6 $
+% $ biblatex bbl format version 2.7 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,7 +18,7 @@
 
 
 \refsection{0}
-  \sortlist[entry]{none/global}
+  \sortlist[entry]{none/global/}
     \entry{ChlorophyllBreakdown}{article}{}
       \name{author}{2}{}{%
         {{hash=10e1edebf83c1dc72586d8f452fa5f76}{%
@@ -532,6 +532,31 @@
       \field{year}{2012}
       \field{pages}{1913\bibrangedash 1919}
       \range{pages}{7}
+    \endentry
+    \entry{scipy}{online}{}
+      \name{author}{1}{}{%
+        {{hash=4c7e4c94b846fa41e2fc0a88e0dc656d}{%
+           family={Weckesser},
+           family_i={W\bibinitperiod},
+           given={Warren},
+           given_i={W\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {scipy}%
+      }
+      \strng{namehash}{4c7e4c94b846fa41e2fc0a88e0dc656d}
+      \strng{fullhash}{4c7e4c94b846fa41e2fc0a88e0dc656d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{savitzkygolay.py}
+      \field{version}{v0.17.1}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://github.com/scipy/scipy/blob/v0.17.1/scipy/signal/_savitzky_golay.py#L228-L349
+      \endverb
     \endentry
     \entry{ChlorophyllCatabolitesBroccoli}{article}{}
       \name{author}{3}{}{%
