@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.5)  5 DEC 2017 23:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.5)  7 DEC 2017 16:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4000,7 +4000,7 @@ Package pdftex.def Info: figures/Kapitel4/Kataboliten/fragmentation_structures/
 VWA_Katabolit_699.png used on input line 11.
 (pdftex.def)             Requested size: 162.60875pt x 191.51697pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
@@ -4011,193 +4011,199 @@ File: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_699.png Graphic file (type
 png)
  <use figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_699.png>
 Package pdftex.def Info: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_699.png 
-used on input line 20.
+used on input line 22.
 (pdftex.def)             Requested size: 418.2524pt x 250.9421pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 28.
 [22]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 28.
  [23 <./figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699
 .png> <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_699.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
-
- []
-
-
-<figures/Kapitel4/Kataboliten/diags/699CID-savgol2.png, id=399, 433.62pt x 289.
+<figures/Kapitel4/Kataboliten/diags/699CID-savgol2.png, id=396, 433.62pt x 289.
 08pt>
 File: figures/Kapitel4/Kataboliten/diags/699CID-savgol2.png Graphic file (type 
 png)
  <use figures/Kapitel4/Kataboliten/diags/699CID-savgol2.png>
 Package pdftex.def Info: figures/Kapitel4/Kataboliten/diags/699CID-savgol2.png 
-used on input line 33.
+used on input line 32.
 (pdftex.def)             Requested size: 209.1277pt x 209.12549pt.
 
-<figures/Kapitel4/Kataboliten/diags/699CID-savgol1.png, id=400, 433.62pt x 289.
+<figures/Kapitel4/Kataboliten/diags/699CID-savgol1.png, id=397, 433.62pt x 289.
 08pt>
 File: figures/Kapitel4/Kataboliten/diags/699CID-savgol1.png Graphic file (type 
 png)
  <use figures/Kapitel4/Kataboliten/diags/699CID-savgol1.png>
 Package pdftex.def Info: figures/Kapitel4/Kataboliten/diags/699CID-savgol1.png 
-used on input line 39.
+used on input line 38.
 (pdftex.def)             Requested size: 209.1277pt x 209.12549pt.
 
-Overfull \hbox (2.65201pt too wide) in paragraph at lines 32--43
+Overfull \hbox (2.65201pt too wide) in paragraph at lines 31--42
 [][]  [] 
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 47.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 47.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 47.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 47.
+[24 <./figures/Kapitel4/Kataboliten/diags/699CID-savgol2.png> <./figures/Kapite
+l4/Kataboliten/diags/699CID-savgol1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+
  []
 
 
 <figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699-639_MK
-_electronMovement.png, id=401, 271.0125pt x 319.1925pt>
+_electronMovement.png, id=408, 271.0125pt x 319.1925pt>
 File: figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699-6
 39_MK_electronMovement.png Graphic file (type png)
 
 <use figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699-63
 9_MK_electronMovement.png>
 Package pdftex.def Info: figures/Kapitel4/Kataboliten/fragmentation_structures/
-VWA_Katabolit_699-639_MK_electronMovement.png used on input line 49.
+VWA_Katabolit_699-639_MK_electronMovement.png used on input line 54.
 (pdftex.def)             Requested size: 209.13515pt x 209.12862pt.
 
 <figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699-639_MK
-.png, id=402, 271.0125pt x 316.18124pt>
+.png, id=409, 271.0125pt x 316.18124pt>
 File: figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699-6
 39_MK.png Graphic file (type png)
 
 <use figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699-63
 9_MK.png>
 Package pdftex.def Info: figures/Kapitel4/Kataboliten/fragmentation_structures/
-VWA_Katabolit_699-639_MK.png used on input line 55.
+VWA_Katabolit_699-639_MK.png used on input line 60.
 (pdftex.def)             Requested size: 209.13515pt x 209.12894pt.
 
-Overfull \hbox (2.65201pt too wide) in paragraph at lines 48--59
+Overfull \hbox (2.65201pt too wide) in paragraph at lines 53--64
 [][]  [] 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 65.
+(babel)             in language  on input line 70.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 65.
+(babel)             in language  on input line 70.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 65.
+(babel)             in language  on input line 70.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 65.
-[24]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 65.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 65.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 65.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 65.
- [25 <./figures/Kapitel4/Kataboliten/diags/699CID-savgol2.png> <./figures/Kapit
-el4/Kataboliten/diags/699CID-savgol1.png>]
-<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_727.png, id=415, 1129.21875pt x 
+(babel)             in language  on input line 70.
+[25 <./figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699-
+639_MK_electronMovement.png> <./figures/Kapitel4/Kataboliten/fragmentation_stru
+ctures/VWA_Katabolit_699-639_MK.png>]
+<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_727.png, id=417, 1129.21875pt x 
 1039.885pt>
 File: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_727.png Graphic file (type 
 png)
  <use figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_727.png>
 Package pdftex.def Info: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_727.png 
-used on input line 71.
+used on input line 76.
 (pdftex.def)             Requested size: 418.2524pt x 292.76842pt.
 
 <figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_727.png, i
-d=416, 276.03125pt x 323.2075pt>
+d=418, 276.03125pt x 323.2075pt>
 File: figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_727.p
 ng Graphic file (type png)
 
 <use figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_727.pn
 g>
 Package pdftex.def Info: figures/Kapitel4/Kataboliten/fragmentation_structures/
-VWA_Katabolit_727.png used on input line 78.
+VWA_Katabolit_727.png used on input line 83.
 (pdftex.def)             Requested size: 165.62001pt x 193.926pt.
-
-<figures/Kapitel4/Kataboliten/diags/727CID-savgol.png, id=421, 433.62pt x 289.0
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 89.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 89.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 89.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 89.
+ [26 <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_727.png (PNG copy)>]
+<figures/Kapitel4/Kataboliten/diags/727CID-savgol.png, id=430, 433.62pt x 289.0
 8pt>
 File: figures/Kapitel4/Kataboliten/diags/727CID-savgol.png Graphic file (type p
 ng)
  <use figures/Kapitel4/Kataboliten/diags/727CID-savgol.png>
 Package pdftex.def Info: figures/Kapitel4/Kataboliten/diags/727CID-savgol.png u
-sed on input line 87.
+sed on input line 92.
 (pdftex.def)             Requested size: 303.53192pt x 202.35461pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 102.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 102.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 102.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 97.
- [26 <./figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699
--639_MK_electronMovement.png> <./figures/Kapitel4/Kataboliten/fragmentation_str
-uctures/VWA_Katabolit_699-639_MK.png>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 97.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 97.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 97.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 97.
- [27 <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_727.png (PNG copy)> <./fi
-gures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_727.png>]
-<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_873.png, id=436, 1129.21875pt x 
+(babel)             in language  on input line 102.
+ [27 <./figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_727
+.png> <./figures/Kapitel4/Kataboliten/diags/727CID-savgol.png>]
+<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_873.png, id=439, 1129.21875pt x 
 1039.885pt>
 File: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_873.png Graphic file (type 
 png)
  <use figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_873.png>
 Package pdftex.def Info: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_873.png 
-used on input line 99.
+used on input line 104.
 (pdftex.def)             Requested size: 418.2524pt x 292.76842pt.
 
 <figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_873.png, i
-d=437, 367.3725pt x 349.305pt>
+d=440, 367.3725pt x 349.305pt>
 File: figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_873.p
 ng Graphic file (type png)
 
 <use figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_873.pn
 g>
 Package pdftex.def Info: figures/Kapitel4/Kataboliten/fragmentation_structures/
-VWA_Katabolit_873.png used on input line 106.
+VWA_Katabolit_873.png used on input line 111.
 (pdftex.def)             Requested size: 220.42519pt x 209.58461pt.
-
-<figures/Kapitel4/Kataboliten/diags/873CID-savgol1.png, id=440, 433.62pt x 289.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 117.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 117.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 117.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 117.
+ [28 <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_873.png (PNG copy)>]
+<figures/Kapitel4/Kataboliten/diags/873CID-savgol1.png, id=450, 433.62pt x 289.
 08pt>
 File: figures/Kapitel4/Kataboliten/diags/873CID-savgol1.png Graphic file (type 
 png)
  <use figures/Kapitel4/Kataboliten/diags/873CID-savgol1.png>
 Package pdftex.def Info: figures/Kapitel4/Kataboliten/diags/873CID-savgol1.png 
-used on input line 115.
+used on input line 120.
 (pdftex.def)             Requested size: 209.1277pt x 209.12549pt.
 
-<figures/Kapitel4/Kataboliten/diags/873CID-savgol2.png, id=441, 433.62pt x 289.
+<figures/Kapitel4/Kataboliten/diags/873CID-savgol2.png, id=451, 433.62pt x 289.
 08pt>
 File: figures/Kapitel4/Kataboliten/diags/873CID-savgol2.png Graphic file (type 
 png)
  <use figures/Kapitel4/Kataboliten/diags/873CID-savgol2.png>
 Package pdftex.def Info: figures/Kapitel4/Kataboliten/diags/873CID-savgol2.png 
-used on input line 121.
+used on input line 126.
 (pdftex.def)             Requested size: 209.1277pt x 209.12549pt.
 
-Overfull \hbox (2.65201pt too wide) in paragraph at lines 114--125
+Overfull \hbox (2.65201pt too wide) in paragraph at lines 119--130
 [][]  [] 
  []
 
@@ -4210,17 +4216,8 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [28 <./figures/Kapitel4/Kataboliten/diags/727CID-savgol.png>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
- [29 <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_873.png (PNG copy)> <./fi
-gures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_873.png>]
+ [29 <./figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_873
+.png>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -4298,7 +4295,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
 (./content/praktischerTeil/Praktischer_Teil_HPLC_Chlorophyllkataboliten.tex
 <figures/Kapitel6/keineReaktion/VWA_HPLC_Chromatogramm_keineReaktion.png, id=47
-4, 720.6925pt x 323.2075pt>
+6, 720.6925pt x 323.2075pt>
 File: figures/Kapitel6/keineReaktion/VWA_HPLC_Chromatogramm_keineReaktion.png G
 raphic file (type png)
 
@@ -4308,7 +4305,7 @@ keineReaktion.png used on input line 6.
 (pdftex.def)             Requested size: 418.25372pt x 187.57391pt.
 
 <figures/Kapitel6/keineReaktion/Kuerbis_Analyse_keineReaktion2_Ganzes_Spektrum.
-png, id=481, 1445.4pt x 722.7pt>
+png, id=483, 1445.4pt x 722.7pt>
 File: figures/Kapitel6/keineReaktion/Kuerbis_Analyse_keineReaktion2_Ganzes_Spek
 trum.png Graphic file (type png)
 
@@ -4366,7 +4363,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
 
 <figures/Kapitel6/keineReaktion/Kuerbis_Analyse_keineReaktion2_LC-ESI-MS.png, i
-d=512, 1445.4pt x 722.7pt>
+d=514, 1445.4pt x 722.7pt>
 File: figures/Kapitel6/keineReaktion/Kuerbis_Analyse_keineReaktion2_LC-ESI-MS.p
 ng Graphic file (type png)
 
@@ -4385,7 +4382,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 61.
  [36 <./figures/Kapitel6/keineReaktion/Kuerbis_Analyse_keineReaktion2_LC-ESI-MS
 .png>]
-<figures/Kapitel6/keineReaktion/NCC2725.png, id=520, 754.82pt x 670.505pt>
+<figures/Kapitel6/keineReaktion/NCC2725.png, id=522, 754.82pt x 670.505pt>
 File: figures/Kapitel6/keineReaktion/NCC2725.png Graphic file (type png)
 
 <use figures/Kapitel6/keineReaktion/NCC2725.png>
@@ -4393,7 +4390,7 @@ Package pdftex.def Info: figures/Kapitel6/keineReaktion/NCC2725.png used on inp
 ut line 64.
 (pdftex.def)             Requested size: 209.12686pt x 185.76552pt.
 
-<figures/Kapitel6/keineReaktion/DNCC2991.png, id=521, 762.85pt x 675.52374pt>
+<figures/Kapitel6/keineReaktion/DNCC2991.png, id=523, 762.85pt x 675.52374pt>
 File: figures/Kapitel6/keineReaktion/DNCC2991.png Graphic file (type png)
 
 <use figures/Kapitel6/keineReaktion/DNCC2991.png>
@@ -4406,7 +4403,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 63--74
  []
 
 
-<figures/Kapitel6/keineReaktion/YCC3094.png, id=522, 697.60625pt x 605.26125pt>
+<figures/Kapitel6/keineReaktion/YCC3094.png, id=524, 697.60625pt x 605.26125pt>
 File: figures/Kapitel6/keineReaktion/YCC3094.png Graphic file (type png)
 <use figures/Kapitel6/keineReaktion/YCC3094.png>
 Package pdftex.def Info: figures/Kapitel6/keineReaktion/YCC3094.png used on inp
@@ -4424,7 +4421,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 2.
  [37 <./figures/Kapitel6/keineReaktion/NCC2725.png> <./figures/Kapitel6/keineRe
 aktion/DNCC2991.png> <./figures/Kapitel6/keineReaktion/YCC3094.png>]
-<figures/Kapitel6/Reaktion3h/HPLC_Chromatogramm.png, id=531, 729.72626pt x 327.
+<figures/Kapitel6/Reaktion3h/HPLC_Chromatogramm.png, id=533, 729.72626pt x 327.
 2225pt>
 File: figures/Kapitel6/Reaktion3h/HPLC_Chromatogramm.png Graphic file (type png
 )
@@ -4447,7 +4444,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 13.
 [38 <./figures/Kapitel6/Reaktion3h/HPLC_Chromatogramm.png>]
 <figures/Kapitel6/Reaktion3h/Kuerbis_Analyse_Reaktion3h_Ganzes_Spektrum.png, id
-=543, 1445.4pt x 722.7pt>
+=545, 1445.4pt x 722.7pt>
 File: figures/Kapitel6/Reaktion3h/Kuerbis_Analyse_Reaktion3h_Ganzes_Spektrum.pn
 g Graphic file (type png)
 
@@ -4471,7 +4468,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 26.
 [39 <./figures/Kapitel6/Reaktion3h/Kuerbis_Analyse_Reaktion3h_Ganzes_Spektrum.p
 ng>]
-<figures/Kapitel6/Reaktion3h/Kuerbis_Analyse_Reaktion3h_LC-ESI-MS.png, id=553, 
+<figures/Kapitel6/Reaktion3h/Kuerbis_Analyse_Reaktion3h_LC-ESI-MS.png, id=555, 
 1445.4pt x 722.7pt>
 File: figures/Kapitel6/Reaktion3h/Kuerbis_Analyse_Reaktion3h_LC-ESI-MS.png Grap
 hic file (type png)
@@ -4504,7 +4501,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 70.
 
 [41]
-<figures/Kapitel6/Reaktion3h/YCC3398.png, id=565, 756.8275pt x 656.4525pt>
+<figures/Kapitel6/Reaktion3h/YCC3398.png, id=567, 756.8275pt x 656.4525pt>
 File: figures/Kapitel6/Reaktion3h/YCC3398.png Graphic file (type png)
 
 <use figures/Kapitel6/Reaktion3h/YCC3398.png>
@@ -4512,7 +4509,7 @@ Package pdftex.def Info: figures/Kapitel6/Reaktion3h/YCC3398.png used on input
 line 74.
 (pdftex.def)             Requested size: 209.12686pt x 181.39143pt.
 
-<figures/Kapitel6/Reaktion3h/DNCC3709.png, id=566, 775.89874pt x 679.53876pt>
+<figures/Kapitel6/Reaktion3h/DNCC3709.png, id=568, 775.89874pt x 679.53876pt>
 File: figures/Kapitel6/Reaktion3h/DNCC3709.png Graphic file (type png)
 
 <use figures/Kapitel6/Reaktion3h/DNCC3709.png>
@@ -4524,7 +4521,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 73--84
 [][]  [] 
  []
 
-<figures/Kapitel6/Reaktion3h/NCC3849.png, id=567, 756.8275pt x 676.5275pt>
+<figures/Kapitel6/Reaktion3h/NCC3849.png, id=569, 756.8275pt x 676.5275pt>
 File: figures/Kapitel6/Reaktion3h/NCC3849.png Graphic file (type png)
 
 <use figures/Kapitel6/Reaktion3h/NCC3849.png>
@@ -4532,7 +4529,7 @@ Package pdftex.def Info: figures/Kapitel6/Reaktion3h/NCC3849.png used on input
 line 86.
 (pdftex.def)             Requested size: 209.12686pt x 186.93857pt.
 
-<figures/Kapitel6/Reaktion3h/DNCC4003.png, id=568, 762.85pt x 680.5425pt>
+<figures/Kapitel6/Reaktion3h/DNCC4003.png, id=570, 762.85pt x 680.5425pt>
 File: figures/Kapitel6/Reaktion3h/DNCC4003.png Graphic file (type png)
 
 <use figures/Kapitel6/Reaktion3h/DNCC4003.png>
@@ -4544,7 +4541,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 85--96
 [][]  [] 
  []
 
-<figures/Kapitel6/Reaktion3h/YCC4728.png, id=569, 757.83125pt x 673.51625pt>
+<figures/Kapitel6/Reaktion3h/YCC4728.png, id=571, 757.83125pt x 673.51625pt>
 File: figures/Kapitel6/Reaktion3h/YCC4728.png Graphic file (type png)
 
 <use figures/Kapitel6/Reaktion3h/YCC4728.png>
@@ -4576,7 +4573,7 @@ Package babel Info: Redefining ngerman shorthand "~
  [43 <./figures/Kapitel6/Reaktion3h/YCC4728.png>]
 chapter 7.
 
-<figures/Kapitel7/Kataboliten/VWA_MS_617.png, id=581, 1129.21875pt x 1039.885pt
+<figures/Kapitel7/Kataboliten/VWA_MS_617.png, id=583, 1129.21875pt x 1039.885pt
 >
 File: figures/Kapitel7/Kataboliten/VWA_MS_617.png Graphic file (type png)
  <use figures/Kapitel7/Kataboliten/VWA_MS_617.png>
@@ -4596,7 +4593,7 @@ Package babel Info: Redefining ngerman shorthand "~
 
 ]
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_617.png, i
-d=592, 271.0125pt x 289.08pt>
+d=594, 271.0125pt x 289.08pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_617.p
 ng Graphic file (type png)
 
@@ -4607,7 +4604,7 @@ VWA_Katabolit_617.png used on input line 28.
 (pdftex.def)             Requested size: 162.60875pt x 173.44933pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_617_MH_Rin
-gD-RingC_331_electronMovement.png, id=593, 271.0125pt x 289.08pt>
+gD-RingC_331_electronMovement.png, id=595, 271.0125pt x 289.08pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_617_M
 H_RingD-RingC_331_electronMovement.png Graphic file (type png)
 
@@ -4619,7 +4616,7 @@ VWA_Katabolit_617_MH_RingD-RingC_331_electronMovement.png used on input line 35
 (pdftex.def)             Requested size: 209.12686pt x 223.07748pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_617-RingD-
-RingC_331.png, id=594, 200.75pt x 264.99pt>
+RingC_331.png, id=596, 200.75pt x 264.99pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_617-R
 ingD-RingC_331.png Graphic file (type png)
 
@@ -4654,7 +4651,7 @@ Package babel Info: Redefining ngerman shorthand "~
 .png> <./figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_61
 7_MH_RingD-RingC_331_electronMovement.png> <./figures/Kapitel7/Kataboliten/frag
 mentation_structures/VWA_Katabolit_617-RingD-RingC_331.png>]
-<figures/Kapitel7/Kataboliten/VWA_MS_619.png, id=609, 1129.21875pt x 1039.885pt
+<figures/Kapitel7/Kataboliten/VWA_MS_619.png, id=611, 1129.21875pt x 1039.885pt
 >
 File: figures/Kapitel7/Kataboliten/VWA_MS_619.png Graphic file (type png)
  <use figures/Kapitel7/Kataboliten/VWA_MS_619.png>
@@ -4663,7 +4660,7 @@ put line 55.
 (pdftex.def)             Requested size: 418.2524pt x 292.76842pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619_MH-CO2
--RingA-RIngD_311_electronMovement.png, id=615, 275.0275pt x 297.11pt>
+-RingA-RIngD_311_electronMovement.png, id=617, 275.0275pt x 297.11pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619_M
 H-CO2-RingA-RIngD_311_electronMovement.png Graphic file (type png)
 
@@ -4675,7 +4672,7 @@ e 66.
 (pdftex.def)             Requested size: 209.12686pt x 225.92381pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619-CO2-Ri
-ngA-RingD_311.png, id=616, 217.81375pt x 184.69pt>
+ngA-RingD_311.png, id=618, 217.81375pt x 184.69pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619-C
 O2-RingA-RingD_311.png Graphic file (type png)
 
@@ -4691,7 +4688,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 65--76
 
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619-CO2-Ri
-ngD-RingA_311_Mesomer1.png, id=617, 217.81375pt x 184.69pt>
+ngD-RingA_311_Mesomer1.png, id=619, 217.81375pt x 184.69pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619-C
 O2-RingD-RingA_311_Mesomer1.png Graphic file (type png)
 
@@ -4702,7 +4699,7 @@ VWA_Katabolit_619-CO2-RingD-RingA_311_Mesomer1.png used on input line 81.
 (pdftex.def)             Requested size: 209.12686pt x 177.3229pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619-CO2-Ri
-ngD-RingA_311_Mesomer2.png, id=618, 217.81375pt x 184.69pt>
+ngD-RingA_311_Mesomer2.png, id=620, 217.81375pt x 184.69pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619-C
 O2-RingD-RingA_311_Mesomer2.png Graphic file (type png)
 
@@ -4739,7 +4736,7 @@ ragmentation_structures/VWA_Katabolit_619-CO2-RingA-RingD_311.png> <./figures/K
 apitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619-CO2-RingD-RingA_
 311_Mesomer1.png> <./figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_
 Katabolit_619-CO2-RingD-RingA_311_Mesomer2.png>]
-<figures/Kapitel7/Kataboliten/VWA_MS_645-12.png, id=635, 949.5475pt x 867.24pt>
+<figures/Kapitel7/Kataboliten/VWA_MS_645-12.png, id=637, 949.5475pt x 867.24pt>
 File: figures/Kapitel7/Kataboliten/VWA_MS_645-12.png Graphic file (type png)
 <use figures/Kapitel7/Kataboliten/VWA_MS_645-12.png>
 Package pdftex.def Info: figures/Kapitel7/Kataboliten/VWA_MS_645-12.png used on
@@ -4754,7 +4751,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 111.
  [49 <./figures/Kapitel7/Kataboliten/VWA_MS_645-12.png>]
-<figures/Kapitel7/Kataboliten/VWA_MS_647.png, id=645, 1129.21875pt x 1039.885pt
+<figures/Kapitel7/Kataboliten/VWA_MS_647.png, id=647, 1129.21875pt x 1039.885pt
 >
 File: figures/Kapitel7/Kataboliten/VWA_MS_647.png Graphic file (type png)
  <use figures/Kapitel7/Kataboliten/VWA_MS_647.png>
@@ -4763,7 +4760,7 @@ put line 119.
 (pdftex.def)             Requested size: 418.2524pt x 250.9421pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647.png, i
-d=646, 276.03125pt x 294.09875pt>
+d=648, 276.03125pt x 294.09875pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647.p
 ng Graphic file (type png)
 
@@ -4774,7 +4771,7 @@ VWA_Katabolit_647.png used on input line 126.
 (pdftex.def)             Requested size: 209.12686pt x 222.82628pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647-CO2-Ri
-ngD_480_MH_electronMovement.png, id=647, 276.03125pt x 304.13625pt>
+ngD_480_MH_electronMovement.png, id=649, 276.03125pt x 304.13625pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647-C
 O2-RingD_480_MH_electronMovement.png Graphic file (type png)
 
@@ -4791,7 +4788,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 125--136
 
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647-CO2-Ri
-ngD_480_MH_Enolform.png, id=648, 276.03125pt x 294.09875pt>
+ngD_480_MH_Enolform.png, id=650, 276.03125pt x 294.09875pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647-C
 O2-RingD_480_MH_Enolform.png Graphic file (type png)
 
@@ -4802,7 +4799,7 @@ VWA_Katabolit_647-CO2-RingD_480_MH_Enolform.png used on input line 141.
 (pdftex.def)             Requested size: 209.12686pt x 222.82628pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647-CO2-Ri
-ngD_480_MH_Ketoform.png, id=649, 271.0125pt x 294.09875pt>
+ngD_480_MH_Ketoform.png, id=651, 271.0125pt x 294.09875pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647-C
 O2-RingD_480_MH_Ketoform.png Graphic file (type png)
 
@@ -4839,7 +4836,7 @@ Package babel Info: Redefining ngerman shorthand "~
 ntation_structures/VWA_Katabolit_647-CO2-RingD_480_MH_Enolform.png> <./figures/
 Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647-CO2-RingD_480_M
 H_Ketoform.png>]
-<figures/Kapitel7/Kataboliten/VWA_MS_793.png, id=665, 1129.21875pt x 1039.885pt
+<figures/Kapitel7/Kataboliten/VWA_MS_793.png, id=667, 1129.21875pt x 1039.885pt
 >
 File: figures/Kapitel7/Kataboliten/VWA_MS_793.png Graphic file (type png)
  <use figures/Kapitel7/Kataboliten/VWA_MS_793.png>
@@ -4855,7 +4852,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 171.
  [52 <./figures/Kapitel7/Kataboliten/VWA_MS_793.png (PNG copy)>]
-<figures/Kapitel7/Kataboliten/VWA_MS_631.png, id=673, 1129.21875pt x 1039.885pt
+<figures/Kapitel7/Kataboliten/VWA_MS_631.png, id=675, 1129.21875pt x 1039.885pt
 >
 File: figures/Kapitel7/Kataboliten/VWA_MS_631.png Graphic file (type png)
  <use figures/Kapitel7/Kataboliten/VWA_MS_631.png>
@@ -4863,7 +4860,7 @@ Package pdftex.def Info: figures/Kapitel7/Kataboliten/VWA_MS_631.png used on in
 put line 183.
 (pdftex.def)             Requested size: 418.2524pt x 292.76842pt.
 
-<figures/Kapitel7/Kataboliten/VWA_MS_645-2.png, id=674, 1129.21875pt x 1039.885
+<figures/Kapitel7/Kataboliten/VWA_MS_645-2.png, id=676, 1129.21875pt x 1039.885
 pt>
 File: figures/Kapitel7/Kataboliten/VWA_MS_645-2.png Graphic file (type png)
  <use figures/Kapitel7/Kataboliten/VWA_MS_645-2.png>
@@ -4872,7 +4869,7 @@ input line 190.
 (pdftex.def)             Requested size: 418.2524pt x 250.9421pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_631.png, i
-d=675, 271.0125pt x 313.17pt>
+d=677, 271.0125pt x 313.17pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_631.p
 ng Graphic file (type png)
 
@@ -4883,7 +4880,7 @@ VWA_Katabolit_631.png used on input line 198.
 (pdftex.def)             Requested size: 209.12686pt x 241.66727pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_645_nachRe
-aktion.png, id=676, 271.0125pt x 313.17pt>
+aktion.png, id=678, 271.0125pt x 313.17pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_645_n
 achReaktion.png Graphic file (type png)
 
@@ -4924,7 +4921,7 @@ Package babel Info: Redefining ngerman shorthand "~
 pitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_631.png> <./figures/K
 apitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_645_nachReaktion.png
 >]
-<figures/Kapitel7/Kataboliten/VWA_MS_633.png, id=690, 1129.21875pt x 1039.885pt
+<figures/Kapitel7/Kataboliten/VWA_MS_633.png, id=692, 1129.21875pt x 1039.885pt
 >
 File: figures/Kapitel7/Kataboliten/VWA_MS_633.png Graphic file (type png)
  <use figures/Kapitel7/Kataboliten/VWA_MS_633.png>
@@ -4933,7 +4930,7 @@ put line 217.
 (pdftex.def)             Requested size: 418.2524pt x 292.76842pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_633.png, i
-d=691, 271.0125pt x 292.09125pt>
+d=693, 271.0125pt x 292.09125pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_633.p
 ng Graphic file (type png)
 
@@ -4951,7 +4948,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 230.
  [55 <./figures/Kapitel7/Kataboliten/VWA_MS_633.png (PNG copy)>]
-<figures/Kapitel7/Kataboliten/VWA_MS_661.png, id=699, 1129.21875pt x 1039.885pt
+<figures/Kapitel7/Kataboliten/VWA_MS_661.png, id=701, 1129.21875pt x 1039.885pt
 >
 File: figures/Kapitel7/Kataboliten/VWA_MS_661.png Graphic file (type png)
  <use figures/Kapitel7/Kataboliten/VWA_MS_661.png>
@@ -5175,10 +5172,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 55377 strings out of 494852
- 1070525 string characters out of 6177658
- 1614090 words of memory out of 5000000
- 56914 multiletter control sequences out of 15000+600000
+ 55378 strings out of 494852
+ 1070544 string characters out of 6177658
+ 1614154 words of memory out of 5000000
+ 56915 multiletter control sequences out of 15000+600000
  89044 words of font info for 553 fonts, out of 8000000 for 9000
  42 hyphenation exceptions out of 8191
  75i,15n,100p,10355b,2996s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -5190,10 +5187,10 @@ ts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palati
 no/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (75 pages, 7741270 bytes).
+Output written on main.pdf (75 pages, 7762157 bytes).
 PDF statistics:
- 955 PDF objects out of 1000 (max. 8388607)
- 755 compressed objects within 8 object streams
+ 957 PDF objects out of 1000 (max. 8388607)
+ 757 compressed objects within 8 object streams
  203 named destinations out of 1000 (max. 500000)
  83804 words of extra memory for PDF output out of 89155 (max. 10000000)
 
