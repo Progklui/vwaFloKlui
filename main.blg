@@ -1,15 +1,21 @@
-[0] Config.pm:343> INFO - This is Biber 2.5
-[0] Config.pm:346> INFO - Logfile is 'main.blg'
-[73] biber:290> INFO - === Die Dez  5, 2017, 21:48:02
-[191] Biber.pm:352> INFO - Reading 'main.bcf'
-[349] Biber.pm:777> INFO - Found 17 citekeys in bib section 0
-[361] Biber.pm:3494> INFO - Processing section 0
-[372] Biber.pm:3658> INFO - Looking for bibtex format file 'references-biblatex.bib' for section 0
-[405] bibtex.pm:1176> INFO - Decoding LaTeX character macros into UTF-8
-[428] bibtex.pm:1037> INFO - Found BibTeX data source 'references-biblatex.bib'
-[506] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[506] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[506] Biber.pm:3307> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'de-DE'
-[506] Biber.pm:3311> INFO - No sort tailoring available for locale 'de-DE'
-[516] bbl.pm:526> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[590] bbl.pm:619> INFO - Output to main.bbl
+[0] Config.pm:340> INFO - This is Biber 2.4
+[0] Config.pm:343> INFO - Logfile is 'main.blg'
+[31] biber:287> INFO - === Sam Dez  9, 2017, 13:42:14
+[108] Biber.pm:348> INFO - Reading 'main.bcf'
+[224] Utils.pm:147> WARN - Warning: Found biblatex control file version 3.1, expected version 3.0
+[226] Biber.pm:742> INFO - Found 17 citekeys in bib section 0
+[231] Biber.pm:3151> INFO - Processing section 0
+[255] Biber.pm:3308> INFO - Looking for bibtex format file 'references-biblatex.bib' for section 0
+[280] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
+[297] bibtex.pm:974> INFO - Found BibTeX data source 'references-biblatex.bib'
+[507] UCollate.pm:65> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[507] UCollate.pm:65> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[509] Biber.pm:3028> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'de-DE'
+[509] Biber.pm:3032> INFO - No sort tailoring available for locale 'de-DE'
+[590] UCollate.pm:65> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[591] UCollate.pm:65> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[591] Biber.pm:3028> INFO - Sorting list 'none/global' of type 'entry' with scheme 'none' and locale 'de-DE'
+[591] Biber.pm:3032> INFO - No sort tailoring available for locale 'de-DE'
+[605] bbl.pm:519> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[659] bbl.pm:615> INFO - Output to main.bbl
+[659] Biber.pm:109> INFO - WARNINGS: 1
