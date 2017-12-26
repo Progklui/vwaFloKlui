@@ -59,3 +59,7 @@
 \contentsline {chapter}{Abbildungsverzeichnis}{63}{chapter*.62}
 \contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{66}{section*.64}
 \contentsline {part}{\nonumberline Anhang}{67}{part*.67}
+\contentsline {chapter}{\numberline {A}Python Code-Listings f\IeC {\"u}r die Erstellung der Grafiken}{68}{appendix.A}
+\contentsline {section}{\numberline {A.1}Programm zur Erstellung von Chromatogrammen f\IeC {\"u}r LC-ESI-MS}{68}{section.A.1}
+\contentsline {section}{\numberline {A.2}Programm zur Erstellung von MS-Spektren}{78}{section.A.2}
+\contentsline {section}{\numberline {A.3}Programm zur Erstellung von Fragmentierungsdiagrammen}{97}{section.A.3}
