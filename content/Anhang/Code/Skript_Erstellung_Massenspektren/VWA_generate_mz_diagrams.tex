@@ -1,0 +1,1040 @@
+
+% Default to the notebook output style
+
+    
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    
+\documentclass[11pt]{article}
+
+    
+    
+    \usepackage[T1]{fontenc}
+    % Nicer default font than Computer Modern for most use cases
+    \usepackage{palatino}
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % We will generate all images so they have a width \maxwidth. This means
+    % that they will get their normal width if they fit onto the page, but
+    % are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
+    % Set max figure width to be 80% of text width, for now hardcoded.
+    \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionLabelFormat{nolabel}{}
+    \captionsetup{labelformat=nolabel}
+
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    
+
+    
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatability definitions
+    \def\gt{>}
+    \def\lt{<}
+    % Document parameters
+    \title{VWA\_generate\_mz\_diagrams}
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    \maketitle
+    
+    
+
+    
+    \section{Drawing nice-looking MS-spectra with fragmentation
+paths}\label{drawing-nice-looking-ms-spectra-with-fragmentation-paths}
+
+    Import needed modules:
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}109}]:} \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
+          \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
+          \PY{k+kn}{import} \PY{n+nn}{math} \PY{k}{as} \PY{n+nn}{mt}
+          \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
+          
+          \PY{k+kn}{from} \PY{n+nn}{matplotlib} \PY{k}{import} \PY{n}{rcParams}
+\end{Verbatim}
+
+    Define filetypes and other general stuff:
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}110}]:} \PY{n}{filetype} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{png}\PY{l+s+s2}{\PYZdq{}}        \PY{c+c1}{\PYZsh{} \PYZdq{}png\PYZdq{} or \PYZdq{}pdf\PYZdq{}}
+          \PY{l+s+sd}{\PYZdq{}\PYZdq{}\PYZdq{}str: Filetype of the outputfile}
+          
+          \PY{l+s+sd}{Tested with \PYZdq{}pdf\PYZdq{} and \PYZdq{}png\PYZdq{}}
+          \PY{l+s+sd}{\PYZdq{}\PYZdq{}\PYZdq{}}
+          
+          \PY{n}{figdpi} \PY{o}{=} \PY{l+m+mi}{200}
+          \PY{l+s+sd}{\PYZdq{}\PYZdq{}\PYZdq{}int: DPI of the image output file}
+          \PY{l+s+sd}{\PYZdq{}\PYZdq{}\PYZdq{}}
+          
+          
+          \PY{c+c1}{\PYZsh{} correct DPI of figure if using pdf}
+          \PY{k}{if} \PY{n}{filetype}\PY{o}{.}\PY{n}{lower}\PY{p}{(}\PY{p}{)} \PY{o}{==} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{pdf}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:}
+              \PY{n}{figdpi} \PY{o}{=} \PY{l+m+mi}{72}
+          
+          \PY{n}{params} \PY{o}{=} \PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{backend}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{pdf}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                    \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{figure.dpi}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{n}{figdpi}\PY{p}{,}  \PY{c+c1}{\PYZsh{} 72 for pdf}
+                    \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{axes.labelsize}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{10}\PY{p}{,}
+                    \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{font.size}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{10}\PY{p}{,}
+                    \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{legend.fontsize}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{8}\PY{p}{,}
+                    \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{legend.frameon}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{k+kc}{True}\PY{p}{,}
+                    \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{xtick.labelsize}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{8}\PY{p}{,}
+                    \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ytick.labelsize}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{8}\PY{p}{,}
+                    \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{font.family}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{serif}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                    \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{text.usetex}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{k+kc}{True}\PY{p}{,}
+                    \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{text.latex.unicode}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{k+kc}{True}\PY{p}{,}
+                    \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{axes.linewidth}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mf}{0.5}\PY{p}{,}
+                    \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{xtick.major.size}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{4}\PY{p}{,}  \PY{c+c1}{\PYZsh{} major tick size in points}
+                    \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{xtick.minor.size}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{2}\PY{p}{,}  \PY{c+c1}{\PYZsh{} minor tick size in points}
+                    \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{xtick.direction}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{out}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                    \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ytick.major.size}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{4}\PY{p}{,}  \PY{c+c1}{\PYZsh{} major tick size in points}
+                    \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ytick.minor.size}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+m+mi}{2}\PY{p}{,}  \PY{c+c1}{\PYZsh{} minor tick size in points}
+                    \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ytick.direction}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{out}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                    \PY{p}{\PYZcb{}}
+          \PY{n}{plt}\PY{o}{.}\PY{n}{rcParams}\PY{o}{.}\PY{n}{update}\PY{p}{(}\PY{n}{params}\PY{p}{)}
+\end{Verbatim}
+
+    Retrieve the maximum peak on which to scale all the others:
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}111}]:} \PY{k}{def} \PY{n+nf}{\PYZus{}\PYZus{}get\PYZus{}max\PYZus{}peak}\PY{p}{(}\PY{n}{x\PYZus{}value}\PY{p}{,} \PY{n}{raw\PYZus{}values}\PY{p}{)}\PY{p}{:}
+              \PY{l+s+sd}{\PYZdq{}\PYZdq{}\PYZdq{}Search for the local peak next to the x\PYZhy{}value.}
+          
+          \PY{l+s+sd}{    The value searches in the near area of the given x\PYZhy{}value for the maximum (local)}
+          \PY{l+s+sd}{    peak, which correspondends to the data.}
+          
+          \PY{l+s+sd}{    Args:}
+          \PY{l+s+sd}{        x\PYZus{}value (float): m/z value (x\PYZhy{}coordinate) of the point, to be annotated}
+          \PY{l+s+sd}{        raw\PYZus{}values (Pandas.DataFrame): Data values, which should be annotated}
+          
+          \PY{l+s+sd}{    Returns:}
+          \PY{l+s+sd}{        y value of the peak, next to the given x value}
+          
+          \PY{l+s+sd}{    \PYZdq{}\PYZdq{}\PYZdq{}}
+              \PY{c+c1}{\PYZsh{}print(x\PYZus{}value)}
+              \PY{c+c1}{\PYZsh{}print(raw\PYZus{}values[raw\PYZus{}values[\PYZdq{}m/z\PYZdq{}] == x\PYZus{}value])}
+              \PY{n}{raw\PYZus{}values\PYZus{}index} \PY{o}{=} \PY{n}{raw\PYZus{}values}\PY{p}{[}\PY{n}{raw\PYZus{}values}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{m/z}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]} \PY{o}{==} \PY{n}{x\PYZus{}value}\PY{p}{]}\PY{o}{.}\PY{n}{index}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
+              
+              \PY{c+c1}{\PYZsh{}print(raw\PYZus{}values\PYZus{}index)}
+              \PY{n}{value}\PY{p}{,} \PY{n}{index} \PY{o}{=} \PY{n+nb}{float}\PY{p}{(}\PY{n}{raw\PYZus{}values}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{n}{raw\PYZus{}values\PYZus{}index} \PY{o}{\PYZhy{}} \PY{l+m+mi}{1}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{intensity\PYZus{}normalized}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{)}\PY{p}{,} \PY{n}{raw\PYZus{}values\PYZus{}index} \PY{o}{\PYZhy{}} \PY{l+m+mi}{1}
+          
+              \PY{c+c1}{\PYZsh{}for z in range(\PYZhy{}5, 15):}
+                  \PY{c+c1}{\PYZsh{}if float(raw\PYZus{}values.loc[raw\PYZus{}values\PYZus{}index + z, \PYZdq{}intensity\PYZus{}normalized\PYZdq{}]) \PYZgt{} value:}
+                      \PY{c+c1}{\PYZsh{}value, index = float(raw\PYZus{}values.loc[raw\PYZus{}values\PYZus{}index + z, \PYZdq{}intensity\PYZus{}normalized\PYZdq{}]), raw\PYZus{}values\PYZus{}index + z}
+              \PY{k}{return} \PY{n}{value}
+\end{Verbatim}
+
+    Retrieve the positions of the points:
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}112}]:} \PY{k}{def} \PY{n+nf}{annotate\PYZus{}point}\PY{p}{(}\PY{n}{x1}\PY{p}{,} \PY{n}{y\PYZus{}pos}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{text}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values}\PY{o}{=}\PY{k+kc}{None}\PY{p}{)}\PY{p}{:}
+              \PY{l+s+sd}{\PYZdq{}\PYZdq{}\PYZdq{}Annotage a specific point.}
+          
+          \PY{l+s+sd}{    Annotate a point with a label. The label will be placed vertically}
+          \PY{l+s+sd}{    with an additional line.}
+          
+          \PY{l+s+sd}{    The function uses the data values and searches for the peak of the}
+          \PY{l+s+sd}{    value to be annotated. Therefore the ``raw\PYZus{}values`` parameter is used}
+          
+          \PY{l+s+sd}{    Args:}
+          \PY{l+s+sd}{        x1 (float): m/z value (x\PYZhy{}coordinate) of the point, to be annotated}
+          \PY{l+s+sd}{        y\PYZus{}pos (Optional[float]): Position of the label beginning (y\PYZhy{}coordinate).}
+          \PY{l+s+sd}{            The value uses the scale of the datapoints.}
+          \PY{l+s+sd}{        text (str): Label text}
+          \PY{l+s+sd}{        raw\PYZus{}values (Pandas.DataFrame): Data values, which should be annotated}
+          
+          \PY{l+s+sd}{    \PYZdq{}\PYZdq{}\PYZdq{}}
+          
+              \PY{n}{delta\PYZus{}point\PYZus{}annotate\PYZus{}line\PYZus{}pixel} \PY{o}{=} \PY{l+m+mi}{1}
+          
+              \PY{k}{if} \PY{n}{raw\PYZus{}values} \PY{o+ow}{is} \PY{o+ow}{not} \PY{k+kc}{None}\PY{p}{:}
+          
+                  \PY{k}{if} \PY{n}{\PYZus{}\PYZus{}get\PYZus{}max\PYZus{}peak}\PY{p}{(}\PY{n}{x1}\PY{p}{,} \PY{n}{raw\PYZus{}values}\PY{p}{)} \PY{o}{\PYZlt{}} \PY{p}{(}\PY{n}{y\PYZus{}pos} \PY{o}{\PYZhy{}} \PY{n}{delta\PYZus{}point\PYZus{}annotate\PYZus{}line\PYZus{}pixel}\PY{p}{)}\PY{p}{:}
+                      \PY{n}{xy\PYZus{}text} \PY{o}{=} \PY{p}{(}\PY{n}{x1}\PY{p}{,} \PY{n}{y\PYZus{}pos}\PY{p}{)}
+                  \PY{k}{else}\PY{p}{:}
+                      \PY{n}{xy\PYZus{}text} \PY{o}{=} \PY{p}{(}\PY{n}{x1}\PY{p}{,} \PY{n}{\PYZus{}\PYZus{}get\PYZus{}max\PYZus{}peak}\PY{p}{(}\PY{n}{x1}\PY{p}{,} \PY{n}{raw\PYZus{}values}\PY{p}{)} \PY{o}{+} \PY{n}{delta\PYZus{}point\PYZus{}annotate\PYZus{}line\PYZus{}pixel}\PY{p}{)}
+          
+                  \PY{n}{plt}\PY{o}{.}\PY{n}{annotate}\PY{p}{(}
+                      \PY{n}{text}\PY{p}{,} \PY{n}{xy}\PY{o}{=}\PY{p}{(}\PY{n}{x1}\PY{p}{,} \PY{n}{\PYZus{}\PYZus{}get\PYZus{}max\PYZus{}peak}\PY{p}{(}\PY{n}{x1}\PY{p}{,} \PY{n}{raw\PYZus{}values}\PY{p}{)} \PY{o}{+} \PY{n}{delta\PYZus{}point\PYZus{}annotate\PYZus{}line\PYZus{}pixel}\PY{p}{)}\PY{p}{,} \PY{n}{xycoords}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{data}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                      \PY{n}{xytext}\PY{o}{=}\PY{n}{xy\PYZus{}text}\PY{p}{,} \PY{n}{textcoords}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{data}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                      \PY{n}{rotation}\PY{o}{=}\PY{l+m+mi}{90}\PY{p}{,} \PY{n}{size}\PY{o}{=}\PY{l+m+mi}{8}\PY{p}{,} \PY{n}{horizontalalignment}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{center}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{verticalalignment}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bottom}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                      \PY{n}{arrowprops}\PY{o}{=}\PY{n+nb}{dict}\PY{p}{(}\PY{n}{arrowstyle}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{color}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZsh{}808080}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{linewidth}\PY{o}{=}\PY{l+m+mf}{0.4}\PY{p}{,} \PY{n}{shrinkA}\PY{o}{=}\PY{l+m+mf}{0.05}\PY{p}{,} \PY{n}{shrinkB}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+    Calculate distance between the annotated points:
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}113}]:} \PY{k}{def} \PY{n+nf}{annotate\PYZus{}distance}\PY{p}{(}\PY{n}{x1}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{x2}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{y\PYZus{}pos}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{text}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values}\PY{o}{=}\PY{k+kc}{None}\PY{p}{,} \PY{n}{rotate\PYZus{}text}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{)}\PY{p}{:}
+              \PY{l+s+sd}{\PYZdq{}\PYZdq{}\PYZdq{}Annotage the distance between two peaks}
+          
+          \PY{l+s+sd}{    Annotate the distance between two given peaks. The text can be placed with a}
+          \PY{l+s+sd}{    given angle.}
+          
+          \PY{l+s+sd}{    }
+          \PY{l+s+sd}{    Args:}
+          \PY{l+s+sd}{        x1 (float): m/z value (x\PYZhy{}coordinate) of the left point}
+          \PY{l+s+sd}{        x2 (float): m/z value (x\PYZhy{}coordinate) of the right point}
+          \PY{l+s+sd}{        y\PYZus{}pos (Optional[float]): Position of the label beginning (y\PYZhy{}coordinate).}
+          \PY{l+s+sd}{            The value uses the scale of the datapoints.}
+          \PY{l+s+sd}{        text (str): Label text}
+          \PY{l+s+sd}{        raw\PYZus{}values (Pandas.DataFrame): Data values, which should be annotated}
+          \PY{l+s+sd}{        rotate\PYZus{}text (Optional[int]): Rotation of the label, should be 0 or 90}
+          
+          \PY{l+s+sd}{    \PYZdq{}\PYZdq{}\PYZdq{}}
+          
+              \PY{n}{delta\PYZus{}point\PYZus{}annotate\PYZus{}line\PYZus{}pixel} \PY{o}{=} \PY{l+m+mi}{1}
+          
+              \PY{k}{if} \PY{n}{raw\PYZus{}values} \PY{o+ow}{is} \PY{o+ow}{not} \PY{k+kc}{None}\PY{p}{:}
+                  \PY{k}{if} \PY{n}{\PYZus{}\PYZus{}get\PYZus{}max\PYZus{}peak}\PY{p}{(}\PY{n}{x1}\PY{p}{,} \PY{n}{raw\PYZus{}values}\PY{p}{)} \PY{o}{\PYZlt{}} \PY{p}{(}\PY{n}{y\PYZus{}pos} \PY{o}{\PYZhy{}} \PY{n}{delta\PYZus{}point\PYZus{}annotate\PYZus{}line\PYZus{}pixel}\PY{p}{)}\PY{p}{:}
+                      \PY{n}{plt}\PY{o}{.}\PY{n}{annotate}\PY{p}{(}
+                          \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{xy}\PY{o}{=}\PY{p}{(}\PY{n}{x1}\PY{p}{,} \PY{n}{\PYZus{}\PYZus{}get\PYZus{}max\PYZus{}peak}\PY{p}{(}\PY{n}{x1}\PY{p}{,} \PY{n}{raw\PYZus{}values}\PY{p}{)} \PY{o}{+} \PY{n}{delta\PYZus{}point\PYZus{}annotate\PYZus{}line\PYZus{}pixel}\PY{p}{)}\PY{p}{,} \PY{n}{xycoords}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{data}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                          \PY{n}{xytext}\PY{o}{=}\PY{p}{(}\PY{n}{x1}\PY{p}{,} \PY{n}{y\PYZus{}pos}\PY{p}{)}\PY{p}{,} \PY{n}{textcoords}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{data}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                          \PY{n}{arrowprops}\PY{o}{=}\PY{n+nb}{dict}\PY{p}{(}\PY{n}{arrowstyle}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{color}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZsh{}808080}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{linewidth}\PY{o}{=}\PY{l+m+mf}{0.4}\PY{p}{,} \PY{n}{shrinkA}\PY{o}{=}\PY{l+m+mf}{0.05}\PY{p}{,} \PY{n}{shrinkB}\PY{o}{=}\PY{l+m+mf}{0.05}\PY{p}{)}\PY{p}{)}
+          
+                  \PY{k}{if} \PY{n}{\PYZus{}\PYZus{}get\PYZus{}max\PYZus{}peak}\PY{p}{(}\PY{n}{x2}\PY{p}{,} \PY{n}{raw\PYZus{}values}\PY{p}{)} \PY{o}{\PYZlt{}} \PY{p}{(}\PY{n}{y\PYZus{}pos} \PY{o}{\PYZhy{}} \PY{n}{delta\PYZus{}point\PYZus{}annotate\PYZus{}line\PYZus{}pixel}\PY{p}{)}\PY{p}{:}
+                      \PY{n}{plt}\PY{o}{.}\PY{n}{annotate}\PY{p}{(}
+                          \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{xy}\PY{o}{=}\PY{p}{(}\PY{n}{x2}\PY{p}{,} \PY{n}{\PYZus{}\PYZus{}get\PYZus{}max\PYZus{}peak}\PY{p}{(}\PY{n}{x2}\PY{p}{,} \PY{n}{raw\PYZus{}values}\PY{p}{)} \PY{o}{+} \PY{n}{delta\PYZus{}point\PYZus{}annotate\PYZus{}line\PYZus{}pixel}\PY{p}{)}\PY{p}{,} \PY{n}{xycoords}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{data}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                          \PY{n}{xytext}\PY{o}{=}\PY{p}{(}\PY{n}{x2}\PY{p}{,} \PY{n}{y\PYZus{}pos}\PY{p}{)}\PY{p}{,} \PY{n}{textcoords}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{data}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                          \PY{n}{arrowprops}\PY{o}{=}\PY{n+nb}{dict}\PY{p}{(}\PY{n}{arrowstyle}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{color}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZsh{}808080}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{linewidth}\PY{o}{=}\PY{l+m+mf}{0.4}\PY{p}{,} \PY{n}{shrinkA}\PY{o}{=}\PY{l+m+mf}{0.05}\PY{p}{,} \PY{n}{shrinkB}\PY{o}{=}\PY{l+m+mf}{0.05}\PY{p}{)}\PY{p}{)}
+          
+              \PY{n}{plt}\PY{o}{.}\PY{n}{annotate}\PY{p}{(}
+                  \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{xy}\PY{o}{=}\PY{p}{(}\PY{n}{x1}\PY{p}{,} \PY{n}{y\PYZus{}pos}\PY{p}{)}\PY{p}{,} \PY{n}{xycoords}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{data}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                  \PY{n}{xytext}\PY{o}{=}\PY{p}{(}\PY{n}{x2}\PY{p}{,} \PY{n}{y\PYZus{}pos}\PY{p}{)}\PY{p}{,} \PY{n}{textcoords}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{data}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                  \PY{n}{arrowprops}\PY{o}{=}\PY{n+nb}{dict}\PY{p}{(}\PY{n}{arrowstyle}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZlt{}|\PYZhy{},head\PYZus{}length=0.4,head\PYZus{}width=0.1}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                                  \PY{n}{color}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{black}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{linewidth}\PY{o}{=}\PY{l+m+mf}{0.6}\PY{p}{,} \PY{n}{shrinkA}\PY{o}{=}\PY{l+m+mf}{0.05}\PY{p}{,} \PY{n}{shrinkB}\PY{o}{=}\PY{l+m+mf}{0.05}\PY{p}{)}\PY{p}{)}
+              \PY{n}{plt}\PY{o}{.}\PY{n}{annotate}\PY{p}{(}
+                  \PY{n}{text}\PY{p}{,} \PY{n}{xy}\PY{o}{=}\PY{p}{(}\PY{p}{(}\PY{n}{x1} \PY{k}{if} \PY{n}{x1} \PY{o}{\PYZlt{}}\PY{o}{=} \PY{n}{x2} \PY{k}{else} \PY{n}{x2}\PY{p}{)} \PY{o}{+} \PY{n}{mt}\PY{o}{.}\PY{n}{fabs}\PY{p}{(}\PY{p}{(}\PY{n}{x1} \PY{o}{\PYZhy{}} \PY{n}{x2}\PY{p}{)}\PY{p}{)} \PY{o}{/} \PY{l+m+mi}{2}\PY{p}{,} \PY{n}{y\PYZus{}pos}\PY{p}{)}\PY{p}{,} \PY{n}{xycoords}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{data}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                  \PY{n}{rotation}\PY{o}{=}\PY{n}{rotate\PYZus{}text}\PY{p}{,} \PY{n}{size}\PY{o}{=}\PY{l+m+mi}{8}\PY{p}{,}
+                  \PY{n}{horizontalalignment}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{center}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{verticalalignment}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bottom}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                  \PY{n}{xytext}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{)}\PY{p}{,} \PY{n}{textcoords}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{offset points}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+          
+          \PY{c+c1}{\PYZsh{} Helper functions}
+\end{Verbatim}
+
+    Set the size and margins of the figure:
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}114}]:} \PY{k}{def} \PY{n+nf}{\PYZus{}\PYZus{}figsize\PYZus{}and\PYZus{}margins}\PY{p}{(}\PY{n}{plotsize}\PY{p}{,} \PY{n}{subplots}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)}\PY{p}{,} \PY{o}{*}\PY{o}{*}\PY{n}{absolute\PYZus{}margins}\PY{p}{)}\PY{p}{:}
+              \PY{l+s+sd}{\PYZdq{}\PYZdq{}\PYZdq{}Determine figure size and margins from plot size and absolute margins}
+          
+          \PY{l+s+sd}{    Args:}
+          \PY{l+s+sd}{        plotsize: (width, height) of plot area in inch}
+          \PY{l+s+sd}{        subplots: (nrows, ncols) of subplots}
+          \PY{l+s+sd}{        left, right, top, bottom: absolute margins around plot area}
+          \PY{l+s+sd}{        wspace, hspace: width and height spacing between subplots}
+          
+          \PY{l+s+sd}{    Returns:}
+          \PY{l+s+sd}{         size: figure size for figsize argument of figure()}
+          \PY{l+s+sd}{         margins: relative margins dict suitable for subplots\PYZus{}adjust()}
+          
+          \PY{l+s+sd}{    Example: making 2x2 grid of 3\PYZdq{} square plots with specific spacings:}
+          
+          \PY{l+s+sd}{       sz, rm = figsize\PYZus{}and\PYZus{}margins((3,3), (2,2), left=1, right=.5,}
+          \PY{l+s+sd}{                                                  top=.5, bottom=1,}
+          \PY{l+s+sd}{                                                  wspace=.5, hspace=.5)}
+          \PY{l+s+sd}{       figure(figsize=sz)}
+          \PY{l+s+sd}{       subplots\PYZus{}adjust(**rm)}
+          \PY{l+s+sd}{       subplot(221); subplot(222)}
+          \PY{l+s+sd}{       subplot(223); subplot(224)}
+          
+          \PY{l+s+sd}{    Source: http://scipy\PYZhy{}central.org/item/65/1/absolute\PYZhy{}plot\PYZhy{}size\PYZhy{}and\PYZhy{}margins\PYZhy{}in\PYZhy{}matplotlib}
+          \PY{l+s+sd}{    \PYZdq{}\PYZdq{}\PYZdq{}}
+          
+              \PY{n}{pw}\PY{p}{,} \PY{n}{ph} \PY{o}{=} \PY{n}{plotsize}
+              \PY{n}{nr}\PY{p}{,} \PY{n}{nc} \PY{o}{=} \PY{n}{subplots}
+              \PY{n}{amarg} \PY{o}{=} \PY{n}{absolute\PYZus{}margins}
+              \PY{c+c1}{\PYZsh{} dictionary for relative margins}
+              \PY{c+c1}{\PYZsh{} initialize from rcParams with margins not in amarg}
+              \PY{n}{rmarg} \PY{o}{=} \PY{n+nb}{dict}\PY{p}{(}\PY{p}{(}\PY{n}{m}\PY{p}{,} \PY{n}{rcParams}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{figure.subplot.}\PY{l+s+s1}{\PYZsq{}} \PY{o}{+} \PY{n}{m}\PY{p}{]}\PY{p}{)}
+                           \PY{k}{for} \PY{n}{m} \PY{o+ow}{in} \PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{left}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{right}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{top}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bottom}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{wspace}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{hspace}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+                           \PY{k}{if} \PY{n}{m} \PY{o+ow}{not} \PY{o+ow}{in} \PY{n}{amarg}
+                           \PY{p}{)}
+              \PY{c+c1}{\PYZsh{} subplots\PYZus{}adjust wants wspace and hspace relative to plotsize:}
+              \PY{k}{if} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{wspace}\PY{l+s+s1}{\PYZsq{}} \PY{o+ow}{in} \PY{n}{amarg}\PY{p}{:}
+                  \PY{n}{rmarg}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{wspace}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n+nb}{float}\PY{p}{(}\PY{n}{amarg}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{wspace}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)} \PY{o}{/} \PY{n}{pw}
+              \PY{k}{if} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{hspace}\PY{l+s+s1}{\PYZsq{}} \PY{o+ow}{in} \PY{n}{amarg}\PY{p}{:}
+                  \PY{n}{rmarg}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{hspace}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n+nb}{float}\PY{p}{(}\PY{n}{amarg}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{hspace}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)} \PY{o}{/} \PY{n}{ph}
+              \PY{c+c1}{\PYZsh{} in terms of the relative margins:}
+              \PY{c+c1}{\PYZsh{} width  * (right \PYZhy{} left)}
+              \PY{c+c1}{\PYZsh{}    = ncols * plot\PYZus{}width  + (ncols \PYZhy{} 1) * wspace * plot\PYZus{}width}
+              \PY{c+c1}{\PYZsh{} height * (top \PYZhy{} bottom)}
+              \PY{c+c1}{\PYZsh{}    = nrows * plot\PYZus{}height + (nrows \PYZhy{} 1) * hspace * plot\PYZus{}height}
+              \PY{c+c1}{\PYZsh{} solve for width and height, using absolute margins as necessary:}
+              \PY{n}{width} \PY{o}{=} \PY{n+nb}{float}\PY{p}{(}\PY{p}{(}\PY{n}{nc} \PY{o}{+} \PY{p}{(}\PY{n}{nc} \PY{o}{\PYZhy{}} \PY{l+m+mi}{1}\PY{p}{)} \PY{o}{*} \PY{n}{rmarg}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{wspace}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)} \PY{o}{*} \PY{n}{pw} \PY{o}{+} \PY{n}{amarg}\PY{o}{.}\PY{n}{get}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{left}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{)} \PY{o}{+} \PY{n}{amarg}\PY{o}{.}\PY{n}{get}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{right}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{)}\PY{p}{)} \PY{o}{/} \PY{p}{(}
+                  \PY{n}{rmarg}\PY{o}{.}\PY{n}{get}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{right}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)} \PY{o}{\PYZhy{}} \PY{n}{rmarg}\PY{o}{.}\PY{n}{get}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{left}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{)}\PY{p}{)}
+              \PY{n}{height} \PY{o}{=} \PY{n+nb}{float}\PY{p}{(}\PY{p}{(}\PY{n}{nr} \PY{o}{+} \PY{p}{(}\PY{n}{nr} \PY{o}{\PYZhy{}} \PY{l+m+mi}{1}\PY{p}{)} \PY{o}{*} \PY{n}{rmarg}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{hspace}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)} \PY{o}{*} \PY{n}{ph} \PY{o}{+} \PY{n}{amarg}\PY{o}{.}\PY{n}{get}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{top}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{)} \PY{o}{+} \PY{n}{amarg}\PY{o}{.}\PY{n}{get}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bottom}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{)}\PY{p}{)} \PY{o}{/} \PY{p}{(}
+                  \PY{n}{rmarg}\PY{o}{.}\PY{n}{get}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{top}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)} \PY{o}{\PYZhy{}} \PY{n}{rmarg}\PY{o}{.}\PY{n}{get}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bottom}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{)}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} now we can get any remaining relative margins}
+              \PY{k}{if} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{left}\PY{l+s+s1}{\PYZsq{}} \PY{o+ow}{in} \PY{n}{amarg}\PY{p}{:}
+                  \PY{n}{rmarg}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{left}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n+nb}{float}\PY{p}{(}\PY{n}{amarg}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{left}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)} \PY{o}{/} \PY{n}{width}
+              \PY{k}{if} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{right}\PY{l+s+s1}{\PYZsq{}} \PY{o+ow}{in} \PY{n}{amarg}\PY{p}{:}
+                  \PY{n}{rmarg}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{right}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{l+m+mi}{1} \PY{o}{\PYZhy{}} \PY{n+nb}{float}\PY{p}{(}\PY{n}{amarg}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{right}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)} \PY{o}{/} \PY{n}{width}
+              \PY{k}{if} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{top}\PY{l+s+s1}{\PYZsq{}} \PY{o+ow}{in} \PY{n}{amarg}\PY{p}{:}
+                  \PY{n}{rmarg}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{top}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{l+m+mi}{1} \PY{o}{\PYZhy{}} \PY{n+nb}{float}\PY{p}{(}\PY{n}{amarg}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{top}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)} \PY{o}{/} \PY{n}{height}
+              \PY{k}{if} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bottom}\PY{l+s+s1}{\PYZsq{}} \PY{o+ow}{in} \PY{n}{amarg}\PY{p}{:}
+                  \PY{n}{rmarg}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bottom}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n+nb}{float}\PY{p}{(}\PY{n}{amarg}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bottom}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)} \PY{o}{/} \PY{n}{height}
+              \PY{c+c1}{\PYZsh{} return figure size and relative margins}
+              \PY{k}{return} \PY{p}{(}\PY{n}{width}\PY{p}{,} \PY{n}{height}\PY{p}{)}\PY{p}{,} \PY{n}{rmarg}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}115}]:} \PY{k}{def} \PY{n+nf}{\PYZus{}\PYZus{}get\PYZus{}ax\PYZus{}size}\PY{p}{(}\PY{n}{ax}\PY{p}{,} \PY{n}{fig}\PY{p}{)}\PY{p}{:}
+              \PY{l+s+sd}{\PYZdq{}\PYZdq{}\PYZdq{}}
+          \PY{l+s+sd}{    Source: http://scipy\PYZhy{}central.org/item/65/1/absolute\PYZhy{}plot\PYZhy{}size\PYZhy{}and\PYZhy{}margins\PYZhy{}in\PYZhy{}matplotlib}
+          \PY{l+s+sd}{    \PYZdq{}\PYZdq{}\PYZdq{}}
+              \PY{n}{bbox} \PY{o}{=} \PY{n}{ax}\PY{o}{.}\PY{n}{get\PYZus{}window\PYZus{}extent}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{transformed}\PY{p}{(}\PY{n}{fig}\PY{o}{.}\PY{n}{dpi\PYZus{}scale\PYZus{}trans}\PY{o}{.}\PY{n}{inverted}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+              \PY{n}{width}\PY{p}{,} \PY{n}{height} \PY{o}{=} \PY{n}{bbox}\PY{o}{.}\PY{n}{width}\PY{p}{,} \PY{n}{bbox}\PY{o}{.}\PY{n}{height}
+              \PY{n}{width} \PY{o}{*}\PY{o}{=} \PY{n}{fig}\PY{o}{.}\PY{n}{dpi}
+              \PY{n}{height} \PY{o}{*}\PY{o}{=} \PY{n}{fig}\PY{o}{.}\PY{n}{dpi}
+              \PY{k}{return} \PY{n}{width}\PY{p}{,} \PY{n}{height}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}116}]:} \PY{k}{def} \PY{n+nf}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{length\PYZus{}mm}\PY{p}{)}\PY{p}{:}
+              \PY{l+s+sd}{\PYZdq{}\PYZdq{}\PYZdq{}Converts a length from millimeters to inch}
+          
+          \PY{l+s+sd}{    Args:}
+          \PY{l+s+sd}{        length\PYZus{}mm (int,float): length in millimeters to be converted}
+          
+          \PY{l+s+sd}{    Returns:}
+          \PY{l+s+sd}{        float: The converted length in inch}
+          \PY{l+s+sd}{    \PYZdq{}\PYZdq{}\PYZdq{}}
+              \PY{k}{return} \PY{n}{length\PYZus{}mm} \PY{o}{/} \PY{l+m+mf}{25.4}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}117}]:} \PY{k}{def} \PY{n+nf}{generate\PYZus{}massspectra\PYZus{}plot\PYZus{}automatic\PYZus{}labels}\PY{p}{(}\PY{n}{input\PYZus{}filename}\PY{p}{,} \PY{n}{output\PYZus{}filename}\PY{p}{)}\PY{p}{:}
+              \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Generate }\PY{l+s+si}{\PYZob{}0\PYZcb{}}\PY{l+s+s2}{ mass spectra plot (}\PY{l+s+si}{\PYZob{}1\PYZcb{}}\PY{l+s+s2}{.}\PY{l+s+si}{\PYZob{}2\PYZcb{}}\PY{l+s+s2}{) from }\PY{l+s+si}{\PYZob{}3\PYZcb{}}\PY{l+s+s2}{.[xy/txt]}\PY{l+s+s2}{\PYZdq{}}\PY{o}{.}\PY{n}{format}\PY{p}{(}\PY{n}{filetype}\PY{o}{.}\PY{n}{upper}\PY{p}{(}\PY{p}{)}\PY{p}{,} \PY{n}{output\PYZus{}filename}\PY{p}{,}
+                                                                                        \PY{n}{filetype}\PY{p}{,} \PY{n}{input\PYZus{}filename}\PY{p}{)}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} min and max value of the x axis}
+              \PY{n}{min\PYZus{}xaxis} \PY{o}{=} \PY{l+m+mi}{50}
+              \PY{n}{max\PYZus{}xaxis} \PY{o}{=} \PY{l+m+mi}{425}
+          
+              \PY{c+c1}{\PYZsh{} dimensions of the single plot}
+              \PY{n}{figwidth\PYZus{}mm} \PY{o}{=} \PY{l+m+mi}{141}
+              \PY{n}{left\PYZus{}margin\PYZus{}mm} \PY{o}{=} \PY{l+m+mi}{14}
+              \PY{n}{right\PYZus{}margin\PYZus{}mm} \PY{o}{=} \PY{l+m+mi}{2}
+              \PY{n}{top\PYZus{}margin\PYZus{}mm} \PY{o}{=} \PY{l+m+mi}{26}
+              \PY{n}{bottom\PYZus{}margin\PYZus{}mm} \PY{o}{=} \PY{l+m+mi}{13}
+          
+              \PY{n}{plotwidth\PYZus{}mm} \PY{o}{=} \PY{n}{figwidth\PYZus{}mm} \PY{o}{\PYZhy{}} \PY{n}{left\PYZus{}margin\PYZus{}mm} \PY{o}{\PYZhy{}} \PY{n}{right\PYZus{}margin\PYZus{}mm}
+              \PY{n}{plotheight\PYZus{}mm} \PY{o}{=} \PY{n}{plotwidth\PYZus{}mm} \PY{o}{*} \PY{l+m+mf}{0.8}
+          
+              \PY{n}{hspace\PYZus{}mm} \PY{o}{=} \PY{l+m+mf}{0.1}  \PY{c+c1}{\PYZsh{} horizontal space between two plots}
+          
+              \PY{c+c1}{\PYZsh{} read xy input data}
+              \PY{n}{raw\PYZus{}values} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{n}{input\PYZus{}filename} \PY{o}{+} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{.xy}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{sep}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{ }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{names}\PY{o}{=}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{m/z}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{intensity}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{,}
+                                       \PY{n}{dtype}\PY{o}{=}\PY{p}{\PYZob{}}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{m/z}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{float64}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{intensity}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{float64}\PY{p}{\PYZcb{}}\PY{p}{)}
+              \PY{c+c1}{\PYZsh{} normalize input data}
+              \PY{n}{max\PYZus{}val} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{n}{raw\PYZus{}values}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{intensity}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+              \PY{n}{raw\PYZus{}values}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{intensity\PYZus{}normalized}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]} \PY{o}{=} \PY{n}{raw\PYZus{}values}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{intensity}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{/} \PY{n}{max\PYZus{}val} \PY{o}{*} \PY{l+m+mf}{100.0}  \PY{c+c1}{\PYZsh{} normalize intensity to percent}
+          
+              \PY{c+c1}{\PYZsh{} read txt captions}
+              \PY{n}{caption\PYZus{}values} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{n}{input\PYZus{}filename} \PY{o}{+} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{.txt}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{sep}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{;}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{names}\PY{o}{=}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{m/z}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{caption}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{,} \PY{n}{dtype}\PY{o}{=}\PY{p}{\PYZob{}}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{m/z}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{float64}\PY{p}{\PYZcb{}}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} find maximum value for each annotate peak \PYZhy{} necessary for later calculation of annotation lines}
+              \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n}{caption\PYZus{}values}\PY{o}{.}\PY{n}{index}\PY{p}{:}
+                  \PY{n}{raw\PYZus{}values\PYZus{}index} \PY{o}{=} \PY{n}{raw\PYZus{}values}\PY{p}{[}\PY{n}{raw\PYZus{}values}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{m/z}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]} \PY{o}{==} \PY{n}{caption\PYZus{}values}\PY{o}{.}\PY{n}{ix}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{m/z}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{]}\PY{o}{.}\PY{n}{index}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
+                  \PY{n}{value}\PY{p}{,} \PY{n}{index} \PY{o}{=} \PY{n+nb}{float}\PY{p}{(}\PY{n}{raw\PYZus{}values}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{n}{raw\PYZus{}values\PYZus{}index} \PY{o}{\PYZhy{}} \PY{l+m+mi}{5}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{intensity\PYZus{}normalized}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{)}\PY{p}{,} \PY{n}{raw\PYZus{}values\PYZus{}index} \PY{o}{\PYZhy{}} \PY{l+m+mi}{5}
+          
+                  \PY{k}{for} \PY{n}{z} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{15}\PY{p}{)}\PY{p}{:}
+                      \PY{k}{if} \PY{n+nb}{float}\PY{p}{(}\PY{n}{raw\PYZus{}values}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{n}{raw\PYZus{}values\PYZus{}index} \PY{o}{+} \PY{n}{z}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{intensity\PYZus{}normalized}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{)} \PY{o}{\PYZgt{}} \PY{n}{value}\PY{p}{:}
+                          \PY{n}{value}\PY{p}{,} \PY{n}{index} \PY{o}{=} \PY{n+nb}{float}\PY{p}{(}\PY{n}{raw\PYZus{}values}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{n}{raw\PYZus{}values\PYZus{}index} \PY{o}{+} \PY{n}{z}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{intensity\PYZus{}normalized}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{)}\PY{p}{,} \PY{n}{raw\PYZus{}values\PYZus{}index} \PY{o}{+} \PY{n}{z}
+          
+                  \PY{n}{caption\PYZus{}values}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{n}{i}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{m/z}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]} \PY{o}{=} \PY{n+nb}{float}\PY{p}{(}\PY{n}{raw\PYZus{}values}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{n}{index}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{m/z}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{)}
+                  \PY{n}{caption\PYZus{}values}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{n}{i}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{intensity\PYZus{}normalized}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]} \PY{o}{=} \PY{n}{value}  \PY{c+c1}{\PYZsh{} add intensity to caption table}
+          
+              \PY{c+c1}{\PYZsh{} dimension for the annotations in pixel}
+              \PY{n}{delta\PYZus{}x\PYZus{}text\PYZus{}labels\PYZus{}mm} \PY{o}{=} \PY{l+m+mf}{3.8}
+              \PY{n}{delta\PYZus{}point\PYZus{}annotate\PYZus{}line\PYZus{}mm} \PY{o}{=} \PY{l+m+mi}{1}
+              \PY{n}{label\PYZus{}annotate\PYZus{}arm\PYZus{}high\PYZus{}mm} \PY{o}{=} \PY{l+m+mf}{5.3}
+              \PY{n}{delta\PYZus{}y\PYZus{}diagonal\PYZus{}annotate\PYZus{}arm\PYZus{}mm} \PY{o}{=} \PY{l+m+mf}{3.5}
+              \PY{n}{delta\PYZus{}y\PYZus{}baseline\PYZus{}axistop\PYZus{}mm} \PY{o}{=} \PY{l+m+mf}{6.3}
+              \PY{n}{delta\PYZus{}label\PYZus{}mznumber\PYZus{}pixel\PYZus{}mm} \PY{o}{=} \PY{l+m+mi}{7}
+          
+              \PY{n}{fsize}\PY{p}{,} \PY{n}{margins} \PY{o}{=} \PY{n}{\PYZus{}\PYZus{}figsize\PYZus{}and\PYZus{}margins}\PY{p}{(}\PY{n}{plotsize}\PY{o}{=}\PY{p}{(}\PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{plotwidth\PYZus{}mm}\PY{p}{)}\PY{p}{,} \PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{plotheight\PYZus{}mm}\PY{p}{)}\PY{p}{)}\PY{p}{,}
+                                                     \PY{n}{subplots}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)}\PY{p}{,}
+                                                     \PY{n}{left}\PY{o}{=}\PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{left\PYZus{}margin\PYZus{}mm}\PY{p}{)}\PY{p}{,} \PY{n}{right}\PY{o}{=}\PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{right\PYZus{}margin\PYZus{}mm}\PY{p}{)}\PY{p}{,}
+                                                     \PY{n}{top}\PY{o}{=}\PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{top\PYZus{}margin\PYZus{}mm}\PY{p}{)}\PY{p}{,} \PY{n}{bottom}\PY{o}{=}\PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{bottom\PYZus{}margin\PYZus{}mm}\PY{p}{)}\PY{p}{,}
+                                                     \PY{n}{wspace}\PY{o}{=}\PY{l+m+mf}{0.01}\PY{p}{,} \PY{n}{hspace}\PY{o}{=}\PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{hspace\PYZus{}mm}\PY{p}{)}\PY{p}{)}
+              \PY{n}{fig} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{figure}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{n}{fsize}\PY{p}{,} \PY{p}{)}
+              \PY{n}{plt}\PY{o}{.}\PY{n}{subplots\PYZus{}adjust}\PY{p}{(}\PY{o}{*}\PY{o}{*}\PY{n}{margins}\PY{p}{)}
+              \PY{n}{ax} \PY{o}{=} \PY{n}{fig}\PY{o}{.}\PY{n}{add\PYZus{}subplot}\PY{p}{(}\PY{l+m+mi}{111}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} delta\PYZus{}dimension in pixel calculate from mm}
+              \PY{n}{delta\PYZus{}x\PYZus{}text\PYZus{}labels\PYZus{}pixel} \PY{o}{=} \PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{delta\PYZus{}x\PYZus{}text\PYZus{}labels\PYZus{}mm}\PY{p}{)} \PY{o}{*} \PY{n}{fig}\PY{o}{.}\PY{n}{dpi}
+              \PY{n}{delta\PYZus{}point\PYZus{}annotate\PYZus{}line\PYZus{}pixel} \PY{o}{=} \PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{delta\PYZus{}point\PYZus{}annotate\PYZus{}line\PYZus{}mm}\PY{p}{)} \PY{o}{*} \PY{n}{fig}\PY{o}{.}\PY{n}{dpi}
+              \PY{n}{label\PYZus{}annotate\PYZus{}arm\PYZus{}high\PYZus{}pixel} \PY{o}{=} \PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{label\PYZus{}annotate\PYZus{}arm\PYZus{}high\PYZus{}mm}\PY{p}{)} \PY{o}{*} \PY{n}{fig}\PY{o}{.}\PY{n}{dpi}
+              \PY{n}{delta\PYZus{}y\PYZus{}diagonal\PYZus{}annotate\PYZus{}arm} \PY{o}{=} \PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{delta\PYZus{}y\PYZus{}diagonal\PYZus{}annotate\PYZus{}arm\PYZus{}mm}\PY{p}{)} \PY{o}{*} \PY{n}{fig}\PY{o}{.}\PY{n}{dpi}
+              \PY{n}{delta\PYZus{}y\PYZus{}baseline\PYZus{}axistop} \PY{o}{=} \PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{delta\PYZus{}y\PYZus{}baseline\PYZus{}axistop\PYZus{}mm}\PY{p}{)} \PY{o}{*} \PY{n}{fig}\PY{o}{.}\PY{n}{dpi}
+              \PY{n}{delta\PYZus{}label\PYZus{}mznumber\PYZus{}pixel} \PY{o}{=} \PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{delta\PYZus{}label\PYZus{}mznumber\PYZus{}pixel\PYZus{}mm}\PY{p}{)} \PY{o}{*} \PY{n}{fig}\PY{o}{.}\PY{n}{dpi}
+          
+              \PY{c+c1}{\PYZsh{} plot spectra line}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{raw\PYZus{}values}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{m/z}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{,} \PY{n}{raw\PYZus{}values}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{intensity\PYZus{}normalized}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{,} \PY{n}{color}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{black}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{linewidth}\PY{o}{=}\PY{l+m+mf}{0.8}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} set x axes range}
+              \PY{k}{if} \PY{n}{min\PYZus{}xaxis} \PY{o+ow}{is} \PY{o+ow}{not} \PY{k+kc}{None} \PY{o+ow}{and} \PY{n}{max\PYZus{}xaxis} \PY{o+ow}{is} \PY{o+ow}{not} \PY{k+kc}{None}\PY{p}{:}
+                  \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}xlim}\PY{p}{(}\PY{p}{[}\PY{n+nb}{int}\PY{p}{(}\PY{n}{min\PYZus{}xaxis}\PY{p}{)}\PY{p}{,} \PY{n+nb}{int}\PY{p}{(}\PY{n}{max\PYZus{}xaxis}\PY{p}{)}\PY{p}{]}\PY{p}{)}
+          
+              \PY{n}{length\PYZus{}x\PYZus{}axis\PYZus{}pixel}\PY{p}{,} \PY{n}{length\PYZus{}y\PYZus{}axis\PYZus{}pixel} \PY{o}{=} \PY{n}{\PYZus{}\PYZus{}get\PYZus{}ax\PYZus{}size}\PY{p}{(}\PY{n}{ax}\PY{p}{,} \PY{n}{fig}\PY{p}{)}
+              \PY{n}{x\PYZus{}axis\PYZus{}min}\PY{p}{,} \PY{n}{x\PYZus{}axis\PYZus{}max} \PY{o}{=} \PY{n}{ax}\PY{o}{.}\PY{n}{get\PYZus{}xlim}\PY{p}{(}\PY{p}{)}
+              \PY{n}{y\PYZus{}axis\PYZus{}min}\PY{p}{,} \PY{n}{y\PYZus{}axis\PYZus{}max} \PY{o}{=} \PY{n}{ax}\PY{o}{.}\PY{n}{get\PYZus{}ylim}\PY{p}{(}\PY{p}{)}
+          
+              \PY{n}{list\PYZus{}text\PYZus{}pos} \PY{o}{=} \PY{n+nb}{list}\PY{p}{(}\PY{p}{)}
+              \PY{k}{if} \PY{n+nb}{len}\PY{p}{(}\PY{n}{caption\PYZus{}values}\PY{o}{.}\PY{n}{index}\PY{p}{)} \PY{o}{\PYZgt{}} \PY{l+m+mi}{0}\PY{p}{:}
+          
+                  \PY{c+c1}{\PYZsh{} annotate from basepeak}
+                  \PY{n}{basepeak\PYZus{}index} \PY{o}{=} \PY{n}{caption\PYZus{}values}\PY{p}{[}\PY{n}{caption\PYZus{}values}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{intensity\PYZus{}normalized}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]} \PY{o}{\PYZgt{}}\PY{o}{=} \PY{l+m+mf}{100.0}\PY{p}{]}\PY{o}{.}\PY{n}{index}
+                  \PY{k}{if} \PY{n+nb}{len}\PY{p}{(}\PY{n}{basepeak\PYZus{}index}\PY{p}{)} \PY{o}{==} \PY{l+m+mi}{0}\PY{p}{:}
+                      \PY{n}{basepeak\PYZus{}index} \PY{o}{=} \PY{p}{[}\PY{n+nb}{len}\PY{p}{(}\PY{n}{caption\PYZus{}values}\PY{p}{)} \PY{o}{/} \PY{l+m+mi}{2}\PY{p}{]}
+          
+                  \PY{c+c1}{\PYZsh{} annotate peaks left frome basepeak}
+                  \PY{k}{for} \PY{n}{z} \PY{o+ow}{in} \PY{n}{caption\PYZus{}values}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{p}{:}\PY{n}{basepeak\PYZus{}index}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{m/z}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{o}{.}\PY{n}{sort\PYZus{}index}\PY{p}{(}\PY{n}{ascending}\PY{o}{=}\PY{k+kc}{False}\PY{p}{)}\PY{p}{:}
+                      \PY{n}{x\PYZus{}value\PYZus{}pixel} \PY{o}{=} \PY{p}{(}\PY{n}{z} \PY{o}{\PYZhy{}} \PY{n}{x\PYZus{}axis\PYZus{}min}\PY{p}{)} \PY{o}{/} \PY{p}{(}\PY{n}{x\PYZus{}axis\PYZus{}max} \PY{o}{\PYZhy{}} \PY{n}{x\PYZus{}axis\PYZus{}min}\PY{p}{)} \PY{o}{*} \PY{n}{length\PYZus{}x\PYZus{}axis\PYZus{}pixel}
+          
+                      \PY{k}{if} \PY{n+nb}{len}\PY{p}{(}\PY{n}{list\PYZus{}text\PYZus{}pos}\PY{p}{)} \PY{o}{==} \PY{l+m+mi}{0}\PY{p}{:}
+                          \PY{n}{list\PYZus{}text\PYZus{}pos}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{x\PYZus{}value\PYZus{}pixel}\PY{p}{)}
+                      \PY{k}{else}\PY{p}{:}
+                          \PY{k}{if} \PY{n}{x\PYZus{}value\PYZus{}pixel} \PY{o}{\PYZgt{}} \PY{n}{list\PYZus{}text\PYZus{}pos}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]} \PY{o}{+} \PY{n}{delta\PYZus{}x\PYZus{}text\PYZus{}labels\PYZus{}pixel}\PY{p}{:}
+                              \PY{n}{list\PYZus{}text\PYZus{}pos}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{x\PYZus{}value\PYZus{}pixel}\PY{p}{)}
+                          \PY{k}{else}\PY{p}{:}
+                              \PY{n}{list\PYZus{}text\PYZus{}pos}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{list\PYZus{}text\PYZus{}pos}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]} \PY{o}{+} \PY{n}{delta\PYZus{}x\PYZus{}text\PYZus{}labels\PYZus{}pixel}\PY{p}{)}
+          
+                  \PY{c+c1}{\PYZsh{} annotate peaks right from basepeak}
+                  \PY{k}{if} \PY{n}{basepeak\PYZus{}index}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]} \PY{o}{+} \PY{l+m+mi}{1} \PY{o+ow}{in} \PY{n}{caption\PYZus{}values}\PY{o}{.}\PY{n}{index}\PY{p}{:}
+                      \PY{k}{for} \PY{n}{z} \PY{o+ow}{in} \PY{n}{caption\PYZus{}values}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{n}{basepeak\PYZus{}index}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]} \PY{o}{+} \PY{l+m+mi}{1}\PY{p}{:}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{m/z}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{:}
+                          \PY{n}{x\PYZus{}value\PYZus{}pixel} \PY{o}{=} \PY{p}{(}\PY{n}{z} \PY{o}{\PYZhy{}} \PY{n}{x\PYZus{}axis\PYZus{}min}\PY{p}{)} \PY{o}{/} \PY{p}{(}\PY{n}{x\PYZus{}axis\PYZus{}max} \PY{o}{\PYZhy{}} \PY{n}{x\PYZus{}axis\PYZus{}min}\PY{p}{)} \PY{o}{*} \PY{n}{length\PYZus{}x\PYZus{}axis\PYZus{}pixel}
+          
+                          \PY{k}{if} \PY{n}{x\PYZus{}value\PYZus{}pixel} \PY{o}{\PYZlt{}} \PY{n}{list\PYZus{}text\PYZus{}pos}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]} \PY{o}{\PYZhy{}} \PY{n}{delta\PYZus{}x\PYZus{}text\PYZus{}labels\PYZus{}pixel}\PY{p}{:}
+                              \PY{n}{list\PYZus{}text\PYZus{}pos}\PY{o}{.}\PY{n}{insert}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{x\PYZus{}value\PYZus{}pixel}\PY{p}{)}
+                          \PY{k}{else}\PY{p}{:}
+                              \PY{n}{list\PYZus{}text\PYZus{}pos}\PY{o}{.}\PY{n}{insert}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{list\PYZus{}text\PYZus{}pos}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]} \PY{o}{\PYZhy{}} \PY{n}{delta\PYZus{}x\PYZus{}text\PYZus{}labels\PYZus{}pixel}\PY{p}{)}
+          
+                  \PY{c+c1}{\PYZsh{} move annotation to left, if the label is out of the axes range}
+                  \PY{k}{if} \PY{n+nb}{len}\PY{p}{(}\PY{n}{list\PYZus{}text\PYZus{}pos}\PY{p}{)} \PY{o}{\PYZgt{}} \PY{l+m+mi}{0} \PY{o+ow}{and} \PY{n+nb}{max}\PY{p}{(}\PY{n}{list\PYZus{}text\PYZus{}pos}\PY{p}{)} \PY{o}{\PYZgt{}}\PY{o}{=} \PY{n}{length\PYZus{}x\PYZus{}axis\PYZus{}pixel}\PY{p}{:}
+                      \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{move labels to left}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+                      \PY{n}{calc\PYZus{}delta} \PY{o}{=} \PY{n+nb}{max}\PY{p}{(}\PY{n}{list\PYZus{}text\PYZus{}pos}\PY{p}{)} \PY{o}{\PYZhy{}} \PY{n}{length\PYZus{}x\PYZus{}axis\PYZus{}pixel}
+                      \PY{k}{for} \PY{n}{index} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{list\PYZus{}text\PYZus{}pos}\PY{p}{)} \PY{o}{\PYZhy{}} \PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{,} \PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{:}
+                          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{change}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{list\PYZus{}text\PYZus{}pos}\PY{p}{[}\PY{n}{index}\PY{p}{]}\PY{p}{,} \PY{n}{calc\PYZus{}delta}\PY{p}{)}
+                          \PY{k}{if} \PY{n}{index} \PY{o}{\PYZgt{}} \PY{l+m+mi}{1} \PY{o+ow}{and} \PY{n}{list\PYZus{}text\PYZus{}pos}\PY{p}{[}\PY{n}{index}\PY{p}{]} \PY{o}{\PYZhy{}} \PY{n}{calc\PYZus{}delta} \PY{o}{\PYZgt{}} \PY{n}{list\PYZus{}text\PYZus{}pos}\PY{p}{[}\PY{n}{index} \PY{o}{\PYZhy{}} \PY{l+m+mi}{1}\PY{p}{]} \PY{o}{+} \PY{n}{delta\PYZus{}x\PYZus{}text\PYZus{}labels\PYZus{}pixel}\PY{p}{:}
+                              \PY{n}{list\PYZus{}text\PYZus{}pos}\PY{p}{[}\PY{n}{index}\PY{p}{]} \PY{o}{=} \PY{n}{list\PYZus{}text\PYZus{}pos}\PY{p}{[}\PY{n}{index}\PY{p}{]} \PY{o}{\PYZhy{}} \PY{n}{calc\PYZus{}delta}
+                              \PY{k}{break}
+                          \PY{k}{else}\PY{p}{:}
+                              \PY{n}{list\PYZus{}text\PYZus{}pos}\PY{p}{[}\PY{n}{index}\PY{p}{]} \PY{o}{=} \PY{n}{list\PYZus{}text\PYZus{}pos}\PY{p}{[}\PY{n}{index}\PY{p}{]} \PY{o}{\PYZhy{}} \PY{n}{calc\PYZus{}delta}
+          
+                  \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n}{caption\PYZus{}values}\PY{o}{.}\PY{n}{index}\PY{p}{:}
+          
+                      \PY{n}{label\PYZus{}x\PYZus{}pos} \PY{o}{=} \PY{n}{list\PYZus{}text\PYZus{}pos}\PY{o}{.}\PY{n}{pop}\PY{p}{(}\PY{p}{)}
+                      \PY{n}{x\PYZus{}value} \PY{o}{=} \PY{n+nb}{float}\PY{p}{(}\PY{n}{caption\PYZus{}values}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{n}{i}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{m/z}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{)}
+                      \PY{n}{y\PYZus{}value} \PY{o}{=} \PY{n+nb}{float}\PY{p}{(}\PY{n}{caption\PYZus{}values}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{n}{i}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{intensity\PYZus{}normalized}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{)}
+                      \PY{n}{label\PYZus{}text} \PY{o}{=} \PY{n+nb}{str}\PY{p}{(}\PY{n}{caption\PYZus{}values}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{n}{i}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{caption}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{)}
+          
+                      \PY{n}{x\PYZus{}value\PYZus{}pixel} \PY{o}{=} \PY{p}{(}\PY{n}{x\PYZus{}value} \PY{o}{\PYZhy{}} \PY{n}{x\PYZus{}axis\PYZus{}min}\PY{p}{)} \PY{o}{/} \PY{p}{(}\PY{n}{x\PYZus{}axis\PYZus{}max} \PY{o}{\PYZhy{}} \PY{n}{x\PYZus{}axis\PYZus{}min}\PY{p}{)} \PY{o}{*} \PY{n}{length\PYZus{}x\PYZus{}axis\PYZus{}pixel}
+                      \PY{n}{y\PYZus{}value\PYZus{}pixel} \PY{o}{=} \PY{p}{(}\PY{n}{y\PYZus{}value} \PY{o}{\PYZhy{}} \PY{n}{y\PYZus{}axis\PYZus{}min}\PY{p}{)} \PY{o}{/} \PY{p}{(}\PY{n}{y\PYZus{}axis\PYZus{}max} \PY{o}{\PYZhy{}} \PY{n}{y\PYZus{}axis\PYZus{}min}\PY{p}{)} \PY{o}{*} \PY{n}{length\PYZus{}y\PYZus{}axis\PYZus{}pixel}
+                      \PY{n}{label\PYZus{}y\PYZus{}pos\PYZus{}pixel} \PY{o}{=} \PY{n}{length\PYZus{}y\PYZus{}axis\PYZus{}pixel} \PY{o}{+} \PY{n}{delta\PYZus{}y\PYZus{}baseline\PYZus{}axistop}
+                      \PY{n}{length\PYZus{}y\PYZus{}annotation\PYZus{}line} \PY{o}{=} \PY{n}{label\PYZus{}y\PYZus{}pos\PYZus{}pixel} \PY{o}{\PYZhy{}} \PY{n}{y\PYZus{}value\PYZus{}pixel} \PY{o}{\PYZhy{}} \PY{n}{delta\PYZus{}point\PYZus{}annotate\PYZus{}line\PYZus{}pixel}
+                      \PY{n}{label\PYZus{}annotate\PYZus{}arm\PYZus{}low\PYZus{}pixel} \PY{o}{=} \PY{n}{length\PYZus{}y\PYZus{}annotation\PYZus{}line} \PY{o}{\PYZhy{}} \PY{n}{label\PYZus{}annotate\PYZus{}arm\PYZus{}high\PYZus{}pixel} \PY{o}{\PYZhy{}} \PY{n}{delta\PYZus{}y\PYZus{}diagonal\PYZus{}annotate\PYZus{}arm}
+          
+                      \PY{k}{if} \PY{n}{label\PYZus{}annotate\PYZus{}arm\PYZus{}low\PYZus{}pixel} \PY{o}{\PYZlt{}} \PY{l+m+mi}{0}\PY{p}{:}
+                          \PY{n}{label\PYZus{}annotate\PYZus{}arm\PYZus{}low\PYZus{}pixel} \PY{o}{=} \PY{l+m+mi}{0}
+          
+                      \PY{n}{ax}\PY{o}{.}\PY{n}{annotate}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+si}{\PYZob{}:.0f\PYZcb{}}\PY{l+s+s2}{\PYZdq{}}\PY{o}{.}\PY{n}{format}\PY{p}{(}\PY{n}{x\PYZus{}value}\PY{p}{)}\PY{p}{,}
+                                  \PY{n}{xy}\PY{o}{=}\PY{p}{(}\PY{n}{x\PYZus{}value\PYZus{}pixel}\PY{p}{,} \PY{n}{y\PYZus{}value\PYZus{}pixel} \PY{o}{+} \PY{n}{delta\PYZus{}point\PYZus{}annotate\PYZus{}line\PYZus{}pixel}\PY{p}{)}\PY{p}{,}
+                                  \PY{n}{xycoords}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{axes pixels}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{rotation}\PY{o}{=}\PY{l+m+mi}{90}\PY{p}{,}
+                                  \PY{n}{xytext}\PY{o}{=}\PY{p}{(}\PY{n}{label\PYZus{}x\PYZus{}pos}\PY{p}{,} \PY{n}{label\PYZus{}y\PYZus{}pos\PYZus{}pixel}\PY{p}{)}\PY{p}{,}
+                                  \PY{n}{textcoords}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{axes pixels}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{size}\PY{o}{=}\PY{l+m+mi}{8}\PY{p}{,}
+                                  \PY{n}{arrowprops}\PY{o}{=}\PY{n+nb}{dict}\PY{p}{(}\PY{n}{arrowstyle}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZhy{}}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}
+                                                  \PY{n}{connectionstyle}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{arc,angleA=\PYZhy{}90,armA=}\PY{l+s+s2}{\PYZdq{}} \PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{label\PYZus{}annotate\PYZus{}arm\PYZus{}high\PYZus{}pixel}\PY{p}{)} \PY{o}{+}
+                                                                  \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{,angleB= 90,armB=}\PY{l+s+s2}{\PYZdq{}} \PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{label\PYZus{}annotate\PYZus{}arm\PYZus{}low\PYZus{}pixel}\PY{p}{)} \PY{o}{+}
+                                                                  \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{,rad=0}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{linewidth}\PY{o}{=}\PY{l+m+mf}{0.5}\PY{p}{,} \PY{n}{color}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsh{}808080}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{,}
+                                  \PY{n}{horizontalalignment}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{center}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{verticalalignment}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bottom}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+                      \PY{n}{ax}\PY{o}{.}\PY{n}{annotate}\PY{p}{(}\PY{n}{label\PYZus{}text}\PY{p}{,}
+                                  \PY{n}{xy}\PY{o}{=}\PY{p}{(}\PY{n}{x\PYZus{}value\PYZus{}pixel}\PY{p}{,} \PY{n}{y\PYZus{}value\PYZus{}pixel} \PY{o}{+} \PY{n}{delta\PYZus{}point\PYZus{}annotate\PYZus{}line\PYZus{}pixel}\PY{p}{)}\PY{p}{,}
+                                  \PY{n}{xycoords}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{axes pixels}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{rotation}\PY{o}{=}\PY{l+m+mi}{90}\PY{p}{,}
+                                  \PY{n}{xytext}\PY{o}{=}\PY{p}{(}\PY{n}{label\PYZus{}x\PYZus{}pos}\PY{p}{,} \PY{n}{label\PYZus{}y\PYZus{}pos\PYZus{}pixel} \PY{o}{+} \PY{n}{delta\PYZus{}label\PYZus{}mznumber\PYZus{}pixel}\PY{p}{)}\PY{p}{,}
+                                  \PY{n}{textcoords}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{axes pixels}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{size}\PY{o}{=}\PY{l+m+mi}{8}\PY{p}{,}
+                                  \PY{n}{horizontalalignment}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{center}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{verticalalignment}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bottom}\PY{l+s+s1}{\PYZsq{}}
+                                  \PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} remove top and right axis}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{spines}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{top}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{set\PYZus{}visible}\PY{p}{(}\PY{k+kc}{False}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{spines}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{right}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{set\PYZus{}visible}\PY{p}{(}\PY{k+kc}{False}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{get\PYZus{}xaxis}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{tick\PYZus{}bottom}\PY{p}{(}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{get\PYZus{}yaxis}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{tick\PYZus{}left}\PY{p}{(}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} label axes}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}xlabel}\PY{p}{(}\PY{l+s+s2}{r\PYZdq{}}\PY{l+s+s2}{\PYZdl{}m/z\PYZdl{}}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}ylabel}\PY{p}{(}\PY{l+s+s2}{r\PYZdq{}}\PY{l+s+s2}{\PYZdl{}Intensity}\PY{l+s+s2}{\PYZbs{}}\PY{l+s+s2}{,[}\PY{l+s+s2}{\PYZbs{}}\PY{l+s+s2}{\PYZpc{}}\PY{l+s+s2}{]\PYZdl{}}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} set x labels}
+              \PY{n}{plt}\PY{o}{.}\PY{n}{xticks}\PY{p}{(}\PY{n}{rotation}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{vertical}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+              \PY{n}{start}\PY{p}{,} \PY{n}{end} \PY{o}{=} \PY{n}{ax}\PY{o}{.}\PY{n}{get\PYZus{}xlim}\PY{p}{(}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{xaxis}\PY{o}{.}\PY{n}{set\PYZus{}ticks}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{n}{start}\PY{p}{,} \PY{n}{end} \PY{o}{+} \PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{25}\PY{p}{)}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} set y labels}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}ylim}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{l+m+mi}{100}\PY{p}{)}
+              \PY{n}{start}\PY{p}{,} \PY{n}{end} \PY{o}{=} \PY{n}{ax}\PY{o}{.}\PY{n}{get\PYZus{}ylim}\PY{p}{(}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{yaxis}\PY{o}{.}\PY{n}{set\PYZus{}ticks}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{n}{start}\PY{p}{,} \PY{n}{end} \PY{o}{+} \PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{10}\PY{p}{)}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} set grid}
+              \PY{n}{plt}\PY{o}{.}\PY{n}{grid}\PY{p}{(}\PY{k+kc}{True}\PY{p}{,} \PY{n}{axis}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{y}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{color}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{black}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{linestyle}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{:}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{linewidth}\PY{o}{=}\PY{l+m+mf}{0.1}\PY{p}{)}
+              \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
+              
+              \PY{n}{plt}\PY{o}{.}\PY{n}{savefig}\PY{p}{(}\PY{n}{output\PYZus{}filename} \PY{o}{+} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{.}\PY{l+s+s2}{\PYZdq{}} \PY{o}{+} \PY{n}{filetype}\PY{p}{,} \PY{n}{dpi}\PY{o}{=}\PY{n}{fig}\PY{o}{.}\PY{n}{dpi}\PY{p}{,} \PY{n+nb}{format}\PY{o}{=}\PY{n}{filetype}\PY{p}{)}
+              \PY{n}{plt}\PY{o}{.}\PY{n}{close}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}118}]:} \PY{k}{def} \PY{n+nf}{generate\PYZus{}massspectra\PYZus{}two\PYZus{}plot\PYZus{}manual\PYZus{}annotation}\PY{p}{(}\PY{n}{input\PYZus{}filename1}\PY{p}{,} \PY{n}{input\PYZus{}filename2}\PY{p}{,} \PY{n}{output\PYZus{}filename}\PY{p}{)}\PY{p}{:}
+              \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Generate }\PY{l+s+si}{\PYZob{}0\PYZcb{}}\PY{l+s+s2}{ mass spectra plot (}\PY{l+s+si}{\PYZob{}1\PYZcb{}}\PY{l+s+s2}{.}\PY{l+s+si}{\PYZob{}2\PYZcb{}}\PY{l+s+s2}{) from }\PY{l+s+si}{\PYZob{}3\PYZcb{}}\PY{l+s+s2}{.xy and }\PY{l+s+si}{\PYZob{}4\PYZcb{}}\PY{l+s+s2}{.xy}\PY{l+s+s2}{\PYZdq{}}\PY{o}{.}\PY{n}{format}\PY{p}{(}\PY{n}{filetype}\PY{o}{.}\PY{n}{upper}\PY{p}{(}\PY{p}{)}\PY{p}{,} \PY{n}{output\PYZus{}filename}\PY{p}{,}
+                                                                                             \PY{n}{filetype}\PY{p}{,} \PY{n}{input\PYZus{}filename1}\PY{p}{,}
+                                                                                             \PY{n}{input\PYZus{}filename2}\PY{p}{)}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} min and max value of the x axis}
+              \PY{n}{min\PYZus{}xaxis} \PY{o}{=} \PY{l+m+mi}{50}
+              \PY{n}{max\PYZus{}xaxis} \PY{o}{=} \PY{l+m+mi}{475}
+          
+              \PY{c+c1}{\PYZsh{} labels}
+              \PY{n}{label1} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Substance 1}\PY{l+s+s2}{\PYZdq{}}
+              \PY{n}{label2} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Substance 2}\PY{l+s+s2}{\PYZdq{}}
+          
+              \PY{c+c1}{\PYZsh{} dimensions of the single plot}
+              \PY{n}{figwidth\PYZus{}mm} \PY{o}{=} \PY{l+m+mi}{141}
+              \PY{n}{left\PYZus{}margin\PYZus{}mm} \PY{o}{=} \PY{l+m+mi}{14}
+              \PY{n}{right\PYZus{}margin\PYZus{}mm} \PY{o}{=} \PY{l+m+mi}{2}
+              \PY{n}{top\PYZus{}margin\PYZus{}mm} \PY{o}{=} \PY{l+m+mi}{5}
+              \PY{n}{bottom\PYZus{}margin\PYZus{}mm} \PY{o}{=} \PY{l+m+mi}{13}
+          
+              \PY{n}{plotwidth\PYZus{}mm} \PY{o}{=} \PY{n}{figwidth\PYZus{}mm} \PY{o}{\PYZhy{}} \PY{n}{left\PYZus{}margin\PYZus{}mm} \PY{o}{\PYZhy{}} \PY{n}{right\PYZus{}margin\PYZus{}mm}
+              \PY{n}{plotheight\PYZus{}mm} \PY{o}{=} \PY{n}{plotwidth\PYZus{}mm} \PY{o}{*} \PY{l+m+mf}{0.8}
+          
+              \PY{n}{hspace\PYZus{}mm} \PY{o}{=} \PY{l+m+mi}{25}  \PY{c+c1}{\PYZsh{} horizontal space between two plots}
+          
+              \PY{c+c1}{\PYZsh{} read xy input data}
+              \PY{n}{raw\PYZus{}values1} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{n}{input\PYZus{}filename1} \PY{o}{+} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{.xy}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{sep}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{ }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{names}\PY{o}{=}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{m/z}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{intensity}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{,}
+                                        \PY{n}{dtype}\PY{o}{=}\PY{p}{\PYZob{}}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{m/z}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{float64}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{intensity}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{float64}\PY{p}{\PYZcb{}}\PY{p}{)}
+              \PY{c+c1}{\PYZsh{} normalize input data}
+              \PY{n}{max\PYZus{}val} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{n}{raw\PYZus{}values1}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{intensity}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+              \PY{n}{raw\PYZus{}values1}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{intensity\PYZus{}normalized}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]} \PY{o}{=} \PY{n}{raw\PYZus{}values1}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{intensity}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{/} \PY{n}{max\PYZus{}val} \PY{o}{*} \PY{l+m+mf}{100.0}  \PY{c+c1}{\PYZsh{} normalize intensity to percent}
+          
+              \PY{c+c1}{\PYZsh{} read xy input data}
+              \PY{n}{raw\PYZus{}values2} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{n}{input\PYZus{}filename2} \PY{o}{+} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{.xy}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{sep}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{ }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{names}\PY{o}{=}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{m/z}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{intensity}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{,}
+                                        \PY{n}{dtype}\PY{o}{=}\PY{p}{\PYZob{}}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{m/z}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{float64}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{intensity}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{float64}\PY{p}{\PYZcb{}}\PY{p}{)}
+              \PY{c+c1}{\PYZsh{} normalize input data}
+              \PY{n}{max\PYZus{}val} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{n}{raw\PYZus{}values2}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{intensity}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+              \PY{n}{raw\PYZus{}values2}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{intensity\PYZus{}normalized}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]} \PY{o}{=} \PY{n}{raw\PYZus{}values2}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{intensity}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{/} \PY{n}{max\PYZus{}val} \PY{o}{*} \PY{l+m+mf}{100.0}  \PY{c+c1}{\PYZsh{} normalize intensity to percent}
+          
+              \PY{n}{fsize}\PY{p}{,} \PY{n}{margins} \PY{o}{=} \PY{n}{\PYZus{}\PYZus{}figsize\PYZus{}and\PYZus{}margins}\PY{p}{(}\PY{n}{plotsize}\PY{o}{=}\PY{p}{(}\PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{plotwidth\PYZus{}mm}\PY{p}{)}\PY{p}{,} \PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{plotheight\PYZus{}mm}\PY{p}{)}\PY{p}{)}\PY{p}{,}
+                                                     \PY{n}{subplots}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)}\PY{p}{,}
+                                                     \PY{n}{left}\PY{o}{=}\PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{left\PYZus{}margin\PYZus{}mm}\PY{p}{)}\PY{p}{,} \PY{n}{right}\PY{o}{=}\PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{right\PYZus{}margin\PYZus{}mm}\PY{p}{)}\PY{p}{,}
+                                                     \PY{n}{top}\PY{o}{=}\PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{top\PYZus{}margin\PYZus{}mm}\PY{p}{)}\PY{p}{,} \PY{n}{bottom}\PY{o}{=}\PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{bottom\PYZus{}margin\PYZus{}mm}\PY{p}{)}\PY{p}{,}
+                                                     \PY{n}{wspace}\PY{o}{=}\PY{l+m+mf}{0.01}\PY{p}{,} \PY{n}{hspace}\PY{o}{=}\PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{hspace\PYZus{}mm}\PY{p}{)}\PY{p}{)}
+              \PY{n}{fig} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{figure}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{n}{fsize}\PY{p}{,} \PY{p}{)}
+              \PY{n}{plt}\PY{o}{.}\PY{n}{subplots\PYZus{}adjust}\PY{p}{(}\PY{o}{*}\PY{o}{*}\PY{n}{margins}\PY{p}{)}
+          
+              \PY{n}{ax} \PY{o}{=} \PY{n}{fig}\PY{o}{.}\PY{n}{add\PYZus{}subplot}\PY{p}{(}\PY{l+m+mi}{211}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} plot spectra line}
+              \PY{n}{plt1}\PY{p}{,} \PY{o}{=} \PY{n}{ax}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{raw\PYZus{}values1}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{m/z}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{,} \PY{n}{raw\PYZus{}values1}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{intensity\PYZus{}normalized}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{,} \PY{n}{color}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{black}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{linewidth}\PY{o}{=}\PY{l+m+mf}{0.8}\PY{p}{,} \PY{n}{label}\PY{o}{=}\PY{n}{label1}\PY{p}{)}
+              \PY{n}{legend} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{legend}\PY{p}{(}\PY{n}{handles}\PY{o}{=}\PY{p}{[}\PY{n}{plt1}\PY{p}{]}\PY{p}{,} \PY{n}{loc}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
+              \PY{n}{legend}\PY{o}{.}\PY{n}{get\PYZus{}frame}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{set\PYZus{}linewidth}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} set x axes range}
+              \PY{k}{if} \PY{n}{min\PYZus{}xaxis} \PY{o+ow}{is} \PY{o+ow}{not} \PY{k+kc}{None} \PY{o+ow}{and} \PY{n}{max\PYZus{}xaxis} \PY{o+ow}{is} \PY{o+ow}{not} \PY{k+kc}{None}\PY{p}{:}
+                  \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}xlim}\PY{p}{(}\PY{p}{[}\PY{n+nb}{int}\PY{p}{(}\PY{n}{min\PYZus{}xaxis}\PY{p}{)}\PY{p}{,} \PY{n+nb}{int}\PY{p}{(}\PY{n}{max\PYZus{}xaxis}\PY{p}{)}\PY{p}{]}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} annotate plot1}
+              \PY{n}{annotate\PYZus{}point}\PY{p}{(}\PY{l+m+mi}{253}\PY{p}{,} \PY{l+m+mi}{60}\PY{p}{,} \PY{l+s+s1}{r\PYZsq{}}\PY{l+s+s1}{Peak 1}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values1}\PY{p}{)}
+              \PY{n}{annotate\PYZus{}distance}\PY{p}{(}\PY{l+m+mi}{385}\PY{p}{,} \PY{l+m+mi}{403}\PY{p}{,} \PY{l+m+mi}{45}\PY{p}{,} \PY{l+s+s1}{r\PYZsq{}}\PY{l+s+s1}{\PYZdl{}\PYZhy{}18\PYZdl{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values1}\PY{p}{,} \PY{n}{rotate\PYZus{}text}\PY{o}{=}\PY{l+m+mi}{90}\PY{p}{)}
+              \PY{n}{annotate\PYZus{}distance}\PY{p}{(}\PY{l+m+mi}{367}\PY{p}{,} \PY{l+m+mi}{385}\PY{p}{,} \PY{l+m+mi}{45}\PY{p}{,} \PY{l+s+s1}{r\PYZsq{}}\PY{l+s+s1}{\PYZdl{}\PYZhy{}18\PYZdl{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values1}\PY{p}{,} \PY{n}{rotate\PYZus{}text}\PY{o}{=}\PY{l+m+mi}{90}\PY{p}{)}
+              \PY{n}{annotate\PYZus{}distance}\PY{p}{(}\PY{l+m+mi}{321}\PY{p}{,} \PY{l+m+mi}{349}\PY{p}{,} \PY{l+m+mi}{75}\PY{p}{,} \PY{l+s+s1}{r\PYZsq{}}\PY{l+s+s1}{\PYZdl{}xy\PYZdl{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values1}\PY{p}{,} \PY{n}{rotate\PYZus{}text}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{)}
+              \PY{n}{annotate\PYZus{}point}\PY{p}{(}\PY{l+m+mi}{403}\PY{p}{,} \PY{l+m+mi}{60}\PY{p}{,} \PY{l+s+s1}{r\PYZsq{}}\PY{l+s+s1}{Peak 2}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values1}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} remove top and right axis}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{spines}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{top}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{set\PYZus{}visible}\PY{p}{(}\PY{k+kc}{False}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{spines}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{right}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{set\PYZus{}visible}\PY{p}{(}\PY{k+kc}{False}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{get\PYZus{}xaxis}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{tick\PYZus{}bottom}\PY{p}{(}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{get\PYZus{}yaxis}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{tick\PYZus{}left}\PY{p}{(}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} label axes}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}ylabel}\PY{p}{(}\PY{l+s+s2}{r\PYZdq{}}\PY{l+s+s2}{\PYZdl{}Intensity}\PY{l+s+s2}{\PYZbs{}}\PY{l+s+s2}{,[}\PY{l+s+s2}{\PYZbs{}}\PY{l+s+s2}{\PYZpc{}}\PY{l+s+s2}{]\PYZdl{}}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} set x labels}
+              \PY{n}{plt}\PY{o}{.}\PY{n}{xticks}\PY{p}{(}\PY{n}{rotation}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{vertical}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+              \PY{n}{start}\PY{p}{,} \PY{n}{end} \PY{o}{=} \PY{n}{ax}\PY{o}{.}\PY{n}{get\PYZus{}xlim}\PY{p}{(}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{xaxis}\PY{o}{.}\PY{n}{set\PYZus{}ticks}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{n}{start}\PY{p}{,} \PY{n}{end} \PY{o}{+} \PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{25}\PY{p}{)}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} set y labels}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}ylim}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{l+m+mi}{100}\PY{p}{)}
+              \PY{n}{start}\PY{p}{,} \PY{n}{end} \PY{o}{=} \PY{n}{ax}\PY{o}{.}\PY{n}{get\PYZus{}ylim}\PY{p}{(}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{yaxis}\PY{o}{.}\PY{n}{set\PYZus{}ticks}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{n}{start}\PY{p}{,} \PY{n}{end} \PY{o}{+} \PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{10}\PY{p}{)}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} set grid}
+              \PY{n}{plt}\PY{o}{.}\PY{n}{grid}\PY{p}{(}\PY{k+kc}{True}\PY{p}{,} \PY{n}{axis}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{y}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{color}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{black}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{linestyle}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{:}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{linewidth}\PY{o}{=}\PY{l+m+mf}{0.1}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} set x labels}
+              \PY{n}{plt}\PY{o}{.}\PY{n}{xticks}\PY{p}{(}\PY{n}{rotation}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{vertical}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+              \PY{n}{start}\PY{p}{,} \PY{n}{end} \PY{o}{=} \PY{n}{ax}\PY{o}{.}\PY{n}{get\PYZus{}xlim}\PY{p}{(}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{xaxis}\PY{o}{.}\PY{n}{set\PYZus{}ticks}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{n}{start}\PY{p}{,} \PY{n}{end} \PY{o}{+} \PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{25}\PY{p}{)}\PY{p}{)}
+              \PY{c+c1}{\PYZsh{} set y labels}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}ylim}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{l+m+mi}{100}\PY{p}{)}
+              \PY{n}{start}\PY{p}{,} \PY{n}{end} \PY{o}{=} \PY{n}{ax}\PY{o}{.}\PY{n}{get\PYZus{}ylim}\PY{p}{(}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{yaxis}\PY{o}{.}\PY{n}{set\PYZus{}ticks}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{n}{start}\PY{p}{,} \PY{n}{end} \PY{o}{+} \PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{10}\PY{p}{)}\PY{p}{)}
+              \PY{c+c1}{\PYZsh{} set grid}
+              \PY{n}{plt}\PY{o}{.}\PY{n}{grid}\PY{p}{(}\PY{k+kc}{True}\PY{p}{,} \PY{n}{axis}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{y}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{color}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{black}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{linestyle}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{:}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{linewidth}\PY{o}{=}\PY{l+m+mf}{0.1}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} generate plot2}
+              \PY{n}{ax} \PY{o}{=} \PY{n}{fig}\PY{o}{.}\PY{n}{add\PYZus{}subplot}\PY{p}{(}\PY{l+m+mi}{212}\PY{p}{)}
+          
+              \PY{n}{plt2}\PY{p}{,} \PY{o}{=} \PY{n}{ax}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{raw\PYZus{}values2}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{m/z}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{,} \PY{n}{raw\PYZus{}values2}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{intensity\PYZus{}normalized}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{,} \PY{n}{color}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZsh{}606060}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{linewidth}\PY{o}{=}\PY{l+m+mf}{0.8}\PY{p}{,}
+                              \PY{n}{label}\PY{o}{=}\PY{n}{label2}\PY{p}{)}
+              \PY{n}{legend} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{legend}\PY{p}{(}\PY{n}{handles}\PY{o}{=}\PY{p}{[}\PY{n}{plt2}\PY{p}{]}\PY{p}{,} \PY{n}{loc}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
+              \PY{n}{legend}\PY{o}{.}\PY{n}{get\PYZus{}frame}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{set\PYZus{}linewidth}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} set x axes range}
+              \PY{k}{if} \PY{n}{min\PYZus{}xaxis} \PY{o+ow}{is} \PY{o+ow}{not} \PY{k+kc}{None} \PY{o+ow}{and} \PY{n}{max\PYZus{}xaxis} \PY{o+ow}{is} \PY{o+ow}{not} \PY{k+kc}{None}\PY{p}{:}
+                  \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}xlim}\PY{p}{(}\PY{p}{[}\PY{n+nb}{int}\PY{p}{(}\PY{n}{min\PYZus{}xaxis}\PY{p}{)}\PY{p}{,} \PY{n+nb}{int}\PY{p}{(}\PY{n}{max\PYZus{}xaxis}\PY{p}{)}\PY{p}{]}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} annotate}
+              \PY{n}{annotate\PYZus{}point}\PY{p}{(}\PY{l+m+mi}{253}\PY{p}{,} \PY{l+m+mi}{60}\PY{p}{,} \PY{l+s+s1}{r\PYZsq{}}\PY{l+s+s1}{Peak I}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values2}\PY{p}{)}
+              \PY{n}{annotate\PYZus{}point}\PY{p}{(}\PY{l+m+mi}{189}\PY{p}{,} \PY{l+m+mi}{60}\PY{p}{,} \PY{l+s+s1}{r\PYZsq{}}\PY{l+s+s1}{189}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values2}\PY{p}{)}
+              \PY{n}{annotate\PYZus{}point}\PY{p}{(}\PY{l+m+mi}{215}\PY{p}{,} \PY{l+m+mi}{60}\PY{p}{,} \PY{l+s+s1}{r\PYZsq{}}\PY{l+s+s1}{215}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values2}\PY{p}{)}
+              \PY{n}{annotate\PYZus{}distance}\PY{p}{(}\PY{l+m+mi}{385}\PY{p}{,} \PY{l+m+mi}{445}\PY{p}{,} \PY{l+m+mi}{30}\PY{p}{,} \PY{l+s+s1}{r\PYZsq{}}\PY{l+s+s1}{Multiple}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s1}{r\PYZsq{}}\PY{l+s+s1}{line}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{annotation}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values2}\PY{p}{)}
+              \PY{n}{annotate\PYZus{}distance}\PY{p}{(}\PY{l+m+mi}{367}\PY{p}{,} \PY{l+m+mi}{385}\PY{p}{,} \PY{l+m+mi}{45}\PY{p}{,} \PY{l+s+s1}{r\PYZsq{}}\PY{l+s+s1}{ \PYZhy{}18}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values2}\PY{p}{,} \PY{n}{rotate\PYZus{}text}\PY{o}{=}\PY{l+m+mi}{90}\PY{p}{)}
+              \PY{n}{annotate\PYZus{}distance}\PY{p}{(}\PY{l+m+mi}{349}\PY{p}{,} \PY{l+m+mi}{367}\PY{p}{,} \PY{l+m+mi}{45}\PY{p}{,} \PY{l+s+s1}{r\PYZsq{}}\PY{l+s+s1}{ \PYZhy{}18}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values2}\PY{p}{,} \PY{n}{rotate\PYZus{}text}\PY{o}{=}\PY{l+m+mi}{90}\PY{p}{)}
+              \PY{n}{annotate\PYZus{}distance}\PY{p}{(}\PY{l+m+mi}{321}\PY{p}{,} \PY{l+m+mi}{349}\PY{p}{,} \PY{l+m+mi}{75}\PY{p}{,} \PY{l+s+s1}{r\PYZsq{}}\PY{l+s+s1}{xy}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values2}\PY{p}{,} \PY{n}{rotate\PYZus{}text}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{)}
+              \PY{n}{annotate\PYZus{}point}\PY{p}{(}\PY{l+m+mi}{445}\PY{p}{,} \PY{l+m+mi}{60}\PY{p}{,} \PY{l+s+s1}{r\PYZsq{}}\PY{l+s+s1}{Peak 2}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values2}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} remove top and right axis}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{spines}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{top}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{set\PYZus{}visible}\PY{p}{(}\PY{k+kc}{False}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{spines}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{right}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{set\PYZus{}visible}\PY{p}{(}\PY{k+kc}{False}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{get\PYZus{}xaxis}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{tick\PYZus{}bottom}\PY{p}{(}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{get\PYZus{}yaxis}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{tick\PYZus{}left}\PY{p}{(}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} label axes}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}xlabel}\PY{p}{(}\PY{l+s+s2}{r\PYZdq{}}\PY{l+s+s2}{\PYZdl{}m/z\PYZdl{}}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}ylabel}\PY{p}{(}\PY{l+s+s2}{r\PYZdq{}}\PY{l+s+s2}{\PYZdl{}Intensity}\PY{l+s+s2}{\PYZbs{}}\PY{l+s+s2}{,[}\PY{l+s+s2}{\PYZbs{}}\PY{l+s+s2}{\PYZpc{}}\PY{l+s+s2}{]\PYZdl{}}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} set x labels}
+              \PY{n}{plt}\PY{o}{.}\PY{n}{xticks}\PY{p}{(}\PY{n}{rotation}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{vertical}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+              \PY{n}{start}\PY{p}{,} \PY{n}{end} \PY{o}{=} \PY{n}{ax}\PY{o}{.}\PY{n}{get\PYZus{}xlim}\PY{p}{(}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{xaxis}\PY{o}{.}\PY{n}{set\PYZus{}ticks}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{n}{start}\PY{p}{,} \PY{n}{end} \PY{o}{+} \PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{25}\PY{p}{)}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} set y labels}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}ylim}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{l+m+mi}{100}\PY{p}{)}
+              \PY{n}{start}\PY{p}{,} \PY{n}{end} \PY{o}{=} \PY{n}{ax}\PY{o}{.}\PY{n}{get\PYZus{}ylim}\PY{p}{(}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{yaxis}\PY{o}{.}\PY{n}{set\PYZus{}ticks}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{n}{start}\PY{p}{,} \PY{n}{end} \PY{o}{+} \PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{10}\PY{p}{)}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} set grid}
+              \PY{n}{plt}\PY{o}{.}\PY{n}{grid}\PY{p}{(}\PY{k+kc}{True}\PY{p}{,} \PY{n}{axis}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{y}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{color}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{black}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{linestyle}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{:}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{linewidth}\PY{o}{=}\PY{l+m+mf}{0.1}\PY{p}{)}
+              \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
+              
+              \PY{n}{plt}\PY{o}{.}\PY{n}{savefig}\PY{p}{(}\PY{n}{output\PYZus{}filename} \PY{o}{+} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{.}\PY{l+s+s2}{\PYZdq{}} \PY{o}{+} \PY{n}{filetype}\PY{p}{,} \PY{n}{dpi}\PY{o}{=}\PY{n}{fig}\PY{o}{.}\PY{n}{dpi}\PY{p}{,} \PY{n+nb}{format}\PY{o}{=}\PY{n}{filetype}\PY{p}{)}
+              \PY{n}{plt}\PY{o}{.}\PY{n}{close}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor} }]:} \PY{n}{Function} \PY{n}{used}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}119}]:} \PY{k}{def} \PY{n+nf}{generate\PYZus{}massspectra\PYZus{}plot\PYZus{}distance\PYZus{}peak\PYZus{}manual\PYZus{}annotation}\PY{p}{(}\PY{n}{input\PYZus{}filename}\PY{p}{,} \PY{n}{output\PYZus{}filename}\PY{p}{)}\PY{p}{:}
+              \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Generate }\PY{l+s+si}{\PYZob{}0\PYZcb{}}\PY{l+s+s2}{ mass spectra plot (}\PY{l+s+si}{\PYZob{}1\PYZcb{}}\PY{l+s+s2}{.}\PY{l+s+si}{\PYZob{}2\PYZcb{}}\PY{l+s+s2}{) from }\PY{l+s+si}{\PYZob{}3\PYZcb{}}\PY{l+s+s2}{.[xy/txt]}\PY{l+s+s2}{\PYZdq{}}\PY{o}{.}\PY{n}{format}\PY{p}{(}\PY{n}{filetype}\PY{o}{.}\PY{n}{upper}\PY{p}{(}\PY{p}{)}\PY{p}{,} \PY{n}{output\PYZus{}filename}\PY{p}{,}
+                                                                                        \PY{n}{filetype}\PY{p}{,} \PY{n}{input\PYZus{}filename}\PY{p}{)}\PY{p}{)}
+              
+              \PY{c+c1}{\PYZsh{} min and max value of the x axis}
+              \PY{n}{min\PYZus{}xaxis} \PY{o}{=} \PY{l+m+mi}{300}
+              \PY{n}{max\PYZus{}xaxis} \PY{o}{=} \PY{l+m+mi}{700}
+              
+              \PY{n}{plotSubstance} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{619 [M+H]\PYZca{}+\PYZca{}}\PY{l+s+s1}{\PYZsq{}}
+              
+              \PY{c+c1}{\PYZsh{} dimensions of the single plot}
+              \PY{n}{figwidth\PYZus{}mm} \PY{o}{=} \PY{l+m+mi}{141}
+              \PY{n}{left\PYZus{}margin\PYZus{}mm} \PY{o}{=} \PY{l+m+mi}{14}
+              \PY{n}{right\PYZus{}margin\PYZus{}mm} \PY{o}{=} \PY{l+m+mi}{2}
+              \PY{n}{top\PYZus{}margin\PYZus{}mm} \PY{o}{=} \PY{l+m+mi}{5}
+              \PY{n}{bottom\PYZus{}margin\PYZus{}mm} \PY{o}{=} \PY{l+m+mi}{13}
+          
+              \PY{n}{plotwidth\PYZus{}mm} \PY{o}{=} \PY{n}{figwidth\PYZus{}mm} \PY{o}{\PYZhy{}} \PY{n}{left\PYZus{}margin\PYZus{}mm} \PY{o}{\PYZhy{}} \PY{n}{right\PYZus{}margin\PYZus{}mm}
+              \PY{n}{plotheight\PYZus{}mm} \PY{o}{=} \PY{n}{plotwidth\PYZus{}mm} \PY{o}{*} \PY{l+m+mf}{0.8}
+          
+              \PY{n}{hspace\PYZus{}mm} \PY{o}{=} \PY{l+m+mf}{0.1}  \PY{c+c1}{\PYZsh{} horizontal space between two plots}
+          
+              \PY{c+c1}{\PYZsh{} read xy input data}
+              \PY{n}{raw\PYZus{}values} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{n}{input\PYZus{}filename} \PY{o}{+} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{.xy}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{sep}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{ }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{names}\PY{o}{=}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{m/z}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{intensity}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{,}
+                                       \PY{n}{dtype}\PY{o}{=}\PY{p}{\PYZob{}}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{m/z}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{float32}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{intensity}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:} \PY{n}{np}\PY{o}{.}\PY{n}{float32}\PY{p}{\PYZcb{}}\PY{p}{)}
+              \PY{c+c1}{\PYZsh{} normalize input data}
+              \PY{n}{max\PYZus{}val} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{n}{raw\PYZus{}values}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{intensity}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+              \PY{n}{raw\PYZus{}values}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{intensity\PYZus{}normalized}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]} \PY{o}{=} \PY{p}{(}\PY{n}{raw\PYZus{}values}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{intensity}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{/} \PY{n}{max\PYZus{}val}\PY{p}{)} \PY{o}{*} \PY{l+m+mf}{100.0}  \PY{c+c1}{\PYZsh{} normalize intensity to percent}
+          
+              \PY{n}{fsize}\PY{p}{,} \PY{n}{margins} \PY{o}{=} \PY{n}{\PYZus{}\PYZus{}figsize\PYZus{}and\PYZus{}margins}\PY{p}{(}\PY{n}{plotsize}\PY{o}{=}\PY{p}{(}\PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{plotwidth\PYZus{}mm}\PY{p}{)}\PY{p}{,} \PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{plotheight\PYZus{}mm}\PY{p}{)}\PY{p}{)}\PY{p}{,}
+                                                     \PY{n}{subplots}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)}\PY{p}{,}
+                                                     \PY{n}{left}\PY{o}{=}\PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{left\PYZus{}margin\PYZus{}mm}\PY{p}{)}\PY{p}{,} \PY{n}{right}\PY{o}{=}\PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{right\PYZus{}margin\PYZus{}mm}\PY{p}{)}\PY{p}{,}
+                                                     \PY{n}{top}\PY{o}{=}\PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{top\PYZus{}margin\PYZus{}mm}\PY{p}{)}\PY{p}{,} \PY{n}{bottom}\PY{o}{=}\PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{bottom\PYZus{}margin\PYZus{}mm}\PY{p}{)}\PY{p}{,}
+                                                     \PY{n}{wspace}\PY{o}{=}\PY{l+m+mf}{0.01}\PY{p}{,} \PY{n}{hspace}\PY{o}{=}\PY{n}{\PYZus{}\PYZus{}conv\PYZus{}inch}\PY{p}{(}\PY{n}{hspace\PYZus{}mm}\PY{p}{)}\PY{p}{)}
+              \PY{n}{fig} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{figure}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{n}{fsize}\PY{p}{,} \PY{p}{)}
+              \PY{n}{plt}\PY{o}{.}\PY{n}{subplots\PYZus{}adjust}\PY{p}{(}\PY{o}{*}\PY{o}{*}\PY{n}{margins}\PY{p}{)}
+              \PY{n}{ax} \PY{o}{=} \PY{n}{fig}\PY{o}{.}\PY{n}{add\PYZus{}subplot}\PY{p}{(}\PY{l+m+mi}{111}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} plot spectra line}
+              \PY{n}{line1} \PY{o}{=} \PY{n}{ax}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{raw\PYZus{}values}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{m/z}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{,} \PY{n}{raw\PYZus{}values}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{intensity\PYZus{}normalized}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{,} \PY{n}{color}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{black}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{linewidth}\PY{o}{=}\PY{l+m+mf}{0.8}\PY{p}{)}
+              \PY{n}{plt}\PY{o}{.}\PY{n}{legend}\PY{p}{(}\PY{p}{[}\PY{n}{plotSubstance}\PY{p}{]}\PY{p}{,}\PY{n}{loc}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
+              
+              \PY{c+c1}{\PYZsh{} set x axes range}
+              \PY{k}{if} \PY{n}{min\PYZus{}xaxis} \PY{o+ow}{is} \PY{o+ow}{not} \PY{k+kc}{None} \PY{o+ow}{and} \PY{n}{max\PYZus{}xaxis} \PY{o+ow}{is} \PY{o+ow}{not} \PY{k+kc}{None}\PY{p}{:}
+                  \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}xlim}\PY{p}{(}\PY{p}{[}\PY{n+nb}{int}\PY{p}{(}\PY{n}{min\PYZus{}xaxis}\PY{p}{)}\PY{p}{,} \PY{n+nb}{int}\PY{p}{(}\PY{n}{max\PYZus{}xaxis}\PY{p}{)}\PY{p}{]}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} annotations}
+              \PY{c+c1}{\PYZsh{} length in data value (in \PYZpc{})}
+              \PY{n}{annotate\PYZus{}distance}\PY{p}{(}\PY{l+m+mi}{619}\PY{p}{,} \PY{l+m+mi}{601}\PY{p}{,} \PY{l+m+mi}{30}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZdl{}18\PYZdl{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values}\PY{p}{,} \PY{n}{rotate\PYZus{}text}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{)}
+              \PY{n}{annotate\PYZus{}distance}\PY{p}{(}\PY{l+m+mi}{619}\PY{p}{,} \PY{l+m+mi}{575}\PY{p}{,} \PY{l+m+mi}{35}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZdl{}44\PYZdl{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values}\PY{p}{,} \PY{n}{rotate\PYZus{}text}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{)}
+              \PY{n}{annotate\PYZus{}distance}\PY{p}{(}\PY{l+m+mi}{619}\PY{p}{,} \PY{l+m+mi}{452}\PY{p}{,} \PY{l+m+mi}{40}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZdl{}167\PYZdl{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values}\PY{p}{,} \PY{n}{rotate\PYZus{}text}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{)}
+              \PY{n}{annotate\PYZus{}distance}\PY{p}{(}\PY{l+m+mi}{575}\PY{p}{,} \PY{l+m+mi}{452}\PY{p}{,} \PY{l+m+mi}{35}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZdl{}123\PYZdl{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values}\PY{p}{,} \PY{n}{rotate\PYZus{}text}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{)}
+              \PY{n}{annotate\PYZus{}distance}\PY{p}{(}\PY{l+m+mi}{452}\PY{p}{,} \PY{l+m+mi}{311}\PY{p}{,} \PY{l+m+mi}{40}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZdl{}141\PYZdl{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values}\PY{p}{,} \PY{n}{rotate\PYZus{}text}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{)}
+              
+              \PY{n}{annotate\PYZus{}point}\PY{p}{(}\PY{l+m+mi}{619}\PY{p}{,} \PY{l+m+mi}{83}\PY{p}{,} \PY{l+s+s1}{r\PYZsq{}}\PY{l+s+s1}{619}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values}\PY{p}{)}
+              \PY{n}{annotate\PYZus{}point}\PY{p}{(}\PY{l+m+mi}{601}\PY{p}{,} \PY{l+m+mi}{83}\PY{p}{,} \PY{l+s+s1}{r\PYZsq{}}\PY{l+s+s1}{601}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values}\PY{p}{)}
+              \PY{n}{annotate\PYZus{}point}\PY{p}{(}\PY{l+m+mi}{575}\PY{p}{,} \PY{l+m+mi}{110}\PY{p}{,} \PY{l+s+s1}{r\PYZsq{}}\PY{l+s+s1}{575}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values}\PY{p}{)}
+              \PY{n}{annotate\PYZus{}point}\PY{p}{(}\PY{l+m+mi}{452}\PY{p}{,} \PY{l+m+mi}{53}\PY{p}{,} \PY{l+s+s1}{r\PYZsq{}}\PY{l+s+s1}{452}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values}\PY{p}{)}
+              \PY{n}{annotate\PYZus{}point}\PY{p}{(}\PY{l+m+mi}{311}\PY{p}{,} \PY{l+m+mi}{83}\PY{p}{,} \PY{l+s+s1}{r\PYZsq{}}\PY{l+s+s1}{311}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{raw\PYZus{}values}\PY{p}{)}
+              
+              \PY{c+c1}{\PYZsh{}633}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}distance(633, 601, 5, \PYZsq{}\PYZdl{}32\PYZdl{}\PYZsq{}, raw\PYZus{}values, rotate\PYZus{}text=0)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}distance(633, 583, 10, \PYZsq{}\PYZdl{}50\PYZdl{}\PYZsq{}, raw\PYZus{}values, rotate\PYZus{}text=0)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}distance(633, 557, 15, \PYZsq{}\PYZdl{}76\PYZdl{}\PYZsq{}, raw\PYZus{}values, rotate\PYZus{}text=0)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}distance(633, 510, 20, \PYZsq{}\PYZdl{}123\PYZdl{}\PYZsq{}, raw\PYZus{}values, rotate\PYZus{}text=0)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}distance(633, 496, 25, \PYZsq{}\PYZdl{}137\PYZdl{}\PYZsq{}, raw\PYZus{}values, rotate\PYZus{}text=0)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}distance(633, 478, 30, \PYZsq{}\PYZdl{}155\PYZdl{}\PYZsq{}, raw\PYZus{}values, rotate\PYZus{}text=0)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}distance(633, 460, 35, \PYZsq{}\PYZdl{}173\PYZdl{}\PYZsq{}, raw\PYZus{}values, rotate\PYZus{}text=0)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}distance(633, 367, 40, \PYZsq{}\PYZdl{}266\PYZdl{}\PYZsq{}, raw\PYZus{}values, rotate\PYZus{}text=0)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}distance(633, 337, 45, \PYZsq{}\PYZdl{}296\PYZdl{}\PYZsq{}, raw\PYZus{}values, rotate\PYZus{}text=0)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}distance(633, 313, 50, \PYZsq{}\PYZdl{}320\PYZdl{}\PYZsq{}, raw\PYZus{}values, rotate\PYZus{}text=0)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}distance(633, 287, 55, \PYZsq{}\PYZdl{}346\PYZdl{}\PYZsq{}, raw\PYZus{}values, rotate\PYZus{}text=0)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}distance(510, 496, 5, \PYZsq{}\PYZdl{}14\PYZdl{}\PYZsq{}, raw\PYZus{}values, rotate\PYZus{}text=0)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}distance(510, 478, 10, \PYZsq{}\PYZdl{}32\PYZdl{}\PYZsq{}, raw\PYZus{}values, rotate\PYZus{}text=0)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}distance(510, 369, 65, \PYZsq{}\PYZdl{}141\PYZdl{}\PYZsq{}, raw\PYZus{}values, rotate\PYZus{}text=0)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}distance(510, 337, 60, \PYZsq{}\PYZdl{}173\PYZdl{}\PYZsq{}, raw\PYZus{}values, rotate\PYZus{}text=0)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}distance(460, 442, 5, \PYZsq{}\PYZdl{}18\PYZdl{}\PYZsq{}, raw\PYZus{}values, rotate\PYZus{}text=0)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}distance(460, 432, 10, \PYZsq{}\PYZdl{}28\PYZdl{}\PYZsq{}, raw\PYZus{}values, rotate\PYZus{}text=0)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}distance(460, 400, 15, \PYZsq{}\PYZdl{}60\PYZdl{}\PYZsq{}, raw\PYZus{}values, rotate\PYZus{}text=0)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}distance(460, 337, 20, \PYZsq{}\PYZdl{}123\PYZdl{}\PYZsq{}, raw\PYZus{}values, rotate\PYZus{}text=0)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}distance(460, 325, 25, \PYZsq{}\PYZdl{}135\PYZdl{}\PYZsq{}, raw\PYZus{}values, rotate\PYZus{}text=0)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}distance(460, 297, 30, \PYZsq{}\PYZdl{}163\PYZdl{}\PYZsq{}, raw\PYZus{}values, rotate\PYZus{}text=0)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}distance(337, 319, 65, \PYZsq{}\PYZdl{}18\PYZdl{}\PYZsq{}, raw\PYZus{}values, rotate\PYZus{}text=0)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}distance(337, 309, 60, \PYZsq{}\PYZdl{}28\PYZdl{}\PYZsq{}, raw\PYZus{}values, rotate\PYZus{}text=0)}
+              
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}point(633, 83, r\PYZsq{}633\PYZsq{}, raw\PYZus{}values)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}point(601, 110, r\PYZsq{}601\PYZsq{}, raw\PYZus{}values)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}point(583, 83, r\PYZsq{}583\PYZsq{}, raw\PYZus{}values)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}point(557, 83, r\PYZsq{}557\PYZsq{}, raw\PYZus{}values)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}point(510, 83, r\PYZsq{}510\PYZsq{}, raw\PYZus{}values)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}point(496, 83, r\PYZsq{}496\PYZsq{}, raw\PYZus{}values)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}point(478, 83, r\PYZsq{}478\PYZsq{}, raw\PYZus{}values)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}point(460, 83, r\PYZsq{}460\PYZsq{}, raw\PYZus{}values)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}point(442, 83, r\PYZsq{}442\PYZsq{}, raw\PYZus{}values)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}point(432, 83, r\PYZsq{}432\PYZsq{}, raw\PYZus{}values)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}point(400, 83, r\PYZsq{}400\PYZsq{}, raw\PYZus{}values)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}point(369, 93, r\PYZsq{}369\PYZsq{}, raw\PYZus{}values)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}point(367, 83, r\PYZsq{}367\PYZsq{}, raw\PYZus{}values)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}point(337, 83, r\PYZsq{}337\PYZsq{}, raw\PYZus{}values)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}point(325, 73, r\PYZsq{}325\PYZsq{}, raw\PYZus{}values)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}point(319, 83, r\PYZsq{}319\PYZsq{}, raw\PYZus{}values)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}point(313, 73, r\PYZsq{}313\PYZsq{}, raw\PYZus{}values)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}point(309, 83, r\PYZsq{}309\PYZsq{}, raw\PYZus{}values)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}point(297, 73, r\PYZsq{}297\PYZsq{}, raw\PYZus{}values)}
+              \PY{c+c1}{\PYZsh{}annotate\PYZus{}point(287, 83, r\PYZsq{}287\PYZsq{}, raw\PYZus{}values)}
+              
+              \PY{c+c1}{\PYZsh{} remove top and right axis}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{spines}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{top}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{set\PYZus{}visible}\PY{p}{(}\PY{k+kc}{False}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{spines}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{right}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{set\PYZus{}visible}\PY{p}{(}\PY{k+kc}{False}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{get\PYZus{}xaxis}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{tick\PYZus{}bottom}\PY{p}{(}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{get\PYZus{}yaxis}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{tick\PYZus{}left}\PY{p}{(}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} label axes}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}xlabel}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{m/z}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}ylabel}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Relative abundance}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)} \PY{c+c1}{\PYZsh{}\PYZdl{}Relative abundance\PYZbs{},[\PYZbs{}\PYZpc{}]\PYZdl{}}
+          
+              \PY{c+c1}{\PYZsh{} set x labels}
+              \PY{n}{plt}\PY{o}{.}\PY{n}{xticks}\PY{p}{(}\PY{n}{rotation}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{vertical}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+              \PY{n}{start}\PY{p}{,} \PY{n}{end} \PY{o}{=} \PY{n}{ax}\PY{o}{.}\PY{n}{get\PYZus{}xlim}\PY{p}{(}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{xaxis}\PY{o}{.}\PY{n}{set\PYZus{}ticks}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{n}{start}\PY{p}{,} \PY{n}{end} \PY{o}{+} \PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{25}\PY{p}{)}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} set y labels}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}ylim}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{l+m+mi}{100}\PY{p}{)}
+              \PY{n}{start}\PY{p}{,} \PY{n}{end} \PY{o}{=} \PY{n}{ax}\PY{o}{.}\PY{n}{get\PYZus{}ylim}\PY{p}{(}\PY{p}{)}
+              \PY{n}{ax}\PY{o}{.}\PY{n}{yaxis}\PY{o}{.}\PY{n}{set\PYZus{}ticks}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{n}{start}\PY{p}{,} \PY{n}{end} \PY{o}{+} \PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{10}\PY{p}{)}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} set grid}
+              \PY{n}{plt}\PY{o}{.}\PY{n}{grid}\PY{p}{(}\PY{k+kc}{True}\PY{p}{,} \PY{n}{axis}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{y}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{color}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{black}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{linestyle}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{:}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{linewidth}\PY{o}{=}\PY{l+m+mf}{0.1}\PY{p}{)}
+              \PY{n}{plt}\PY{o}{.}\PY{n}{savefig}\PY{p}{(}\PY{n}{output\PYZus{}filename} \PY{o}{+} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{.png}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+              
+              \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
+              \PY{n}{plt}\PY{o}{.}\PY{n}{close}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}120}]:} \PY{k}{if} \PY{n}{\PYZus{}\PYZus{}name\PYZus{}\PYZus{}} \PY{o}{==} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZus{}\PYZus{}main\PYZus{}\PYZus{}}\PY{l+s+s2}{\PYZdq{}}\PY{p}{:}
+              \PY{c+c1}{\PYZsh{} generate\PYZus{}massspectra\PYZus{}plot\PYZus{}automatic\PYZus{}labels(\PYZdq{}examples/inputs/substance1\PYZdq{}, \PYZdq{}examples/ex1\PYZdq{})}
+          
+              \PY{n}{generate\PYZus{}massspectra\PYZus{}plot\PYZus{}distance\PYZus{}peak\PYZus{}manual\PYZus{}annotation}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{data/raw/Kuerbis\PYZus{}Analyse\PYZus{}Bindungskinetik\PYZus{}Fragmente61927}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{data/ex2}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+          
+              \PY{c+c1}{\PYZsh{} generate\PYZus{}massspectra\PYZus{}two\PYZus{}plot\PYZus{}manual\PYZus{}annotation(\PYZdq{}examples/inputs/substance1\PYZdq{},\PYZdq{}examples/inputs/substance2\PYZdq{}, \PYZdq{}examples/ex3\PYZdq{})}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Generate PNG mass spectra plot (data/ex2.png) from data/raw/Kuerbis\_Analyse\_Bindungskinetik\_Fragmente61927.[xy/txt]
+
+    \end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{VWA_generate_mz_diagrams_files/VWA_generate_mz_diagrams_19_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor} }]:} 
+\end{Verbatim}
+
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+    \end{document}

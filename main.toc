@@ -59,7 +59,19 @@
 \contentsline {chapter}{Abbildungsverzeichnis}{63}{chapter*.62}
 \contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{66}{section*.64}
 \contentsline {part}{\nonumberline Anhang}{67}{part*.67}
-\contentsline {chapter}{\numberline {A}Python Code-Listings f\IeC {\"u}r die Erstellung der Grafiken}{68}{appendix.A}
-\contentsline {section}{\numberline {A.1}Programm zur Erstellung von Chromatogrammen f\IeC {\"u}r LC-ESI-MS}{68}{section.A.1}
-\contentsline {section}{\numberline {A.2}Programm zur Erstellung von MS-Spektren}{78}{section.A.2}
-\contentsline {section}{\numberline {A.3}Programm zur Erstellung von Fragmentierungsdiagrammen}{97}{section.A.3}
+\contentsline {chapter}{\numberline {A}Fragmentierungsdiagramme und MS-Spektren der MS-Leafspray Experimente}{68}{appendix.A}
+\contentsline {section}{\numberline {A.1}Reaktionsprodukt von Bo-DYCC}{68}{section.A.1}
+\contentsline {section}{\numberline {A.2}Reaktionsprodukt von Bo-DNCC}{69}{section.A.2}
+\contentsline {section}{\numberline {A.3}Reaktionsprodukt von Chl-Katabolit mit m/z = 667 Da [M+K]\textsuperscript {+}}{70}{section.A.3}
+\contentsline {chapter}{\numberline {B}Fragmentierungsdiagramme der ESI-MS Experimente}{71}{appendix.B}
+\contentsline {section}{\numberline {B.1}Bo-DYCC}{72}{section.B.1}
+\contentsline {section}{\numberline {B.2}Bo-DNCC}{73}{section.B.2}
+\contentsline {section}{\numberline {B.3}Bo-NCC-1}{74}{section.B.3}
+\contentsline {section}{\numberline {B.4}Bo-NCC-3}{75}{section.B.4}
+\contentsline {section}{\numberline {B.5}Reaktionsprodukt von Bo-DYCC}{75}{section.B.5}
+\contentsline {section}{\numberline {B.6}Reaktionsprodukt von Bo-DNCC}{76}{section.B.6}
+\contentsline {section}{\numberline {B.7}Reaktionsprodukt von Bo-NCC-3}{77}{section.B.7}
+\contentsline {chapter}{\numberline {C}Python Code-Listings f\IeC {\"u}r die Erstellung der Grafiken}{78}{appendix.C}
+\contentsline {section}{\numberline {C.1}Programm zur Erstellung von Fragmentierungsdiagrammen}{78}{section.C.1}
+\contentsline {section}{\numberline {C.2}Programm zur Erstellung von Chromatogrammen f\IeC {\"u}r LC-ESI-MS}{80}{section.C.2}
+\contentsline {section}{\numberline {C.3}Programm zur Erstellung von MS-Spektren}{90}{section.C.3}

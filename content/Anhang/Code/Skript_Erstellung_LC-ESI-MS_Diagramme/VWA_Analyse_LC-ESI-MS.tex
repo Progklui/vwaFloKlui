@@ -1,0 +1,804 @@
+
+% Default to the notebook output style
+
+    
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    
+\documentclass[11pt]{article}
+
+    
+    
+    \usepackage[T1]{fontenc}
+    % Nicer default font than Computer Modern for most use cases
+    \usepackage{palatino}
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % We will generate all images so they have a width \maxwidth. This means
+    % that they will get their normal width if they fit onto the page, but
+    % are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
+    % Set max figure width to be 80% of text width, for now hardcoded.
+    \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionLabelFormat{nolabel}{}
+    \captionsetup{labelformat=nolabel}
+
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    
+
+    
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatability definitions
+    \def\gt{>}
+    \def\lt{<}
+    % Document parameters
+    \title{VWA\_Analyse\_LC-ESI-MS}
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    \maketitle
+    
+    
+
+    
+    \section{Generate LC-MS chromatograms for analysis of overlaying
+effects}\label{generate-lc-ms-chromatograms-for-analysis-of-overlaying-effects}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}22}]:} \PY{k}{def} \PY{n+nf}{cc}\PY{p}{(}\PY{n}{arg}\PY{p}{)}\PY{p}{:}
+             \PY{k}{return} \PY{n}{mcolors}\PY{o}{.}\PY{n}{to\PYZus{}rgba}\PY{p}{(}\PY{n}{arg}\PY{p}{,} \PY{n}{alpha}\PY{o}{=}\PY{l+m+mf}{0.6}\PY{p}{)}
+\end{Verbatim}
+
+    Detecting peaks from dataset and scaling:
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}23}]:} \PY{k}{def} \PY{n+nf}{detect\PYZus{}peaks}\PY{p}{(}\PY{n}{x}\PY{p}{,} \PY{n}{mph}\PY{o}{=}\PY{k+kc}{None}\PY{p}{,} \PY{n}{mpd}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{threshold}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{edge}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{rising}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                          \PY{n}{kpsh}\PY{o}{=}\PY{k+kc}{False}\PY{p}{,} \PY{n}{valley}\PY{o}{=}\PY{k+kc}{False}\PY{p}{,} \PY{n}{show}\PY{o}{=}\PY{k+kc}{False}\PY{p}{,} \PY{n}{ax}\PY{o}{=}\PY{k+kc}{None}\PY{p}{)}\PY{p}{:}
+         
+             \PY{l+s+sd}{\PYZdq{}\PYZdq{}\PYZdq{}Detect peaks in data based on their amplitude and other features.}
+         
+         \PY{l+s+sd}{    Parameters}
+         \PY{l+s+sd}{    \PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}
+         \PY{l+s+sd}{    x : 1D array\PYZus{}like}
+         \PY{l+s+sd}{        data.}
+         \PY{l+s+sd}{    mph : \PYZob{}None, number\PYZcb{}, optional (default = None)}
+         \PY{l+s+sd}{        detect peaks that are greater than minimum peak height.}
+         \PY{l+s+sd}{    mpd : positive integer, optional (default = 1)}
+         \PY{l+s+sd}{        detect peaks that are at least separated by minimum peak distance (in}
+         \PY{l+s+sd}{        number of data).}
+         \PY{l+s+sd}{    threshold : positive number, optional (default = 0)}
+         \PY{l+s+sd}{        detect peaks (valleys) that are greater (smaller) than `threshold`}
+         \PY{l+s+sd}{        in relation to their immediate neighbors.}
+         \PY{l+s+sd}{    edge : \PYZob{}None, \PYZsq{}rising\PYZsq{}, \PYZsq{}falling\PYZsq{}, \PYZsq{}both\PYZsq{}\PYZcb{}, optional (default = \PYZsq{}rising\PYZsq{})}
+         \PY{l+s+sd}{        for a flat peak, keep only the rising edge (\PYZsq{}rising\PYZsq{}), only the}
+         \PY{l+s+sd}{        falling edge (\PYZsq{}falling\PYZsq{}), both edges (\PYZsq{}both\PYZsq{}), or don\PYZsq{}t detect a}
+         \PY{l+s+sd}{        flat peak (None).}
+         \PY{l+s+sd}{    kpsh : bool, optional (default = False)}
+         \PY{l+s+sd}{        keep peaks with same height even if they are closer than `mpd`.}
+         \PY{l+s+sd}{    valley : bool, optional (default = False)}
+         \PY{l+s+sd}{        if True (1), detect valleys (local minima) instead of peaks.}
+         \PY{l+s+sd}{    show : bool, optional (default = False)}
+         \PY{l+s+sd}{        if True (1), plot data in matplotlib figure.}
+         \PY{l+s+sd}{    ax : a matplotlib.axes.Axes instance, optional (default = None).}
+         
+         \PY{l+s+sd}{    Returns}
+         \PY{l+s+sd}{    \PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}
+         \PY{l+s+sd}{    ind : 1D array\PYZus{}like}
+         \PY{l+s+sd}{        indeces of the peaks in `x`.}
+         
+         \PY{l+s+sd}{    Notes}
+         \PY{l+s+sd}{    \PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}
+         \PY{l+s+sd}{    The detection of valleys instead of peaks is performed internally by simply}
+         \PY{l+s+sd}{    negating the data: `ind\PYZus{}valleys = detect\PYZus{}peaks(\PYZhy{}x)`}
+         \PY{l+s+sd}{    }
+         \PY{l+s+sd}{    The function can handle NaN\PYZsq{}s }
+         
+         \PY{l+s+sd}{    See this IPython Notebook [1]\PYZus{}.}
+         
+         \PY{l+s+sd}{    References}
+         \PY{l+s+sd}{    \PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}
+         \PY{l+s+sd}{    .. [1] http://nbviewer.ipython.org/github/demotu/BMC/blob/master/notebooks/DetectPeaks.ipynb}
+         
+         \PY{l+s+sd}{    Examples}
+         \PY{l+s+sd}{    \PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}
+         \PY{l+s+sd}{    \PYZgt{}\PYZgt{}\PYZgt{} from detect\PYZus{}peaks import detect\PYZus{}peaks}
+         \PY{l+s+sd}{    \PYZgt{}\PYZgt{}\PYZgt{} x = np.random.randn(100)}
+         \PY{l+s+sd}{    \PYZgt{}\PYZgt{}\PYZgt{} x[60:81] = np.nan}
+         \PY{l+s+sd}{    \PYZgt{}\PYZgt{}\PYZgt{} \PYZsh{} detect all peaks and plot data}
+         \PY{l+s+sd}{    \PYZgt{}\PYZgt{}\PYZgt{} ind = detect\PYZus{}peaks(x, show=True)}
+         \PY{l+s+sd}{    \PYZgt{}\PYZgt{}\PYZgt{} print(ind)}
+         
+         \PY{l+s+sd}{    \PYZgt{}\PYZgt{}\PYZgt{} x = np.sin(2*np.pi*5*np.linspace(0, 1, 200)) + np.random.randn(200)/5}
+         \PY{l+s+sd}{    \PYZgt{}\PYZgt{}\PYZgt{} \PYZsh{} set minimum peak height = 0 and minimum peak distance = 20}
+         \PY{l+s+sd}{    \PYZgt{}\PYZgt{}\PYZgt{} detect\PYZus{}peaks(x, mph=0, mpd=20, show=True)}
+         
+         \PY{l+s+sd}{    \PYZgt{}\PYZgt{}\PYZgt{} x = [0, 1, 0, 2, 0, 3, 0, 2, 0, 1, 0]}
+         \PY{l+s+sd}{    \PYZgt{}\PYZgt{}\PYZgt{} \PYZsh{} set minimum peak distance = 2}
+         \PY{l+s+sd}{    \PYZgt{}\PYZgt{}\PYZgt{} detect\PYZus{}peaks(x, mpd=2, show=True)}
+         
+         \PY{l+s+sd}{    \PYZgt{}\PYZgt{}\PYZgt{} x = np.sin(2*np.pi*5*np.linspace(0, 1, 200)) + np.random.randn(200)/5}
+         \PY{l+s+sd}{    \PYZgt{}\PYZgt{}\PYZgt{} \PYZsh{} detection of valleys instead of peaks}
+         \PY{l+s+sd}{    \PYZgt{}\PYZgt{}\PYZgt{} detect\PYZus{}peaks(x, mph=0, mpd=20, valley=True, show=True)}
+         
+         \PY{l+s+sd}{    \PYZgt{}\PYZgt{}\PYZgt{} x = [0, 1, 1, 0, 1, 1, 0]}
+         \PY{l+s+sd}{    \PYZgt{}\PYZgt{}\PYZgt{} \PYZsh{} detect both edges}
+         \PY{l+s+sd}{    \PYZgt{}\PYZgt{}\PYZgt{} detect\PYZus{}peaks(x, edge=\PYZsq{}both\PYZsq{}, show=True)}
+         
+         \PY{l+s+sd}{    \PYZgt{}\PYZgt{}\PYZgt{} x = [\PYZhy{}2, 1, \PYZhy{}2, 2, 1, 1, 3, 0]}
+         \PY{l+s+sd}{    \PYZgt{}\PYZgt{}\PYZgt{} \PYZsh{} set threshold = 2}
+         \PY{l+s+sd}{    \PYZgt{}\PYZgt{}\PYZgt{} detect\PYZus{}peaks(x, threshold = 2, show=True)}
+         \PY{l+s+sd}{    \PYZdq{}\PYZdq{}\PYZdq{}}
+         
+             \PY{n}{x} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{atleast\PYZus{}1d}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{o}{.}\PY{n}{astype}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{float64}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{k}{if} \PY{n}{x}\PY{o}{.}\PY{n}{size} \PY{o}{\PYZlt{}} \PY{l+m+mi}{3}\PY{p}{:}
+                 \PY{k}{return} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{p}{]}\PY{p}{,} \PY{n}{dtype}\PY{o}{=}\PY{n+nb}{int}\PY{p}{)}
+             \PY{k}{if} \PY{n}{valley}\PY{p}{:}
+                 \PY{n}{x} \PY{o}{=} \PY{o}{\PYZhy{}}\PY{n}{x}
+             \PY{c+c1}{\PYZsh{} find indices of all peaks}
+             \PY{n}{dx} \PY{o}{=} \PY{n}{x}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]} \PY{o}{\PYZhy{}} \PY{n}{x}\PY{p}{[}\PY{p}{:}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}
+             \PY{c+c1}{\PYZsh{} handle NaN\PYZsq{}s}
+             \PY{n}{indnan} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{where}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{isnan}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
+             \PY{k}{if} \PY{n}{indnan}\PY{o}{.}\PY{n}{size}\PY{p}{:}
+                 \PY{n}{x}\PY{p}{[}\PY{n}{indnan}\PY{p}{]} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{inf}
+                 \PY{n}{dx}\PY{p}{[}\PY{n}{np}\PY{o}{.}\PY{n}{where}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{isnan}\PY{p}{(}\PY{n}{dx}\PY{p}{)}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{]} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{inf}
+             \PY{n}{ine}\PY{p}{,} \PY{n}{ire}\PY{p}{,} \PY{n}{ife} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{p}{[}\PY{p}{]}\PY{p}{,} \PY{p}{[}\PY{p}{]}\PY{p}{,} \PY{p}{[}\PY{p}{]}\PY{p}{]}\PY{p}{,} \PY{n}{dtype}\PY{o}{=}\PY{n+nb}{int}\PY{p}{)}
+             \PY{k}{if} \PY{o+ow}{not} \PY{n}{edge}\PY{p}{:}
+                 \PY{n}{ine} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{where}\PY{p}{(}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{hstack}\PY{p}{(}\PY{p}{(}\PY{n}{dx}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{)}\PY{p}{)} \PY{o}{\PYZlt{}} \PY{l+m+mi}{0}\PY{p}{)} \PY{o}{\PYZam{}} \PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{hstack}\PY{p}{(}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{dx}\PY{p}{)}\PY{p}{)} \PY{o}{\PYZgt{}} \PY{l+m+mi}{0}\PY{p}{)}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
+             \PY{k}{else}\PY{p}{:}
+                 \PY{k}{if} \PY{n}{edge}\PY{o}{.}\PY{n}{lower}\PY{p}{(}\PY{p}{)} \PY{o+ow}{in} \PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{rising}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{both}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{:}
+                     \PY{n}{ire} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{where}\PY{p}{(}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{hstack}\PY{p}{(}\PY{p}{(}\PY{n}{dx}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{)}\PY{p}{)} \PY{o}{\PYZlt{}}\PY{o}{=} \PY{l+m+mi}{0}\PY{p}{)} \PY{o}{\PYZam{}} \PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{hstack}\PY{p}{(}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{dx}\PY{p}{)}\PY{p}{)} \PY{o}{\PYZgt{}} \PY{l+m+mi}{0}\PY{p}{)}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
+                 \PY{k}{if} \PY{n}{edge}\PY{o}{.}\PY{n}{lower}\PY{p}{(}\PY{p}{)} \PY{o+ow}{in} \PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{falling}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{both}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{:}
+                     \PY{n}{ife} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{where}\PY{p}{(}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{hstack}\PY{p}{(}\PY{p}{(}\PY{n}{dx}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{)}\PY{p}{)} \PY{o}{\PYZlt{}} \PY{l+m+mi}{0}\PY{p}{)} \PY{o}{\PYZam{}} \PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{hstack}\PY{p}{(}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{dx}\PY{p}{)}\PY{p}{)} \PY{o}{\PYZgt{}}\PY{o}{=} \PY{l+m+mi}{0}\PY{p}{)}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
+             \PY{n}{ind} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{unique}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{hstack}\PY{p}{(}\PY{p}{(}\PY{n}{ine}\PY{p}{,} \PY{n}{ire}\PY{p}{,} \PY{n}{ife}\PY{p}{)}\PY{p}{)}\PY{p}{)}
+             \PY{c+c1}{\PYZsh{} handle NaN\PYZsq{}s}
+             \PY{k}{if} \PY{n}{ind}\PY{o}{.}\PY{n}{size} \PY{o+ow}{and} \PY{n}{indnan}\PY{o}{.}\PY{n}{size}\PY{p}{:}
+                 \PY{c+c1}{\PYZsh{} NaN\PYZsq{}s and values close to NaN\PYZsq{}s cannot be peaks}
+                 \PY{n}{ind} \PY{o}{=} \PY{n}{ind}\PY{p}{[}\PY{n}{np}\PY{o}{.}\PY{n}{in1d}\PY{p}{(}\PY{n}{ind}\PY{p}{,} \PY{n}{np}\PY{o}{.}\PY{n}{unique}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{hstack}\PY{p}{(}\PY{p}{(}\PY{n}{indnan}\PY{p}{,} \PY{n}{indnan}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{,} \PY{n}{indnan}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}\PY{p}{)}\PY{p}{,} \PY{n}{invert}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}\PY{p}{]}
+             \PY{c+c1}{\PYZsh{} first and last values of x cannot be peaks}
+             \PY{k}{if} \PY{n}{ind}\PY{o}{.}\PY{n}{size} \PY{o+ow}{and} \PY{n}{ind}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]} \PY{o}{==} \PY{l+m+mi}{0}\PY{p}{:}
+                 \PY{n}{ind} \PY{o}{=} \PY{n}{ind}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]}
+             \PY{k}{if} \PY{n}{ind}\PY{o}{.}\PY{n}{size} \PY{o+ow}{and} \PY{n}{ind}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]} \PY{o}{==} \PY{n}{x}\PY{o}{.}\PY{n}{size}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{:}
+                 \PY{n}{ind} \PY{o}{=} \PY{n}{ind}\PY{p}{[}\PY{p}{:}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}
+             \PY{c+c1}{\PYZsh{} remove peaks \PYZlt{} minimum peak height}
+             \PY{k}{if} \PY{n}{ind}\PY{o}{.}\PY{n}{size} \PY{o+ow}{and} \PY{n}{mph} \PY{o+ow}{is} \PY{o+ow}{not} \PY{k+kc}{None}\PY{p}{:}
+                 \PY{n}{ind} \PY{o}{=} \PY{n}{ind}\PY{p}{[}\PY{n}{x}\PY{p}{[}\PY{n}{ind}\PY{p}{]} \PY{o}{\PYZgt{}}\PY{o}{=} \PY{n}{mph}\PY{p}{]}
+             \PY{c+c1}{\PYZsh{} remove peaks \PYZhy{} neighbors \PYZlt{} threshold}
+             \PY{k}{if} \PY{n}{ind}\PY{o}{.}\PY{n}{size} \PY{o+ow}{and} \PY{n}{threshold} \PY{o}{\PYZgt{}} \PY{l+m+mi}{0}\PY{p}{:}
+                 \PY{n}{dx} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{min}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{vstack}\PY{p}{(}\PY{p}{[}\PY{n}{x}\PY{p}{[}\PY{n}{ind}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{n}{x}\PY{p}{[}\PY{n}{ind}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,} \PY{n}{x}\PY{p}{[}\PY{n}{ind}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{n}{x}\PY{p}{[}\PY{n}{ind}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PY{p}{,} \PY{n}{axis}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{)}
+                 \PY{n}{ind} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{delete}\PY{p}{(}\PY{n}{ind}\PY{p}{,} \PY{n}{np}\PY{o}{.}\PY{n}{where}\PY{p}{(}\PY{n}{dx} \PY{o}{\PYZlt{}} \PY{n}{threshold}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{)}
+             \PY{c+c1}{\PYZsh{} detect small peaks closer than minimum peak distance}
+             \PY{k}{if} \PY{n}{ind}\PY{o}{.}\PY{n}{size} \PY{o+ow}{and} \PY{n}{mpd} \PY{o}{\PYZgt{}} \PY{l+m+mi}{1}\PY{p}{:}
+                 \PY{n}{ind} \PY{o}{=} \PY{n}{ind}\PY{p}{[}\PY{n}{np}\PY{o}{.}\PY{n}{argsort}\PY{p}{(}\PY{n}{x}\PY{p}{[}\PY{n}{ind}\PY{p}{]}\PY{p}{)}\PY{p}{]}\PY{p}{[}\PY{p}{:}\PY{p}{:}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}  \PY{c+c1}{\PYZsh{} sort ind by peak height}
+                 \PY{n}{idel} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{zeros}\PY{p}{(}\PY{n}{ind}\PY{o}{.}\PY{n}{size}\PY{p}{,} \PY{n}{dtype}\PY{o}{=}\PY{n+nb}{bool}\PY{p}{)}
+                 \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{n}{ind}\PY{o}{.}\PY{n}{size}\PY{p}{)}\PY{p}{:}
+                     \PY{k}{if} \PY{o+ow}{not} \PY{n}{idel}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{:}
+                         \PY{c+c1}{\PYZsh{} keep peaks with the same height if kpsh is True}
+                         \PY{n}{idel} \PY{o}{=} \PY{n}{idel} \PY{o}{|} \PY{p}{(}\PY{n}{ind} \PY{o}{\PYZgt{}}\PY{o}{=} \PY{n}{ind}\PY{p}{[}\PY{n}{i}\PY{p}{]} \PY{o}{\PYZhy{}} \PY{n}{mpd}\PY{p}{)} \PY{o}{\PYZam{}} \PY{p}{(}\PY{n}{ind} \PY{o}{\PYZlt{}}\PY{o}{=} \PY{n}{ind}\PY{p}{[}\PY{n}{i}\PY{p}{]} \PY{o}{+} \PY{n}{mpd}\PY{p}{)} \PYZbs{}
+                             \PY{o}{\PYZam{}} \PY{p}{(}\PY{n}{x}\PY{p}{[}\PY{n}{ind}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{]} \PY{o}{\PYZgt{}} \PY{n}{x}\PY{p}{[}\PY{n}{ind}\PY{p}{]} \PY{k}{if} \PY{n}{kpsh} \PY{k}{else} \PY{k+kc}{True}\PY{p}{)}
+                         \PY{n}{idel}\PY{p}{[}\PY{n}{i}\PY{p}{]} \PY{o}{=} \PY{l+m+mi}{0}  \PY{c+c1}{\PYZsh{} Keep current peak}
+                 \PY{c+c1}{\PYZsh{} remove the small peaks and sort back the indices by their occurrence}
+                 \PY{n}{ind} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{sort}\PY{p}{(}\PY{n}{ind}\PY{p}{[}\PY{o}{\PYZti{}}\PY{n}{idel}\PY{p}{]}\PY{p}{)}
+         
+             \PY{k}{if} \PY{n}{show}\PY{p}{:}
+                 \PY{k}{if} \PY{n}{indnan}\PY{o}{.}\PY{n}{size}\PY{p}{:}
+                     \PY{n}{x}\PY{p}{[}\PY{n}{indnan}\PY{p}{]} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{nan}
+                 \PY{k}{if} \PY{n}{valley}\PY{p}{:}
+                     \PY{n}{x} \PY{o}{=} \PY{o}{\PYZhy{}}\PY{n}{x}
+                 \PY{n}{\PYZus{}plot}\PY{p}{(}\PY{n}{x}\PY{p}{,} \PY{n}{mph}\PY{p}{,} \PY{n}{mpd}\PY{p}{,} \PY{n}{threshold}\PY{p}{,} \PY{n}{edge}\PY{p}{,} \PY{n}{valley}\PY{p}{,} \PY{n}{ax}\PY{p}{,} \PY{n}{ind}\PY{p}{)}
+         
+             \PY{k}{return} \PY{n}{ind}
+         
+         
+         \PY{k}{def} \PY{n+nf}{\PYZus{}plot}\PY{p}{(}\PY{n}{x}\PY{p}{,} \PY{n}{mph}\PY{p}{,} \PY{n}{mpd}\PY{p}{,} \PY{n}{threshold}\PY{p}{,} \PY{n}{edge}\PY{p}{,} \PY{n}{valley}\PY{p}{,} \PY{n}{ax}\PY{p}{,} \PY{n}{ind}\PY{p}{)}\PY{p}{:}
+             \PY{l+s+sd}{\PYZdq{}\PYZdq{}\PYZdq{}Plot results of the detect\PYZus{}peaks function, see its help.\PYZdq{}\PYZdq{}\PYZdq{}}
+             \PY{k}{try}\PY{p}{:}
+                 \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
+             \PY{k}{except} \PY{n+ne}{ImportError}\PY{p}{:}
+                 \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{matplotlib is not available.}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{k}{else}\PY{p}{:}
+                 \PY{k}{if} \PY{n}{ax} \PY{o+ow}{is} \PY{k+kc}{None}\PY{p}{:}
+                     \PY{n}{\PYZus{}}\PY{p}{,} \PY{n}{ax} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{subplots}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{,} \PY{n}{figsize}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{8}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{)}\PY{p}{)}
+         
+                 \PY{n}{ax}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{x}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{b}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{lw}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{)}
+                 \PY{k}{if} \PY{n}{ind}\PY{o}{.}\PY{n}{size}\PY{p}{:}
+                     \PY{n}{label} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{valley}\PY{l+s+s1}{\PYZsq{}} \PY{k}{if} \PY{n}{valley} \PY{k}{else} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{peak}\PY{l+s+s1}{\PYZsq{}}
+                     \PY{n}{label} \PY{o}{=} \PY{n}{label} \PY{o}{+} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{s}\PY{l+s+s1}{\PYZsq{}} \PY{k}{if} \PY{n}{ind}\PY{o}{.}\PY{n}{size} \PY{o}{\PYZgt{}} \PY{l+m+mi}{1} \PY{k}{else} \PY{n}{label}
+                     \PY{n}{ax}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{ind}\PY{p}{,} \PY{n}{x}\PY{p}{[}\PY{n}{ind}\PY{p}{]}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{+}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{mfc}\PY{o}{=}\PY{k+kc}{None}\PY{p}{,} \PY{n}{mec}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{r}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{mew}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{,} \PY{n}{ms}\PY{o}{=}\PY{l+m+mi}{8}\PY{p}{,}
+                             \PY{n}{label}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+si}{\PYZpc{}d}\PY{l+s+s1}{ }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{p}{(}\PY{n}{ind}\PY{o}{.}\PY{n}{size}\PY{p}{,} \PY{n}{label}\PY{p}{)}\PY{p}{)}
+                     \PY{n}{ax}\PY{o}{.}\PY{n}{legend}\PY{p}{(}\PY{n}{loc}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{best}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{framealpha}\PY{o}{=}\PY{o}{.}\PY{l+m+mi}{5}\PY{p}{,} \PY{n}{numpoints}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{)}
+                 \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}xlim}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{o}{.}\PY{l+m+mi}{02}\PY{o}{*}\PY{n}{x}\PY{o}{.}\PY{n}{size}\PY{p}{,} \PY{n}{x}\PY{o}{.}\PY{n}{size}\PY{o}{*}\PY{l+m+mf}{1.02}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}
+                 \PY{n}{ymin}\PY{p}{,} \PY{n}{ymax} \PY{o}{=} \PY{n}{x}\PY{p}{[}\PY{n}{np}\PY{o}{.}\PY{n}{isfinite}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{p}{]}\PY{o}{.}\PY{n}{min}\PY{p}{(}\PY{p}{)}\PY{p}{,} \PY{n}{x}\PY{p}{[}\PY{n}{np}\PY{o}{.}\PY{n}{isfinite}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{p}{]}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{p}{)}
+                 \PY{n}{yrange} \PY{o}{=} \PY{n}{ymax} \PY{o}{\PYZhy{}} \PY{n}{ymin} \PY{k}{if} \PY{n}{ymax} \PY{o}{\PYZgt{}} \PY{n}{ymin} \PY{k}{else} \PY{l+m+mi}{1}
+                 \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}ylim}\PY{p}{(}\PY{n}{ymin} \PY{o}{\PYZhy{}} \PY{l+m+mf}{0.1}\PY{o}{*}\PY{n}{yrange}\PY{p}{,} \PY{n}{ymax} \PY{o}{+} \PY{l+m+mf}{0.1}\PY{o}{*}\PY{n}{yrange}\PY{p}{)}
+                 \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}xlabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Data \PYZsh{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{fontsize}\PY{o}{=}\PY{l+m+mi}{14}\PY{p}{)}
+                 \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}ylabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Amplitude}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{fontsize}\PY{o}{=}\PY{l+m+mi}{14}\PY{p}{)}
+                 \PY{n}{mode} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Valley detection}\PY{l+s+s1}{\PYZsq{}} \PY{k}{if} \PY{n}{valley} \PY{k}{else} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Peak detection}\PY{l+s+s1}{\PYZsq{}}
+                 \PY{n}{ax}\PY{o}{.}\PY{n}{set\PYZus{}title}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s2}{ (mph=}\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s2}{, mpd=}\PY{l+s+si}{\PYZpc{}d}\PY{l+s+s2}{, threshold=}\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s2}{, edge=}\PY{l+s+s2}{\PYZsq{}}\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s2}{\PYZsq{}}\PY{l+s+s2}{)}\PY{l+s+s2}{\PYZdq{}}
+                              \PY{o}{\PYZpc{}} \PY{p}{(}\PY{n}{mode}\PY{p}{,} \PY{n+nb}{str}\PY{p}{(}\PY{n}{mph}\PY{p}{)}\PY{p}{,} \PY{n}{mpd}\PY{p}{,} \PY{n+nb}{str}\PY{p}{(}\PY{n}{threshold}\PY{p}{)}\PY{p}{,} \PY{n}{edge}\PY{p}{)}\PY{p}{)}
+                 \PY{c+c1}{\PYZsh{} plt.grid()}
+                 \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+    Import needed modules:
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}24}]:} \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
+         \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
+         \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
+         \PY{k+kn}{from} \PY{n+nn}{matplotlib} \PY{k}{import} \PY{n}{colors} \PY{k}{as} \PY{n}{mcolors}
+         \PY{k+kn}{from} \PY{n+nn}{scipy}\PY{n+nn}{.}\PY{n+nn}{signal} \PY{k}{import} \PY{n}{argrelextrema}
+         \PY{k+kn}{from} \PY{n+nn}{scipy}\PY{n+nn}{.}\PY{n+nn}{signal} \PY{k}{import} \PY{n}{find\PYZus{}peaks\PYZus{}cwt}
+         
+         \PY{k+kn}{from} \PY{n+nn}{numpy} \PY{k}{import} \PY{n}{trapz}
+\end{Verbatim}
+
+    Load and specify dataset:
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}25}]:} \PY{n}{data} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{io}\PY{o}{.}\PY{n}{parsers}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Kuerbis\PYZus{}Analyse\PYZus{}7min\PYZus{}LC\PYZhy{}ESI\PYZhy{}MS\PYZus{}12min.csv}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+         
+         \PY{n}{helpvalue} \PY{o}{=} \PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{617}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{619}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{629}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{631}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{633.23}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{633.29}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{645}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{647.27}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{647.31}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{659.23}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{659.27}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{661}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{675}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{793}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{795}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{807}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{809}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{821}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+         \PY{c+c1}{\PYZsh{}helpvalue = [\PYZsq{}619\PYZsq{}, \PYZsq{}633.23\PYZsq{}, \PYZsq{}645\PYZsq{}, \PYZsq{}647\PYZsq{}, \PYZsq{}675\PYZsq{}, \PYZsq{}821\PYZsq{}]}
+         
+         \PY{n}{xs} \PY{o}{=} \PY{n}{data}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Zeit}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}\PY{o}{.}\PY{n}{values}
+         \PY{n}{xs} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{hstack}\PY{p}{(}\PY{n}{xs}\PY{p}{)}
+         
+         \PY{n}{list\PYZus{}x\PYZus{}values} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+         \PY{n}{list\PYZus{}y\PYZus{}values} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+         \PY{n}{list\PYZus{}catabolite} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+         \PY{n}{list\PYZus{}isomer} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+\end{Verbatim}
+
+    Retrieve assumed constants for developing an equilibrium theory (though
+not working as found out):
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}26}]:} \PY{n}{ys} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{i} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{highest\PYZus{}peak} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+         
+         \PY{n}{fig} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{figure}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{20}\PY{p}{,}\PY{l+m+mi}{10}\PY{p}{)}\PY{p}{)}
+         \PY{n}{ax} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{axes}\PY{p}{(}\PY{p}{)}
+         
+         \PY{n}{area\PYZus{}617} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{area\PYZus{}619} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{area\PYZus{}631} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{area\PYZus{}63329} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{area\PYZus{}645} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{area\PYZus{}647} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{area\PYZus{}659} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{area\PYZus{}661} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{area\PYZus{}675} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{area\PYZus{}793} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{area\PYZus{}795} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{area\PYZus{}807} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{area\PYZus{}809} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{area\PYZus{}821} \PY{o}{=} \PY{l+m+mi}{0}
+         
+         \PY{n}{height\PYZus{}617} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{height\PYZus{}619} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{height\PYZus{}631} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{height\PYZus{}63329} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{height\PYZus{}645} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{height\PYZus{}647} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{height\PYZus{}659} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{height\PYZus{}661} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{height\PYZus{}675} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{height\PYZus{}793} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{height\PYZus{}795} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{height\PYZus{}807} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{height\PYZus{}809} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{height\PYZus{}821} \PY{o}{=} \PY{l+m+mi}{0}
+         
+         \PY{n}{distance\PYZus{}for\PYZus{}integration} \PY{o}{=} \PY{l+m+mf}{0.1}
+         
+         \PY{k}{for} \PY{n}{h} \PY{o+ow}{in} \PY{n}{helpvalue}\PY{p}{:}
+             \PY{n}{ys} \PY{o}{=} \PY{n}{data}\PY{p}{[}\PY{p}{[}\PY{n}{helpvalue}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{]}\PY{p}{]}\PY{o}{.}\PY{n}{values}
+             \PY{n}{ys} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{hstack}\PY{p}{(}\PY{n}{ys}\PY{p}{)}
+             
+             \PY{n}{highest\PYZus{}peak}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{ys}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+             
+             \PY{k}{if} \PY{p}{(}\PY{n}{i} \PY{o}{==} \PY{l+m+mi}{0}\PY{p}{)}\PY{p}{:}
+                 \PY{n+nb}{print}\PY{p}{(}\PY{n}{helpvalue}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)}
+                 \PY{n}{area\PYZus{}617} \PY{o}{=} \PY{n}{trapz}\PY{p}{(}\PY{n}{ys}\PY{p}{,} \PY{n}{dx}\PY{o}{=}\PY{n}{distance\PYZus{}for\PYZus{}integration}\PY{p}{)}
+                 \PY{n}{height\PYZus{}617} \PY{o}{=} \PY{n}{ys}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{p}{)}
+             \PY{k}{elif} \PY{p}{(}\PY{n}{i} \PY{o}{==} \PY{l+m+mi}{1}\PY{p}{)}\PY{p}{:}
+                 \PY{n+nb}{print}\PY{p}{(}\PY{n}{helpvalue}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)}
+                 \PY{n}{area\PYZus{}619} \PY{o}{=} \PY{n}{trapz}\PY{p}{(}\PY{n}{ys}\PY{p}{,} \PY{n}{dx}\PY{o}{=}\PY{n}{distance\PYZus{}for\PYZus{}integration}\PY{p}{)}
+                 \PY{n}{height\PYZus{}619} \PY{o}{=} \PY{n}{ys}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{p}{)}
+             \PY{k}{elif} \PY{p}{(}\PY{n}{i} \PY{o}{==} \PY{l+m+mi}{3}\PY{p}{)}\PY{p}{:}
+                 \PY{n+nb}{print}\PY{p}{(}\PY{n}{helpvalue}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)}
+                 \PY{n}{area\PYZus{}631} \PY{o}{=} \PY{n}{trapz}\PY{p}{(}\PY{n}{ys}\PY{p}{,} \PY{n}{dx}\PY{o}{=}\PY{n}{distance\PYZus{}for\PYZus{}integration}\PY{p}{)}
+                 \PY{n}{height\PYZus{}631} \PY{o}{=} \PY{n}{ys}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{p}{)}
+             \PY{k}{elif} \PY{p}{(}\PY{n}{i} \PY{o}{==} \PY{l+m+mi}{5}\PY{p}{)}\PY{p}{:}
+                 \PY{n+nb}{print}\PY{p}{(}\PY{n}{helpvalue}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)}
+                 \PY{n}{area\PYZus{}63329} \PY{o}{=} \PY{n}{trapz}\PY{p}{(}\PY{n}{ys}\PY{p}{,} \PY{n}{dx}\PY{o}{=}\PY{n}{distance\PYZus{}for\PYZus{}integration}\PY{p}{)}
+                 \PY{n}{height\PYZus{}63329} \PY{o}{=} \PY{n}{ys}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{p}{)}
+             \PY{k}{elif} \PY{p}{(}\PY{n}{i} \PY{o}{==} \PY{l+m+mi}{6}\PY{p}{)}\PY{p}{:}
+                 \PY{n+nb}{print}\PY{p}{(}\PY{n}{helpvalue}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)}
+                 \PY{n}{area\PYZus{}645} \PY{o}{=} \PY{n}{trapz}\PY{p}{(}\PY{n}{ys}\PY{p}{,} \PY{n}{dx}\PY{o}{=}\PY{n}{distance\PYZus{}for\PYZus{}integration}\PY{p}{)}
+                 \PY{n}{height\PYZus{}645} \PY{o}{=} \PY{n}{ys}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{p}{)}
+             \PY{k}{elif} \PY{p}{(}\PY{n}{i} \PY{o}{==} \PY{l+m+mi}{7}\PY{p}{)}\PY{p}{:}
+                 \PY{n+nb}{print}\PY{p}{(}\PY{n}{helpvalue}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)}
+                 \PY{n}{area\PYZus{}647} \PY{o}{=} \PY{n}{trapz}\PY{p}{(}\PY{n}{ys}\PY{p}{,} \PY{n}{dx}\PY{o}{=}\PY{n}{distance\PYZus{}for\PYZus{}integration}\PY{p}{)}
+                 \PY{n}{height\PYZus{}647} \PY{o}{=} \PY{n}{ys}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{p}{)}
+             \PY{k}{elif} \PY{p}{(}\PY{n}{i} \PY{o}{==} \PY{l+m+mi}{10}\PY{p}{)}\PY{p}{:}
+                 \PY{n+nb}{print}\PY{p}{(}\PY{n}{helpvalue}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)}
+                 \PY{n}{area\PYZus{}659} \PY{o}{=} \PY{n}{trapz}\PY{p}{(}\PY{n}{ys}\PY{p}{,} \PY{n}{dx}\PY{o}{=}\PY{n}{distance\PYZus{}for\PYZus{}integration}\PY{p}{)}
+                 \PY{n}{height\PYZus{}659} \PY{o}{=} \PY{n}{ys}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{p}{)}
+             \PY{k}{elif} \PY{p}{(}\PY{n}{i} \PY{o}{==} \PY{l+m+mi}{11}\PY{p}{)}\PY{p}{:}
+                 \PY{n+nb}{print}\PY{p}{(}\PY{n}{helpvalue}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)}
+                 \PY{n}{area\PYZus{}661} \PY{o}{=} \PY{n}{trapz}\PY{p}{(}\PY{n}{ys}\PY{p}{,} \PY{n}{dx}\PY{o}{=}\PY{n}{distance\PYZus{}for\PYZus{}integration}\PY{p}{)}
+                 \PY{n}{height\PYZus{}661} \PY{o}{=} \PY{n}{ys}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{p}{)}
+             \PY{k}{elif} \PY{p}{(}\PY{n}{i} \PY{o}{==} \PY{l+m+mi}{12}\PY{p}{)}\PY{p}{:}
+                 \PY{n+nb}{print}\PY{p}{(}\PY{n}{helpvalue}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)}
+                 \PY{n}{area\PYZus{}675} \PY{o}{=} \PY{n}{trapz}\PY{p}{(}\PY{n}{ys}\PY{p}{,} \PY{n}{dx}\PY{o}{=}\PY{n}{distance\PYZus{}for\PYZus{}integration}\PY{p}{)}
+                 \PY{n}{height\PYZus{}675} \PY{o}{=} \PY{n}{ys}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{p}{)}
+             \PY{k}{elif} \PY{p}{(}\PY{n}{i} \PY{o}{==} \PY{l+m+mi}{13}\PY{p}{)}\PY{p}{:}
+                 \PY{n+nb}{print}\PY{p}{(}\PY{n}{helpvalue}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)}
+                 \PY{n}{area\PYZus{}793} \PY{o}{=} \PY{n}{trapz}\PY{p}{(}\PY{n}{ys}\PY{p}{,} \PY{n}{dx}\PY{o}{=}\PY{n}{distance\PYZus{}for\PYZus{}integration}\PY{p}{)}
+                 \PY{n}{height\PYZus{}793} \PY{o}{=} \PY{n}{ys}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{p}{)}
+             \PY{k}{elif} \PY{p}{(}\PY{n}{i} \PY{o}{==} \PY{l+m+mi}{14}\PY{p}{)}\PY{p}{:}
+                 \PY{n+nb}{print}\PY{p}{(}\PY{n}{helpvalue}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)}
+                 \PY{n}{area\PYZus{}795} \PY{o}{=} \PY{n}{trapz}\PY{p}{(}\PY{n}{ys}\PY{p}{,} \PY{n}{dx}\PY{o}{=}\PY{n}{distance\PYZus{}for\PYZus{}integration}\PY{p}{)}
+                 \PY{n}{height\PYZus{}795} \PY{o}{=} \PY{n}{ys}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{p}{)}
+             \PY{k}{elif} \PY{p}{(}\PY{n}{i} \PY{o}{==} \PY{l+m+mi}{15}\PY{p}{)}\PY{p}{:}
+                 \PY{n+nb}{print}\PY{p}{(}\PY{n}{helpvalue}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)}
+                 \PY{n}{area\PYZus{}807} \PY{o}{=} \PY{n}{trapz}\PY{p}{(}\PY{n}{ys}\PY{p}{,} \PY{n}{dx}\PY{o}{=}\PY{n}{distance\PYZus{}for\PYZus{}integration}\PY{p}{)}
+                 \PY{n}{height\PYZus{}807} \PY{o}{=} \PY{n}{ys}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{p}{)}
+             \PY{k}{elif} \PY{p}{(}\PY{n}{i} \PY{o}{==} \PY{l+m+mi}{16}\PY{p}{)}\PY{p}{:}
+                 \PY{n+nb}{print}\PY{p}{(}\PY{n}{helpvalue}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)}
+                 \PY{n}{area\PYZus{}809} \PY{o}{=} \PY{n}{trapz}\PY{p}{(}\PY{n}{ys}\PY{p}{,} \PY{n}{dx}\PY{o}{=}\PY{n}{distance\PYZus{}for\PYZus{}integration}\PY{p}{)}
+                 \PY{n}{height\PYZus{}809} \PY{o}{=} \PY{n}{ys}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{p}{)}
+             \PY{k}{elif} \PY{p}{(}\PY{n}{i} \PY{o}{==} \PY{l+m+mi}{17}\PY{p}{)}\PY{p}{:}
+                 \PY{n+nb}{print}\PY{p}{(}\PY{n}{helpvalue}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)}
+                 \PY{n}{area\PYZus{}821} \PY{o}{=} \PY{n}{trapz}\PY{p}{(}\PY{n}{ys}\PY{p}{,} \PY{n}{dx}\PY{o}{=}\PY{n}{distance\PYZus{}for\PYZus{}integration}\PY{p}{)}
+                 \PY{n}{height\PYZus{}821} \PY{o}{=} \PY{n}{ys}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{p}{)}
+             
+             \PY{n}{i} \PY{o}{=} \PY{n}{i}\PY{o}{+}\PY{l+m+mi}{1}
+         
+         \PY{n}{Ka\PYZus{}617} \PY{o}{=} \PY{n}{area\PYZus{}631}\PY{o}{/}\PY{n}{area\PYZus{}617}
+         \PY{n}{Kh\PYZus{}617} \PY{o}{=} \PY{n}{height\PYZus{}631}\PY{o}{/}\PY{n}{height\PYZus{}617}
+         \PY{n}{Ka\PYZus{}619} \PY{o}{=} \PY{n}{area\PYZus{}63329}\PY{o}{/}\PY{n}{area\PYZus{}619}
+         \PY{n}{Kh\PYZus{}619} \PY{o}{=} \PY{n}{height\PYZus{}63329}\PY{o}{/}\PY{n}{height\PYZus{}619}
+         \PY{n}{Ka\PYZus{}645} \PY{o}{=} \PY{n}{area\PYZus{}659}\PY{o}{/}\PY{n}{area\PYZus{}645}
+         \PY{n}{Kh\PYZus{}645} \PY{o}{=} \PY{n}{height\PYZus{}659}\PY{o}{/}\PY{n}{height\PYZus{}645}
+         \PY{n}{Ka\PYZus{}647} \PY{o}{=} \PY{n}{area\PYZus{}661}\PY{o}{/}\PY{n}{area\PYZus{}647}
+         \PY{n}{Kh\PYZus{}647} \PY{o}{=} \PY{n}{height\PYZus{}661}\PY{o}{/}\PY{n}{height\PYZus{}647}
+         \PY{n}{Ka2\PYZus{}647} \PY{o}{=} \PY{n}{area\PYZus{}675}\PY{o}{/}\PY{n}{area\PYZus{}647}
+         \PY{n}{Kh2\PYZus{}647} \PY{o}{=} \PY{n}{height\PYZus{}675}\PY{o}{/}\PY{n}{height\PYZus{}647}
+         \PY{n}{Ka\PYZus{}793} \PY{o}{=} \PY{n}{area\PYZus{}807}\PY{o}{/}\PY{n}{area\PYZus{}793}
+         \PY{n}{Kh\PYZus{}793} \PY{o}{=} \PY{n}{height\PYZus{}807}\PY{o}{/}\PY{n}{height\PYZus{}793}
+         \PY{n}{Ka2\PYZus{}793} \PY{o}{=} \PY{n}{area\PYZus{}821}\PY{o}{/}\PY{n}{area\PYZus{}793}
+         \PY{n}{Kh2\PYZus{}793} \PY{o}{=} \PY{n}{height\PYZus{}821}\PY{o}{/}\PY{n}{height\PYZus{}793}
+         \PY{n}{Ka\PYZus{}795} \PY{o}{=} \PY{n}{area\PYZus{}809}\PY{o}{/}\PY{n}{area\PYZus{}795}
+         \PY{n}{Kh\PYZus{}795} \PY{o}{=} \PY{n}{height\PYZus{}809}\PY{o}{/}\PY{n}{height\PYZus{}795}
+         
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Ka\PYZus{}617}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{Ka\PYZus{}617}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{Kh\PYZus{}617}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Ka\PYZus{}619}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{Ka\PYZus{}619}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{Kh\PYZus{}619}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Ka\PYZus{}645}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{Ka\PYZus{}645}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{Kh\PYZus{}645}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Ka\PYZus{}647}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{Ka\PYZus{}647}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{Kh\PYZus{}647}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Ka2\PYZus{}647}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{Ka2\PYZus{}647}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{Kh2\PYZus{}647}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Ka\PYZus{}793}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{Ka\PYZus{}793}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{Kh\PYZus{}793}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Ka2\PYZus{}793}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{Ka2\PYZus{}793}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{Kh2\PYZus{}793}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Ka\PYZus{}795}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{Ka\PYZus{}795}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{Kh\PYZus{}795}\PY{p}{)}
+         
+         
+         \PY{n}{highest\PYZus{}peak} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{n}{highest\PYZus{}peak}\PY{p}{)}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{p}{)}
+         
+         \PY{n}{ys} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{n}{i}\PY{o}{=}\PY{l+m+mi}{0}
+         \PY{n}{previous\PYZus{}mass} \PY{o}{=} \PY{l+m+mi}{0}
+         
+         \PY{k}{for} \PY{n}{h} \PY{o+ow}{in} \PY{n}{helpvalue}\PY{p}{:}
+             \PY{n}{ys} \PY{o}{=} \PY{n}{data}\PY{p}{[}\PY{p}{[}\PY{n}{helpvalue}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{]}\PY{p}{]}\PY{o}{.}\PY{n}{values}
+             \PY{n}{ys} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{hstack}\PY{p}{(}\PY{n}{ys}\PY{p}{)}
+             
+             \PY{n}{y} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+             \PY{k}{for} \PY{n}{x} \PY{o+ow}{in} \PY{n}{ys}\PY{p}{:}
+                 \PY{n}{y}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{p}{(}\PY{p}{(}\PY{n}{x}\PY{o}{/}\PY{n}{highest\PYZus{}peak}\PY{p}{)}\PY{o}{*}\PY{l+m+mi}{100}\PY{p}{)}\PY{o}{+}\PY{n}{previous\PYZus{}mass}\PY{o}{+}\PY{l+m+mi}{10}\PY{p}{)}
+             
+             \PY{n}{y} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{n}{y}\PY{p}{)}
+             
+             \PY{n}{previous\PYZus{}mass} \PY{o}{=} \PY{n}{y}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{p}{)}
+             \PY{n}{x\PYZus{}max\PYZus{}arg} \PY{o}{=} \PY{n}{y}\PY{o}{.}\PY{n}{argmax}\PY{p}{(}\PY{p}{)}
+         
+             \PY{c+c1}{\PYZsh{}local\PYZus{}maxima = argrelextrema(y, np.greater, order=200)}
+             \PY{c+c1}{\PYZsh{}local\PYZus{}maxima = find\PYZus{}peaks\PYZus{}cwt(y, np.arange(1, 350))}
+             \PY{n}{local\PYZus{}maxima} \PY{o}{=} \PY{n}{detect\PYZus{}peaks}\PY{p}{(}\PY{n}{y}\PY{p}{,} \PY{n}{mph}\PY{o}{=}\PY{l+m+mf}{0.04}\PY{p}{,} \PY{n}{mpd}\PY{o}{=}\PY{l+m+mi}{350}\PY{p}{)}
+             \PY{c+c1}{\PYZsh{}first\PYZus{}isomer = np.partition(np.array(y).flatten(), \PYZhy{}1)[\PYZhy{}1]}
+             \PY{c+c1}{\PYZsh{}first\PYZus{}isomer = np.round(np.array(np.hstack(y)[local\PYZus{}maxima])).argsort()[\PYZhy{}0:]}
+             \PY{c+c1}{\PYZsh{}print(first\PYZus{}isomer)}
+             \PY{c+c1}{\PYZsh{}y\PYZus{}help = np.sort(y[local\PYZus{}maxima])}
+             
+             \PY{n}{line} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{xs}\PY{p}{,} \PY{n}{y}\PY{p}{,} \PY{n}{color} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{black}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{label} \PY{o}{=} \PY{n}{h} \PY{o}{+} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{[M+H]\PYZca{}+\PYZca{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{n}{ax}\PY{o}{.}\PY{n}{annotate}\PY{p}{(}\PY{n}{xy}\PY{o}{=}\PY{p}{(}\PY{n}{xs}\PY{p}{[}\PY{n}{x\PYZus{}max\PYZus{}arg}\PY{p}{]}\PY{p}{,} \PY{n}{previous\PYZus{}mass}\PY{p}{)}\PY{p}{,} \PY{n}{s} \PY{o}{=} \PY{n}{h} \PY{o}{+} \PY{l+s+s1}{r\PYZsq{}}\PY{l+s+s1}{ \PYZdl{}[M+H]\PYZca{}+\PYZdl{} (}\PY{l+s+s1}{\PYZsq{}}\PY{o}{+}\PY{n+nb}{str}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{round}\PY{p}{(}\PY{n}{xs}\PY{p}{[}\PY{n}{x\PYZus{}max\PYZus{}arg}\PY{p}{]}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}\PY{o}{+}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ min.)}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             
+             \PY{n}{list\PYZus{}x\PYZus{}values}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{xs}\PY{p}{[}\PY{n}{x\PYZus{}max\PYZus{}arg}\PY{p}{]}\PY{p}{)}
+             \PY{n}{list\PYZus{}y\PYZus{}values}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{previous\PYZus{}mass}\PY{p}{)}
+             \PY{n}{list\PYZus{}catabolite}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{h}\PY{p}{)}
+                 
+             \PY{c+c1}{\PYZsh{}u=1}
+             \PY{c+c1}{\PYZsh{}for x in xs[local\PYZus{}maxima]:}
+                 \PY{c+c1}{\PYZsh{}ax.annotate(xy=(x, y[np.where(x)]), s = h + r\PYZsq{} \PYZdl{}[M+H]\PYZca{}+\PYZdl{}\PYZhy{}Isomer \PYZsq{}+str(u)+\PYZsq{} (\PYZsq{}+str(np.round(x, 1))+\PYZsq{} min.)\PYZsq{})}
+                 
+                 \PY{c+c1}{\PYZsh{}list\PYZus{}x\PYZus{}values.append(x)}
+                 \PY{c+c1}{\PYZsh{}list\PYZus{}y\PYZus{}values.append(y[np.where(x)])}
+                 \PY{c+c1}{\PYZsh{}list\PYZus{}catabolite.append(h)}
+                 \PY{c+c1}{\PYZsh{}list\PYZus{}isomer.append(u)}
+                 
+                 \PY{c+c1}{\PYZsh{}u = u+1}
+                 
+             \PY{n}{i} \PY{o}{=} \PY{n}{i}\PY{o}{+}\PY{l+m+mi}{1}
+         
+         \PY{n}{plt}\PY{o}{.}\PY{n}{yticks}\PY{p}{(}\PY{p}{[}\PY{p}{]}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Retention Time (min.)}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{xlim}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{65}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{savefig}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Kuerbis\PYZus{}Analyse\PYZus{}Reaktion3h\PYZus{}LC\PYZhy{}ESI\PYZhy{}MS.png}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+617
+619
+631
+633.29
+645
+647.27
+659.27
+661
+675
+793
+795
+807
+809
+821
+Ka\_617
+2.04496546098
+2.61835424334
+Ka\_619
+3.72894401481
+4.30577315565
+Ka\_645
+0.952718937384
+1.90972196983
+Ka\_647
+4.46006879328
+6.6850336666
+Ka2\_647
+0.50313171312
+0.722832075087
+Ka\_793
+0.998319279587
+3.20375262079
+Ka2\_793
+0.112793086295
+0.266083083593
+Ka\_795
+0.118012120986
+0.093094387365
+
+    \end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{VWA_Analyse_LC-ESI-MS_files/VWA_Analyse_LC-ESI-MS_9_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    Load and specify another dataset:
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}27}]:} \PY{n}{data} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{io}\PY{o}{.}\PY{n}{parsers}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Kuerbis\PYZus{}Analyse\PYZus{}7min\PYZus{}LC\PYZhy{}ESI\PYZhy{}MS\PYZus{}12min\PYZus{}Spektrum.csv}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+         
+         \PY{n}{xs} \PY{o}{=} \PY{n}{data}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Time}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}\PY{o}{.}\PY{n}{values}
+         \PY{n}{xs} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{hstack}\PY{p}{(}\PY{n}{xs}\PY{p}{)}
+         
+         \PY{n}{ys} \PY{o}{=} \PY{n}{data}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Intensity}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}\PY{o}{.}\PY{n}{values}
+         \PY{n}{ys} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{hstack}\PY{p}{(}\PY{n}{ys}\PY{p}{)}
+\end{Verbatim}
+
+    Print whole chromatogram for completion purpose:
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}28}]:} \PY{n}{fig} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{figure}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{20}\PY{p}{,}\PY{l+m+mi}{10}\PY{p}{)}\PY{p}{)}
+         \PY{n}{ax} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{axes}\PY{p}{(}\PY{p}{)}
+         
+         
+         \PY{c+c1}{\PYZsh{}ax.annotate(xy=(xs[x\PYZus{}max\PYZus{}arg], previous\PYZus{}mass), s = h + r\PYZsq{} \PYZdl{}[M+H]\PYZca{}+\PYZdl{} (\PYZsq{}+str(np.round(xs[x\PYZus{}max\PYZus{}arg], 1))+\PYZsq{} min.)\PYZsq{})}
+         
+         \PY{n}{highest\PYZus{}peak} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{n}{ys}\PY{p}{)}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{p}{)}
+         \PY{n}{y} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+         \PY{k}{for} \PY{n}{z} \PY{o+ow}{in} \PY{n}{ys}\PY{p}{:}
+             \PY{n}{y}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{p}{(}\PY{p}{(}\PY{n}{z}\PY{o}{/}\PY{n}{highest\PYZus{}peak}\PY{p}{)}\PY{o}{*}\PY{l+m+mi}{100}\PY{p}{)}\PY{p}{)}
+         \PY{n}{ys} \PY{o}{=} \PY{n}{y}
+         
+         \PY{n}{line} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{xs}\PY{p}{,} \PY{n}{ys}\PY{p}{,} \PY{n}{color} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{black}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{label} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         
+         \PY{n}{highest\PYZus{}peak} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{n}{list\PYZus{}y\PYZus{}values}\PY{p}{)}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{p}{)}
+         \PY{n}{helper} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+         \PY{k}{for} \PY{n}{t} \PY{o+ow}{in} \PY{n}{list\PYZus{}y\PYZus{}values}\PY{p}{:}
+             \PY{n}{helper}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{p}{(}\PY{p}{(}\PY{n}{t}\PY{o}{/}\PY{n}{highest\PYZus{}peak}\PY{p}{)}\PY{o}{*}\PY{l+m+mi}{100}\PY{p}{)}\PY{p}{)}
+         \PY{n}{list\PYZus{}y\PYZus{}values} \PY{o}{=} \PY{n}{helper}
+         
+         \PY{n}{i} \PY{o}{=} \PY{l+m+mi}{0}
+         \PY{k}{for} \PY{n}{index} \PY{o+ow}{in} \PY{n}{list\PYZus{}x\PYZus{}values}\PY{p}{:}
+             \PY{n}{h} \PY{o}{=} \PY{n}{list\PYZus{}catabolite}\PY{p}{[}\PY{n}{i}\PY{p}{]}
+             \PY{c+c1}{\PYZsh{}u = list\PYZus{}isomer[i]}
+             \PY{n}{text} \PY{o}{=} \PY{n}{h} \PY{o}{+} \PY{l+s+s1}{r\PYZsq{}}\PY{l+s+s1}{ \PYZdl{}[M+H]\PYZca{}+\PYZdl{} (}\PY{l+s+s1}{\PYZsq{}}\PY{o}{+}\PY{n+nb}{str}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{round}\PY{p}{(}\PY{n}{index}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}\PY{o}{+}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ min.)}\PY{l+s+s1}{\PYZsq{}}
+             \PY{n}{plt}\PY{o}{.}\PY{n}{annotate}\PY{p}{(}
+                     \PY{n}{text}\PY{p}{,} \PY{n}{xy}\PY{o}{=}\PY{p}{(}\PY{n}{index}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{)}\PY{p}{,} \PY{n}{xycoords}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{data}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                     \PY{n}{xytext}\PY{o}{=}\PY{p}{(}\PY{n}{index}\PY{p}{,} \PY{n}{list\PYZus{}y\PYZus{}values}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)}\PY{p}{,} \PY{n}{textcoords}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{data}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                     \PY{n}{rotation}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{size}\PY{o}{=}\PY{l+m+mi}{12}\PY{p}{,} \PY{n}{horizontalalignment}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{center}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{verticalalignment}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{bottom}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                     \PY{n}{arrowprops}\PY{o}{=}\PY{n+nb}{dict}\PY{p}{(}\PY{n}{arrowstyle}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{color}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZsh{}808080}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{linewidth}\PY{o}{=}\PY{l+m+mf}{0.4}\PY{p}{,} \PY{n}{shrinkA}\PY{o}{=}\PY{l+m+mf}{0.05}\PY{p}{,} \PY{n}{shrinkB}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)}
+             \PY{n}{i} \PY{o}{=} \PY{n}{i}\PY{o}{+}\PY{l+m+mi}{1}
+                 
+         \PY{c+c1}{\PYZsh{}ax.annotate(xy=(x, y[np.where(x)]), s = h + r\PYZsq{} \PYZdl{}[M+H]\PYZca{}+\PYZdl{}\PYZhy{}Isomer \PYZsq{}+str(u)+\PYZsq{} (\PYZsq{}+str(np.round(x, 1))+\PYZsq{} min.)\PYZsq{})}
+         
+         \PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Retention Time (min.)}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{ylabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Relative abundance}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{xlim}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{65}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{savefig}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Kuerbis\PYZus{}Analyse\PYZus{}Ganzes\PYZus{}Spektrum.png}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{VWA_Analyse_LC-ESI-MS_files/VWA_Analyse_LC-ESI-MS_13_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+    \end{document}
