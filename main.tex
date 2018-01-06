@@ -188,6 +188,8 @@
 
 \usepackage{listings}
 
+\usepackage{rotating}
+
 \usepackage{booktabs}
 \usepackage{colortbl}
 \usepackage{xcolor}
@@ -246,9 +248,18 @@
 
 %\frontmatter                    %% KOMA: roman page numbers and such; only available in scrbook
 
-\begin{titlepage}[htbp!]
-\includegraphics[width=\paperwidth, height=\paperheight]{template/VWA_Titelblatt_selected.png}
-\end{titlepage}
+%\begin{titlepage}[htbp!]
+%\includegraphics[width=\paperwidth, height=\paperheight]{template/VWA_Titelblatt_selected.png}
+%\end{titlepage}
+
+\thispagestyle{empty}
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[inner sep=0pt] at (current page.center) {
+      \includegraphics[width=\paperwidth,height=\paperheight]{template/VWA_Titelblatt_selected.png}%
+    };
+  \end{tikzpicture}
+  
+\cleardoublepage{}
 
 \input{colophon}                %% defines information about editor, LaTeX, font, ...
 
@@ -302,6 +313,7 @@
 
 \addpart{Ergebnisse und Diskussion}
 
+\input{content/Ergebnisse/Ergebnisse_und_Diskussion}
 
 %\input{content/example-style-chapter}   %% remove this line to get rid of the style chapter
 
