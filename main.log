@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.18)  14 JAN 2018 20:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.18)  14 JAN 2018 23:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6224,10 +6224,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 58648 strings out of 494860
- 1116876 string characters out of 6177601
- 1890033 words of memory out of 5000000
- 58691 multiletter control sequences out of 15000+600000
+ 58618 strings out of 494860
+ 1116478 string characters out of 6177601
+ 1890078 words of memory out of 5000000
+ 58661 multiletter control sequences out of 15000+600000
  98002 words of font info for 572 fonts, out of 8000000 for 9000
  42 hyphenation exceptions out of 8191
  75i,17n,100p,10355b,3231s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -6242,7 +6242,7 @@ j8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (128 pages, 12873861 bytes).
+Output written on main.pdf (128 pages, 12873483 bytes).
 PDF statistics:
  2931 PDF objects out of 2984 (max. 8388607)
  2591 compressed objects within 26 object streams

@@ -72,8 +72,6 @@
 		\setentrycounter[]{page}\glsnumberformat{42}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{54}}}\glsgroupskip
 \glsgroupheading{N}\relax \glsresetentrylist %
-\glossentry{n2}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{6}}}%
 \glossentry{nAb}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{16\delimR 20}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{22}\delimN 
