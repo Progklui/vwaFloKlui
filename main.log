@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.18)  9 JAN 2018 14:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.18)  14 JAN 2018 20:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3082,9 +3082,6 @@ Package: chemformula 2016/01/07 v4.14a typeset chemical compounds and reactions
 )
 (./main.aux (./abstract.aux) (./Vorwort.aux)
 
-LaTeX Warning: Label `fig:Chlorophyllabbau' multiply defined.
-
-
 LaTeX Warning: Label `sec:MSLeafspray' multiply defined.
 
 
@@ -3147,16 +3144,12 @@ Package biblatex Info: Automatic encoding selection.
 \openout5 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-
-
-Package biblatex Warning: File 'main.bbl' is wrong format version - expected 2.
-6.
-
 Package biblatex Info: ... file 'main.bbl' found.
-(./main.bbl)
+ (./main.bbl)
 Package biblatex Info: Reference section=0 on input line 248.
 Package biblatex Info: Reference segment=0 on input line 248.
- (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count461
 \scratchdimen=\dimen414
@@ -3516,7 +3509,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.29 ...ine {5.4.2}Bo-NCC-3}{18}{subsection.5.4.2}
+l.29 ...ine {5.4.2}Bo-NCC-3}{17}{subsection.5.4.2}
                                                    [1
 
 
@@ -3534,7 +3527,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.61 ...ukturaufkl\IeC {\"a}rung}{64}{section.9.2}
+l.61 ...ukturaufkl\IeC {\"a}rung}{63}{section.9.2}
                                                    [2])
 \tf@toc=\write8
 \openout8 = `main.toc'.
@@ -3591,6 +3584,12 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              deprecated \float@addtolist interface .
 
 
+Overfull \hbox (0.2835pt too wide) in paragraph at lines 5--6
+\OT1/pplj/m/n/12 (-20) der-nen Me-tho-de MS Leaf-spray ei-ne struk-tu-rel-le Au
+f-kl[]arung von []Chl-Kataboliten
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
@@ -3620,92 +3619,31 @@ l.1 \chapter
 ]
 chapter 2.
 
-LaTeX Warning: Citation 'ChlorophyllBreakdown' on page 3 undefined on input lin
-e 5.
-
-LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <12> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 5.
-
-LaTeX Warning: Citation 'DegradationChlorophyll' on page 3 undefined on input l
-ine 5.
-
-
-LaTeX Warning: Citation 'ChlorophyllBreakdown' on page 3 undefined on input lin
-e 5.
-
-
-LaTeX Warning: Citation 'ChlorophyllBreakdown' on page 3 undefined on input lin
-e 5.
-
-
-LaTeX Warning: Citation 'ErsterKatabolit' on page 3 undefined on input line 5.
-
-
-LaTeX Warning: Citation 'ChlorophyllCataboliteDifferent' on page 3 undefined on
- input line 5.
-
-
-LaTeX Warning: Citation 'ChlorophyllKatabolitenalsZeichenReifung' on page 3 und
-efined on input line 5.
-
-
-Overfull \hbox (24.1992pt too wide) in paragraph at lines 5--6
-\OT1/pplj/m/n/12 (-20) Vorg[]ange und kann so-gar aus dem All be-ob-ach-tet wer
--den. [[]]
- []
-
-
-Overfull \hbox (82.63991pt too wide) in paragraph at lines 5--6
-\OT1/pplj/m/n/12 (-20) Rah-men ei-nes Ent-gif-tungs-pro-zes-ses be-gan-gen. [[]
-] 
- []
-
-
-<figures/Kapitel2/VWA_Schema_Chlorophyllabbau.png, id=238, 326.21875pt x 310.15
+<figures/Kapitel2/VWA_Schema_Chlorophyllabbau.png, id=247, 326.21875pt x 310.15
 875pt>
 File: figures/Kapitel2/VWA_Schema_Chlorophyllabbau.png Graphic file (type png)
  <use figures/Kapitel2/VWA_Schema_Chlorophyllabbau.png>
 Package pdftex.def Info: figures/Kapitel2/VWA_Schema_Chlorophyllabbau.png used 
 on input line 9.
 (pdftex.def)             Requested size: 182.68124pt x 173.68771pt.
-
-
-LaTeX Warning: Citation 'ErsterKatabolit' on page 3 undefined on input line 14.
-
-
-
-LaTeX Warning: Citation 'ChlorophyllCatabolitesEnzyme' on page 3 undefined on i
-nput line 16.
-
-
-LaTeX Warning: Citation 'FCCKatabolit' on page 3 undefined on input line 17.
-
-
-LaTeX Warning: Citation 'ChlorophyllCatabolites' on page 3 undefined on input l
-ine 17.
-
-
-LaTeX Warning: Citation 'ChlorophyllCatabolites' on page 3 undefined on input l
-ine 17.
-
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 15.
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.18 
+l.15 
       [3
 
 
-]
-<figures/Kapitel2/VWA_Chl-Nummerierung.png, id=243, 402.50375pt x 385.44pt>
+ <./figures/Kapitel2/VWA_Schema_Chlorophyllabbau.png>]
+<figures/Kapitel2/VWA_Chl-Nummerierung.png, id=263, 402.50375pt x 385.44pt>
 File: figures/Kapitel2/VWA_Chl-Nummerierung.png Graphic file (type png)
 
 <use figures/Kapitel2/VWA_Chl-Nummerierung.png>
@@ -3722,31 +3660,9 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [4 <./figures/Kapitel2/VWA_Schema_Chlorophyllabbau.png>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
- [5 <./figures/Kapitel2/VWA_Chl-Nummerierung.png>]
+ [4 <./figures/Kapitel2/VWA_Chl-Nummerierung.png>]
 chapter 3.
 (./content/allgemeinerTeil/HPLC.tex
-
-LaTeX Warning: Citation 'Chromatographie' on page 6 undefined on input line 3.
-
-
-LaTeX Warning: Citation 'Chromatographie' on page 6 undefined on input line 5.
-
-
-LaTeX Warning: Citation 'Chromatographie' on page 6 undefined on input line 5.
-
-
-LaTeX Warning: Citation 'Chromatographie' on page 6 undefined on input line 7.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
@@ -3764,19 +3680,10 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 10.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 10.
-[6
+[5
 
 
 ]) (./content/allgemeinerTeil/LC-MS.tex
-
-LaTeX Warning: Citation 'MassSpectrometry' on page 7 undefined on input line 3.
-
-
-
-LaTeX Warning: Citation 'MassSpectrometry' on page 7 undefined on input line 3.
-
-
-
 Overfull \hbox (4.81084pt too wide) in paragraph at lines 3--4
 \OT1/pplj/m/n/12 (-20) wer-den. Auf-grund der Ein-fach-heit der Me-tho-de und d
 er sehr ge-rin-gen ben[]otigten
@@ -3788,21 +3695,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
  []
 
 
-LaTeX Warning: Citation 'MassSpectrometry' on page 7 undefined on input line 5.
-
-
-
-LaTeX Warning: Citation 'MassSpectrometry' on page 7 undefined on input line 5.
-
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
-
-
-LaTeX Warning: Citation 'MassSpectrometry' on page 7 undefined on input line 7.
-
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
@@ -3817,29 +3712,10 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 8.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 8.
-[7]
-
-LaTeX Warning: Citation 'MassSpectrometry' on page 8 undefined on input line 13
-.
-
-
-LaTeX Warning: Citation 'MassSpectrometry' on page 8 undefined on input line 13
-.
-
-
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
-
-
-LaTeX Warning: Citation 'AmbientIonisation' on page 8 undefined on input line 1
-9.
-
-
-LaTeX Warning: Citation 'PaperSpray' on page 8 undefined on input line 19.
-
-
-LaTeX Warning: Citation 'PaperSpray' on page 8 undefined on input line 19.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 19--20
@@ -3847,22 +3723,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--20
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 20.
+(babel)             in language  on input line 22.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 20.
+(babel)             in language  on input line 22.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 20.
+(babel)             in language  on input line 22.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 20.
-[8]
-
-LaTeX Warning: Citation 'RapidScreeningLeafSpray' on page 9 undefined on input 
-line 21.
-
-
-LaTeX Warning: Citation 'LeafSpray' on page 9 undefined on input line 21.
-
-)
+(babel)             in language  on input line 22.
+[7])
 Underfull \hbox (badness 10000) in paragraph at lines 23--7
 
  []
@@ -3876,7 +3744,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 308.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 308.
- [9]
+ [8]
 part without number
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 308.
@@ -3886,7 +3754,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 308.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 308.
-[10
+[9
 
 
 ] (./content/praktischerTeil/Praktischer_Teil_Allgemeine_Arbeitsmethoden.tex
@@ -3907,7 +3775,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 21.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 21.
-[11
+[10
 
 
 ]
@@ -3915,9 +3783,6 @@ Overfull \hbox (18.90648pt too wide) in paragraph at lines 24--25
 []\OT1/pplj/m/n/12 (-20) Es wur-den Re-ak-ti-ons-zei-ten zwi-schen 7min. und 6h
  aus-pro-biert. F[]ur die Pr[]asentation
  []
-
-
-LaTeX Warning: Citation 'scipy' on page 12 undefined on input line 32.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 32--33
@@ -3933,10 +3798,10 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [12]
+ [11]
 chapter 5.
 
-<figures/Kapitel4/VWA_MSLeafspray_Versuchsaufbau.png, id=289, 492.84125pt x 422
+<figures/Kapitel4/VWA_MSLeafspray_Versuchsaufbau.png, id=332, 492.84125pt x 422
 .57875pt>
 File: figures/Kapitel4/VWA_MSLeafspray_Versuchsaufbau.png Graphic file (type pn
 g)
@@ -3952,11 +3817,11 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 19.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 19.
- [13
+ [12
 
 
  <./figures/Kapitel4/VWA_MSLeafspray_Versuchsaufbau.png>]
-<figures/Kapitel4/VWA_MSLeafspray_Detail1.jpg, id=297, 4047.12pt x 3035.34pt>
+<figures/Kapitel4/VWA_MSLeafspray_Detail1.jpg, id=340, 4047.12pt x 3035.34pt>
 File: figures/Kapitel4/VWA_MSLeafspray_Detail1.jpg Graphic file (type jpg)
 
 <use figures/Kapitel4/VWA_MSLeafspray_Detail1.jpg>
@@ -3964,7 +3829,7 @@ Package pdftex.def Info: figures/Kapitel4/VWA_MSLeafspray_Detail1.jpg used on i
 nput line 22.
 (pdftex.def)             Requested size: 209.12686pt x 156.82428pt.
 
-<figures/Kapitel4/VWA_MSLeafspray_Detail2.jpg, id=298, 4015.0pt x 3003.22pt>
+<figures/Kapitel4/VWA_MSLeafspray_Detail2.jpg, id=341, 4015.0pt x 3003.22pt>
 File: figures/Kapitel4/VWA_MSLeafspray_Detail2.jpg Graphic file (type jpg)
 
 <use figures/Kapitel4/VWA_MSLeafspray_Detail2.jpg>
@@ -3984,9 +3849,9 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 41.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 41.
-[14 <./figures/Kapitel4/VWA_MSLeafspray_Detail1.jpg> <./figures/Kapitel4/VWA_MS
+[13 <./figures/Kapitel4/VWA_MSLeafspray_Detail1.jpg> <./figures/Kapitel4/VWA_MS
 Leafspray_Detail2.jpg>]
-<figures/Kapitel4/VWA_MSLeafspray_Blattvobereitung_zwei.png, id=307, 544.0325pt
+<figures/Kapitel4/VWA_MSLeafspray_Blattvobereitung_zwei.png, id=350, 544.0325pt
  x 312.16624pt>
 File: figures/Kapitel4/VWA_MSLeafspray_Blattvobereitung_zwei.png Graphic file (
 type png)
@@ -4008,21 +3873,12 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 52.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 52.
-[15 <./figures/Kapitel4/VWA_MSLeafspray_Blattvobereitung_zwei.png>]
+[14 <./figures/Kapitel4/VWA_MSLeafspray_Blattvobereitung_zwei.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
-
-LaTeX Warning: Citation 'RapidScreeningLeafSpray' on page 16 undefined on input
- line 55.
-
 (./content/praktischerTeil/Kataboliten_MS_Leafspray.tex
-
-LaTeX Warning: Citation 'ChlorophyllCatabolitesBroccoli' on page 16 undefined o
-n input line 9.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
@@ -4035,8 +3891,8 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 11.
-[16]
-<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_831.png, id=327, 1129.21875pt x 
+[15]
+<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_831.png, id=371, 1129.21875pt x 
 1039.885pt>
 File: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_831.png Graphic file (type 
 png)
@@ -4053,14 +3909,9 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 21.
 
-[17 <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_831.png (PNG copy)>]
-
-LaTeX Warning: Citation 'StructureElucidation' on page 18 undefined on input li
-ne 23.
-
-
+[16 <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_831.png (PNG copy)>]
 <figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_831.png, i
-d=337, 367.3725pt x 319.1925pt>
+d=383, 367.3725pt x 319.1925pt>
 File: figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_831.p
 ng Graphic file (type png)
 
@@ -4070,7 +3921,7 @@ Package pdftex.def Info: figures/Kapitel4/Kataboliten/fragmentation_structures/
 VWA_Katabolit_831.png used on input line 27.
 (pdftex.def)             Requested size: 209.12686pt x 181.70296pt.
 
-<figures/Kapitel4/Kataboliten/diags/831CID-savgol.png, id=338, 433.62pt x 289.0
+<figures/Kapitel4/Kataboliten/diags/831CID-savgol.png, id=384, 433.62pt x 289.0
 8pt>
 File: figures/Kapitel4/Kataboliten/diags/831CID-savgol.png Graphic file (type p
 ng)
@@ -4081,16 +3932,6 @@ sed on input line 33.
 
 Overfull \hbox (86.30147pt too wide) in paragraph at lines 26--37
 [][]  [] 
- []
-
-
-LaTeX Warning: Citation 'ChlorophyllCatabolitesBroccoli' on page 18 undefined o
-n input line 44.
-
-
-Overfull \hbox (69.38683pt too wide) in paragraph at lines 44--45
-\OT1/pplj/m/n/12 (-20) Brok-ko-lifrucht iden-ti-fi-ziert wur-de, wes-we-gen er 
-als drit-ter [[]],
  []
 
 
@@ -4106,9 +3947,9 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 45.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 45.
-[18 <./figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_831.
+[17 <./figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_831.
 png> <./figures/Kapitel4/Kataboliten/diags/831CID-savgol.png>]
-<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_685.png, id=348, 1129.21875pt x 
+<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_685.png, id=396, 1129.21875pt x 
 1039.885pt>
 File: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_685.png Graphic file (type 
 png)
@@ -4123,7 +3964,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--51
 
 
 <figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_685.png, i
-d=349, 276.03125pt x 294.09875pt>
+d=397, 276.03125pt x 294.09875pt>
 File: figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_685.p
 ng Graphic file (type png)
 
@@ -4133,7 +3974,7 @@ Package pdftex.def Info: figures/Kapitel4/Kataboliten/fragmentation_structures/
 VWA_Katabolit_685.png used on input line 57.
 (pdftex.def)             Requested size: 167.29893pt x 178.25563pt.
 
-<figures/Kapitel4/Kataboliten/diags/685CID-savgol.png, id=350, 395.4775pt x 273
+<figures/Kapitel4/Kataboliten/diags/685CID-savgol.png, id=398, 395.4775pt x 273
 .02pt>
 File: figures/Kapitel4/Kataboliten/diags/685CID-savgol.png Graphic file (type p
 ng)
@@ -4154,14 +3995,10 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 72.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 72.
-[19 <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_685.png (PNG copy)>]
+[18 <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_685.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
-
-
-LaTeX Warning: Citation 'ChlorophyllCatabolitesBroccoli' on page 20 undefined o
-n input line 78.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 78--79
@@ -4176,9 +4013,9 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 79.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 79.
-[20 <./figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_685.
+[19 <./figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_685.
 png> <./figures/Kapitel4/Kataboliten/diags/685CID-savgol.png>]
-<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_619.png, id=370, 1129.21875pt x 
+<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_619.png, id=419, 1129.21875pt x 
 1039.885pt>
 File: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_619.png Graphic file (type 
 png)
@@ -4187,7 +4024,7 @@ Package pdftex.def Info: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_619.png
 used on input line 83.
 (pdftex.def)             Requested size: 418.2524pt x 292.76842pt.
 
-<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_657.png, id=372, 1129.21875pt x 
+<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_657.png, id=421, 1129.21875pt x 
 1039.885pt>
 File: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_657.png Graphic file (type 
 png)
@@ -4197,7 +4034,7 @@ used on input line 91.
 (pdftex.def)             Requested size: 418.2524pt x 292.76842pt.
 
 <figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_619.png, i
-d=373, 271.0125pt x 289.08pt>
+d=422, 271.0125pt x 289.08pt>
 File: figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_619.p
 ng Graphic file (type png)
 
@@ -4207,7 +4044,7 @@ Package pdftex.def Info: figures/Kapitel4/Kataboliten/fragmentation_structures/
 VWA_Katabolit_619.png used on input line 98.
 (pdftex.def)             Requested size: 167.29893pt x 178.45581pt.
 
-<figures/Kapitel4/Kataboliten/diags/619CID-savgol.png, id=374, 433.62pt x 289.0
+<figures/Kapitel4/Kataboliten/diags/619CID-savgol.png, id=423, 433.62pt x 289.0
 8pt>
 File: figures/Kapitel4/Kataboliten/diags/619CID-savgol.png Graphic file (type p
 ng)
@@ -4229,7 +4066,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [21 <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_619.png (PNG copy)>]
+ [20 <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_619.png (PNG copy)>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -4238,21 +4075,16 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [22 <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_657.png (PNG copy)> <./fi
+ [21 <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_657.png (PNG copy)> <./fi
 gures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_619.png> <./f
 igures/Kapitel4/Kataboliten/diags/619CID-savgol.png>]
-
-LaTeX Warning: Citation 'StructureElucidation' on page 23 undefined on input li
-ne 7.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
 
 <figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699.png, i
-d=394, 271.0125pt x 319.1925pt>
+d=443, 271.0125pt x 319.1925pt>
 File: figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699.p
 ng Graphic file (type png)
 
@@ -4267,7 +4099,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
  []
 
 
-<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_699.png, id=397, 1129.21875pt x 
+<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_699.png, id=446, 1129.21875pt x 
 1039.885pt>
 File: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_699.png Graphic file (type 
 png)
@@ -4275,16 +4107,7 @@ png)
 Package pdftex.def Info: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_699.png 
 used on input line 22.
 (pdftex.def)             Requested size: 418.2524pt x 250.9421pt.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 25.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 25.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 25.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 25.
 
-[23]
 Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
@@ -4297,9 +4120,18 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 28.
-[24 <./figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699.
-png> <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_699.png (PNG copy)>]
-<figures/Kapitel4/Kataboliten/diags/699CID-savgol2.png, id=412, 433.62pt x 289.
+[22]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 28.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 28.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 28.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 28.
+ [23 <./figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699
+.png> <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_699.png (PNG copy)>]
+<figures/Kapitel4/Kataboliten/diags/699CID-savgol2.png, id=463, 433.62pt x 289.
 08pt>
 File: figures/Kapitel4/Kataboliten/diags/699CID-savgol2.png Graphic file (type 
 png)
@@ -4308,7 +4140,7 @@ Package pdftex.def Info: figures/Kapitel4/Kataboliten/diags/699CID-savgol2.png
 used on input line 32.
 (pdftex.def)             Requested size: 209.1277pt x 209.12549pt.
 
-<figures/Kapitel4/Kataboliten/diags/699CID-savgol1.png, id=413, 433.62pt x 289.
+<figures/Kapitel4/Kataboliten/diags/699CID-savgol1.png, id=464, 433.62pt x 289.
 08pt>
 File: figures/Kapitel4/Kataboliten/diags/699CID-savgol1.png Graphic file (type 
 png)
@@ -4329,7 +4161,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 47.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 47.
-[25 <./figures/Kapitel4/Kataboliten/diags/699CID-savgol2.png> <./figures/Kapite
+[24 <./figures/Kapitel4/Kataboliten/diags/699CID-savgol2.png> <./figures/Kapite
 l4/Kataboliten/diags/699CID-savgol1.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
@@ -4337,7 +4169,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
 
 <figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699-639_MK
-_electronMovement.png, id=423, 271.0125pt x 319.1925pt>
+_electronMovement.png, id=474, 271.0125pt x 319.1925pt>
 File: figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699-6
 39_MK_electronMovement.png Graphic file (type png)
 
@@ -4348,7 +4180,7 @@ VWA_Katabolit_699-639_MK_electronMovement.png used on input line 54.
 (pdftex.def)             Requested size: 209.13515pt x 209.12862pt.
 
 <figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699-639_MK
-.png, id=424, 271.0125pt x 316.18124pt>
+.png, id=475, 271.0125pt x 316.18124pt>
 File: figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699-6
 39_MK.png Graphic file (type png)
 
@@ -4370,10 +4202,10 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 70.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 70.
-[26 <./figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699-
+[25 <./figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699-
 639_MK_electronMovement.png> <./figures/Kapitel4/Kataboliten/fragmentation_stru
 ctures/VWA_Katabolit_699-639_MK.png>]
-<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_727.png, id=432, 1129.21875pt x 
+<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_727.png, id=483, 1129.21875pt x 
 1039.885pt>
 File: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_727.png Graphic file (type 
 png)
@@ -4383,7 +4215,7 @@ used on input line 76.
 (pdftex.def)             Requested size: 418.2524pt x 292.76842pt.
 
 <figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_727.png, i
-d=433, 276.03125pt x 323.2075pt>
+d=484, 276.03125pt x 323.2075pt>
 File: figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_727.p
 ng Graphic file (type png)
 
@@ -4400,8 +4232,8 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 89.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 89.
- [27 <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_727.png (PNG copy)>]
-<figures/Kapitel4/Kataboliten/diags/727CID-savgol.png, id=445, 433.62pt x 289.0
+ [26 <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_727.png (PNG copy)>]
+<figures/Kapitel4/Kataboliten/diags/727CID-savgol.png, id=496, 433.62pt x 289.0
 8pt>
 File: figures/Kapitel4/Kataboliten/diags/727CID-savgol.png Graphic file (type p
 ng)
@@ -4417,9 +4249,9 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 102.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 102.
- [28 <./figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_727
+ [27 <./figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_727
 .png> <./figures/Kapitel4/Kataboliten/diags/727CID-savgol.png>]
-<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_873.png, id=455, 1129.21875pt x 
+<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_873.png, id=505, 1129.21875pt x 
 1039.885pt>
 File: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_873.png Graphic file (type 
 png)
@@ -4429,7 +4261,7 @@ used on input line 104.
 (pdftex.def)             Requested size: 418.2524pt x 292.76842pt.
 
 <figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_873.png, i
-d=456, 367.3725pt x 349.305pt>
+d=506, 367.3725pt x 349.305pt>
 File: figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_873.p
 ng Graphic file (type png)
 
@@ -4446,8 +4278,8 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 117.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 117.
- [29 <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_873.png (PNG copy)>]
-<figures/Kapitel4/Kataboliten/diags/873CID-savgol1.png, id=466, 433.62pt x 289.
+ [28 <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_873.png (PNG copy)>]
+<figures/Kapitel4/Kataboliten/diags/873CID-savgol1.png, id=516, 433.62pt x 289.
 08pt>
 File: figures/Kapitel4/Kataboliten/diags/873CID-savgol1.png Graphic file (type 
 png)
@@ -4456,7 +4288,7 @@ Package pdftex.def Info: figures/Kapitel4/Kataboliten/diags/873CID-savgol1.png
 used on input line 122.
 (pdftex.def)             Requested size: 209.1277pt x 209.12549pt.
 
-<figures/Kapitel4/Kataboliten/diags/873CID-savgol2.png, id=467, 433.62pt x 289.
+<figures/Kapitel4/Kataboliten/diags/873CID-savgol2.png, id=517, 433.62pt x 289.
 08pt>
 File: figures/Kapitel4/Kataboliten/diags/873CID-savgol2.png Graphic file (type 
 png)
@@ -4478,7 +4310,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [30 <./figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_873
+ [29 <./figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_873
 .png>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -4488,7 +4320,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [31 <./figures/Kapitel4/Kataboliten/diags/873CID-savgol1.png> <./figures/Kapit
+ [30 <./figures/Kapitel4/Kataboliten/diags/873CID-savgol1.png> <./figures/Kapit
 el4/Kataboliten/diags/873CID-savgol2.png>]
 chapter 6.
 
@@ -4509,7 +4341,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 20.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 20.
-[32
+[31
 
 
 ]
@@ -4556,13 +4388,13 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 30.
-[33]
+[32]
 Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
 (./content/praktischerTeil/Praktischer_Teil_HPLC_Chlorophyllkataboliten.tex
-<figures/Kapitel6/keineReaktion/VWA_HPLC_Chromatogramm_keineReaktion.png, id=49
+<figures/Kapitel6/keineReaktion/VWA_HPLC_Chromatogramm_keineReaktion.png, id=54
 2, 720.6925pt x 323.2075pt>
 File: figures/Kapitel6/keineReaktion/VWA_HPLC_Chromatogramm_keineReaktion.png G
 raphic file (type png)
@@ -4573,7 +4405,7 @@ keineReaktion.png used on input line 6.
 (pdftex.def)             Requested size: 418.25372pt x 187.57391pt.
 
 <figures/Kapitel6/keineReaktion/Kuerbis_Analyse_keineReaktion2_Ganzes_Spektrum.
-png, id=499, 1445.4pt x 722.7pt>
+png, id=549, 1445.4pt x 722.7pt>
 File: figures/Kapitel6/keineReaktion/Kuerbis_Analyse_keineReaktion2_Ganzes_Spek
 trum.png Graphic file (type png)
 
@@ -4600,7 +4432,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 23.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 23.
-[34]
+[33]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 23.
 Package babel Info: Redefining ngerman shorthand "~
@@ -4609,7 +4441,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 23.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 23.
- [35 <./figures/Kapitel6/keineReaktion/VWA_HPLC_Chromatogramm_keineReaktion.png
+ [34 <./figures/Kapitel6/keineReaktion/VWA_HPLC_Chromatogramm_keineReaktion.png
 > <./figures/Kapitel6/keineReaktion/Kuerbis_Analyse_keineReaktion2_Ganzes_Spekt
 rum.png>]
 Overfull \hbox (38.03012pt too wide) in paragraph at lines 27--44
@@ -4624,9 +4456,9 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 51.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 51.
-[36]
+[35]
 <figures/Kapitel6/keineReaktion/Kuerbis_Analyse_keineReaktion2_LC-ESI-MS.png, i
-d=530, 1445.4pt x 722.7pt>
+d=580, 1445.4pt x 722.7pt>
 File: figures/Kapitel6/keineReaktion/Kuerbis_Analyse_keineReaktion2_LC-ESI-MS.p
 ng Graphic file (type png)
 
@@ -4648,9 +4480,9 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 62.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 62.
-[37 <./figures/Kapitel6/keineReaktion/Kuerbis_Analyse_keineReaktion2_LC-ESI-MS.
+[36 <./figures/Kapitel6/keineReaktion/Kuerbis_Analyse_keineReaktion2_LC-ESI-MS.
 png>]
-<figures/Kapitel6/keineReaktion/NCC2725.png, id=538, 754.82pt x 670.505pt>
+<figures/Kapitel6/keineReaktion/NCC2725.png, id=588, 754.82pt x 670.505pt>
 File: figures/Kapitel6/keineReaktion/NCC2725.png Graphic file (type png)
 
 <use figures/Kapitel6/keineReaktion/NCC2725.png>
@@ -4658,7 +4490,7 @@ Package pdftex.def Info: figures/Kapitel6/keineReaktion/NCC2725.png used on inp
 ut line 65.
 (pdftex.def)             Requested size: 209.12686pt x 185.76552pt.
 
-<figures/Kapitel6/keineReaktion/DNCC2991.png, id=539, 762.85pt x 675.52374pt>
+<figures/Kapitel6/keineReaktion/DNCC2991.png, id=589, 762.85pt x 675.52374pt>
 File: figures/Kapitel6/keineReaktion/DNCC2991.png Graphic file (type png)
 
 <use figures/Kapitel6/keineReaktion/DNCC2991.png>
@@ -4671,7 +4503,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 64--75
  []
 
 
-<figures/Kapitel6/keineReaktion/YCC3094.png, id=540, 697.60625pt x 605.26125pt>
+<figures/Kapitel6/keineReaktion/YCC3094.png, id=590, 697.60625pt x 605.26125pt>
 File: figures/Kapitel6/keineReaktion/YCC3094.png Graphic file (type png)
 <use figures/Kapitel6/keineReaktion/YCC3094.png>
 Package pdftex.def Info: figures/Kapitel6/keineReaktion/YCC3094.png used on inp
@@ -4687,7 +4519,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 2.
- [38]
+ [37]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining ngerman shorthand "~
@@ -4697,9 +4529,9 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 2.
 
-[39 <./figures/Kapitel6/keineReaktion/NCC2725.png> <./figures/Kapitel6/keineRea
+[38 <./figures/Kapitel6/keineReaktion/NCC2725.png> <./figures/Kapitel6/keineRea
 ktion/DNCC2991.png> <./figures/Kapitel6/keineReaktion/YCC3094.png>]
-<figures/Kapitel6/Reaktion3h/HPLC_Chromatogramm.png, id=553, 729.72626pt x 327.
+<figures/Kapitel6/Reaktion3h/HPLC_Chromatogramm.png, id=604, 729.72626pt x 327.
 2225pt>
 File: figures/Kapitel6/Reaktion3h/HPLC_Chromatogramm.png Graphic file (type png
 )
@@ -4720,9 +4552,9 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 14.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 14.
-[40 <./figures/Kapitel6/Reaktion3h/HPLC_Chromatogramm.png>]
+[39 <./figures/Kapitel6/Reaktion3h/HPLC_Chromatogramm.png>]
 <figures/Kapitel6/Reaktion3h/Kuerbis_Analyse_Reaktion3h_Ganzes_Spektrum.png, id
-=568, 1445.4pt x 722.7pt>
+=618, 1445.4pt x 722.7pt>
 File: figures/Kapitel6/Reaktion3h/Kuerbis_Analyse_Reaktion3h_Ganzes_Spektrum.pn
 g Graphic file (type png)
 
@@ -4744,9 +4576,9 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 24.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 24.
-[41 <./figures/Kapitel6/Reaktion3h/Kuerbis_Analyse_Reaktion3h_Ganzes_Spektrum.p
+[40 <./figures/Kapitel6/Reaktion3h/Kuerbis_Analyse_Reaktion3h_Ganzes_Spektrum.p
 ng>]
-<figures/Kapitel6/Reaktion3h/Kuerbis_Analyse_Reaktion3h_LC-ESI-MS.png, id=577, 
+<figures/Kapitel6/Reaktion3h/Kuerbis_Analyse_Reaktion3h_LC-ESI-MS.png, id=628, 
 1445.4pt x 722.7pt>
 File: figures/Kapitel6/Reaktion3h/Kuerbis_Analyse_Reaktion3h_LC-ESI-MS.png Grap
 hic file (type png)
@@ -4768,7 +4600,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 67.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 67.
-[42 <./figures/Kapitel6/Reaktion3h/Kuerbis_Analyse_Reaktion3h_LC-ESI-MS.png>]
+[41 <./figures/Kapitel6/Reaktion3h/Kuerbis_Analyse_Reaktion3h_LC-ESI-MS.png>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 70.
 Package babel Info: Redefining ngerman shorthand "~
@@ -4778,8 +4610,8 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 70.
 
-[43]
-<figures/Kapitel6/Reaktion3h/YCC3398.png, id=590, 756.8275pt x 656.4525pt>
+[42]
+<figures/Kapitel6/Reaktion3h/YCC3398.png, id=641, 756.8275pt x 656.4525pt>
 File: figures/Kapitel6/Reaktion3h/YCC3398.png Graphic file (type png)
 
 <use figures/Kapitel6/Reaktion3h/YCC3398.png>
@@ -4787,7 +4619,7 @@ Package pdftex.def Info: figures/Kapitel6/Reaktion3h/YCC3398.png used on input
 line 74.
 (pdftex.def)             Requested size: 209.12686pt x 181.39143pt.
 
-<figures/Kapitel6/Reaktion3h/DNCC3709.png, id=591, 775.89874pt x 679.53876pt>
+<figures/Kapitel6/Reaktion3h/DNCC3709.png, id=642, 775.89874pt x 679.53876pt>
 File: figures/Kapitel6/Reaktion3h/DNCC3709.png Graphic file (type png)
 
 <use figures/Kapitel6/Reaktion3h/DNCC3709.png>
@@ -4799,7 +4631,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 73--84
 [][]  [] 
  []
 
-<figures/Kapitel6/Reaktion3h/NCC3849.png, id=592, 756.8275pt x 676.5275pt>
+<figures/Kapitel6/Reaktion3h/NCC3849.png, id=643, 756.8275pt x 676.5275pt>
 File: figures/Kapitel6/Reaktion3h/NCC3849.png Graphic file (type png)
 
 <use figures/Kapitel6/Reaktion3h/NCC3849.png>
@@ -4807,7 +4639,7 @@ Package pdftex.def Info: figures/Kapitel6/Reaktion3h/NCC3849.png used on input
 line 86.
 (pdftex.def)             Requested size: 209.12686pt x 186.93857pt.
 
-<figures/Kapitel6/Reaktion3h/DNCC4003.png, id=593, 762.85pt x 680.5425pt>
+<figures/Kapitel6/Reaktion3h/DNCC4003.png, id=644, 762.85pt x 680.5425pt>
 File: figures/Kapitel6/Reaktion3h/DNCC4003.png Graphic file (type png)
 
 <use figures/Kapitel6/Reaktion3h/DNCC4003.png>
@@ -4819,7 +4651,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 85--96
 [][]  [] 
  []
 
-<figures/Kapitel6/Reaktion3h/YCC4728.png, id=594, 757.83125pt x 673.51625pt>
+<figures/Kapitel6/Reaktion3h/YCC4728.png, id=645, 757.83125pt x 673.51625pt>
 File: figures/Kapitel6/Reaktion3h/YCC4728.png Graphic file (type png)
 
 <use figures/Kapitel6/Reaktion3h/YCC4728.png>
@@ -4837,7 +4669,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-[44 <./figures/Kapitel6/Reaktion3h/YCC3398.png> <./figures/Kapitel6/Reaktion3h/
+[43 <./figures/Kapitel6/Reaktion3h/YCC3398.png> <./figures/Kapitel6/Reaktion3h/
 DNCC3709.png> <./figures/Kapitel6/Reaktion3h/NCC3849.png> <./figures/Kapitel6/R
 eaktion3h/DNCC4003.png>]
 Package babel Info: Redefining ngerman shorthand "|
@@ -4848,10 +4680,10 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [45 <./figures/Kapitel6/Reaktion3h/YCC4728.png>]
+ [44 <./figures/Kapitel6/Reaktion3h/YCC4728.png>]
 chapter 7.
 
-<figures/Kapitel7/Kataboliten/VWA_MS_617.png, id=606, 1129.21875pt x 1039.885pt
+<figures/Kapitel7/Kataboliten/VWA_MS_617.png, id=656, 1129.21875pt x 1039.885pt
 >
 File: figures/Kapitel7/Kataboliten/VWA_MS_617.png Graphic file (type png)
  <use figures/Kapitel7/Kataboliten/VWA_MS_617.png>
@@ -4866,12 +4698,12 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 25.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 25.
- [46
+ [45
 
 
 ]
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_617.png, i
-d=615, 271.0125pt x 289.08pt>
+d=664, 271.0125pt x 289.08pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_617.p
 ng Graphic file (type png)
 
@@ -4888,10 +4720,10 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 34.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 34.
- [47 <./figures/Kapitel7/Kataboliten/VWA_MS_617.png (PNG copy)> <./figures/Kapi
+ [46 <./figures/Kapitel7/Kataboliten/VWA_MS_617.png (PNG copy)> <./figures/Kapi
 tel7/Kataboliten/fragmentation_structures/VWA_Katabolit_617.png>]
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_617_MH_Rin
-gD-RingC_331_electronMovement.png, id=624, 271.0125pt x 289.08pt>
+gD-RingC_331_electronMovement.png, id=674, 271.0125pt x 289.08pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_617_M
 H_RingD-RingC_331_electronMovement.png Graphic file (type png)
 
@@ -4903,7 +4735,7 @@ VWA_Katabolit_617_MH_RingD-RingC_331_electronMovement.png used on input line 37
 (pdftex.def)             Requested size: 209.12686pt x 223.07748pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_617-RingD-
-RingC_331.png, id=625, 200.75pt x 264.99pt>
+RingC_331.png, id=675, 200.75pt x 264.99pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_617-R
 ingD-RingC_331.png Graphic file (type png)
 
@@ -4925,10 +4757,10 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 51.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 51.
-[48 <./figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_617_
+[47 <./figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_617_
 MH_RingD-RingC_331_electronMovement.png> <./figures/Kapitel7/Kataboliten/fragme
 ntation_structures/VWA_Katabolit_617-RingD-RingC_331.png>]
-<figures/Kapitel7/Kataboliten/VWA_MS_619.png, id=634, 1129.21875pt x 1039.885pt
+<figures/Kapitel7/Kataboliten/VWA_MS_619.png, id=684, 1129.21875pt x 1039.885pt
 >
 File: figures/Kapitel7/Kataboliten/VWA_MS_619.png Graphic file (type png)
  <use figures/Kapitel7/Kataboliten/VWA_MS_619.png>
@@ -4936,19 +4768,8 @@ Package pdftex.def Info: figures/Kapitel7/Kataboliten/VWA_MS_619.png used on in
 put line 57.
 (pdftex.def)             Requested size: 418.2524pt x 292.76842pt.
 
-
-LaTeX Warning: Citation 'StructureElucidation' on page 49 undefined on input li
-ne 62.
-
-
-Overfull \hbox (13.9278pt too wide) in paragraph at lines 62--63
-\OT1/pplj/m/n/12 (-20) [[]] vor-ge-schla-gen wird, gibt es un-ter-schied-li-che
- M[]oglichkeiten
- []
-
-
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619_MH-CO2
--RingA-RIngD_311_electronMovement.png, id=639, 275.0275pt x 297.11pt>
+-RingA-RIngD_311_electronMovement.png, id=690, 275.0275pt x 297.11pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619_M
 H-CO2-RingA-RIngD_311_electronMovement.png Graphic file (type png)
 
@@ -4960,7 +4781,7 @@ e 68.
 (pdftex.def)             Requested size: 209.12686pt x 225.92381pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619-CO2-Ri
-ngA-RingD_311.png, id=640, 217.81375pt x 184.69pt>
+ngA-RingD_311.png, id=691, 217.81375pt x 184.69pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619-C
 O2-RingA-RingD_311.png Graphic file (type png)
 
@@ -4976,7 +4797,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 67--78
 
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619-CO2-Ri
-ngD-RingA_311_Mesomer1.png, id=641, 217.81375pt x 184.69pt>
+ngD-RingA_311_Mesomer1.png, id=692, 217.81375pt x 184.69pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619-C
 O2-RingD-RingA_311_Mesomer1.png Graphic file (type png)
 
@@ -4987,7 +4808,7 @@ VWA_Katabolit_619-CO2-RingD-RingA_311_Mesomer1.png used on input line 83.
 (pdftex.def)             Requested size: 209.12686pt x 177.3229pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619-CO2-Ri
-ngD-RingA_311_Mesomer2.png, id=642, 217.81375pt x 184.69pt>
+ngD-RingA_311_Mesomer2.png, id=693, 217.81375pt x 184.69pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619-C
 O2-RingD-RingA_311_Mesomer2.png Graphic file (type png)
 
@@ -5009,7 +4830,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 97.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 97.
-[49 <./figures/Kapitel7/Kataboliten/VWA_MS_619.png (PNG copy)>]
+[48 <./figures/Kapitel7/Kataboliten/VWA_MS_619.png (PNG copy)>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 97.
 Package babel Info: Redefining ngerman shorthand "~
@@ -5018,13 +4839,13 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 97.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 97.
- [50 <./figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619
+ [49 <./figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619
 _MH-CO2-RingA-RIngD_311_electronMovement.png> <./figures/Kapitel7/Kataboliten/f
 ragmentation_structures/VWA_Katabolit_619-CO2-RingA-RingD_311.png> <./figures/K
 apitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619-CO2-RingD-RingA_
 311_Mesomer1.png> <./figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_
 Katabolit_619-CO2-RingD-RingA_311_Mesomer2.png>]
-<figures/Kapitel7/Kataboliten/VWA_MS_645-12.png, id=658, 949.5475pt x 867.24pt>
+<figures/Kapitel7/Kataboliten/VWA_MS_645-12.png, id=709, 949.5475pt x 867.24pt>
 File: figures/Kapitel7/Kataboliten/VWA_MS_645-12.png Graphic file (type png)
 <use figures/Kapitel7/Kataboliten/VWA_MS_645-12.png>
 Package pdftex.def Info: figures/Kapitel7/Kataboliten/VWA_MS_645-12.png used on
@@ -5038,8 +4859,8 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 113.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 113.
- [51 <./figures/Kapitel7/Kataboliten/VWA_MS_645-12.png>]
-<figures/Kapitel7/Kataboliten/VWA_MS_647.png, id=668, 1129.21875pt x 1039.885pt
+ [50 <./figures/Kapitel7/Kataboliten/VWA_MS_645-12.png>]
+<figures/Kapitel7/Kataboliten/VWA_MS_647.png, id=719, 1129.21875pt x 1039.885pt
 >
 File: figures/Kapitel7/Kataboliten/VWA_MS_647.png Graphic file (type png)
  <use figures/Kapitel7/Kataboliten/VWA_MS_647.png>
@@ -5048,7 +4869,7 @@ put line 121.
 (pdftex.def)             Requested size: 418.2524pt x 250.9421pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647.png, i
-d=669, 276.03125pt x 294.09875pt>
+d=720, 276.03125pt x 294.09875pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647.p
 ng Graphic file (type png)
 
@@ -5059,7 +4880,7 @@ VWA_Katabolit_647.png used on input line 128.
 (pdftex.def)             Requested size: 209.12686pt x 222.82628pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647-CO2-Ri
-ngD_480_MH_electronMovement.png, id=670, 276.03125pt x 304.13625pt>
+ngD_480_MH_electronMovement.png, id=721, 276.03125pt x 304.13625pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647-C
 O2-RingD_480_MH_electronMovement.png Graphic file (type png)
 
@@ -5076,7 +4897,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 127--138
 
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647-CO2-Ri
-ngD_480_MH_Enolform.png, id=671, 276.03125pt x 294.09875pt>
+ngD_480_MH_Enolform.png, id=722, 276.03125pt x 294.09875pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647-C
 O2-RingD_480_MH_Enolform.png Graphic file (type png)
 
@@ -5087,7 +4908,7 @@ VWA_Katabolit_647-CO2-RingD_480_MH_Enolform.png used on input line 143.
 (pdftex.def)             Requested size: 209.12686pt x 222.82628pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647-CO2-Ri
-ngD_480_MH_Ketoform.png, id=672, 271.0125pt x 294.09875pt>
+ngD_480_MH_Ketoform.png, id=723, 271.0125pt x 294.09875pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647-C
 O2-RingD_480_MH_Ketoform.png Graphic file (type png)
 
@@ -5109,7 +4930,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 157.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 157.
-[52 <./figures/Kapitel7/Kataboliten/VWA_MS_647.png (PNG copy)>]
+[51 <./figures/Kapitel7/Kataboliten/VWA_MS_647.png (PNG copy)>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 157.
 Package babel Info: Redefining ngerman shorthand "~
@@ -5118,13 +4939,13 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 157.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 157.
- [53 <./figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647
+ [52 <./figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647
 .png> <./figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_64
 7-CO2-RingD_480_MH_electronMovement.png> <./figures/Kapitel7/Kataboliten/fragme
 ntation_structures/VWA_Katabolit_647-CO2-RingD_480_MH_Enolform.png> <./figures/
 Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647-CO2-RingD_480_M
 H_Ketoform.png>]
-<figures/Kapitel7/Kataboliten/VWA_MS_793.png, id=689, 1129.21875pt x 1039.885pt
+<figures/Kapitel7/Kataboliten/VWA_MS_793.png, id=740, 1129.21875pt x 1039.885pt
 >
 File: figures/Kapitel7/Kataboliten/VWA_MS_793.png Graphic file (type png)
  <use figures/Kapitel7/Kataboliten/VWA_MS_793.png>
@@ -5139,8 +4960,8 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 173.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 173.
- [54 <./figures/Kapitel7/Kataboliten/VWA_MS_793.png (PNG copy)>]
-<figures/Kapitel7/Kataboliten/VWA_MS_631.png, id=697, 1129.21875pt x 1039.885pt
+ [53 <./figures/Kapitel7/Kataboliten/VWA_MS_793.png (PNG copy)>]
+<figures/Kapitel7/Kataboliten/VWA_MS_631.png, id=749, 1129.21875pt x 1039.885pt
 >
 File: figures/Kapitel7/Kataboliten/VWA_MS_631.png Graphic file (type png)
  <use figures/Kapitel7/Kataboliten/VWA_MS_631.png>
@@ -5148,7 +4969,7 @@ Package pdftex.def Info: figures/Kapitel7/Kataboliten/VWA_MS_631.png used on in
 put line 185.
 (pdftex.def)             Requested size: 418.2524pt x 292.76842pt.
 
-<figures/Kapitel7/Kataboliten/VWA_MS_645-2.png, id=698, 1129.21875pt x 1039.885
+<figures/Kapitel7/Kataboliten/VWA_MS_645-2.png, id=750, 1129.21875pt x 1039.885
 pt>
 File: figures/Kapitel7/Kataboliten/VWA_MS_645-2.png Graphic file (type png)
  <use figures/Kapitel7/Kataboliten/VWA_MS_645-2.png>
@@ -5157,7 +4978,7 @@ input line 192.
 (pdftex.def)             Requested size: 418.2524pt x 250.9421pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_631.png, i
-d=699, 271.0125pt x 313.17pt>
+d=751, 271.0125pt x 313.17pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_631.p
 ng Graphic file (type png)
 
@@ -5168,7 +4989,7 @@ VWA_Katabolit_631.png used on input line 200.
 (pdftex.def)             Requested size: 209.12686pt x 241.66727pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_645_nachRe
-aktion.png, id=700, 271.0125pt x 313.17pt>
+aktion.png, id=752, 271.0125pt x 313.17pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_645_n
 achReaktion.png Graphic file (type png)
 
@@ -5190,7 +5011,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 216.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 216.
-[55 <./figures/Kapitel7/Kataboliten/VWA_MS_631.png (PNG copy)>]
+[54 <./figures/Kapitel7/Kataboliten/VWA_MS_631.png (PNG copy)>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 216.
 Package babel Info: Redefining ngerman shorthand "~
@@ -5199,11 +5020,11 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 216.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 216.
- [56 <./figures/Kapitel7/Kataboliten/VWA_MS_645-2.png (PNG copy)> <./figures/Ka
+ [55 <./figures/Kapitel7/Kataboliten/VWA_MS_645-2.png (PNG copy)> <./figures/Ka
 pitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_631.png> <./figures/K
 apitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_645_nachReaktion.png
 >]
-<figures/Kapitel7/Kataboliten/VWA_MS_633.png, id=714, 1129.21875pt x 1039.885pt
+<figures/Kapitel7/Kataboliten/VWA_MS_633.png, id=766, 1129.21875pt x 1039.885pt
 >
 File: figures/Kapitel7/Kataboliten/VWA_MS_633.png Graphic file (type png)
  <use figures/Kapitel7/Kataboliten/VWA_MS_633.png>
@@ -5212,7 +5033,7 @@ put line 219.
 (pdftex.def)             Requested size: 418.2524pt x 292.76842pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_633.png, i
-d=715, 271.0125pt x 292.09125pt>
+d=767, 271.0125pt x 292.09125pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_633.p
 ng Graphic file (type png)
 
@@ -5229,7 +5050,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 232.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 232.
- [57 <./figures/Kapitel7/Kataboliten/VWA_MS_633.png (PNG copy)>]
+ [56 <./figures/Kapitel7/Kataboliten/VWA_MS_633.png (PNG copy)>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 241.
 Package babel Info: Redefining ngerman shorthand "~
@@ -5238,9 +5059,9 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 241.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 241.
- [58 <./figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_633
+ [57 <./figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_633
 .png>]
-<figures/Kapitel7/Kataboliten/VWA_MS_661.png, id=731, 1129.21875pt x 1039.885pt
+<figures/Kapitel7/Kataboliten/VWA_MS_661.png, id=782, 1129.21875pt x 1039.885pt
 >
 File: figures/Kapitel7/Kataboliten/VWA_MS_661.png Graphic file (type png)
  <use figures/Kapitel7/Kataboliten/VWA_MS_661.png>
@@ -5256,7 +5077,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 315.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 315.
- [59 <./figures/Kapitel7/Kataboliten/VWA_MS_661.png (PNG copy)>]
+ [58 <./figures/Kapitel7/Kataboliten/VWA_MS_661.png (PNG copy)>]
 part without number
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 315.
@@ -5266,7 +5087,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 315.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 315.
-[60
+[59
 
 
 ] (./content/Ergebnisse/Ergebnisse_und_Diskussion.tex
@@ -5284,7 +5105,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 57.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 57.
-[61
+[60
 
 
 ]
@@ -5296,7 +5117,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 57.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 57.
- [62]
+ [61]
 chapter 9.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 70.
@@ -5306,7 +5127,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 70.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 70.
-[63
+[62
 
 
 ]
@@ -5318,7 +5139,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 86.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 86.
- [64]
+ [63]
 Overfull \hbox (28.08481pt too wide) in paragraph at lines 94--108
  [][] 
  []
@@ -5331,7 +5152,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 114.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 114.
-[65]
+[64]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 114.
 Package babel Info: Redefining ngerman shorthand "~
@@ -5340,17 +5161,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 114.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 114.
- [66]
-
-LaTeX Warning: Citation 'ChlorophyllCatabolitesBroccoli' on page 67 undefined o
-n input line 116.
-
-
-Overfull \hbox (53.72931pt too wide) in paragraph at lines 116--117
-\OT1/pplj/m/n/12 (-20) Ver-gleich zu ei-ner k[]urzlich ver[]offentlichten Pu-bl
-i-ka-ti-on [[]],
- []
-
+ [65]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 147.
 Package babel Info: Redefining ngerman shorthand "~
@@ -5359,7 +5170,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 147.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 147.
-[67])
+ [66])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 328.
 Package babel Info: Redefining ngerman shorthand "~
@@ -5368,7 +5179,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 328.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 328.
- [68]
+ [67]
 part without number
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 328.
@@ -5378,16 +5189,47 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 328.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 328.
+[68
+
+
+]
+chapter without number
+
+Overfull \hbox (1.27963pt too wide) in paragraph at lines 330--330
+[]\OT1/pplj/m/n/12 (-20) Simone Mo-ser, Tho-mas M[]uller, Mi-cha-el Ober-hu-ber
+ und Bern-hard Kr[]autler.
+ []
+
+
+Overfull \hbox (1.27963pt too wide) in paragraph at lines 330--330
+[]\OT1/pplj/m/n/12 (-20) Simone Mo-ser, Tho-mas M[]uller, Mi-cha-el Ober-hu-ber
+ und Bern-hard Kr[]autler.
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 330.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 330.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 330.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 330.
 [69
 
 
 ]
-
-LaTeX Warning: Empty bibliography on input line 330.
-
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 333.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 333.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 333.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 333.
+ [70]
 Package tocbasic Info: character protrusion at lof deactivated on input line 33
 6.
-(./main.lof
+ (./main.lof
 Overfull \hbox (3.78166pt too wide) in paragraph at lines 15--15
  [][] [][][]\OT1/pplj/m/n/12 (-20) Strukturvorschlag von Bo-NCC-1 und Frag-men-
 tie-rungs-dia-gramm, 
@@ -5413,7 +5255,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 30.
-[70
+[71
 
 
 
@@ -5438,7 +5280,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 56.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 56.
-[71]
+[72]
 Overfull \hbox (0.59271pt too wide) in paragraph at lines 58--58
  [][] [][][]\OT1/pplj/m/n/12 (-20) Strukturvorschlag f[]ur das Re-ak-ti-ons-pro
 -dukt von Bo-DNCC, Quel- 
@@ -5456,7 +5298,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 339.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 339.
- [72]
+ [73]
 Package tocbasic Info: character protrusion at lot deactivated on input line 33
 9.
  (./main.lot)
@@ -5472,7 +5314,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [73
+ [74
 
 
 ])
@@ -5484,7 +5326,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 344.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 344.
- [74
+ [75
 
 
 
@@ -5499,14 +5341,14 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 344.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 344.
-[75
+[76
 
 
 ] (./content/Anhang/MSLeafspray/Anhang_MSLeafspray.tex
 chapter A.
 
-<content/Anhang/MSLeafspray/RP_Bo-DYCC/697CID-697savgol.png, id=935, 433.62pt x
- 289.08pt>
+<content/Anhang/MSLeafspray/RP_Bo-DYCC/697CID-697savgol.png, id=1036, 433.62pt 
+x 289.08pt>
 File: content/Anhang/MSLeafspray/RP_Bo-DYCC/697CID-697savgol.png Graphic file (
 type png)
  <use content/Anhang/MSLeafspray/RP_Bo-DYCC/697CID-697savgol.png>
@@ -5514,8 +5356,8 @@ Package pdftex.def Info: content/Anhang/MSLeafspray/RP_Bo-DYCC/697CID-697savgol
 .png used on input line 9.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/MSLeafspray/RP_Bo-DYCC/697CID-697savgolv25.png, id=936, 433.62p
-t x 289.08pt>
+<content/Anhang/MSLeafspray/RP_Bo-DYCC/697CID-697savgolv25.png, id=1037, 433.62
+pt x 289.08pt>
 File: content/Anhang/MSLeafspray/RP_Bo-DYCC/697CID-697savgolv25.png Graphic fil
 e (type png)
 
@@ -5536,13 +5378,13 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 22.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 22.
-[76
+[77
 
 
  <./content/Anhang/MSLeafspray/RP_Bo-DYCC/697CID-697savgol.png> <./content/Anha
 ng/MSLeafspray/RP_Bo-DYCC/697CID-697savgolv25.png>]
-<content/Anhang/MSLeafspray/RP_Bo-DNCC/671CID-671savgol.png, id=944, 433.62pt x
- 289.08pt>
+<content/Anhang/MSLeafspray/RP_Bo-DNCC/671CID-671savgol.png, id=1044, 433.62pt 
+x 289.08pt>
 File: content/Anhang/MSLeafspray/RP_Bo-DNCC/671CID-671savgol.png Graphic file (
 type png)
  <use content/Anhang/MSLeafspray/RP_Bo-DNCC/671CID-671savgol.png>
@@ -5550,8 +5392,8 @@ Package pdftex.def Info: content/Anhang/MSLeafspray/RP_Bo-DNCC/671CID-671savgol
 .png used on input line 26.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/MSLeafspray/RP_Bo-DNCC/671CID-671savgolv20.png, id=945, 433.62p
-t x 289.08pt>
+<content/Anhang/MSLeafspray/RP_Bo-DNCC/671CID-671savgolv20.png, id=1045, 433.62
+pt x 289.08pt>
 File: content/Anhang/MSLeafspray/RP_Bo-DNCC/671CID-671savgolv20.png Graphic fil
 e (type png)
 
@@ -5565,8 +5407,8 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 25--34
  []
 
 
-<content/Anhang/MSLeafspray/RP_Bo-DNCC/VWA_MS_LeafSpray_671.png, id=946, 1129.2
-1875pt x 1039.885pt>
+<content/Anhang/MSLeafspray/RP_Bo-DNCC/VWA_MS_LeafSpray_671.png, id=1046, 1129.
+21875pt x 1039.885pt>
 File: content/Anhang/MSLeafspray/RP_Bo-DNCC/VWA_MS_LeafSpray_671.png Graphic fi
 le (type png)
 
@@ -5588,7 +5430,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 44.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 44.
-[77 <./content/Anhang/MSLeafspray/RP_Bo-DNCC/671CID-671savgol.png> <./content/A
+[78 <./content/Anhang/MSLeafspray/RP_Bo-DNCC/671CID-671savgol.png> <./content/A
 nhang/MSLeafspray/RP_Bo-DNCC/671CID-671savgolv20.png> <./content/Anhang/MSLeafs
 pray/RP_Bo-DNCC/VWA_MS_LeafSpray_671.png (PNG copy)>]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
@@ -5596,8 +5438,8 @@ LaTeX Font Info:    Font shape `U/msa/m/n' will be
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 18.00587pt on input line 44.
 
-<content/Anhang/MSLeafspray/RP_667/667CID-667savgol.png, id=953, 433.62pt x 289
-.08pt>
+<content/Anhang/MSLeafspray/RP_667/667CID-667savgol.png, id=1053, 433.62pt x 28
+9.08pt>
 File: content/Anhang/MSLeafspray/RP_667/667CID-667savgol.png Graphic file (type
  png)
  <use content/Anhang/MSLeafspray/RP_667/667CID-667savgol.png>
@@ -5605,8 +5447,8 @@ Package pdftex.def Info: content/Anhang/MSLeafspray/RP_667/667CID-667savgol.png
  used on input line 48.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/MSLeafspray/RP_667/667CID-667savgolv10.png, id=954, 433.62pt x 
-289.08pt>
+<content/Anhang/MSLeafspray/RP_667/667CID-667savgolv10.png, id=1054, 433.62pt x
+ 289.08pt>
 File: content/Anhang/MSLeafspray/RP_667/667CID-667savgolv10.png Graphic file (t
 ype png)
  <use content/Anhang/MSLeafspray/RP_667/667CID-667savgolv10.png>
@@ -5619,8 +5461,8 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 47--56
  []
 
 
-<content/Anhang/MSLeafspray/RP_667/VWA_MS_LeafSpray_667.png, id=955, 1129.21875
-pt x 1039.885pt>
+<content/Anhang/MSLeafspray/RP_667/VWA_MS_LeafSpray_667.png, id=1055, 1129.2187
+5pt x 1039.885pt>
 File: content/Anhang/MSLeafspray/RP_667/VWA_MS_LeafSpray_667.png Graphic file (
 type png)
 
@@ -5643,7 +5485,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
-[78 <./content/Anhang/MSLeafspray/RP_667/667CID-667savgol.png> <./content/Anhan
+[79 <./content/Anhang/MSLeafspray/RP_667/667CID-667savgol.png> <./content/Anhan
 g/MSLeafspray/RP_667/667CID-667savgolv10.png> <./content/Anhang/MSLeafspray/RP_
 667/VWA_MS_LeafSpray_667.png (PNG copy)>]
 chapter B.
@@ -5660,12 +5502,12 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 12.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 12.
-[79
+[80
 
 
 ]
-<content/Anhang/ESIMS/Bo-DYCC/617CID-617-2savgol.png, id=968, 433.62pt x 289.08
-pt>
+<content/Anhang/ESIMS/Bo-DYCC/617CID-617-2savgol.png, id=1068, 433.62pt x 289.0
+8pt>
 File: content/Anhang/ESIMS/Bo-DYCC/617CID-617-2savgol.png Graphic file (type pn
 g)
  <use content/Anhang/ESIMS/Bo-DYCC/617CID-617-2savgol.png>
@@ -5673,8 +5515,8 @@ Package pdftex.def Info: content/Anhang/ESIMS/Bo-DYCC/617CID-617-2savgol.png us
 ed on input line 16.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/ESIMS/Bo-DYCC/617PQD-617-2savgol.png, id=969, 433.62pt x 289.08
-pt>
+<content/Anhang/ESIMS/Bo-DYCC/617PQD-617-2savgol.png, id=1069, 433.62pt x 289.0
+8pt>
 File: content/Anhang/ESIMS/Bo-DYCC/617PQD-617-2savgol.png Graphic file (type pn
 g)
  <use content/Anhang/ESIMS/Bo-DYCC/617PQD-617-2savgol.png>
@@ -5687,8 +5529,8 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 15--24
  []
 
 
-<content/Anhang/ESIMS/Bo-DYCC/617CID100-573CID-573savgol.png, id=970, 433.62pt 
-x 289.08pt>
+<content/Anhang/ESIMS/Bo-DYCC/617CID100-573CID-573savgol.png, id=1070, 433.62pt
+ x 289.08pt>
 File: content/Anhang/ESIMS/Bo-DYCC/617CID100-573CID-573savgol.png Graphic file 
 (type png)
  <use content/Anhang/ESIMS/Bo-DYCC/617CID100-573CID-573savgol.png>
@@ -5704,11 +5546,11 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 34.
 
-[80 <./content/Anhang/ESIMS/Bo-DYCC/617CID-617-2savgol.png> <./content/Anhang/E
+[81 <./content/Anhang/ESIMS/Bo-DYCC/617CID-617-2savgol.png> <./content/Anhang/E
 SIMS/Bo-DYCC/617PQD-617-2savgol.png> <./content/Anhang/ESIMS/Bo-DYCC/617CID100-
 573CID-573savgol.png>]
-<content/Anhang/ESIMS/Bo-DNCC/619CID-619savgol.png, id=978, 433.62pt x 289.08pt
->
+<content/Anhang/ESIMS/Bo-DNCC/619CID-619savgol.png, id=1078, 433.62pt x 289.08p
+t>
 File: content/Anhang/ESIMS/Bo-DNCC/619CID-619savgol.png Graphic file (type png)
 
  <use content/Anhang/ESIMS/Bo-DNCC/619CID-619savgol.png>
@@ -5716,8 +5558,8 @@ Package pdftex.def Info: content/Anhang/ESIMS/Bo-DNCC/619CID-619savgol.png used
  on input line 38.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/ESIMS/Bo-DNCC/619PQD-619savgol.png, id=979, 433.62pt x 289.08pt
->
+<content/Anhang/ESIMS/Bo-DNCC/619PQD-619savgol.png, id=1079, 433.62pt x 289.08p
+t>
 File: content/Anhang/ESIMS/Bo-DNCC/619PQD-619savgol.png Graphic file (type png)
 
  <use content/Anhang/ESIMS/Bo-DNCC/619PQD-619savgol.png>
@@ -5730,8 +5572,8 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 37--46
  []
 
 
-<content/Anhang/ESIMS/Bo-DNCC/619CID40-575CID-575savgol.png, id=980, 433.62pt x
- 289.08pt>
+<content/Anhang/ESIMS/Bo-DNCC/619CID40-575CID-575savgol.png, id=1080, 433.62pt 
+x 289.08pt>
 File: content/Anhang/ESIMS/Bo-DNCC/619CID40-575CID-575savgol.png Graphic file (
 type png)
  <use content/Anhang/ESIMS/Bo-DNCC/619CID40-575CID-575savgol.png>
@@ -5739,8 +5581,8 @@ Package pdftex.def Info: content/Anhang/ESIMS/Bo-DNCC/619CID40-575CID-575savgol
 .png used on input line 48.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/ESIMS/Bo-DNCC/619CID40-575CID100-452CID-452savgol.png, id=981, 
-433.62pt x 289.08pt>
+<content/Anhang/ESIMS/Bo-DNCC/619CID40-575CID100-452CID-452savgol.png, id=1081,
+ 433.62pt x 289.08pt>
 File: content/Anhang/ESIMS/Bo-DNCC/619CID40-575CID100-452CID-452savgol.png Grap
 hic file (type png)
 
@@ -5761,12 +5603,12 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 61.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 61.
-[81 <./content/Anhang/ESIMS/Bo-DNCC/619CID-619savgol.png> <./content/Anhang/ESI
+[82 <./content/Anhang/ESIMS/Bo-DNCC/619CID-619savgol.png> <./content/Anhang/ESI
 MS/Bo-DNCC/619PQD-619savgol.png> <./content/Anhang/ESIMS/Bo-DNCC/619CID40-575CI
 D-575savgol.png> <./content/Anhang/ESIMS/Bo-DNCC/619CID40-575CID100-452CID-452s
 avgol.png>]
-<content/Anhang/ESIMS/Bo-NCC-1/793CID-793savgol.png, id=990, 433.62pt x 289.08p
-t>
+<content/Anhang/ESIMS/Bo-NCC-1/793CID-793savgol.png, id=1091, 433.62pt x 289.08
+pt>
 File: content/Anhang/ESIMS/Bo-NCC-1/793CID-793savgol.png Graphic file (type png
 )
  <use content/Anhang/ESIMS/Bo-NCC-1/793CID-793savgol.png>
@@ -5774,8 +5616,8 @@ Package pdftex.def Info: content/Anhang/ESIMS/Bo-NCC-1/793CID-793savgol.png use
 d on input line 65.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/ESIMS/Bo-NCC-1/793PQD-793savgol.png, id=991, 433.62pt x 289.08p
-t>
+<content/Anhang/ESIMS/Bo-NCC-1/793PQD-793savgol.png, id=1092, 433.62pt x 289.08
+pt>
 File: content/Anhang/ESIMS/Bo-NCC-1/793PQD-793savgol.png Graphic file (type png
 )
  <use content/Anhang/ESIMS/Bo-NCC-1/793PQD-793savgol.png>
@@ -5788,8 +5630,8 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 64--73
  []
 
 
-<content/Anhang/ESIMS/Bo-NCC-1/793PQD-793savgolv5.png, id=992, 433.62pt x 289.0
-8pt>
+<content/Anhang/ESIMS/Bo-NCC-1/793PQD-793savgolv5.png, id=1093, 433.62pt x 289.
+08pt>
 File: content/Anhang/ESIMS/Bo-NCC-1/793PQD-793savgolv5.png Graphic file (type p
 ng)
  <use content/Anhang/ESIMS/Bo-NCC-1/793PQD-793savgolv5.png>
@@ -5804,10 +5646,10 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 83.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 83.
- [82 <./content/Anhang/ESIMS/Bo-NCC-1/793CID-793savgol.png> <./content/Anhang/E
+ [83 <./content/Anhang/ESIMS/Bo-NCC-1/793CID-793savgol.png> <./content/Anhang/E
 SIMS/Bo-NCC-1/793PQD-793savgol.png> <./content/Anhang/ESIMS/Bo-NCC-1/793PQD-793
 savgolv5.png>]
-<content/Anhang/ESIMS/Bo-NCC-3/647CID-647savgol.png, id=1001, 433.62pt x 289.08
+<content/Anhang/ESIMS/Bo-NCC-3/647CID-647savgol.png, id=1101, 433.62pt x 289.08
 pt>
 File: content/Anhang/ESIMS/Bo-NCC-3/647CID-647savgol.png Graphic file (type png
 )
@@ -5816,7 +5658,7 @@ Package pdftex.def Info: content/Anhang/ESIMS/Bo-NCC-3/647CID-647savgol.png use
 d on input line 87.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/ESIMS/Bo-NCC-3/647PQD-647savgol.png, id=1002, 433.62pt x 289.08
+<content/Anhang/ESIMS/Bo-NCC-3/647PQD-647savgol.png, id=1102, 433.62pt x 289.08
 pt>
 File: content/Anhang/ESIMS/Bo-NCC-3/647PQD-647savgol.png Graphic file (type png
 )
@@ -5830,7 +5672,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 86--95
  []
 
 
-<content/Anhang/ESIMS/RP_Bo-DYCC/631CID-631-2savgol.png, id=1003, 433.62pt x 28
+<content/Anhang/ESIMS/RP_Bo-DYCC/631CID-631-2savgol.png, id=1103, 433.62pt x 28
 9.08pt>
 File: content/Anhang/ESIMS/RP_Bo-DYCC/631CID-631-2savgol.png Graphic file (type
  png)
@@ -5839,7 +5681,7 @@ Package pdftex.def Info: content/Anhang/ESIMS/RP_Bo-DYCC/631CID-631-2savgol.png
  used on input line 103.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/ESIMS/RP_Bo-DYCC/631PQD-631savgol.png, id=1004, 433.62pt x 289.
+<content/Anhang/ESIMS/RP_Bo-DYCC/631PQD-631savgol.png, id=1104, 433.62pt x 289.
 08pt>
 File: content/Anhang/ESIMS/RP_Bo-DYCC/631PQD-631savgol.png Graphic file (type p
 ng)
@@ -5860,10 +5702,10 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 116.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 116.
-[83 <./content/Anhang/ESIMS/Bo-NCC-3/647CID-647savgol.png> <./content/Anhang/ES
+[84 <./content/Anhang/ESIMS/Bo-NCC-3/647CID-647savgol.png> <./content/Anhang/ES
 IMS/Bo-NCC-3/647PQD-647savgol.png> <./content/Anhang/ESIMS/RP_Bo-DYCC/631CID-63
 1-2savgol.png> <./content/Anhang/ESIMS/RP_Bo-DYCC/631PQD-631savgol.png>]
-<content/Anhang/ESIMS/RP_Bo-DNCC/633CID-633savgol.png, id=1013, 433.62pt x 289.
+<content/Anhang/ESIMS/RP_Bo-DNCC/633CID-633savgol.png, id=1113, 433.62pt x 289.
 08pt>
 File: content/Anhang/ESIMS/RP_Bo-DNCC/633CID-633savgol.png Graphic file (type p
 ng)
@@ -5872,7 +5714,7 @@ Package pdftex.def Info: content/Anhang/ESIMS/RP_Bo-DNCC/633CID-633savgol.png u
 sed on input line 120.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/ESIMS/RP_Bo-DNCC/633PQD-633savgol_pic.png, id=1014, 433.62pt x 
+<content/Anhang/ESIMS/RP_Bo-DNCC/633PQD-633savgol_pic.png, id=1114, 433.62pt x 
 289.08pt>
 File: content/Anhang/ESIMS/RP_Bo-DNCC/633PQD-633savgol_pic.png Graphic file (ty
 pe png)
@@ -5886,7 +5728,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 119--128
  []
 
 
-<content/Anhang/ESIMS/RP_Bo-DNCC/633CID100-510CID-510savgol.png, id=1015, 433.6
+<content/Anhang/ESIMS/RP_Bo-DNCC/633CID100-510CID-510savgol.png, id=1115, 433.6
 2pt x 289.08pt>
 File: content/Anhang/ESIMS/RP_Bo-DNCC/633CID100-510CID-510savgol.png Graphic fi
 le (type png)
@@ -5896,7 +5738,7 @@ Package pdftex.def Info: content/Anhang/ESIMS/RP_Bo-DNCC/633CID100-510CID-510sa
 vgol.png used on input line 130.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/ESIMS/RP_Bo-DNCC/633PQD35-460CID-460savgol_pic.png, id=1016, 43
+<content/Anhang/ESIMS/RP_Bo-DNCC/633PQD35-460CID-460savgol_pic.png, id=1116, 43
 3.62pt x 289.08pt>
 File: content/Anhang/ESIMS/RP_Bo-DNCC/633PQD35-460CID-460savgol_pic.png Graphic
  file (type png)
@@ -5912,7 +5754,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 129--138
 
 
 <content/Anhang/ESIMS/RP_Bo-DNCC/633CID100-510CID100-337CID-337savgol.png, id=1
-017, 433.62pt x 289.08pt>
+117, 433.62pt x 289.08pt>
 File: content/Anhang/ESIMS/RP_Bo-DNCC/633CID100-510CID100-337CID-337savgol.png 
 Graphic file (type png)
 
@@ -5929,12 +5771,12 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 148.
 
-[84 <./content/Anhang/ESIMS/RP_Bo-DNCC/633CID-633savgol.png> <./content/Anhang/
+[85 <./content/Anhang/ESIMS/RP_Bo-DNCC/633CID-633savgol.png> <./content/Anhang/
 ESIMS/RP_Bo-DNCC/633PQD-633savgol_pic.png> <./content/Anhang/ESIMS/RP_Bo-DNCC/6
 33CID100-510CID-510savgol.png> <./content/Anhang/ESIMS/RP_Bo-DNCC/633PQD35-460C
 ID-460savgol_pic.png> <./content/Anhang/ESIMS/RP_Bo-DNCC/633CID100-510CID100-33
 7CID-337savgol.png>]
-<content/Anhang/ESIMS/RP_Bo-NCC-3/661CID-661-1savgol.png, id=1027, 433.62pt x 2
+<content/Anhang/ESIMS/RP_Bo-NCC-3/661CID-661-1savgol.png, id=1127, 433.62pt x 2
 89.08pt>
 File: content/Anhang/ESIMS/RP_Bo-NCC-3/661CID-661-1savgol.png Graphic file (typ
 e png)
@@ -5943,7 +5785,7 @@ Package pdftex.def Info: content/Anhang/ESIMS/RP_Bo-NCC-3/661CID-661-1savgol.pn
 g used on input line 152.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/ESIMS/RP_Bo-NCC-3/661CID-661-1savgolv20.png, id=1028, 433.62pt 
+<content/Anhang/ESIMS/RP_Bo-NCC-3/661CID-661-1savgolv20.png, id=1128, 433.62pt 
 x 289.08pt>
 File: content/Anhang/ESIMS/RP_Bo-NCC-3/661CID-661-1savgolv20.png Graphic file (
 type png)
@@ -5957,7 +5799,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 151--160
  []
 
 
-<content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD-661-1savgol_pic.png, id=1029, 433.62pt
+<content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD-661-1savgol_pic.png, id=1129, 433.62pt
  x 289.08pt>
 File: content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD-661-1savgol_pic.png Graphic file 
 (type png)
@@ -5966,7 +5808,7 @@ Package pdftex.def Info: content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD-661-1savgol_pi
 c.png used on input line 162.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD40-506CID-506savgol.png, id=1030, 433.6
+<content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD40-506CID-506savgol.png, id=1130, 433.6
 2pt x 289.08pt>
 File: content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD40-506CID-506savgol.png Graphic fi
 le (type png)
@@ -5981,7 +5823,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 161--170
  []
 
 
-<content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD40-460CID-460savgol_pic.png, id=1031, 4
+<content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD40-460CID-460savgol_pic.png, id=1131, 4
 33.62pt x 289.08pt>
 File: content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD40-460CID-460savgol_pic.png Graphi
 c file (type png)
@@ -5992,7 +5834,7 @@ vgol_pic.png used on input line 172.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
 <content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD40-506CID100-337CID-337savgol.png, id=1
-032, 433.62pt x 289.08pt>
+132, 433.62pt x 289.08pt>
 File: content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD40-506CID100-337CID-337savgol.png 
 Graphic file (type png)
 
@@ -6014,7 +5856,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [85 <./content/Anhang/ESIMS/RP_Bo-NCC-3/661CID-661-1savgol.png> <./content/Anh
+ [86 <./content/Anhang/ESIMS/RP_Bo-NCC-3/661CID-661-1savgol.png> <./content/Anh
 ang/ESIMS/RP_Bo-NCC-3/661CID-661-1savgolv20.png> <./content/Anhang/ESIMS/RP_Bo-
 NCC-3/661PQD-661-1savgol_pic.png> <./content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD40-
 506CID-506savgol.png> <./content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD40-460CID-460sa
@@ -6035,7 +5877,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 18.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 18.
- [86
+ [87
 
 
 ]
@@ -6047,7 +5889,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 60.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 60.
- [87])
+ [88])
 (./content/Anhang/Code/VWA_Analyse_LC-ESI-MS.py
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 14.
@@ -6057,7 +5899,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 14.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 14.
- [88]
+ [89]
 LaTeX Font Info:    Try loading font information for OMS+pplj on input line 20.
 
 LaTeX Font Info:    No file OMSpplj.fd. on input line 20.
@@ -6075,7 +5917,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 54.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 54.
-[89]
+[90]
 LaTeX Font Info:    Try loading font information for OML+pplj on input line 60.
 
 LaTeX Font Info:    No file OMLpplj.fd. on input line 60.
@@ -6098,7 +5940,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 100.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 100.
-[90]
+[91]
 
 LaTeX Font Warning: Font shape `OMS/pplj/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
@@ -6112,7 +5954,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 140.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 140.
-[91]
+[92]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 189.
 Package babel Info: Redefining ngerman shorthand "~
@@ -6121,44 +5963,44 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 189.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 189.
- [92]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 234.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 234.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 234.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 234.
  [93]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 283.
+(babel)             in language  on input line 234.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 283.
+(babel)             in language  on input line 234.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 283.
+(babel)             in language  on input line 234.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 283.
+(babel)             in language  on input line 234.
  [94]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 332.
+(babel)             in language  on input line 283.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 332.
+(babel)             in language  on input line 283.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 332.
+(babel)             in language  on input line 283.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 332.
+(babel)             in language  on input line 283.
  [95]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 381.
+(babel)             in language  on input line 332.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 381.
+(babel)             in language  on input line 332.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 381.
+(babel)             in language  on input line 332.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 381.
+(babel)             in language  on input line 332.
  [96]
 Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 381.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 381.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 381.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 381.
+ [97]
+Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 427.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 427.
@@ -6166,7 +6008,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 427.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 427.
- [97])
+ [98])
 (./content/Anhang/Code/VWA_generate_mz_diagrams.py
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 4.
@@ -6176,35 +6018,35 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 4.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 4.
- [98]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 52.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 52.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 52.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 52.
  [99]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 52.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 52.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 52.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 52.
  [100]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 130.
+(babel)             in language  on input line 93.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 130.
+(babel)             in language  on input line 93.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 130.
+(babel)             in language  on input line 93.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 130.
+(babel)             in language  on input line 93.
  [101]
 Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 130.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 130.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 130.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 130.
+ [102]
+Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 169.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 169.
@@ -6213,7 +6055,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 169.
 
-[102]
+[103]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 209.
 Package babel Info: Redefining ngerman shorthand "~
@@ -6222,89 +6064,89 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 209.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 209.
- [103]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 253.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 253.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 253.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 253.
  [104]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 292.
+(babel)             in language  on input line 253.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 292.
+(babel)             in language  on input line 253.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 292.
+(babel)             in language  on input line 253.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 292.
+(babel)             in language  on input line 253.
  [105]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 326.
+(babel)             in language  on input line 292.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 326.
+(babel)             in language  on input line 292.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 326.
+(babel)             in language  on input line 292.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 326.
+(babel)             in language  on input line 292.
  [106]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 365.
+(babel)             in language  on input line 326.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 365.
+(babel)             in language  on input line 326.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 365.
+(babel)             in language  on input line 326.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 365.
+(babel)             in language  on input line 326.
  [107]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 400.
+(babel)             in language  on input line 365.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 400.
+(babel)             in language  on input line 365.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 400.
+(babel)             in language  on input line 365.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 400.
+(babel)             in language  on input line 365.
  [108]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 439.
+(babel)             in language  on input line 400.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 439.
+(babel)             in language  on input line 400.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 439.
+(babel)             in language  on input line 400.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 439.
+(babel)             in language  on input line 400.
  [109]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 478.
+(babel)             in language  on input line 439.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 478.
+(babel)             in language  on input line 439.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 478.
+(babel)             in language  on input line 439.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 478.
+(babel)             in language  on input line 439.
  [110]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 520.
+(babel)             in language  on input line 478.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 520.
+(babel)             in language  on input line 478.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 520.
+(babel)             in language  on input line 478.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 520.
+(babel)             in language  on input line 478.
  [111]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 562.
+(babel)             in language  on input line 520.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 562.
+(babel)             in language  on input line 520.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 562.
+(babel)             in language  on input line 520.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 562.
+(babel)             in language  on input line 520.
  [112]
 Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 562.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 562.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 562.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 562.
+ [113]
+Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 604.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 604.
@@ -6312,7 +6154,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 604.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 604.
- [113]
+ [114]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 640.
 Package babel Info: Redefining ngerman shorthand "~
@@ -6322,7 +6164,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 640.
 
-[114]
+[115]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 668.
 Package babel Info: Redefining ngerman shorthand "~
@@ -6331,7 +6173,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 668.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 668.
- [115]
+ [116]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 714.
 Package babel Info: Redefining ngerman shorthand "~
@@ -6340,7 +6182,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 714.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 714.
- [116]))
+ [117]))
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 353.
 Package babel Info: Redefining ngerman shorthand "~
@@ -6349,7 +6191,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 353.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 353.
- [117]
+ [118]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 371.
 Package babel Info: Redefining ngerman shorthand "~
@@ -6358,7 +6200,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 371.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 371.
- [118
+ [119
 
 
 runsystem(makeindex -s main.ist -t main.glg -o main.gls main.glo)...executed sa
@@ -6375,26 +6217,18 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 371.
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 58658 strings out of 494860
- 1116645 string characters out of 6177601
- 1890444 words of memory out of 5000000
- 58762 multiletter control sequences out of 15000+600000
- 97644 words of font info for 540 fonts, out of 8000000 for 9000
+ 58648 strings out of 494860
+ 1116876 string characters out of 6177601
+ 1890033 words of memory out of 5000000
+ 58691 multiletter control sequences out of 15000+600000
+ 98002 words of font info for 572 fonts, out of 8000000 for 9000
  42 hyphenation exceptions out of 8191
  75i,17n,100p,10355b,3231s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -6408,10 +6242,10 @@ j8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (127 pages, 12851231 bytes).
+Output written on main.pdf (128 pages, 12873861 bytes).
 PDF statistics:
- 2826 PDF objects out of 2984 (max. 8388607)
- 2488 compressed objects within 25 object streams
- 1548 named destinations out of 1728 (max. 500000)
- 89094 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 2931 PDF objects out of 2984 (max. 8388607)
+ 2591 compressed objects within 26 object streams
+ 1567 named destinations out of 1728 (max. 500000)
+ 88582 words of extra memory for PDF output out of 89155 (max. 10000000)
 

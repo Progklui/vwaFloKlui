@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.7 $
+% $ biblatex bbl format version 2.6 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,7 +18,7 @@
 
 
 \refsection{0}
-  \sortlist[entry]{none/global/}
+  \sortlist[entry]{none/global}
     \entry{ChlorophyllBreakdown}{article}{}
       \name{author}{2}{}{%
         {{hash=10e1edebf83c1dc72586d8f452fa5f76}{%
