@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {3.2.2}MS Leafspray}{7}{subsection.3.2.2}
 \contentsline {part}{\nonumberline Experimenteller Teil}{9}{part*.9}
 \contentsline {chapter}{\numberline {4}Allgemeine Arbeits- und Analysemethoden}{10}{chapter.4}
-\contentsline {section}{\numberline {4.1}Herstellung von L\IeC {\"o}sungen f\IeC {\"u}r eine Analyse mit HPLC}{10}{section.4.1}
+\contentsline {section}{\numberline {4.1}Herstellung einer Pufferl\IeC {\"o}sung}{10}{section.4.1}
 \contentsline {section}{\numberline {4.2}Chemikalien und Material}{10}{section.4.2}
 \contentsline {section}{\numberline {4.3}Probenmaterial}{10}{section.4.3}
 \contentsline {section}{\numberline {4.4}Reaktion mit Essigs\IeC {\"a}ureanhydrid}{10}{section.4.4}
