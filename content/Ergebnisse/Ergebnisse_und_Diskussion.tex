@@ -76,20 +76,24 @@ Es wird vermutet, dass die Fragmentierungsdiagramme charakteristisch für einen 
 
 Um einen Blick in die Zukunft zu wagen, könnte man diese Fragmentierungsdiagramme verwenden, um eine Schnellidentifikation von Chl-Kataboliten durchzuführen. Ein Anwendungsgebiet wäre hier beispielsweise die Landwirtschaft, in der ein Bauer mithilfe von MS Leafspray \textit{am Feld} Chl-Kataboliten identifizieren könnte. Um diese Schnellidentifikation zu programmieren, könnte man auf die Methode des Deep-Learnings zurückgreifen, die ein Analysieren der Diagramme erleichtern und vor allem automatisieren könnte. 
 
-Unter Verwendung eines solchen DeepLearning Netwerkes ist es außerdem denkbar, dass man aus den Fragmentierungsdiagramm weitere Strukturmerkmale \textit{herauskitzeln} kann, was einen Fortschritt in Bezug auf Strukturaufklärung mit dem Massenspektrometer bedeuten würde.
+Unter Verwendung eines solchen Deep-Learning Netwerkes ist es außerdem denkbar, dass man aus den Fragmentierungsdiagramm weitere Strukturmerkmale \textit{herauskitzeln} kann, was einen Fortschritt in Bezug auf Strukturaufklärung mit dem Massenspektrometer bedeuten würde.
 
 Außerdem ist denkbar, dass über eine intensivere Erforschung der Fragmentierungsdiagramme ein tieferer Einblick in die Eigenschaften der chemischen Bindung in komplexen Molekülen gewonnen werden kann. Auch hier ist eine Anwendung von DeepLearning denkbar.\\
 
-Im Folgenden wird eine Theorie zur Interpretation der im CID-Modus aufgenommenen Fragmentierungsdiagramme entwickelt. Im Massenspektrometer kommt es durch teilweise Umwandlung kinetischer Energie in interne Energie zur  Anregung des Molekül und dementsprechend zu Schwingungen desselben. Diese Schwingungen führen letztendlich zum Bindungsbruch und zu den messbaren Fragmenten. Bei der Erstellung der Fragmentierungsdiagramme wurde die Intensität dieser Fragmente zur aufgewendeten \gls{nKE} gemessen. 
+Im Folgenden wird eine Theorie zur Interpretation der im CID-Modus aufgenommenen Fragmentierungsdiagramme entwickelt. Im Massenspektrometer kommt es durch teilweise Umwandlung kinetischer Energie in intramolekulare Energie zur  Anregung des Molekül und dementsprechend zu Schwingungen desselben. Diese Schwingungen führen letztendlich zum Bindungsbruch und zu den messbaren Fragmenten. Bei der Erstellung der Fragmentierungsdiagramme wurde die Intensität dieser Fragmente zur aufgewendeten \gls{nKE} gemessen. \\
 
-Was bei der Betrachtung der Diagramme auffällt, ist, dass sie Minima und Maxima besitzen, die im Praktischen Teil der Arbeit ausführlich beschrieben worden sind. Außerdem nehmen die Intensitäten bei höheren Energien zumeist ab. Die meisten Maxima befinden sich in einem Bereich von 10 bis 50 \gls{nKE}. \gls{Chl-K}en sind von ihrer räumlichen Struktur komplexe Moleküle und können aufgrund von Drehungen um Einfachbindungen diverse räumliche Strukturen annehmen, die aufgrund von sterischen Effekten thermodynamisch nicht gleich stabil sind. Wenn ein solcher \gls{Chl-K} energetisch angeregt wird und zu schwingen anfängt, gibt es vermutlich bestimmte energetisch stabile räumliche Anordnungen, die abhängig von der \gls{nKE} sind. Das könnte bedeuten, dass es bestimmte \gls{nKE}s gibt, die den \gls{Chl-K}en in bestimmte räumliche Anordnungen bringen, bei denen eine Abspaltung eines Ringes beispielsweise energetisch günstig ist. Nach diesem Modell wäre bei einer großen \gls{nKE} die Anregung so groß, dass es zu sterischen intramolekularen Hinderungen kommt, die Abspaltungen entweder gänzlich verhindern oder das Molekül zum unkontrollierten Auseinanderbrechen bringt.
+Was bei der Betrachtung der Diagramme auffällt, ist, dass sie Minima und Maxima besitzen, die im Praktischen Teil der Arbeit ausführlich beschrieben worden sind. Außerdem nehmen die Intensitäten bei höheren Energien zumeist ab. Die meisten Maxima befinden sich in einem Bereich von 10 bis 50 \gls{nKE}. 
+
+\gls{Chl-K}en sind von ihrer räumlichen Struktur komplexe Moleküle und können aufgrund von Drehungen um Einfachbindungen diverse räumliche Strukturen annehmen, die aufgrund von sterischen Effekten thermodynamisch nicht gleich stabil sind. Wenn ein solcher \gls{Chl-K} energetisch angeregt wird und demnach schwingt, gibt es vermutlich bestimmte energetisch stabile räumliche Anordnungen, die abhängig von der \gls{nKE} sind. Das könnte bedeuten, dass es bestimmte \gls{nKE}s gibt, die den \gls{Chl-K}en in bestimmte räumliche Anordnungen bringen, bei denen eine Abspaltung eines Ringes beispielsweise energetisch günstig ist. 
+
+Nach diesem Modell wäre bei einer großen \gls{nKE} die Anregung so groß, dass es zu sterischen intramolekularen Hinderungen kommt, die Abspaltungen entweder gänzlich verhindern oder das Molekül zum unkontrollierten Auseinanderbrechen bringt. Das Entstehen von Maxima einer Abspaltung kann durch das Einnehmen eines für diese Abspaltung energetisch günstigen Zustandes erklärt werden. Minima könnten das Einnehmen eines Übergangszustandes beschreiben.
+
+Bei der vorliegenden Betrachtung werden die Intensitäten der Abspaltungen aufgrund der unterschiedlichen Ionisierbarkeit nicht berücksichtigt. Es wird angenommen, dass die Ionisierbarkeit nicht von der \gls{nKE} abhängt.
 
 
 \section{zum Vergleich direkte Analyse - klassischer Ansatz}
 
-In Tabelle \ref{tab:ComparisonDirectClassic} werden die wesentlichen Unterschiede der beiden Analysemethoden, die ich während meiner Arbeit beobachten konnte, aufgelistet. Die Liste stellt nicht den Anspruch, vollständig zu sein.
-
-Man kann sagen, dass beide Methoden ihre Vorzüge haben und auch dementsprechend eingesetzt werden sollten.
+In Tabelle \ref{tab:ComparisonDirectClassic} werden die wesentlichen Unterschiede der beiden Analysemethoden, die ich während meiner Arbeit beobachten konnte, herausgearbeitet. Die Liste stellt nicht den Anspruch, vollständig zu sein.
 
 \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
 
@@ -100,13 +104,13 @@ Man kann sagen, dass beide Methoden ihre Vorzüge haben und auch dementsprechend
  +/- & direkte Analyse & +/- & klassischer Ansatz \\
 \midrule
 \rowcolor{black!20} + & kurze Blattvorbereitungszeit für die Analyse & - & lange Blattvorbereitungszeit für die Analyse (Aufreibung, Abzentrifugieren, ...) \\
- + & lange Analysezeiten, die z.B. für die Erstellung von Fragmentierungsdiagrammen verwendet werden kann & - & 75min. Zeit vergeht, bis analysiert werden kann - erzeugen von Fragmentierungsdiagrammen nur über Sammeln in EPPIs möglich \\ 
+ + & lange Analysezeiten, die z.B. für die Erstellung von Fragmentierungsdiagrammen verwendet werden kann & - & 75 min. Zeit vergeht, bis analysiert werden kann - erzeugen von Fragmentierungsdiagrammen nur über Sammeln in EPPIs möglich \\ 
 \rowcolor{black!20} + & erlaubt einfache Isolierung von Anhydriden durch Verwendung von Acetonitril als LM & - & Isolierung von Anhydriden als Reaktionsprodukt schwer möglich, da bevorzugtes LM MeOH \\
- + & erlaubt Analyse von vielen Blättern in kurzer Zeit (ca. 30min. pro Blatt, wenn man viele Chl-Kataboliten analysiert) & - & (fast) vollständige Analyse eines Blattes dauert bis zu 100min., sofern sehr effizient gearbeitet wird \\ 
-\rowcolor{black!20} - & man bekommt kein Chromatogramm, über das man alle Chl-Kataboliten potentiell herausfinden kann - es besteht die Gefahr, dass einige Chl-Kataboliten nicht analysiert werden & + & weniger Chl-Kataboliten gehen verloren \\
- - & nur [M+K]\textsuperscript{+} Ionen & - & [M+K]\textsuperscript{+} Ionen \\ 
+ + & erlaubt Analyse von vielen Blättern in kurzer Zeit (ca. 30 min. pro Blatt, wenn man viele Chl-Kataboliten analysiert) & - & (fast) vollständige Analyse eines Blattes dauert bis zu 100 min., sofern sehr effizient gearbeitet wird \\ 
+\rowcolor{black!20} - & man bekommt kein Chromatogramm, über das man alle Chl-Kataboliten potentiell herausfinden kann - es besteht die Gefahr, dass einige Chl-Kataboliten nicht analysiert werden & + & höhere Wahrscheinlichkeit des Auffindens von Chl-Kataboliten \\
+ - & bevorzugt [M+K]\textsuperscript{+} Ionen & - & bevorzugt [M+H]\textsuperscript{+} Ionen \\ 
 \rowcolor{black!20} - & Molekülmasse nur auf 1 signifikante Kommastelle messbar - Summenformel kann nicht berechnet werden & + & Molekülmasse auf 3 signifikante Kommastellen messbar - Möglichkeit, Summenformel zu berechnen \\
- + & theoretisch relativ einfach automatisierbar & - & aufwändig zum automatisieren \\ 
+ + & theoretisch relativ einfach automatisierbar & - & aufwändig zu automatisieren \\ 
  \rowcolor{black!20} - & Massenspektrometer kann mit der Zeit verschmutzen & + & Massenspektrometer nicht so anfällig für ein Verschmutzen \\
 \bottomrule
   \end{tabular}
@@ -148,6 +152,6 @@ Durch die parallele Analyse mit LC-MS konnte ein erfolgreicher Vergleich der bei
 
 Außerdem konnten andere Chl-Kataboliten im Brokkoliblatt nachgewiesen werden wie in der Frucht an sich, was neue Fragen zum Verständnis des Chl-Abbauprozesses aufwirft.
 
-Demnach leiste ich mit dieser Arbeit einen wesentlichen Beitrag zur Methodenverbesserung, Analyseerweiterung und dem Verständnis des Abbauweges des Chlorophylls im Allgemeinen. Für mich selbst gilt, dass ich durch die Arbeit an dieser Arbeit meine Persönlichkeit wesentlich entwickeln konnte, insbesondere was eigenständiges Arbeiten in jeglicher Hinsicht und Sammeln von Erfahrung anbelangt. 
+Demnach leiste ich mit dieser Arbeit einen wesentlichen Beitrag zur Methodenverbesserung, Analyseerweiterung und dem Verständnis des Abbauweges des Chlorophylls im Allgemeinen. Für mich persönlich gilt, dass ich durch diese Arbeit meine Persönlichkeit wesentlich weiterentwickeln konnte, insbesondere was eigenständiges Arbeiten in jeglicher Hinsicht und Sammeln von Erfahrung anbelangt. 
 
 %Ich möchte betonen, dass die Erstellung dieser VWA einiges an Arbeit und vor allem Zeit beanspruchte. Zum Einen war es während meinem einmonatigem Praktikum schwer, sich auf einige wenige Sachen zu konzentrieren, um sinnvoll verwertbare Ergebnisse zu bekommen. Außerdem war das Planen der täglichen Experimente eine Herausforderung für sich. Doch mit der Zeit konnte ich mich in meiner Arbeitsweise zunehmend verbessern und erreichte somit eine große Effizienz\footnote{zu Bestzeiten gelangen mir 4 HPLC Läufe an einem Arbeitstag - das entsprich 5h}. In dem mir zur Verfügung stehendem, kurzem Zeitraum von 1 Monat war es nicht immer leicht, einen Mittelweg zwischen Analyse der Ergebnisse und Durchführen von Experimenten zu finden. Das Resultat war, dass der Großteil der Datenauswertung nach meinem Praktikum erfolgte.
