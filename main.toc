@@ -16,15 +16,14 @@
 \contentsline {part}{\nonumberline Experimenteller Teil}{9}{part*.9}
 \contentsline {chapter}{\numberline {4}Allgemeine Arbeits- und Analysemethoden}{10}{chapter.4}
 \contentsline {section}{\numberline {4.1}Herstellung einer Pufferl\IeC {\"o}sung}{10}{section.4.1}
-\contentsline {section}{\numberline {4.2}Chemikalien und Material}{10}{section.4.2}
-\contentsline {section}{\numberline {4.3}Probenmaterial}{10}{section.4.3}
-\contentsline {section}{\numberline {4.4}Reaktion mit Essigs\IeC {\"a}ureanhydrid}{10}{section.4.4}
-\contentsline {section}{\numberline {4.5}Erstellen von Fragmentierungsdiagrammen}{11}{section.4.5}
+\contentsline {section}{\numberline {4.2}Probenmaterial}{10}{section.4.2}
+\contentsline {section}{\numberline {4.3}Reaktion mit Essigs\IeC {\"a}ureanhydrid}{10}{section.4.3}
+\contentsline {section}{\numberline {4.4}Erstellen von Fragmentierungsdiagrammen}{11}{section.4.4}
 \contentsline {chapter}{\numberline {5}Experimente MS-Leafspray}{12}{chapter.5}
 \contentsline {section}{\numberline {5.1}Ger\IeC {\"a}tebeschreibung Massenspektrometer}{12}{section.5.1}
 \contentsline {section}{\numberline {5.2}Versuchsaufbau}{12}{section.5.2}
 \contentsline {section}{\numberline {5.3}Versuchsdurchf\IeC {\"u}hrung}{14}{section.5.3}
-\contentsline {section}{\numberline {5.4}Chl-Kataboliten des Brokkoliblattes mithilfe von MS-Leafspray identifiziert}{15}{section.5.4}
+\contentsline {section}{\numberline {5.4}Identifikation der Chl-Kataboliten des Brokkoliblattes mit MS Leafspray}{15}{section.5.4}
 \contentsline {subsection}{\numberline {5.4.1}Bo-NCC-1}{15}{subsection.5.4.1}
 \contentsline {subsection}{\numberline {5.4.2}Bo-NCC-3}{17}{subsection.5.4.2}
 \contentsline {subsection}{\numberline {5.4.3}Bo-DNCC}{19}{subsection.5.4.3}

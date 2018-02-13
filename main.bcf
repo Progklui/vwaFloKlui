@@ -2048,21 +2048,20 @@
     <bcf:citekey order="20">MassSpectrometry</bcf:citekey>
     <bcf:citekey order="21">MassSpectrometry</bcf:citekey>
     <bcf:citekey order="22">MassSpectrometry</bcf:citekey>
-    <bcf:citekey order="23">MassSpectrometry</bcf:citekey>
-    <bcf:citekey order="24">AmbientIonisation</bcf:citekey>
+    <bcf:citekey order="23">AmbientIonisation</bcf:citekey>
+    <bcf:citekey order="24">PaperSpray</bcf:citekey>
     <bcf:citekey order="25">PaperSpray</bcf:citekey>
-    <bcf:citekey order="26">PaperSpray</bcf:citekey>
-    <bcf:citekey order="27">RapidScreeningLeafSpray</bcf:citekey>
-    <bcf:citekey order="28">LeafSpray</bcf:citekey>
-    <bcf:citekey order="29">scipy</bcf:citekey>
-    <bcf:citekey order="30">RapidScreeningLeafSpray</bcf:citekey>
-    <bcf:citekey order="31">ChlorophyllCatabolitesBroccoli</bcf:citekey>
-    <bcf:citekey order="32">StructureElucidation</bcf:citekey>
+    <bcf:citekey order="26">RapidScreeningLeafSpray</bcf:citekey>
+    <bcf:citekey order="27">LeafSpray</bcf:citekey>
+    <bcf:citekey order="28">scipy</bcf:citekey>
+    <bcf:citekey order="29">RapidScreeningLeafSpray</bcf:citekey>
+    <bcf:citekey order="30">ChlorophyllCatabolitesBroccoli</bcf:citekey>
+    <bcf:citekey order="31">StructureElucidation</bcf:citekey>
+    <bcf:citekey order="32">ChlorophyllCatabolitesBroccoli</bcf:citekey>
     <bcf:citekey order="33">ChlorophyllCatabolitesBroccoli</bcf:citekey>
-    <bcf:citekey order="34">ChlorophyllCatabolitesBroccoli</bcf:citekey>
+    <bcf:citekey order="34">StructureElucidation</bcf:citekey>
     <bcf:citekey order="35">StructureElucidation</bcf:citekey>
-    <bcf:citekey order="36">StructureElucidation</bcf:citekey>
-    <bcf:citekey order="37">ChlorophyllCatabolitesBroccoli</bcf:citekey>
+    <bcf:citekey order="36">ChlorophyllCatabolitesBroccoli</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global" type="entry" sortscheme="none" sortnamekeyscheme="global">
   <bcf:sorting>

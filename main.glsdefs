@@ -1,0 +1,60 @@
+\ifglsentryexists{\glsspace }{}%
+{%
+\gls@defglossaryentry{\glsspace }%
+{%
+name={(},%
+sort={(},%
+type={main},%
+first={z\glsspace (()},%
+firstplural={z\acrpluralsuffix \glsspace ((\acrpluralsuffix )},%
+text={(},%
+plural={(\acrpluralsuffix },%
+description={z},%
+descriptionplural={z\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={z},%
+longplural={zs},%
+short={(},%
+shortplural={(s},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{.\spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par }{}%
+{%
+\gls@defglossaryentry{.\spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par }%
+{%
+name={\glo@. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par },%
+sort={\glo@. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par },%
+type={\glo@. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par },%
+first={\glo@. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par },%
+firstplural={\glo@. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par },%
+text={\glo@. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par },%
+plural={\glo@. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par },%
+description={\glo@. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par },%
+descriptionplural={\glo@. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par },%
+symbol={\glo@. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par },%
+symbolplural={\glo@. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par },%
+user1={\glo@. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par },%
+user2={\glo@. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par },%
+user3={\glo@. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par },%
+user4={\glo@. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par },%
+user5={\glo@. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par },%
+user6={\glo@. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par },%
+long={\glo@. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par },%
+longplural={\glo@. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par },%
+short={\glo@. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par },%
+shortplural={\glo@. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par },%
+counter={\glo@. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par },%
+parent={\glo@. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@\OT1/cmss/m/n/12 \def \par },%
+%
+}%
+}%

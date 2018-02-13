@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.18)  25 JAN 2018 15:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.18)  13 FEB 2018 23:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3137,6 +3137,1092 @@ File: ot1pplj.fd 2004/09/06 font definitions for OT1/pplj.
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bas
 ic-dictionary/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
+) (./main.glsdefs
+Runaway argument?
+{glo@\glsdetoklabel {.\spacefactor \sfcode `\let \begingroup \escapechar \ETC.
+! Paragraph ended before \ifcsundef was complete.
+<to be read again> 
+                   \par 
+l.60 }
+      %
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Too many }'s.
+\ifglsentryexists ...ndef {glo@\glsdetoklabel {#1}
+                                                  @name}{#3}{#2}
+l.60 }
+      %
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Too many }'s.
+\ifglsentryexists ...glo@\glsdetoklabel {#1}@name}
+                                                  {#3}{#2}
+l.60 }
+      %
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+Runaway argument?
+{.\spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@ \ETC
+.
+! Paragraph ended before \glsdetoklabel was complete.
+<to be read again> 
+                   \par 
+l.60 }
+      %
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+{c@\glo@ . \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \ETC.
+! Paragraph ended before \ifcsundef was complete.
+<to be read again> 
+                   \par 
+l.60 }
+      %
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Too many }'s.
+\KV@glossentry@counter #1->\ifcsundef {c@#1}
+                                            {\PackageError {glossaries}{Ther...
+l.60 }
+      %
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+Runaway argument?
+{There is no counter called `\glo@ . \spacefactor \sfcode `\let \begingroup \ET
+C.
+! Paragraph ended before \PackageError was complete.
+<to be read again> 
+                   \par 
+l.60 }
+      %
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Too many }'s.
+\KV@glossentry@counter ...d counter as its value}}
+                                                  {\def \@glo@counter {#1}}
+l.60 }
+      %
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+Runaway argument?
+. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@ \ETC
+.
+! Paragraph ended before \@gls@startswithexpandonce was complete.
+<to be read again> 
+                   \par 
+l.60 }
+      %
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+<argument> ...lo@type \relax \relax \gls@endcheck 
+                                                  {\@@gls@expand@field {\@gl...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@type ->\glo@ 
+                   . \spacefactor \sfcode `\let \begingroup \escapechar \m@n...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@type ...p \escapechar \m@ne \let \MT@subst@ 
+                                                  \OT 1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@type ...scapechar \m@ne \let \MT@subst@ \OT 
+                                                  1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@type ->\glo@ 
+                   . \spacefactor \sfcode `\let \begingroup \escapechar \m@n...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@type ...p \escapechar \m@ne \let \MT@subst@ 
+                                                  \OT 1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@type ...scapechar \m@ne \let \MT@subst@ \OT 
+                                                  1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \spacefactor 
+l.60 }
+      %
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+! Package glossaries Error: Glossary type `. \spacefactor \sfcode `\let \beging
+roup \escapechar \m@ne \let 1/cmss/m/n/12 \def \par ' has not been defined.
+
+See the glossaries package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 }
+      %
+You need to define a new glossary type, before making entries in it
+
+! Undefined control sequence.
+\@glo@parent ->\glo@ 
+                     . \spacefactor \sfcode `\let \begingroup \escapechar \m...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \spacefactor 
+l.60 }
+      %
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+! Undefined control sequence.
+\@glo@parent ->\glo@ 
+                     . \spacefactor \sfcode `\let \begingroup \escapechar \m...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@parent ...\escapechar \m@ne \let \MT@subst@ 
+                                                  \OT 1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@parent ...apechar \m@ne \let \MT@subst@ \OT 
+                                                  1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Package glossaries Error: Invalid parent `. \spacefactor \sfcode `\let \begin
+group \escapechar \m@ne \let 1/cmss/m/n/12 \def \par ' for entry `\glsspace ' -
+ parent doesn't exist.
+
+See the glossaries package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 }
+      %
+Parent entries must be defined before their children
+
+Runaway argument?
+. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@ \ETC
+.
+! Paragraph ended before \@gls@startswithexpandonce was complete.
+<to be read again> 
+                   \par 
+l.60 }
+      %
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+<argument> ...lo@sort \relax \relax \gls@endcheck 
+                                                  {\@@gls@expand@field {\@gl...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@sort ->\glo@ 
+                   . \spacefactor \sfcode `\let \begingroup \escapechar \m@n...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@sort ...p \escapechar \m@ne \let \MT@subst@ 
+                                                  \OT 1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@sort ...scapechar \m@ne \let \MT@subst@ \OT 
+                                                  1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@text ->\glo@ 
+                   . \spacefactor \sfcode `\let \begingroup \escapechar \m@n...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@text ...p \escapechar \m@ne \let \MT@subst@ 
+                                                  \OT 1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@text ...scapechar \m@ne \let \MT@subst@ \OT 
+                                                  1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@plural ->\glo@ 
+                     . \spacefactor \sfcode `\let \begingroup \escapechar \m...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@plural ...\escapechar \m@ne \let \MT@subst@ 
+                                                  \OT 1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@plural ...apechar \m@ne \let \MT@subst@ \OT 
+                                                  1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@first ->\glo@ 
+                    . \spacefactor \sfcode `\let \begingroup \escapechar \m@...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@first ... \escapechar \m@ne \let \MT@subst@ 
+                                                  \OT 1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@first ...capechar \m@ne \let \MT@subst@ \OT 
+                                                  1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@firstplural ->\glo@ 
+                          . \spacefactor \sfcode `\let \begingroup \escapech...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@firstplural ...pechar \m@ne \let \MT@subst@ 
+                                                  \OT 1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@firstplural ...ar \m@ne \let \MT@subst@ \OT 
+                                                  1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \spacefactor 
+l.60 }
+      %
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Undefined control sequence.
+\@glo@useri ->\glo@ 
+                    . \spacefactor \sfcode `\let \begingroup \escapechar \m@...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@useri ... \escapechar \m@ne \let \MT@subst@ 
+                                                  \OT 1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@useri ...capechar \m@ne \let \MT@subst@ \OT 
+                                                  1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@userii ->\glo@ 
+                     . \spacefactor \sfcode `\let \begingroup \escapechar \m...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@userii ...\escapechar \m@ne \let \MT@subst@ 
+                                                  \OT 1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@userii ...apechar \m@ne \let \MT@subst@ \OT 
+                                                  1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@useriii ->\glo@ 
+                      . \spacefactor \sfcode `\let \begingroup \escapechar \...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@useriii ...escapechar \m@ne \let \MT@subst@ 
+                                                  \OT 1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@useriii ...pechar \m@ne \let \MT@subst@ \OT 
+                                                  1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@useriv ->\glo@ 
+                     . \spacefactor \sfcode `\let \begingroup \escapechar \m...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@useriv ...\escapechar \m@ne \let \MT@subst@ 
+                                                  \OT 1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@useriv ...apechar \m@ne \let \MT@subst@ \OT 
+                                                  1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@userv ->\glo@ 
+                    . \spacefactor \sfcode `\let \begingroup \escapechar \m@...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@userv ... \escapechar \m@ne \let \MT@subst@ 
+                                                  \OT 1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@userv ...capechar \m@ne \let \MT@subst@ \OT 
+                                                  1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@uservi ->\glo@ 
+                     . \spacefactor \sfcode `\let \begingroup \escapechar \m...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@uservi ...\escapechar \m@ne \let \MT@subst@ 
+                                                  \OT 1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@uservi ...apechar \m@ne \let \MT@subst@ \OT 
+                                                  1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@short ->\glo@ 
+                    . \spacefactor \sfcode `\let \begingroup \escapechar \m@...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@short ... \escapechar \m@ne \let \MT@subst@ 
+                                                  \OT 1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@short ...capechar \m@ne \let \MT@subst@ \OT 
+                                                  1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@shortpl ->\glo@ 
+                      . \spacefactor \sfcode `\let \begingroup \escapechar \...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@shortpl ...escapechar \m@ne \let \MT@subst@ 
+                                                  \OT 1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@shortpl ...pechar \m@ne \let \MT@subst@ \OT 
+                                                  1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@long ->\glo@ 
+                   . \spacefactor \sfcode `\let \begingroup \escapechar \m@n...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@long ...p \escapechar \m@ne \let \MT@subst@ 
+                                                  \OT 1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@long ...scapechar \m@ne \let \MT@subst@ \OT 
+                                                  1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@longpl ->\glo@ 
+                     . \spacefactor \sfcode `\let \begingroup \escapechar \m...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@longpl ...\escapechar \m@ne \let \MT@subst@ 
+                                                  \OT 1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@longpl ...apechar \m@ne \let \MT@subst@ \OT 
+                                                  1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Runaway argument?
+. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@ \ETC
+.
+! Paragraph ended before \@gls@startswithexpandonce was complete.
+<to be read again> 
+                   \par 
+l.60 }
+      %
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+<argument> ...lo@name \relax \relax \gls@endcheck 
+                                                  {\@@gls@expand@field {\@gl...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@name ->\glo@ 
+                   . \spacefactor \sfcode `\let \begingroup \escapechar \m@n...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@name ...p \escapechar \m@ne \let \MT@subst@ 
+                                                  \OT 1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@name ...scapechar \m@ne \let \MT@subst@ \OT 
+                                                  1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Runaway argument?
+. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@ \ETC
+.
+! Paragraph ended before \@gls@startswithexpandonce was complete.
+<to be read again> 
+                   \par 
+l.60 }
+      %
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+<argument> ...lo@desc \relax \relax \gls@endcheck 
+                                                  {\@@gls@expand@field {\@gl...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@desc ->\glo@ 
+                   . \spacefactor \sfcode `\let \begingroup \escapechar \m@n...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@desc ...p \escapechar \m@ne \let \MT@subst@ 
+                                                  \OT 1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@desc ...scapechar \m@ne \let \MT@subst@ \OT 
+                                                  1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Runaway argument?
+. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@ \ETC
+.
+! Paragraph ended before \@gls@startswithexpandonce was complete.
+<to be read again> 
+                   \par 
+l.60 }
+      %
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+<argument> ...cplural \relax \relax \gls@endcheck 
+                                                  {\@@gls@expand@field {\@gl...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@descplural ->\glo@ 
+                         . \spacefactor \sfcode `\let \begingroup \escapecha...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@descplural ...apechar \m@ne \let \MT@subst@ 
+                                                  \OT 1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@descplural ...har \m@ne \let \MT@subst@ \OT 
+                                                  1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Runaway argument?
+. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@ \ETC
+.
+! Paragraph ended before \@gls@startswithexpandonce was complete.
+<to be read again> 
+                   \par 
+l.60 }
+      %
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+<argument> ...@symbol \relax \relax \gls@endcheck 
+                                                  {\@@gls@expand@field {\@gl...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@symbol ->\glo@ 
+                     . \spacefactor \sfcode `\let \begingroup \escapechar \m...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@symbol ...\escapechar \m@ne \let \MT@subst@ 
+                                                  \OT 1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@symbol ...apechar \m@ne \let \MT@subst@ \OT 
+                                                  1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Runaway argument?
+. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let \MT@subst@ \ETC
+.
+! Paragraph ended before \@gls@startswithexpandonce was complete.
+<to be read again> 
+                   \par 
+l.60 }
+      %
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+<argument> ...lplural \relax \relax \gls@endcheck 
+                                                  {\@@gls@expand@field {\@gl...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@symbolplural ->\glo@ 
+                           . \spacefactor \sfcode `\let \begingroup \escapec...
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@symbolplural ...echar \m@ne \let \MT@subst@ 
+                                                  \OT 1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@glo@symbolplural ...r \m@ne \let \MT@subst@ \OT 
+                                                  1/cmss/m/n/12 \def \par 
+l.60 }
+      %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Runaway argument?
+{. \spacefactor \sfcode `\let \begingroup \escapechar \m@ne \let 1/cm\ETC.
+! Paragraph ended before \DTLifinlist was complete.
+<to be read again> 
+                   \par 
+l.60 }
+      %
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Too many }'s.
+\ifignoredglossary ...\expandafter {\@gls@igtype }
+                                                  {\@ignored@glossaries }{#2...
+l.60 }
+      %
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Too many }'s.
+\ifglsentryexists ...\glsdetoklabel {#1}@name}{#3}
+                                                  {#2}
+l.60 }
+      %
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -3148,8 +4234,7 @@ Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
 Package biblatex Info: Reference section=0 on input line 248.
 Package biblatex Info: Reference segment=0 on input line 248.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count461
 \scratchdimen=\dimen414
@@ -3355,19 +4440,20 @@ Package babel Info: Redefining ngerman shorthand "~
 
 \openout3 = `main.ist'.
 
- <./template/VWA_Titelblatt_selected.png>] (./colophon.tex) (./template/title_V
-WA.tex
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./template/VWA_Titelblatt_
+selected.png>] (./colophon.tex)
+(./template/title_VWA.tex
 LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <20.74> not available
 (Font)              Font shape `OT1/pplj/b/n' tried instead on input line 17.
 LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/pplj/b/n' tried instead on input line 22.
 
-<figures/institution.png, id=15, 962.59625pt x 121.45375pt>
+<figures/institution.png, id=16, 962.59625pt x 121.45375pt>
 File: figures/institution.png Graphic file (type png)
 
 <use figures/institution.png>
 Package pdftex.def Info: figures/institution.png used on input line 27.
-(pdftex.def)             Requested size: 85.35826pt x 10.76912pt.
+(pdftex.def)             Requested size: 256.0748pt x 32.30925pt.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 42.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3379,8 +4465,7 @@ Package babel Info: Redefining ngerman shorthand "~
  [2
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figures/institution.png>
-]
+ <./figures/institution.png>]
 Package microtype Info: Character `013' is missing
 (microtype)             in font `OT1/pplj/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -3395,19 +4480,8 @@ Package babel Info: Redefining ngerman shorthand "~
  [3])
 \openout2 = `abstract.aux'.
 
- (./abstract.tex
-Overfull \hbox (24.67181pt too wide) in paragraph at lines 12--13
-[]\OT1/pplj/m/n/12 (-20) Au^^Yerdem wur-de ei-ne Re-ak-ti-on am Blatt der Chl-K
-ataboliten mit Es-sigs[]aureanhydrid
- []
 
-
-Overfull \hbox (20.24945pt too wide) in paragraph at lines 14--15
-\OT1/pplj/m/n/12 (-20) cha-rak-te-ris-tisch f[]ur be-stimm-te Chl-Kataboliten s
-ind. Ei-ne In-ter-pre-ta-ti-onsm[]oglichkeit
- []
-
-)
+(./abstract.tex)
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 280.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3498,36 +4572,36 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 28
 8.
  (./main.toc
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 29.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 29.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 29.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 29.
+(babel)             in language  on input line 28.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.29 ...ine {5.4.2}Bo-NCC-3}{17}{subsection.5.4.2}
+l.28 ...ine {5.4.2}Bo-NCC-3}{17}{subsection.5.4.2}
                                                    [1
 
 
 
 ]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 60.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 60.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 60.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 60.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.61 ...ukturaufkl\IeC {\"a}rung}{63}{section.9.2}
+l.60 ...ukturaufkl\IeC {\"a}rung}{63}{section.9.2}
                                                    [2])
 \tf@toc=\write8
 \openout8 = `main.toc'.
@@ -3619,13 +4693,13 @@ l.1 \chapter
 ]
 chapter 2.
 
-<figures/Kapitel2/VWA_Schema_Chlorophyllabbau.png, id=247, 326.21875pt x 310.15
+<figures/Kapitel2/VWA_Schema_Chlorophyllabbau.png, id=245, 326.21875pt x 310.15
 875pt>
 File: figures/Kapitel2/VWA_Schema_Chlorophyllabbau.png Graphic file (type png)
  <use figures/Kapitel2/VWA_Schema_Chlorophyllabbau.png>
 Package pdftex.def Info: figures/Kapitel2/VWA_Schema_Chlorophyllabbau.png used 
 on input line 9.
-(pdftex.def)             Requested size: 182.68124pt x 173.68771pt.
+(pdftex.def)             Requested size: 163.10896pt x 155.079pt.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3643,7 +4717,7 @@ l.15
 
 
  <./figures/Kapitel2/VWA_Schema_Chlorophyllabbau.png>]
-<figures/Kapitel2/VWA_Chl-Nummerierung.png, id=263, 402.50375pt x 385.44pt>
+<figures/Kapitel2/VWA_Chl-Nummerierung.png, id=260, 402.50375pt x 385.44pt>
 File: figures/Kapitel2/VWA_Chl-Nummerierung.png Graphic file (type png)
 
 <use figures/Kapitel2/VWA_Chl-Nummerierung.png>
@@ -3672,18 +4746,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
+) (./content/allgemeinerTeil/LC-MS.tex
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 10.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 10.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 10.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 10.
-[5
+(babel)             in language  on input line 1.
+ [5
 
 
-]) (./content/allgemeinerTeil/LC-MS.tex
+]
 Overfull \hbox (4.81084pt too wide) in paragraph at lines 3--4
 \OT1/pplj/m/n/12 (-20) wer-den. Auf-grund der Ein-fach-heit der Me-tho-de und d
 er sehr ge-rin-gen ben[]otigten
@@ -3705,13 +4780,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 14.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 14.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 14.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 14.
 [6]
 Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
@@ -3722,20 +4797,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 22.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 22.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 22.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 22.
-[7])
-Underfull \hbox (badness 10000) in paragraph at lines 23--7
+)
+Underfull \hbox (badness 10000) in paragraph at lines 23--5
 
  []
 
-)
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 5.
+[7])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 308.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3759,27 +4834,29 @@ Package babel Info: Redefining ngerman shorthand "~
 
 ] (./content/praktischerTeil/Praktischer_Teil_Allgemeine_Arbeitsmethoden.tex
 chapter 4.
-LaTeX Font Info:    Try loading font information for TS1+pplj on input line 6.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pplj.fd
-File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
+LaTeX Font Info:    Try loading font information for TS1+pplj on input line 15.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pplj.fd
+File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
+)
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 18.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 18.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 18.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 22.
-[10
+(babel)             in language  on input line 18.
+ [10
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
@@ -3795,98 +4872,94 @@ Package babel Info: Redefining ngerman shorthand "~
  [11]
 chapter 5.
 
-<figures/Kapitel4/VWA_MSLeafspray_Versuchsaufbau.png, id=332, 492.84125pt x 422
+<figures/Kapitel4/VWA_MSLeafspray_Versuchsaufbau.png, id=327, 492.84125pt x 422
 .57875pt>
 File: figures/Kapitel4/VWA_MSLeafspray_Versuchsaufbau.png Graphic file (type pn
 g)
  <use figures/Kapitel4/VWA_MSLeafspray_Versuchsaufbau.png>
 Package pdftex.def Info: figures/Kapitel4/VWA_MSLeafspray_Versuchsaufbau.png us
-ed on input line 11.
+ed on input line 13.
 (pdftex.def)             Requested size: 246.42001pt x 211.28885pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 19.
  [12
 
 
  <./figures/Kapitel4/VWA_MSLeafspray_Versuchsaufbau.png>]
-<figures/Kapitel4/VWA_MSLeafspray_Detail1.jpg, id=340, 4047.12pt x 3035.34pt>
+<figures/Kapitel4/VWA_MSLeafspray_Detail1.jpg, id=335, 4047.12pt x 3035.34pt>
 File: figures/Kapitel4/VWA_MSLeafspray_Detail1.jpg Graphic file (type jpg)
 
 <use figures/Kapitel4/VWA_MSLeafspray_Detail1.jpg>
 Package pdftex.def Info: figures/Kapitel4/VWA_MSLeafspray_Detail1.jpg used on i
-nput line 20.
+nput line 22.
 (pdftex.def)             Requested size: 209.12686pt x 156.82428pt.
 
-<figures/Kapitel4/VWA_MSLeafspray_Detail2.jpg, id=341, 4015.0pt x 3003.22pt>
+<figures/Kapitel4/VWA_MSLeafspray_Detail2.jpg, id=336, 4015.0pt x 3003.22pt>
 File: figures/Kapitel4/VWA_MSLeafspray_Detail2.jpg Graphic file (type jpg)
 
 <use figures/Kapitel4/VWA_MSLeafspray_Detail2.jpg>
 Package pdftex.def Info: figures/Kapitel4/VWA_MSLeafspray_Detail2.jpg used on i
-nput line 26.
+nput line 28.
 (pdftex.def)             Requested size: 209.12686pt x 156.40205pt.
 
-Overfull \hbox (2.65201pt too wide) in paragraph at lines 19--30
+Overfull \hbox (2.65201pt too wide) in paragraph at lines 21--32
 [][]  [] 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 39.
 [13 <./figures/Kapitel4/VWA_MSLeafspray_Detail1.jpg> <./figures/Kapitel4/VWA_MS
 Leafspray_Detail2.jpg>]
-<figures/Kapitel4/VWA_MSLeafspray_Blattvobereitung_zwei.png, id=350, 544.0325pt
+<figures/Kapitel4/VWA_MSLeafspray_Blattvobereitung_zwei.png, id=345, 544.0325pt
  x 312.16624pt>
 File: figures/Kapitel4/VWA_MSLeafspray_Blattvobereitung_zwei.png Graphic file (
 type png)
 
 <use figures/Kapitel4/VWA_MSLeafspray_Blattvobereitung_zwei.png>
 Package pdftex.def Info: figures/Kapitel4/VWA_MSLeafspray_Blattvobereitung_zwei
-.png used on input line 45.
+.png used on input line 47.
 (pdftex.def)             Requested size: 272.01558pt x 156.08273pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-
- []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 51.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 51.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 51.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 51.
-[14 <./figures/Kapitel4/VWA_MSLeafspray_Blattvobereitung_zwei.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 53.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 53.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 53.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 53.
+[14 <./figures/Kapitel4/VWA_MSLeafspray_Blattvobereitung_zwei.png>]
 (./content/praktischerTeil/Kataboliten_MS_Leafspray.tex
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 11.
+(babel)             in language  on input line 12.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 11.
+(babel)             in language  on input line 12.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 11.
+(babel)             in language  on input line 12.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 11.
+(babel)             in language  on input line 12.
 [15]
-<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_831.png, id=372, 1129.21875pt x 
+<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_831.png, id=367, 1129.21875pt x 
 1039.885pt>
 File: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_831.png Graphic file (type 
 png)
@@ -3905,7 +4978,7 @@ Package babel Info: Redefining ngerman shorthand "~
 
 [16 <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_831.png (PNG copy)>]
 <figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_831.png, i
-d=384, 367.3725pt x 319.1925pt>
+d=379, 367.3725pt x 319.1925pt>
 File: figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_831.p
 ng Graphic file (type png)
 
@@ -3915,7 +4988,7 @@ Package pdftex.def Info: figures/Kapitel4/Kataboliten/fragmentation_structures/
 VWA_Katabolit_831.png used on input line 27.
 (pdftex.def)             Requested size: 209.12686pt x 181.70296pt.
 
-<figures/Kapitel4/Kataboliten/diags/831CID-savgol.png, id=385, 433.62pt x 289.0
+<figures/Kapitel4/Kataboliten/diags/831CID-savgol.png, id=380, 433.62pt x 289.0
 8pt>
 File: figures/Kapitel4/Kataboliten/diags/831CID-savgol.png Graphic file (type p
 ng)
@@ -3943,7 +5016,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 47.
 [17 <./figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_831.
 png> <./figures/Kapitel4/Kataboliten/diags/831CID-savgol.png>]
-<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_685.png, id=397, 1129.21875pt x 
+<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_685.png, id=392, 1129.21875pt x 
 1039.885pt>
 File: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_685.png Graphic file (type 
 png)
@@ -3958,7 +5031,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--51
 
 
 <figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_685.png, i
-d=398, 276.03125pt x 294.09875pt>
+d=393, 276.03125pt x 294.09875pt>
 File: figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_685.p
 ng Graphic file (type png)
 
@@ -3968,7 +5041,7 @@ Package pdftex.def Info: figures/Kapitel4/Kataboliten/fragmentation_structures/
 VWA_Katabolit_685.png used on input line 57.
 (pdftex.def)             Requested size: 167.29893pt x 178.25563pt.
 
-<figures/Kapitel4/Kataboliten/diags/685CID-savgol.png, id=399, 395.4775pt x 273
+<figures/Kapitel4/Kataboliten/diags/685CID-savgol.png, id=394, 395.4775pt x 273
 .02pt>
 File: figures/Kapitel4/Kataboliten/diags/685CID-savgol.png Graphic file (type p
 ng)
@@ -4000,16 +5073,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--79
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 81.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 81.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 81.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 81.
 [19 <./figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_685.
 png> <./figures/Kapitel4/Kataboliten/diags/685CID-savgol.png>]
-<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_619.png, id=421, 1129.21875pt x 
+<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_619.png, id=417, 1129.21875pt x 
 1039.885pt>
 File: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_619.png Graphic file (type 
 png)
@@ -4018,7 +5091,7 @@ Package pdftex.def Info: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_619.png
 used on input line 83.
 (pdftex.def)             Requested size: 418.2524pt x 292.76842pt.
 
-<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_657.png, id=423, 1129.21875pt x 
+<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_657.png, id=419, 1129.21875pt x 
 1039.885pt>
 File: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_657.png Graphic file (type 
 png)
@@ -4028,7 +5101,7 @@ used on input line 91.
 (pdftex.def)             Requested size: 418.2524pt x 292.76842pt.
 
 <figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_619.png, i
-d=424, 271.0125pt x 289.08pt>
+d=420, 271.0125pt x 289.08pt>
 File: figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_619.p
 ng Graphic file (type png)
 
@@ -4038,7 +5111,7 @@ Package pdftex.def Info: figures/Kapitel4/Kataboliten/fragmentation_structures/
 VWA_Katabolit_619.png used on input line 98.
 (pdftex.def)             Requested size: 167.29893pt x 178.45581pt.
 
-<figures/Kapitel4/Kataboliten/diags/619CID-savgol.png, id=425, 433.62pt x 289.0
+<figures/Kapitel4/Kataboliten/diags/619CID-savgol.png, id=421, 433.62pt x 289.0
 8pt>
 File: figures/Kapitel4/Kataboliten/diags/619CID-savgol.png Graphic file (type p
 ng)
@@ -4052,22 +5125,22 @@ Overfull \hbox (44.47354pt too wide) in paragraph at lines 97--108
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 113.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 113.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 113.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 113.
 [20 <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_619.png (PNG copy)>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 113.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 113.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 113.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 113.
 
 [21 <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_657.png (PNG copy)> <./fig
 ures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_619.png> <./fi
@@ -4079,7 +5152,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
 
 <figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699.png, i
-d=444, 271.0125pt x 319.1925pt>
+d=439, 271.0125pt x 319.1925pt>
 File: figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699.p
 ng Graphic file (type png)
 
@@ -4094,7 +5167,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--20
  []
 
 
-<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_699.png, id=447, 1129.21875pt x 
+<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_699.png, id=442, 1129.21875pt x 
 1039.885pt>
 File: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_699.png Graphic file (type 
 png)
@@ -4126,7 +5199,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 29.
  [23 <./figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699
 .png> <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_699.png (PNG copy)>]
-<figures/Kapitel4/Kataboliten/diags/699CID-savgol2.png, id=464, 433.62pt x 289.
+<figures/Kapitel4/Kataboliten/diags/699CID-savgol2.png, id=459, 433.62pt x 289.
 08pt>
 File: figures/Kapitel4/Kataboliten/diags/699CID-savgol2.png Graphic file (type 
 png)
@@ -4135,7 +5208,7 @@ Package pdftex.def Info: figures/Kapitel4/Kataboliten/diags/699CID-savgol2.png
 used on input line 33.
 (pdftex.def)             Requested size: 250.95721pt x 250.955pt.
 
-<figures/Kapitel4/Kataboliten/diags/699CID-savgol1.png, id=465, 433.62pt x 289.
+<figures/Kapitel4/Kataboliten/diags/699CID-savgol1.png, id=460, 433.62pt x 289.
 08pt>
 File: figures/Kapitel4/Kataboliten/diags/699CID-savgol1.png Graphic file (type 
 png)
@@ -4164,7 +5237,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
 
 <figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699-639_MK
-_electronMovement.png, id=475, 271.0125pt x 319.1925pt>
+_electronMovement.png, id=470, 271.0125pt x 319.1925pt>
 File: figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699-6
 39_MK_electronMovement.png Graphic file (type png)
 
@@ -4175,7 +5248,7 @@ VWA_Katabolit_699-639_MK_electronMovement.png used on input line 55.
 (pdftex.def)             Requested size: 209.13515pt x 209.12862pt.
 
 <figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699-639_MK
-.png, id=476, 271.0125pt x 316.18124pt>
+.png, id=471, 271.0125pt x 316.18124pt>
 File: figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699-6
 39_MK.png Graphic file (type png)
 
@@ -4200,7 +5273,7 @@ Package babel Info: Redefining ngerman shorthand "~
 [25 <./figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_699-
 639_MK_electronMovement.png> <./figures/Kapitel4/Kataboliten/fragmentation_stru
 ctures/VWA_Katabolit_699-639_MK.png>]
-<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_727.png, id=484, 1129.21875pt x 
+<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_727.png, id=479, 1129.21875pt x 
 1039.885pt>
 File: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_727.png Graphic file (type 
 png)
@@ -4210,7 +5283,7 @@ used on input line 77.
 (pdftex.def)             Requested size: 418.2524pt x 292.76842pt.
 
 <figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_727.png, i
-d=485, 276.03125pt x 323.2075pt>
+d=480, 276.03125pt x 323.2075pt>
 File: figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_727.p
 ng Graphic file (type png)
 
@@ -4228,7 +5301,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 90.
  [26 <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_727.png (PNG copy)>]
-<figures/Kapitel4/Kataboliten/diags/727CID-savgol.png, id=497, 433.62pt x 289.0
+<figures/Kapitel4/Kataboliten/diags/727CID-savgol.png, id=492, 433.62pt x 289.0
 8pt>
 File: figures/Kapitel4/Kataboliten/diags/727CID-savgol.png Graphic file (type p
 ng)
@@ -4246,7 +5319,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 103.
  [27 <./figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_727
 .png> <./figures/Kapitel4/Kataboliten/diags/727CID-savgol.png>]
-<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_873.png, id=506, 1129.21875pt x 
+<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_873.png, id=501, 1129.21875pt x 
 1039.885pt>
 File: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_873.png Graphic file (type 
 png)
@@ -4256,7 +5329,7 @@ used on input line 105.
 (pdftex.def)             Requested size: 418.2524pt x 292.76842pt.
 
 <figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_873.png, i
-d=507, 367.3725pt x 349.305pt>
+d=502, 367.3725pt x 349.305pt>
 File: figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_873.p
 ng Graphic file (type png)
 
@@ -4274,7 +5347,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 118.
  [28 <./figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_873.png (PNG copy)>]
-<figures/Kapitel4/Kataboliten/diags/873CID-savgol1.png, id=517, 433.62pt x 289.
+<figures/Kapitel4/Kataboliten/diags/873CID-savgol1.png, id=512, 433.62pt x 289.
 08pt>
 File: figures/Kapitel4/Kataboliten/diags/873CID-savgol1.png Graphic file (type 
 png)
@@ -4283,7 +5356,7 @@ Package pdftex.def Info: figures/Kapitel4/Kataboliten/diags/873CID-savgol1.png
 used on input line 125.
 (pdftex.def)             Requested size: 390.2544pt x 260.16959pt.
 
-<figures/Kapitel4/Kataboliten/diags/873CID-savgol2.png, id=518, 433.62pt x 289.
+<figures/Kapitel4/Kataboliten/diags/873CID-savgol2.png, id=513, 433.62pt x 289.
 08pt>
 File: figures/Kapitel4/Kataboliten/diags/873CID-savgol2.png Graphic file (type 
 png)
@@ -4388,8 +5461,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
  []
 
 (./content/praktischerTeil/Praktischer_Teil_HPLC_Chlorophyllkataboliten.tex
-<figures/Kapitel6/keineReaktion/VWA_HPLC_Chromatogramm_keineReaktion.png, id=54
-3, 720.6925pt x 323.2075pt>
+<figures/Kapitel6/keineReaktion/VWA_HPLC_Chromatogramm_keineReaktion.png, id=53
+8, 720.6925pt x 323.2075pt>
 File: figures/Kapitel6/keineReaktion/VWA_HPLC_Chromatogramm_keineReaktion.png G
 raphic file (type png)
 
@@ -4399,7 +5472,7 @@ keineReaktion.png used on input line 6.
 (pdftex.def)             Requested size: 418.25372pt x 187.57391pt.
 
 <figures/Kapitel6/keineReaktion/Kuerbis_Analyse_keineReaktion2_Ganzes_Spektrum.
-png, id=550, 1445.4pt x 722.7pt>
+png, id=545, 1445.4pt x 722.7pt>
 File: figures/Kapitel6/keineReaktion/Kuerbis_Analyse_keineReaktion2_Ganzes_Spek
 trum.png Graphic file (type png)
 
@@ -4452,7 +5525,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 51.
 [35]
 <figures/Kapitel6/keineReaktion/Kuerbis_Analyse_keineReaktion2_LC-ESI-MS.png, i
-d=581, 1445.4pt x 722.7pt>
+d=576, 1445.4pt x 722.7pt>
 File: figures/Kapitel6/keineReaktion/Kuerbis_Analyse_keineReaktion2_LC-ESI-MS.p
 ng Graphic file (type png)
 
@@ -4476,7 +5549,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 62.
 [36 <./figures/Kapitel6/keineReaktion/Kuerbis_Analyse_keineReaktion2_LC-ESI-MS.
 png>]
-<figures/Kapitel6/keineReaktion/NCC2725.png, id=589, 754.82pt x 670.505pt>
+<figures/Kapitel6/keineReaktion/NCC2725.png, id=584, 754.82pt x 670.505pt>
 File: figures/Kapitel6/keineReaktion/NCC2725.png Graphic file (type png)
 
 <use figures/Kapitel6/keineReaktion/NCC2725.png>
@@ -4484,7 +5557,7 @@ Package pdftex.def Info: figures/Kapitel6/keineReaktion/NCC2725.png used on inp
 ut line 65.
 (pdftex.def)             Requested size: 209.12686pt x 185.76552pt.
 
-<figures/Kapitel6/keineReaktion/DNCC2991.png, id=590, 762.85pt x 675.52374pt>
+<figures/Kapitel6/keineReaktion/DNCC2991.png, id=585, 762.85pt x 675.52374pt>
 File: figures/Kapitel6/keineReaktion/DNCC2991.png Graphic file (type png)
 
 <use figures/Kapitel6/keineReaktion/DNCC2991.png>
@@ -4497,7 +5570,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 64--75
  []
 
 
-<figures/Kapitel6/keineReaktion/YCC3094.png, id=591, 697.60625pt x 605.26125pt>
+<figures/Kapitel6/keineReaktion/YCC3094.png, id=586, 697.60625pt x 605.26125pt>
 File: figures/Kapitel6/keineReaktion/YCC3094.png Graphic file (type png)
 <use figures/Kapitel6/keineReaktion/YCC3094.png>
 Package pdftex.def Info: figures/Kapitel6/keineReaktion/YCC3094.png used on inp
@@ -4525,7 +5598,7 @@ Package babel Info: Redefining ngerman shorthand "~
 
 [38 <./figures/Kapitel6/keineReaktion/NCC2725.png> <./figures/Kapitel6/keineRea
 ktion/DNCC2991.png> <./figures/Kapitel6/keineReaktion/YCC3094.png>]
-<figures/Kapitel6/Reaktion3h/HPLC_Chromatogramm.png, id=605, 729.72626pt x 327.
+<figures/Kapitel6/Reaktion3h/HPLC_Chromatogramm.png, id=599, 729.72626pt x 327.
 2225pt>
 File: figures/Kapitel6/Reaktion3h/HPLC_Chromatogramm.png Graphic file (type png
 )
@@ -4548,7 +5621,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 14.
 [39 <./figures/Kapitel6/Reaktion3h/HPLC_Chromatogramm.png>]
 <figures/Kapitel6/Reaktion3h/Kuerbis_Analyse_Reaktion3h_Ganzes_Spektrum.png, id
-=619, 1445.4pt x 722.7pt>
+=614, 1445.4pt x 722.7pt>
 File: figures/Kapitel6/Reaktion3h/Kuerbis_Analyse_Reaktion3h_Ganzes_Spektrum.pn
 g Graphic file (type png)
 
@@ -4572,7 +5645,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 24.
 [40 <./figures/Kapitel6/Reaktion3h/Kuerbis_Analyse_Reaktion3h_Ganzes_Spektrum.p
 ng>]
-<figures/Kapitel6/Reaktion3h/Kuerbis_Analyse_Reaktion3h_LC-ESI-MS.png, id=629, 
+<figures/Kapitel6/Reaktion3h/Kuerbis_Analyse_Reaktion3h_LC-ESI-MS.png, id=624, 
 1445.4pt x 722.7pt>
 File: figures/Kapitel6/Reaktion3h/Kuerbis_Analyse_Reaktion3h_LC-ESI-MS.png Grap
 hic file (type png)
@@ -4605,7 +5678,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 70.
 
 [42]
-<figures/Kapitel6/Reaktion3h/YCC3398.png, id=642, 756.8275pt x 656.4525pt>
+<figures/Kapitel6/Reaktion3h/YCC3398.png, id=637, 756.8275pt x 656.4525pt>
 File: figures/Kapitel6/Reaktion3h/YCC3398.png Graphic file (type png)
 
 <use figures/Kapitel6/Reaktion3h/YCC3398.png>
@@ -4613,7 +5686,7 @@ Package pdftex.def Info: figures/Kapitel6/Reaktion3h/YCC3398.png used on input
 line 74.
 (pdftex.def)             Requested size: 209.12686pt x 181.39143pt.
 
-<figures/Kapitel6/Reaktion3h/DNCC3709.png, id=643, 775.89874pt x 679.53876pt>
+<figures/Kapitel6/Reaktion3h/DNCC3709.png, id=638, 775.89874pt x 679.53876pt>
 File: figures/Kapitel6/Reaktion3h/DNCC3709.png Graphic file (type png)
 
 <use figures/Kapitel6/Reaktion3h/DNCC3709.png>
@@ -4625,7 +5698,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 73--84
 [][]  [] 
  []
 
-<figures/Kapitel6/Reaktion3h/NCC3849.png, id=644, 756.8275pt x 676.5275pt>
+<figures/Kapitel6/Reaktion3h/NCC3849.png, id=639, 756.8275pt x 676.5275pt>
 File: figures/Kapitel6/Reaktion3h/NCC3849.png Graphic file (type png)
 
 <use figures/Kapitel6/Reaktion3h/NCC3849.png>
@@ -4633,7 +5706,7 @@ Package pdftex.def Info: figures/Kapitel6/Reaktion3h/NCC3849.png used on input
 line 86.
 (pdftex.def)             Requested size: 209.12686pt x 186.93857pt.
 
-<figures/Kapitel6/Reaktion3h/DNCC4003.png, id=645, 762.85pt x 680.5425pt>
+<figures/Kapitel6/Reaktion3h/DNCC4003.png, id=640, 762.85pt x 680.5425pt>
 File: figures/Kapitel6/Reaktion3h/DNCC4003.png Graphic file (type png)
 
 <use figures/Kapitel6/Reaktion3h/DNCC4003.png>
@@ -4645,7 +5718,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 85--96
 [][]  [] 
  []
 
-<figures/Kapitel6/Reaktion3h/YCC4728.png, id=646, 757.83125pt x 673.51625pt>
+<figures/Kapitel6/Reaktion3h/YCC4728.png, id=641, 757.83125pt x 673.51625pt>
 File: figures/Kapitel6/Reaktion3h/YCC4728.png Graphic file (type png)
 
 <use figures/Kapitel6/Reaktion3h/YCC4728.png>
@@ -4677,7 +5750,7 @@ Package babel Info: Redefining ngerman shorthand "~
  [44 <./figures/Kapitel6/Reaktion3h/YCC4728.png>]
 chapter 7.
 
-<figures/Kapitel7/Kataboliten/VWA_MS_617.png, id=657, 1129.21875pt x 1039.885pt
+<figures/Kapitel7/Kataboliten/VWA_MS_617.png, id=652, 1129.21875pt x 1039.885pt
 >
 File: figures/Kapitel7/Kataboliten/VWA_MS_617.png Graphic file (type png)
  <use figures/Kapitel7/Kataboliten/VWA_MS_617.png>
@@ -4697,7 +5770,7 @@ Package babel Info: Redefining ngerman shorthand "~
 
 ]
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_617.png, i
-d=665, 271.0125pt x 289.08pt>
+d=660, 271.0125pt x 289.08pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_617.p
 ng Graphic file (type png)
 
@@ -4717,7 +5790,7 @@ Package babel Info: Redefining ngerman shorthand "~
  [46 <./figures/Kapitel7/Kataboliten/VWA_MS_617.png (PNG copy)> <./figures/Kapi
 tel7/Kataboliten/fragmentation_structures/VWA_Katabolit_617.png>]
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_617_MH_Rin
-gD-RingC_331_electronMovement.png, id=675, 271.0125pt x 289.08pt>
+gD-RingC_331_electronMovement.png, id=670, 271.0125pt x 289.08pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_617_M
 H_RingD-RingC_331_electronMovement.png Graphic file (type png)
 
@@ -4729,7 +5802,7 @@ VWA_Katabolit_617_MH_RingD-RingC_331_electronMovement.png used on input line 37
 (pdftex.def)             Requested size: 209.12686pt x 223.07748pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_617-RingD-
-RingC_331.png, id=676, 200.75pt x 264.99pt>
+RingC_331.png, id=671, 200.75pt x 264.99pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_617-R
 ingD-RingC_331.png Graphic file (type png)
 
@@ -4754,7 +5827,7 @@ Package babel Info: Redefining ngerman shorthand "~
 [47 <./figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_617_
 MH_RingD-RingC_331_electronMovement.png> <./figures/Kapitel7/Kataboliten/fragme
 ntation_structures/VWA_Katabolit_617-RingD-RingC_331.png>]
-<figures/Kapitel7/Kataboliten/VWA_MS_619.png, id=685, 1129.21875pt x 1039.885pt
+<figures/Kapitel7/Kataboliten/VWA_MS_619.png, id=680, 1129.21875pt x 1039.885pt
 >
 File: figures/Kapitel7/Kataboliten/VWA_MS_619.png Graphic file (type png)
  <use figures/Kapitel7/Kataboliten/VWA_MS_619.png>
@@ -4763,7 +5836,7 @@ put line 57.
 (pdftex.def)             Requested size: 418.2524pt x 292.76842pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619_MH-CO2
--RingA-RIngD_311_electronMovement.png, id=691, 275.0275pt x 297.11pt>
+-RingA-RIngD_311_electronMovement.png, id=686, 275.0275pt x 297.11pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619_M
 H-CO2-RingA-RIngD_311_electronMovement.png Graphic file (type png)
 
@@ -4775,7 +5848,7 @@ e 68.
 (pdftex.def)             Requested size: 209.12686pt x 225.92381pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619-CO2-Ri
-ngA-RingD_311.png, id=692, 217.81375pt x 184.69pt>
+ngA-RingD_311.png, id=687, 217.81375pt x 184.69pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619-C
 O2-RingA-RingD_311.png Graphic file (type png)
 
@@ -4791,7 +5864,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 67--78
 
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619-CO2-Ri
-ngD-RingA_311_Mesomer1.png, id=693, 217.81375pt x 184.69pt>
+ngD-RingA_311_Mesomer1.png, id=688, 217.81375pt x 184.69pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619-C
 O2-RingD-RingA_311_Mesomer1.png Graphic file (type png)
 
@@ -4802,7 +5875,7 @@ VWA_Katabolit_619-CO2-RingD-RingA_311_Mesomer1.png used on input line 83.
 (pdftex.def)             Requested size: 209.12686pt x 177.3229pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619-CO2-Ri
-ngD-RingA_311_Mesomer2.png, id=694, 217.81375pt x 184.69pt>
+ngD-RingA_311_Mesomer2.png, id=689, 217.81375pt x 184.69pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619-C
 O2-RingD-RingA_311_Mesomer2.png Graphic file (type png)
 
@@ -4839,7 +5912,7 @@ ragmentation_structures/VWA_Katabolit_619-CO2-RingA-RingD_311.png> <./figures/K
 apitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619-CO2-RingD-RingA_
 311_Mesomer1.png> <./figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_
 Katabolit_619-CO2-RingD-RingA_311_Mesomer2.png>]
-<figures/Kapitel7/Kataboliten/VWA_MS_645-12.png, id=710, 949.5475pt x 867.24pt>
+<figures/Kapitel7/Kataboliten/VWA_MS_645-12.png, id=705, 949.5475pt x 867.24pt>
 File: figures/Kapitel7/Kataboliten/VWA_MS_645-12.png Graphic file (type png)
 <use figures/Kapitel7/Kataboliten/VWA_MS_645-12.png>
 Package pdftex.def Info: figures/Kapitel7/Kataboliten/VWA_MS_645-12.png used on
@@ -4854,7 +5927,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 113.
  [50 <./figures/Kapitel7/Kataboliten/VWA_MS_645-12.png>]
-<figures/Kapitel7/Kataboliten/VWA_MS_647.png, id=720, 1129.21875pt x 1039.885pt
+<figures/Kapitel7/Kataboliten/VWA_MS_647.png, id=715, 1129.21875pt x 1039.885pt
 >
 File: figures/Kapitel7/Kataboliten/VWA_MS_647.png Graphic file (type png)
  <use figures/Kapitel7/Kataboliten/VWA_MS_647.png>
@@ -4863,7 +5936,7 @@ put line 121.
 (pdftex.def)             Requested size: 418.2524pt x 250.9421pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647.png, i
-d=721, 276.03125pt x 294.09875pt>
+d=716, 276.03125pt x 294.09875pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647.p
 ng Graphic file (type png)
 
@@ -4874,7 +5947,7 @@ VWA_Katabolit_647.png used on input line 128.
 (pdftex.def)             Requested size: 209.12686pt x 222.82628pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647-CO2-Ri
-ngD_480_MH_electronMovement.png, id=722, 276.03125pt x 304.13625pt>
+ngD_480_MH_electronMovement.png, id=717, 276.03125pt x 304.13625pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647-C
 O2-RingD_480_MH_electronMovement.png Graphic file (type png)
 
@@ -4891,7 +5964,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 127--138
 
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647-CO2-Ri
-ngD_480_MH_Enolform.png, id=723, 276.03125pt x 294.09875pt>
+ngD_480_MH_Enolform.png, id=718, 276.03125pt x 294.09875pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647-C
 O2-RingD_480_MH_Enolform.png Graphic file (type png)
 
@@ -4902,7 +5975,7 @@ VWA_Katabolit_647-CO2-RingD_480_MH_Enolform.png used on input line 143.
 (pdftex.def)             Requested size: 209.12686pt x 222.82628pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647-CO2-Ri
-ngD_480_MH_Ketoform.png, id=724, 271.0125pt x 294.09875pt>
+ngD_480_MH_Ketoform.png, id=719, 271.0125pt x 294.09875pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647-C
 O2-RingD_480_MH_Ketoform.png Graphic file (type png)
 
@@ -4939,7 +6012,7 @@ Package babel Info: Redefining ngerman shorthand "~
 ntation_structures/VWA_Katabolit_647-CO2-RingD_480_MH_Enolform.png> <./figures/
 Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647-CO2-RingD_480_M
 H_Ketoform.png>]
-<figures/Kapitel7/Kataboliten/VWA_MS_793.png, id=741, 1129.21875pt x 1039.885pt
+<figures/Kapitel7/Kataboliten/VWA_MS_793.png, id=736, 1129.21875pt x 1039.885pt
 >
 File: figures/Kapitel7/Kataboliten/VWA_MS_793.png Graphic file (type png)
  <use figures/Kapitel7/Kataboliten/VWA_MS_793.png>
@@ -4955,7 +6028,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 173.
  [53 <./figures/Kapitel7/Kataboliten/VWA_MS_793.png (PNG copy)>]
-<figures/Kapitel7/Kataboliten/VWA_MS_631.png, id=750, 1129.21875pt x 1039.885pt
+<figures/Kapitel7/Kataboliten/VWA_MS_631.png, id=744, 1129.21875pt x 1039.885pt
 >
 File: figures/Kapitel7/Kataboliten/VWA_MS_631.png Graphic file (type png)
  <use figures/Kapitel7/Kataboliten/VWA_MS_631.png>
@@ -4963,7 +6036,7 @@ Package pdftex.def Info: figures/Kapitel7/Kataboliten/VWA_MS_631.png used on in
 put line 185.
 (pdftex.def)             Requested size: 418.2524pt x 292.76842pt.
 
-<figures/Kapitel7/Kataboliten/VWA_MS_645-2.png, id=751, 1129.21875pt x 1039.885
+<figures/Kapitel7/Kataboliten/VWA_MS_645-2.png, id=745, 1129.21875pt x 1039.885
 pt>
 File: figures/Kapitel7/Kataboliten/VWA_MS_645-2.png Graphic file (type png)
  <use figures/Kapitel7/Kataboliten/VWA_MS_645-2.png>
@@ -4972,7 +6045,7 @@ input line 192.
 (pdftex.def)             Requested size: 418.2524pt x 250.9421pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_631.png, i
-d=752, 271.0125pt x 313.17pt>
+d=746, 271.0125pt x 313.17pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_631.p
 ng Graphic file (type png)
 
@@ -4983,7 +6056,7 @@ VWA_Katabolit_631.png used on input line 200.
 (pdftex.def)             Requested size: 209.12686pt x 241.66727pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_645_nachRe
-aktion.png, id=753, 271.0125pt x 313.17pt>
+aktion.png, id=747, 271.0125pt x 313.17pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_645_n
 achReaktion.png Graphic file (type png)
 
@@ -5018,7 +6091,7 @@ Package babel Info: Redefining ngerman shorthand "~
 pitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_631.png> <./figures/K
 apitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_645_nachReaktion.png
 >]
-<figures/Kapitel7/Kataboliten/VWA_MS_633.png, id=767, 1129.21875pt x 1039.885pt
+<figures/Kapitel7/Kataboliten/VWA_MS_633.png, id=762, 1129.21875pt x 1039.885pt
 >
 File: figures/Kapitel7/Kataboliten/VWA_MS_633.png Graphic file (type png)
  <use figures/Kapitel7/Kataboliten/VWA_MS_633.png>
@@ -5027,7 +6100,7 @@ put line 219.
 (pdftex.def)             Requested size: 418.2524pt x 292.76842pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_633.png, i
-d=768, 271.0125pt x 292.09125pt>
+d=763, 271.0125pt x 292.09125pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_633.p
 ng Graphic file (type png)
 
@@ -5055,7 +6128,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 241.
  [57 <./figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_633
 .png>]
-<figures/Kapitel7/Kataboliten/VWA_MS_661.png, id=783, 1129.21875pt x 1039.885pt
+<figures/Kapitel7/Kataboliten/VWA_MS_661.png, id=778, 1129.21875pt x 1039.885pt
 >
 File: figures/Kapitel7/Kataboliten/VWA_MS_661.png Graphic file (type png)
  <use figures/Kapitel7/Kataboliten/VWA_MS_661.png>
@@ -5233,15 +6306,15 @@ Package babel Info: Redefining ngerman shorthand "~
 Package tocbasic Info: character protrusion at lof deactivated on input line 33
 6.
  (./main.lof
-Overfull \hbox (3.78166pt too wide) in paragraph at lines 15--15
- [][] [][][]\OT1/pplj/m/n/12 (-20) Strukturvorschlag von Bo-NCC-1 und Frag-men-
-tie-rungs-dia-gramm, 
+Overfull \hbox (2.58215pt too wide) in paragraph at lines 15--15
+ [][] [][][]\OT1/pplj/m/n/12 (-20) Strukturvorschlag von \OT1/pplj/m/it/12 (-20
+) Bo\OT1/pplj/m/n/12 (-20) -NCC-1 und Frag-men-tie-rungs-dia-gramm, 
  []
 
 
-Overfull \hbox (3.78166pt too wide) in paragraph at lines 17--17
- [][] [][][]\OT1/pplj/m/n/12 (-20) Strukturvorschlag von Bo-NCC-3 und Frag-men-
-tie-rungs-dia-gramm, 
+Overfull \hbox (2.58215pt too wide) in paragraph at lines 17--17
+ [][] [][][]\OT1/pplj/m/n/12 (-20) Strukturvorschlag von \OT1/pplj/m/it/12 (-20
+) Bo\OT1/pplj/m/n/12 (-20) -NCC-3 und Frag-men-tie-rungs-dia-gramm, 
  []
 
 
@@ -5344,7 +6417,7 @@ Package babel Info: Redefining ngerman shorthand "~
 ] (./content/Anhang/MSLeafspray/Anhang_MSLeafspray.tex
 chapter A.
 
-<content/Anhang/MSLeafspray/RP_Bo-DYCC/697CID-697savgol.png, id=1037, 433.62pt 
+<content/Anhang/MSLeafspray/RP_Bo-DYCC/697CID-697savgol.png, id=1032, 433.62pt 
 x 289.08pt>
 File: content/Anhang/MSLeafspray/RP_Bo-DYCC/697CID-697savgol.png Graphic file (
 type png)
@@ -5353,7 +6426,7 @@ Package pdftex.def Info: content/Anhang/MSLeafspray/RP_Bo-DYCC/697CID-697savgol
 .png used on input line 9.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/MSLeafspray/RP_Bo-DYCC/697CID-697savgolv25.png, id=1038, 433.62
+<content/Anhang/MSLeafspray/RP_Bo-DYCC/697CID-697savgolv25.png, id=1033, 433.62
 pt x 289.08pt>
 File: content/Anhang/MSLeafspray/RP_Bo-DYCC/697CID-697savgolv25.png Graphic fil
 e (type png)
@@ -5380,7 +6453,7 @@ Package babel Info: Redefining ngerman shorthand "~
 
  <./content/Anhang/MSLeafspray/RP_Bo-DYCC/697CID-697savgol.png> <./content/Anha
 ng/MSLeafspray/RP_Bo-DYCC/697CID-697savgolv25.png>]
-<content/Anhang/MSLeafspray/RP_Bo-DNCC/671CID-671savgol.png, id=1045, 433.62pt 
+<content/Anhang/MSLeafspray/RP_Bo-DNCC/671CID-671savgol.png, id=1040, 433.62pt 
 x 289.08pt>
 File: content/Anhang/MSLeafspray/RP_Bo-DNCC/671CID-671savgol.png Graphic file (
 type png)
@@ -5389,7 +6462,7 @@ Package pdftex.def Info: content/Anhang/MSLeafspray/RP_Bo-DNCC/671CID-671savgol
 .png used on input line 26.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/MSLeafspray/RP_Bo-DNCC/671CID-671savgolv20.png, id=1046, 433.62
+<content/Anhang/MSLeafspray/RP_Bo-DNCC/671CID-671savgolv20.png, id=1041, 433.62
 pt x 289.08pt>
 File: content/Anhang/MSLeafspray/RP_Bo-DNCC/671CID-671savgolv20.png Graphic fil
 e (type png)
@@ -5404,7 +6477,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 25--34
  []
 
 
-<content/Anhang/MSLeafspray/RP_Bo-DNCC/VWA_MS_LeafSpray_671.png, id=1047, 1129.
+<content/Anhang/MSLeafspray/RP_Bo-DNCC/VWA_MS_LeafSpray_671.png, id=1042, 1129.
 21875pt x 1039.885pt>
 File: content/Anhang/MSLeafspray/RP_Bo-DNCC/VWA_MS_LeafSpray_671.png Graphic fi
 le (type png)
@@ -5435,7 +6508,7 @@ LaTeX Font Info:    Font shape `U/msa/m/n' will be
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 18.00587pt on input line 44.
 
-<content/Anhang/MSLeafspray/RP_667/667CID-667savgol.png, id=1054, 433.62pt x 28
+<content/Anhang/MSLeafspray/RP_667/667CID-667savgol.png, id=1049, 433.62pt x 28
 9.08pt>
 File: content/Anhang/MSLeafspray/RP_667/667CID-667savgol.png Graphic file (type
  png)
@@ -5444,7 +6517,7 @@ Package pdftex.def Info: content/Anhang/MSLeafspray/RP_667/667CID-667savgol.png
  used on input line 48.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/MSLeafspray/RP_667/667CID-667savgolv10.png, id=1055, 433.62pt x
+<content/Anhang/MSLeafspray/RP_667/667CID-667savgolv10.png, id=1050, 433.62pt x
  289.08pt>
 File: content/Anhang/MSLeafspray/RP_667/667CID-667savgolv10.png Graphic file (t
 ype png)
@@ -5458,7 +6531,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 47--56
  []
 
 
-<content/Anhang/MSLeafspray/RP_667/VWA_MS_LeafSpray_667.png, id=1056, 1129.2187
+<content/Anhang/MSLeafspray/RP_667/VWA_MS_LeafSpray_667.png, id=1051, 1129.2187
 5pt x 1039.885pt>
 File: content/Anhang/MSLeafspray/RP_667/VWA_MS_LeafSpray_667.png Graphic file (
 type png)
@@ -5503,7 +6576,7 @@ Package babel Info: Redefining ngerman shorthand "~
 
 
 ]
-<content/Anhang/ESIMS/Bo-DYCC/617CID-617-2savgol.png, id=1069, 433.62pt x 289.0
+<content/Anhang/ESIMS/Bo-DYCC/617CID-617-2savgol.png, id=1063, 433.62pt x 289.0
 8pt>
 File: content/Anhang/ESIMS/Bo-DYCC/617CID-617-2savgol.png Graphic file (type pn
 g)
@@ -5512,7 +6585,7 @@ Package pdftex.def Info: content/Anhang/ESIMS/Bo-DYCC/617CID-617-2savgol.png us
 ed on input line 16.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/ESIMS/Bo-DYCC/617PQD-617-2savgol.png, id=1070, 433.62pt x 289.0
+<content/Anhang/ESIMS/Bo-DYCC/617PQD-617-2savgol.png, id=1064, 433.62pt x 289.0
 8pt>
 File: content/Anhang/ESIMS/Bo-DYCC/617PQD-617-2savgol.png Graphic file (type pn
 g)
@@ -5526,7 +6599,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 15--24
  []
 
 
-<content/Anhang/ESIMS/Bo-DYCC/617CID100-573CID-573savgol.png, id=1071, 433.62pt
+<content/Anhang/ESIMS/Bo-DYCC/617CID100-573CID-573savgol.png, id=1065, 433.62pt
  x 289.08pt>
 File: content/Anhang/ESIMS/Bo-DYCC/617CID100-573CID-573savgol.png Graphic file 
 (type png)
@@ -5546,7 +6619,7 @@ Package babel Info: Redefining ngerman shorthand "~
 [81 <./content/Anhang/ESIMS/Bo-DYCC/617CID-617-2savgol.png> <./content/Anhang/E
 SIMS/Bo-DYCC/617PQD-617-2savgol.png> <./content/Anhang/ESIMS/Bo-DYCC/617CID100-
 573CID-573savgol.png>]
-<content/Anhang/ESIMS/Bo-DNCC/619CID-619savgol.png, id=1079, 433.62pt x 289.08p
+<content/Anhang/ESIMS/Bo-DNCC/619CID-619savgol.png, id=1074, 433.62pt x 289.08p
 t>
 File: content/Anhang/ESIMS/Bo-DNCC/619CID-619savgol.png Graphic file (type png)
 
@@ -5555,7 +6628,7 @@ Package pdftex.def Info: content/Anhang/ESIMS/Bo-DNCC/619CID-619savgol.png used
  on input line 38.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/ESIMS/Bo-DNCC/619PQD-619savgol.png, id=1080, 433.62pt x 289.08p
+<content/Anhang/ESIMS/Bo-DNCC/619PQD-619savgol.png, id=1075, 433.62pt x 289.08p
 t>
 File: content/Anhang/ESIMS/Bo-DNCC/619PQD-619savgol.png Graphic file (type png)
 
@@ -5569,7 +6642,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 37--46
  []
 
 
-<content/Anhang/ESIMS/Bo-DNCC/619CID40-575CID-575savgol.png, id=1081, 433.62pt 
+<content/Anhang/ESIMS/Bo-DNCC/619CID40-575CID-575savgol.png, id=1076, 433.62pt 
 x 289.08pt>
 File: content/Anhang/ESIMS/Bo-DNCC/619CID40-575CID-575savgol.png Graphic file (
 type png)
@@ -5578,7 +6651,7 @@ Package pdftex.def Info: content/Anhang/ESIMS/Bo-DNCC/619CID40-575CID-575savgol
 .png used on input line 48.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/ESIMS/Bo-DNCC/619CID40-575CID100-452CID-452savgol.png, id=1082,
+<content/Anhang/ESIMS/Bo-DNCC/619CID40-575CID100-452CID-452savgol.png, id=1077,
  433.62pt x 289.08pt>
 File: content/Anhang/ESIMS/Bo-DNCC/619CID40-575CID100-452CID-452savgol.png Grap
 hic file (type png)
@@ -5604,7 +6677,7 @@ Package babel Info: Redefining ngerman shorthand "~
 MS/Bo-DNCC/619PQD-619savgol.png> <./content/Anhang/ESIMS/Bo-DNCC/619CID40-575CI
 D-575savgol.png> <./content/Anhang/ESIMS/Bo-DNCC/619CID40-575CID100-452CID-452s
 avgol.png>]
-<content/Anhang/ESIMS/Bo-NCC-1/793CID-793savgol.png, id=1092, 433.62pt x 289.08
+<content/Anhang/ESIMS/Bo-NCC-1/793CID-793savgol.png, id=1087, 433.62pt x 289.08
 pt>
 File: content/Anhang/ESIMS/Bo-NCC-1/793CID-793savgol.png Graphic file (type png
 )
@@ -5613,7 +6686,7 @@ Package pdftex.def Info: content/Anhang/ESIMS/Bo-NCC-1/793CID-793savgol.png use
 d on input line 65.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/ESIMS/Bo-NCC-1/793PQD-793savgol.png, id=1093, 433.62pt x 289.08
+<content/Anhang/ESIMS/Bo-NCC-1/793PQD-793savgol.png, id=1088, 433.62pt x 289.08
 pt>
 File: content/Anhang/ESIMS/Bo-NCC-1/793PQD-793savgol.png Graphic file (type png
 )
@@ -5627,7 +6700,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 64--73
  []
 
 
-<content/Anhang/ESIMS/Bo-NCC-1/793PQD-793savgolv5.png, id=1094, 433.62pt x 289.
+<content/Anhang/ESIMS/Bo-NCC-1/793PQD-793savgolv5.png, id=1089, 433.62pt x 289.
 08pt>
 File: content/Anhang/ESIMS/Bo-NCC-1/793PQD-793savgolv5.png Graphic file (type p
 ng)
@@ -5646,7 +6719,7 @@ Package babel Info: Redefining ngerman shorthand "~
  [83 <./content/Anhang/ESIMS/Bo-NCC-1/793CID-793savgol.png> <./content/Anhang/E
 SIMS/Bo-NCC-1/793PQD-793savgol.png> <./content/Anhang/ESIMS/Bo-NCC-1/793PQD-793
 savgolv5.png>]
-<content/Anhang/ESIMS/Bo-NCC-3/647CID-647savgol.png, id=1102, 433.62pt x 289.08
+<content/Anhang/ESIMS/Bo-NCC-3/647CID-647savgol.png, id=1097, 433.62pt x 289.08
 pt>
 File: content/Anhang/ESIMS/Bo-NCC-3/647CID-647savgol.png Graphic file (type png
 )
@@ -5655,7 +6728,7 @@ Package pdftex.def Info: content/Anhang/ESIMS/Bo-NCC-3/647CID-647savgol.png use
 d on input line 87.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/ESIMS/Bo-NCC-3/647PQD-647savgol.png, id=1103, 433.62pt x 289.08
+<content/Anhang/ESIMS/Bo-NCC-3/647PQD-647savgol.png, id=1098, 433.62pt x 289.08
 pt>
 File: content/Anhang/ESIMS/Bo-NCC-3/647PQD-647savgol.png Graphic file (type png
 )
@@ -5669,7 +6742,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 86--95
  []
 
 
-<content/Anhang/ESIMS/RP_Bo-DYCC/631CID-631-2savgol.png, id=1104, 433.62pt x 28
+<content/Anhang/ESIMS/RP_Bo-DYCC/631CID-631-2savgol.png, id=1099, 433.62pt x 28
 9.08pt>
 File: content/Anhang/ESIMS/RP_Bo-DYCC/631CID-631-2savgol.png Graphic file (type
  png)
@@ -5678,7 +6751,7 @@ Package pdftex.def Info: content/Anhang/ESIMS/RP_Bo-DYCC/631CID-631-2savgol.png
  used on input line 103.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/ESIMS/RP_Bo-DYCC/631PQD-631savgol.png, id=1105, 433.62pt x 289.
+<content/Anhang/ESIMS/RP_Bo-DYCC/631PQD-631savgol.png, id=1100, 433.62pt x 289.
 08pt>
 File: content/Anhang/ESIMS/RP_Bo-DYCC/631PQD-631savgol.png Graphic file (type p
 ng)
@@ -5702,7 +6775,7 @@ Package babel Info: Redefining ngerman shorthand "~
 [84 <./content/Anhang/ESIMS/Bo-NCC-3/647CID-647savgol.png> <./content/Anhang/ES
 IMS/Bo-NCC-3/647PQD-647savgol.png> <./content/Anhang/ESIMS/RP_Bo-DYCC/631CID-63
 1-2savgol.png> <./content/Anhang/ESIMS/RP_Bo-DYCC/631PQD-631savgol.png>]
-<content/Anhang/ESIMS/RP_Bo-DNCC/633CID-633savgol.png, id=1114, 433.62pt x 289.
+<content/Anhang/ESIMS/RP_Bo-DNCC/633CID-633savgol.png, id=1109, 433.62pt x 289.
 08pt>
 File: content/Anhang/ESIMS/RP_Bo-DNCC/633CID-633savgol.png Graphic file (type p
 ng)
@@ -5711,7 +6784,7 @@ Package pdftex.def Info: content/Anhang/ESIMS/RP_Bo-DNCC/633CID-633savgol.png u
 sed on input line 120.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/ESIMS/RP_Bo-DNCC/633PQD-633savgol_pic.png, id=1115, 433.62pt x 
+<content/Anhang/ESIMS/RP_Bo-DNCC/633PQD-633savgol_pic.png, id=1110, 433.62pt x 
 289.08pt>
 File: content/Anhang/ESIMS/RP_Bo-DNCC/633PQD-633savgol_pic.png Graphic file (ty
 pe png)
@@ -5725,7 +6798,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 119--128
  []
 
 
-<content/Anhang/ESIMS/RP_Bo-DNCC/633CID100-510CID-510savgol.png, id=1116, 433.6
+<content/Anhang/ESIMS/RP_Bo-DNCC/633CID100-510CID-510savgol.png, id=1111, 433.6
 2pt x 289.08pt>
 File: content/Anhang/ESIMS/RP_Bo-DNCC/633CID100-510CID-510savgol.png Graphic fi
 le (type png)
@@ -5735,7 +6808,7 @@ Package pdftex.def Info: content/Anhang/ESIMS/RP_Bo-DNCC/633CID100-510CID-510sa
 vgol.png used on input line 130.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/ESIMS/RP_Bo-DNCC/633PQD35-460CID-460savgol_pic.png, id=1117, 43
+<content/Anhang/ESIMS/RP_Bo-DNCC/633PQD35-460CID-460savgol_pic.png, id=1112, 43
 3.62pt x 289.08pt>
 File: content/Anhang/ESIMS/RP_Bo-DNCC/633PQD35-460CID-460savgol_pic.png Graphic
  file (type png)
@@ -5751,7 +6824,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 129--138
 
 
 <content/Anhang/ESIMS/RP_Bo-DNCC/633CID100-510CID100-337CID-337savgol.png, id=1
-118, 433.62pt x 289.08pt>
+113, 433.62pt x 289.08pt>
 File: content/Anhang/ESIMS/RP_Bo-DNCC/633CID100-510CID100-337CID-337savgol.png 
 Graphic file (type png)
 
@@ -5773,7 +6846,7 @@ ESIMS/RP_Bo-DNCC/633PQD-633savgol_pic.png> <./content/Anhang/ESIMS/RP_Bo-DNCC/6
 33CID100-510CID-510savgol.png> <./content/Anhang/ESIMS/RP_Bo-DNCC/633PQD35-460C
 ID-460savgol_pic.png> <./content/Anhang/ESIMS/RP_Bo-DNCC/633CID100-510CID100-33
 7CID-337savgol.png>]
-<content/Anhang/ESIMS/RP_Bo-NCC-3/661CID-661-1savgol.png, id=1128, 433.62pt x 2
+<content/Anhang/ESIMS/RP_Bo-NCC-3/661CID-661-1savgol.png, id=1123, 433.62pt x 2
 89.08pt>
 File: content/Anhang/ESIMS/RP_Bo-NCC-3/661CID-661-1savgol.png Graphic file (typ
 e png)
@@ -5782,7 +6855,7 @@ Package pdftex.def Info: content/Anhang/ESIMS/RP_Bo-NCC-3/661CID-661-1savgol.pn
 g used on input line 152.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/ESIMS/RP_Bo-NCC-3/661CID-661-1savgolv20.png, id=1129, 433.62pt 
+<content/Anhang/ESIMS/RP_Bo-NCC-3/661CID-661-1savgolv20.png, id=1124, 433.62pt 
 x 289.08pt>
 File: content/Anhang/ESIMS/RP_Bo-NCC-3/661CID-661-1savgolv20.png Graphic file (
 type png)
@@ -5796,7 +6869,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 151--160
  []
 
 
-<content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD-661-1savgol_pic.png, id=1130, 433.62pt
+<content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD-661-1savgol_pic.png, id=1125, 433.62pt
  x 289.08pt>
 File: content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD-661-1savgol_pic.png Graphic file 
 (type png)
@@ -5805,7 +6878,7 @@ Package pdftex.def Info: content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD-661-1savgol_pi
 c.png used on input line 162.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
-<content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD40-506CID-506savgol.png, id=1131, 433.6
+<content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD40-506CID-506savgol.png, id=1126, 433.6
 2pt x 289.08pt>
 File: content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD40-506CID-506savgol.png Graphic fi
 le (type png)
@@ -5820,7 +6893,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 161--170
  []
 
 
-<content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD40-460CID-460savgol_pic.png, id=1132, 4
+<content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD40-460CID-460savgol_pic.png, id=1127, 4
 33.62pt x 289.08pt>
 File: content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD40-460CID-460savgol_pic.png Graphi
 c file (type png)
@@ -5831,7 +6904,7 @@ vgol_pic.png used on input line 172.
 (pdftex.def)             Requested size: 209.12686pt x 139.41846pt.
 
 <content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD40-506CID100-337CID-337savgol.png, id=1
-133, 433.62pt x 289.08pt>
+128, 433.62pt x 289.08pt>
 File: content/Anhang/ESIMS/RP_Bo-NCC-3/661PQD40-506CID100-337CID-337savgol.png 
 Graphic file (type png)
 
@@ -6221,11 +7294,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 58633 strings out of 494860
- 1116608 string characters out of 6177601
- 1890081 words of memory out of 5000000
- 58661 multiletter control sequences out of 15000+600000
- 98776 words of font info for 584 fonts, out of 8000000 for 9000
+ 58687 strings out of 494860
+ 1117188 string characters out of 6177601
+ 1892487 words of memory out of 5000000
+ 58686 multiletter control sequences out of 15000+600000
+ 100294 words of font info for 607 fonts, out of 8000000 for 9000
  42 hyphenation exceptions out of 8191
  75i,17n,100p,10355b,3231s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -6239,10 +7312,10 @@ j8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (128 pages, 12875616 bytes).
+Output written on main.pdf (128 pages, 12875737 bytes).
 PDF statistics:
- 2932 PDF objects out of 2984 (max. 8388607)
- 2592 compressed objects within 26 object streams
- 1567 named destinations out of 1728 (max. 500000)
+ 2926 PDF objects out of 2984 (max. 8388607)
+ 2586 compressed objects within 26 object streams
+ 1566 named destinations out of 1728 (max. 500000)
  88582 words of extra memory for PDF output out of 89155 (max. 10000000)
 
