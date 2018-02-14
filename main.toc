@@ -34,9 +34,9 @@
 \contentsline {chapter}{\numberline {6}Experimente LC-MS}{31}{chapter.6}
 \contentsline {section}{\numberline {6.1}HPLC-Gradient und Ger\IeC {\"a}tebeschreibungen}{31}{section.6.1}
 \contentsline {section}{\numberline {6.2}Aufarbeitung der Probe}{31}{section.6.2}
-\contentsline {section}{\numberline {6.3}Theoretische Auswertung der Online-UV/Vis Spektren}{32}{section.6.3}
-\contentsline {section}{\numberline {6.4}Theoretische Auswertung der MS Spektren}{32}{section.6.4}
-\contentsline {section}{\numberline {6.5}Chl-Kataboliten des Brokkoliblattes mithilfe von LC-MS identifiziert}{33}{section.6.5}
+\contentsline {section}{\numberline {6.3}Theoretische Grundlagen der Auswertung von Online-UV/Vis Spektren}{32}{section.6.3}
+\contentsline {section}{\numberline {6.4}Theoretische Grundlagen der Auswertung der MS Spektren}{32}{section.6.4}
+\contentsline {section}{\numberline {6.5}Identifikation von Chl-Kataboliten des Brokkoliblattes mit LC-MS}{33}{section.6.5}
 \contentsline {section}{\numberline {6.6}Identifikation der Reaktionsprodukte}{39}{section.6.6}
 \contentsline {chapter}{\numberline {7}Strukturaufkl\IeC {\"a}rung der Chl-Kataboliten mit ESI-MS}{45}{chapter.7}
 \contentsline {section}{\numberline {7.1}Beschreibung der Methode}{45}{section.7.1}
@@ -47,10 +47,10 @@
 \contentsline {subsection}{\numberline {7.2.4}Bo-NCC-3}{51}{subsection.7.2.4}
 \contentsline {subsection}{\numberline {7.2.5}Bo-NCC-1}{53}{subsection.7.2.5}
 \contentsline {section}{\numberline {7.3}Reaktionsprodukte der Chl-Kataboliten}{54}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Reaktionsprodukte von Bo-DYCC}{54}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Reaktionsprodukt von Bo-DNCC}{56}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}Reaktionsprodukt von Bo-YCC}{57}{subsection.7.3.3}
-\contentsline {subsection}{\numberline {7.3.4}Reaktionsprodukt von Bo-NCC-1}{57}{subsection.7.3.4}
+\contentsline {subsection}{\numberline {7.3.1}Reaktionsprodukte des Bo-DYCC}{54}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Reaktionsprodukt des Bo-DNCC}{56}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Reaktionsprodukt des Bo-YCC}{57}{subsection.7.3.3}
+\contentsline {subsection}{\numberline {7.3.4}Reaktionsprodukt des Bo-NCC-1}{57}{subsection.7.3.4}
 \contentsline {subsection}{\numberline {7.3.5}Reaktionsprodukt von Bo-NCC-3}{58}{subsection.7.3.5}
 \contentsline {part}{\nonumberline Ergebnisse und Diskussion}{59}{part*.59}
 \contentsline {chapter}{\numberline {8}Ergebnisse}{60}{chapter.8}
