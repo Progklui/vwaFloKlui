@@ -51,7 +51,7 @@
 \contentsline {subsection}{\numberline {7.3.2}Reaktionsprodukt des Bo-DNCC}{56}{subsection.7.3.2}
 \contentsline {subsection}{\numberline {7.3.3}Reaktionsprodukt des Bo-YCC}{57}{subsection.7.3.3}
 \contentsline {subsection}{\numberline {7.3.4}Reaktionsprodukt des Bo-NCC-1}{57}{subsection.7.3.4}
-\contentsline {subsection}{\numberline {7.3.5}Reaktionsprodukt von Bo-NCC-3}{58}{subsection.7.3.5}
+\contentsline {subsection}{\numberline {7.3.5}Reaktionsprodukt des Bo-NCC-3}{58}{subsection.7.3.5}
 \contentsline {part}{\nonumberline Zusammenfassung und Fazit}{59}{part*.59}
 \contentsline {chapter}{\numberline {8}Zusammenfassung der Ergebnisse}{60}{chapter.8}
 \contentsline {section}{\numberline {8.1}Auflistung aller identifizierten Chl-Kataboliten und deren Reaktionsprodukte}{60}{section.8.1}
