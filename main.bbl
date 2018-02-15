@@ -629,6 +629,59 @@
       \verb 10.1016/j.ijms.2013.12.028
       \endverb
     \endentry
+    \entry{YCCReferenz}{article}{}
+      \name{author}{6}{}{%
+        {{hash=b3e21dcadebe827a8cbf307dfa37dc48}{%
+           family={Vergeiner},
+           family_i={V\bibinitperiod},
+           given={Clemens},
+           given_i={C\bibinitperiod}}}%
+        {{hash=120a22b0710da6e1ec88197c9141b093}{%
+           family={Ulrich},
+           family_i={U\bibinitperiod},
+           given={Markus},
+           given_i={M\bibinitperiod}}}%
+        {{hash=dc268bf648360f50b6147a96f1e6d3d9}{%
+           family={Li},
+           family_i={L\bibinitperiod},
+           given={Chengjie},
+           given_i={C\bibinitperiod}}}%
+        {{hash=c882503cfed717887cd5fe1158ce447b}{%
+           family={Liu},
+           family_i={L\bibinitperiod},
+           given={Xiujun},
+           given_i={X\bibinitperiod}}}%
+        {{hash=c2ad285eb682bccdfe2685694db2188f}{%
+           family={Müller},
+           family_i={M\bibinitperiod},
+           given={Thomas},
+           given_i={T\bibinitperiod}}}%
+        {{hash=10e1edebf83c1dc72586d8f452fa5f76}{%
+           family={Kräutler},
+           family_i={K\bibinitperiod},
+           given={Bernhard},
+           given_i={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ChemPubSoc}%
+      }
+      \strng{namehash}{66cd6bf18dac5b758e3a3b1dbb49080b}
+      \strng{fullhash}{66cd6bf18dac5b758e3a3b1dbb49080b}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{10}
+      \field{journaltitle}{Chemistry - A European Journal}
+      \field{title}{Stereo- and Regioselective Phyllobilane Oxidation in Leaf Homogenates of the Peace Lily (Spathiphyllum wallisii): Hypothetical Endogenous Path to Yellow Chlorophyll Catabolites}
+      \field{volume}{21}
+      \field{year}{2015}
+      \field{pages}{136\bibrangedash 149}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1002/chem.201404783
+      \endverb
+    \endentry
   \endsortlist
 \endrefsection
 \endinput

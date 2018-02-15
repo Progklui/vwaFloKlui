@@ -2058,10 +2058,12 @@
     <bcf:citekey order="30">ChlorophyllCatabolitesBroccoli</bcf:citekey>
     <bcf:citekey order="31">StructureElucidation</bcf:citekey>
     <bcf:citekey order="32">ChlorophyllCatabolitesBroccoli</bcf:citekey>
-    <bcf:citekey order="33">ChlorophyllCatabolitesBroccoli</bcf:citekey>
-    <bcf:citekey order="34">StructureElucidation</bcf:citekey>
+    <bcf:citekey order="33">YCCReferenz</bcf:citekey>
+    <bcf:citekey order="34">ChlorophyllCatabolitesBroccoli</bcf:citekey>
     <bcf:citekey order="35">StructureElucidation</bcf:citekey>
-    <bcf:citekey order="36">ChlorophyllCatabolitesBroccoli</bcf:citekey>
+    <bcf:citekey order="36">ErsterKatabolit</bcf:citekey>
+    <bcf:citekey order="37">StructureElucidation</bcf:citekey>
+    <bcf:citekey order="38">ChlorophyllCatabolitesBroccoli</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global" type="entry" sortscheme="none" sortnamekeyscheme="global">
   <bcf:sorting>

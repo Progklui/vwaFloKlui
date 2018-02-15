@@ -12,31 +12,31 @@
 \contentsline {section}{\numberline {3.1}HPLC}{5}{section.3.1}
 \contentsline {section}{\numberline {3.2}Massenspektrometrie}{6}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}LC-MS}{7}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}MS Leafspray}{7}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.2}MS-Leafspray}{7}{subsection.3.2.2}
 \contentsline {part}{\nonumberline Experimenteller Teil}{9}{part*.9}
 \contentsline {chapter}{\numberline {4}Allgemeine Arbeits- und Analysemethoden}{10}{chapter.4}
 \contentsline {section}{\numberline {4.1}Herstellung einer Pufferl\IeC {\"o}sung}{10}{section.4.1}
 \contentsline {section}{\numberline {4.2}Probenmaterial}{10}{section.4.2}
-\contentsline {section}{\numberline {4.3}Reaktion mit Essigs\IeC {\"a}ureanhydrid}{10}{section.4.3}
+\contentsline {section}{\numberline {4.3}Synthese der Anhydride}{10}{section.4.3}
 \contentsline {section}{\numberline {4.4}Erstellen von Fragmentierungsdiagrammen}{11}{section.4.4}
 \contentsline {chapter}{\numberline {5}Experimente MS-Leafspray}{12}{chapter.5}
 \contentsline {section}{\numberline {5.1}Ger\IeC {\"a}tebeschreibung Massenspektrometer}{12}{section.5.1}
 \contentsline {section}{\numberline {5.2}Versuchsaufbau}{12}{section.5.2}
 \contentsline {section}{\numberline {5.3}Versuchsdurchf\IeC {\"u}hrung}{14}{section.5.3}
-\contentsline {section}{\numberline {5.4}Identifikation der Chl-Kataboliten des Brokkoliblattes mit MS Leafspray}{15}{section.5.4}
+\contentsline {section}{\numberline {5.4}Identifikation der Chl-Kataboliten des Brokkoliblattes mit MS-Leafspray}{15}{section.5.4}
 \contentsline {subsection}{\numberline {5.4.1}Bo-NCC-1}{15}{subsection.5.4.1}
 \contentsline {subsection}{\numberline {5.4.2}Bo-NCC-3}{17}{subsection.5.4.2}
 \contentsline {subsection}{\numberline {5.4.3}Bo-DNCC}{19}{subsection.5.4.3}
 \contentsline {section}{\numberline {5.5}Identifikation der Reaktionsprodukte}{22}{section.5.5}
 \contentsline {subsection}{\numberline {5.5.1}Reaktionsprodukt des Bo-DNCC}{22}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Reaktionsprodukt von Bo-NCC-3}{26}{subsection.5.5.2}
-\contentsline {subsection}{\numberline {5.5.3}Reaktionsprodukt von Bo-NCC-1}{28}{subsection.5.5.3}
+\contentsline {subsection}{\numberline {5.5.2}Reaktionsprodukt des Bo-NCC-3}{26}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Reaktionsprodukt des Bo-NCC-1}{28}{subsection.5.5.3}
 \contentsline {chapter}{\numberline {6}Experimente LC-MS}{31}{chapter.6}
 \contentsline {section}{\numberline {6.1}HPLC-Gradient und Ger\IeC {\"a}tebeschreibungen}{31}{section.6.1}
-\contentsline {section}{\numberline {6.2}Aufarbeitung der Probe}{31}{section.6.2}
+\contentsline {section}{\numberline {6.2}Aufarbeitung der Probe}{32}{section.6.2}
 \contentsline {section}{\numberline {6.3}Theoretische Grundlagen der Auswertung von Online-UV/Vis Spektren}{32}{section.6.3}
-\contentsline {section}{\numberline {6.4}Theoretische Grundlagen der Auswertung der MS Spektren}{32}{section.6.4}
-\contentsline {section}{\numberline {6.5}Identifikation von Chl-Kataboliten des Brokkoliblattes mit LC-MS}{33}{section.6.5}
+\contentsline {section}{\numberline {6.4}Theoretische Grundlagen der Auswertung der MS Spektren}{33}{section.6.4}
+\contentsline {section}{\numberline {6.5}Identifikation von Chl-Kataboliten des Brokkoliblattes mit LC-MS}{34}{section.6.5}
 \contentsline {section}{\numberline {6.6}Identifikation der Reaktionsprodukte}{39}{section.6.6}
 \contentsline {chapter}{\numberline {7}Strukturaufkl\IeC {\"a}rung der Chl-Kataboliten mit ESI-MS}{45}{chapter.7}
 \contentsline {section}{\numberline {7.1}Beschreibung der Methode}{45}{section.7.1}
@@ -52,34 +52,34 @@
 \contentsline {subsection}{\numberline {7.3.3}Reaktionsprodukt des Bo-YCC}{57}{subsection.7.3.3}
 \contentsline {subsection}{\numberline {7.3.4}Reaktionsprodukt des Bo-NCC-1}{57}{subsection.7.3.4}
 \contentsline {subsection}{\numberline {7.3.5}Reaktionsprodukt von Bo-NCC-3}{58}{subsection.7.3.5}
-\contentsline {part}{\nonumberline Ergebnisse und Diskussion}{59}{part*.59}
-\contentsline {chapter}{\numberline {8}Ergebnisse}{60}{chapter.8}
-\contentsline {section}{\numberline {8.1}Liste aller identifizierten Chl-Kataboliten und deren Reaktionsprodukten}{60}{section.8.1}
-\contentsline {chapter}{\numberline {9}Diskussion}{62}{chapter.9}
-\contentsline {section}{\numberline {9.1}zur direkten Analyse, MS Leafspray und der Reaktion mit Essigs\IeC {\"a}ureanhydrid}{62}{section.9.1}
+\contentsline {part}{\nonumberline Zusammenfassung und Fazit}{59}{part*.59}
+\contentsline {chapter}{\numberline {8}Zusammenfassung der Ergebnisse}{60}{chapter.8}
+\contentsline {section}{\numberline {8.1}Auflistung aller identifizierten Chl-Kataboliten und deren Reaktionsprodukte}{60}{section.8.1}
+\contentsline {chapter}{\numberline {9}Fazit}{62}{chapter.9}
+\contentsline {section}{\numberline {9.1}zur direkten Analyse, MS-Leafspray und der Reaktion mit Essigs\IeC {\"a}ureanhydrid}{62}{section.9.1}
 \contentsline {section}{\numberline {9.2}zu den Fragmentierungsdiagrammen und Strukturaufkl\IeC {\"a}rung}{63}{section.9.2}
 \contentsline {section}{\numberline {9.3}zum Vergleich direkte Analyse - klassischer Ansatz}{64}{section.9.3}
 \contentsline {section}{\numberline {9.4}zum Vergleich Brokkoliblatt - Brokkolifrucht}{66}{section.9.4}
 \contentsline {section}{\numberline {9.5}R\IeC {\"u}ck- und Ausblick}{66}{section.9.5}
 \contentsline {part}{\nonumberline Verweise}{68}{part*.64}
 \contentsline {chapter}{\nonumberline Literaturverzeichnis}{69}{chapter*.65}
-\contentsline {chapter}{Abbildungsverzeichnis}{71}{chapter*.65}
-\contentsline {chapter}{Tabellenverzeichnis}{73}{chapter*.66}
-\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{75}{section*.68}
-\contentsline {part}{\nonumberline Anhang}{76}{part*.71}
-\contentsline {chapter}{\numberline {A}Fragmentierungsdiagramme und MS-Spektren der MS-Leafspray Experimente}{77}{appendix.A}
-\contentsline {section}{\numberline {A.1}Reaktionsprodukt von Bo-DYCC}{77}{section.A.1}
-\contentsline {section}{\numberline {A.2}Reaktionsprodukt von Bo-DNCC}{78}{section.A.2}
-\contentsline {section}{\numberline {A.3}Reaktionsprodukt von Chl-Katabolit mit m/z = 667 Da [M+K]\textsuperscript {+}}{79}{section.A.3}
-\contentsline {chapter}{\numberline {B}Fragmentierungsdiagramme der ESI-MS Experimente}{80}{appendix.B}
-\contentsline {section}{\numberline {B.1}Bo-DYCC}{81}{section.B.1}
-\contentsline {section}{\numberline {B.2}Bo-DNCC}{82}{section.B.2}
-\contentsline {section}{\numberline {B.3}Bo-NCC-1}{83}{section.B.3}
-\contentsline {section}{\numberline {B.4}Bo-NCC-3}{84}{section.B.4}
-\contentsline {section}{\numberline {B.5}Reaktionsprodukt von Bo-DYCC}{84}{section.B.5}
-\contentsline {section}{\numberline {B.6}Reaktionsprodukt von Bo-DNCC}{85}{section.B.6}
-\contentsline {section}{\numberline {B.7}Reaktionsprodukt von Bo-NCC-3}{86}{section.B.7}
-\contentsline {chapter}{\numberline {C}Python Code-Listings f\IeC {\"u}r die Erstellung der Grafiken}{87}{appendix.C}
-\contentsline {section}{\numberline {C.1}Programm zur Erstellung von Fragmentierungsdiagrammen}{87}{section.C.1}
-\contentsline {section}{\numberline {C.2}Programm zur Erstellung von Chromatogrammen f\IeC {\"u}r LC-ESI-MS}{89}{section.C.2}
-\contentsline {section}{\numberline {C.3}Programm zur Erstellung von MS-Spektren}{99}{section.C.3}
+\contentsline {chapter}{Abbildungsverzeichnis}{72}{chapter*.65}
+\contentsline {chapter}{Tabellenverzeichnis}{74}{chapter*.66}
+\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{76}{section*.68}
+\contentsline {part}{\nonumberline Anhang}{77}{part*.71}
+\contentsline {chapter}{\numberline {A}Fragmentierungsdiagramme und MS-Spektren der MS-Leafspray Experimente}{78}{appendix.A}
+\contentsline {section}{\numberline {A.1}Reaktionsprodukt des Bo-DYCC}{78}{section.A.1}
+\contentsline {section}{\numberline {A.2}Reaktionsprodukt des Bo-DNCC}{79}{section.A.2}
+\contentsline {section}{\numberline {A.3}Reaktionsprodukt des Chl-Kataboliten mit m/z = 667 Da [M+K]\textsuperscript {+}}{80}{section.A.3}
+\contentsline {chapter}{\numberline {B}Fragmentierungsdiagramme der ESI-MS Experimente}{81}{appendix.B}
+\contentsline {section}{\numberline {B.1}Bo-DYCC}{82}{section.B.1}
+\contentsline {section}{\numberline {B.2}Bo-DNCC}{83}{section.B.2}
+\contentsline {section}{\numberline {B.3}Bo-NCC-1}{84}{section.B.3}
+\contentsline {section}{\numberline {B.4}Bo-NCC-3}{85}{section.B.4}
+\contentsline {section}{\numberline {B.5}Reaktionsprodukt des Bo-DYCC}{85}{section.B.5}
+\contentsline {section}{\numberline {B.6}Reaktionsprodukt des Bo-DNCC}{86}{section.B.6}
+\contentsline {section}{\numberline {B.7}Reaktionsprodukt des Bo-NCC-3}{87}{section.B.7}
+\contentsline {chapter}{\numberline {C}Python Code-Listings f\IeC {\"u}r die Erstellung der Grafiken}{88}{appendix.C}
+\contentsline {section}{\numberline {C.1}Programm zur Erstellung von Fragmentierungsdiagrammen}{88}{section.C.1}
+\contentsline {section}{\numberline {C.2}Programm zur Erstellung von Chromatogrammen f\IeC {\"u}r LC-ESI-MS}{90}{section.C.2}
+\contentsline {section}{\numberline {C.3}Programm zur Erstellung von MS-Spektren}{100}{section.C.3}
