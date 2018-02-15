@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.18)  15 FEB 2018 05:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.18)  15 FEB 2018 06:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5816,7 +5816,7 @@ put line 57.
 (pdftex.def)             Requested size: 418.2524pt x 292.76842pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619_MH-CO2
--RingA-RIngD_311_electronMovement.png, id=695, 275.0275pt x 297.11pt>
+-RingA-RIngD_311_electronMovement.png, id=695, 275.0275pt x 298.11375pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619_M
 H-CO2-RingA-RIngD_311_electronMovement.png Graphic file (type png)
 
@@ -5825,7 +5825,7 @@ H-CO2-RingA-RIngD_311_electronMovement.png Graphic file (type png)
 Package pdftex.def Info: figures/Kapitel7/Kataboliten/fragmentation_structures/
 VWA_Katabolit_619_MH-CO2-RingA-RIngD_311_electronMovement.png used on input lin
 e 68.
-(pdftex.def)             Requested size: 209.12686pt x 225.92381pt.
+(pdftex.def)             Requested size: 209.12686pt x 226.68707pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_619-CO2-Ri
 ngA-RingD_311.png, id=696, 217.81375pt x 184.69pt>
@@ -5927,7 +5927,7 @@ VWA_Katabolit_647.png used on input line 128.
 (pdftex.def)             Requested size: 209.12686pt x 222.82628pt.
 
 <figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647-CO2-Ri
-ngD_480_MH_electronMovement.png, id=725, 276.03125pt x 304.13625pt>
+ngD_480_MH_electronMovement.png, id=725, 277.035pt x 305.14pt>
 File: figures/Kapitel7/Kataboliten/fragmentation_structures/VWA_Katabolit_647-C
 O2-RingD_480_MH_electronMovement.png Graphic file (type png)
 
@@ -5936,7 +5936,7 @@ O2-RingD_480_MH_electronMovement.png Graphic file (type png)
 Package pdftex.def Info: figures/Kapitel7/Kataboliten/fragmentation_structures/
 VWA_Katabolit_647-CO2-RingD_480_MH_electronMovement.png used on input line 134.
 
-(pdftex.def)             Requested size: 209.12686pt x 230.43127pt.
+(pdftex.def)             Requested size: 209.12686pt x 230.34436pt.
 
 Overfull \hbox (2.65201pt too wide) in paragraph at lines 127--138
 [][]  [] 
@@ -7314,7 +7314,7 @@ j8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (129 pages, 12862729 bytes).
+Output written on main.pdf (129 pages, 12864270 bytes).
 PDF statistics:
  2946 PDF objects out of 2984 (max. 8388607)
  2604 compressed objects within 27 object streams
