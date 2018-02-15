@@ -7,19 +7,21 @@ Diese Arbeit wurde im Rahmen der österreichischen Reifeprüfung im Zeitraum von
 
 ** Wie kann die Arbeit angeschaut werden?
 
-Die im Moment des Aufrufes fertige Arbeit befindet sich im Dokument -> main.pdf.
+Die fertige Arbeit kann abgerufen werden im Dokument -> VWA_FlorianKluibenschedl_2018_DirekteAnalysevonChlorophyllkataboliten_Arbeit.pdf.
 
 ** Inhalte:
 
-- Im Ordner -> /content befinden sich die LaTex Dokumente der einzelnen Kapitel
-- Im Ordner -> /figures befinden sich sämtliche für die Arbeit benötigten Graphiken
-- Im Ordner -> /template befinden sich alle relevanten Dateien, die für LaTex Pakete, den generellen Style der Arbeit und dergleichen verantwortlich sind
+- Im Ordner -> /latex_files befinden sich alle Latex Dokumente
+- Im Ordner -> /latex_files/content befinden sich die LaTex Dokumente der einzelnen Kapitel
+- Im Ordner -> /latex_files/template befinden sich alle relevanten Dateien, die für LaTex Pakete, den generellen Style der Arbeit und dergleichen verantwortlich sind
+- Im Ordner -> /figures befinden sich sämtliche für die Arbeit benötigten Graphiken 
+- Im Ordner -> /latex_files/content/Anhang befindet sich sonstiges Zusatzmaterial
 
-Die Datei -> references-biblatex.bib.blg entält alle verwendeten Quellenangaben.
+Die Datei -> /latex_files/references-biblatex.bib.blg entält alle verwendeten Quellenangaben.
 
 ** Bis zu welchem Zeitpunkt wird an der Arbeit noch gearbeitet?
 
-Bis Mitte Februar wird potentiell noch etwas verändert, da sie erst zu diesem Zeitpunkt abgegeben werden muss.
+Die Arbeit wurde am 15.02.2018 zur Evaluation abgegeben.
 
 ** License of the template used for compilation with LaTex
 
