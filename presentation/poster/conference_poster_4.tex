@@ -113,7 +113,7 @@ Dabei wurde besonderes Augenmerk auf die Verbesserung massenspektrometrischer Me
 }
 
 %----------------------------------------------------------------------------------------
-%	RESULTS 1
+%	RESULTS 2
 %----------------------------------------------------------------------------------------
 
 \headerbox{Results II - Fragmentierungsdiagramme}{name=results,column=2,span=2,row=0}{
@@ -121,18 +121,20 @@ Dabei wurde besonderes Augenmerk auf die Verbesserung massenspektrometrischer Me
 \begin{multicols}{2}
 \vspace{1em}
 \begin{center}
-\includegraphics[width=0.8\linewidth]{699CID-savgol1}
-\captionof{figure}{Figure caption}
+\includegraphics[width=0.4\textwidth]{699CID-savgol1}
+\captionof{figure}{Fragmentierungsdiagramm Reaktionsprodukt des \textit{Bo}-DNCC, m/z = 699 [M+H]\textsuperscript{+}}
 \end{center}
 
-Aliquam auctor, metus id ultrices porta, risus enim cursus sapien, quis iaculis sapien tortor sed odio. Mauris ante orci, euismod vitae tincidunt eu, porta ut neque. Aenean sapien est, viverra vel lacinia nec, venenatis eu nulla. Maecenas ut nunc nibh, et tempus libero. Aenean vitae risus ante. Pellentesque condimentum dui. Etiam sagittis purus non tellus tempor volutpat. Donec et dui non massa tristique adipiscing.
+Im Rahmen der massenspektrometrischen Untersuchungen wurden Fragmentierungsdiagramme der Chl-Kataboliten und deren Reaktionsprodukte erstellt. Dabei wurden die Verbindungen im Massenspektrometer mit unterschiedlichen Energien angeregt und die Intensitäten der auftretenden Fragmentierungen (=Abspaltungen) gemessen. \\
+
+In Abbildung 1 ist das Fragmentierungsdiagramm des Reaktionsproduktes des \textit{Bo}-DNCC dargestellt. Auf der Ordinate wird dabei die Anregungsenergie und auf der Abszisse die Intensitäten der Fragmente aufgetragen. 
 \end{multicols}
 
 %------------------------------------------------
 
 \begin{multicols}{2}
 \vspace{1em}
-Sed fringilla tempus hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam ut elit sit amet metus lobortis consequat sit amet in libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel sem magna. Nunc at convallis urna. isus ante. Pellentesque condimentum dui. Etiam sagittis purus non tellus tempor volutpat. Donec et dui non massa tristique adipiscing. Quisque vestibulum eros eu.
+In Abbildung 2 wird ein Strukturvorschlag für das Reaktionsprodukt des \textit{Bo}-DNCC gemacht. Zu beachten ist das Anhydrid, das über eine Abspaltung von 60 Da identifiziert werden konnte. Ein Mechanismus für diese Abspaltung wird ebenfalls vorgeschlagen, indem durch Pfeile die Bewegung der Elektronen gekennzeichnet wird.  
 
 \begin{center}
 \includegraphics[width=0.8\linewidth, height=0.3\textheight]{VWA_Katabolit_699-639_MK_electronMovement}
@@ -162,9 +164,7 @@ Sed fringilla tempus hendrerit. Vestibulum ante ipsum primis in faucibus orci lu
 \headerbox{Future Research}{name=futureresearch,column=1,span=2,aligned=references,above=bottom}{ % This block is as tall as the references block
 
 \begin{multicols}{2}
-Integer sed lectus vel mauris euismod suscipit. Praesent a est a est ultricies pellentesque. Donec tincidunt, nunc in feugiat varius, lectus lectus auctor lorem, egestas molestie risus erat ut nibh.
-
-Maecenas viverra ligula a risus blandit vel tincidunt est adipiscing. Suspendisse mollis iaculis sem, in \emph{imperdiet} orci porta vitae. Quisque id dui sed ante sollicitudin sagittis.
+Die vorliegende Arbeit beschäftigt sich mit Grundlagenforschung im Bereich der Strukturaufklärung. Besonders die Verfolgung der Idee der Fragmentierungsdiagramme eignet sich für weitere Forschungen, wobei diese noch verifiziert werden müssten. Auch MS-Leafspray eignet sich für die Weiterentwicklung schneller und effizienter Analysen.
 \end{multicols}
 }
 
@@ -175,9 +175,9 @@ Maecenas viverra ligula a risus blandit vel tincidunt est adipiscing. Suspendiss
 \headerbox{Contact Information}{name=contact,column=3,aligned=references,above=bottom}{ % This block is as tall as the references block
 
 \begin{description}\compresslist
-\item[Web] www.university.edu/smithlab
-\item[Email] john@smith.com
-\item[Phone] +1 (000) 111 1111
+\item[Web] github.com/Progklui/vwaFloKlui/
+\item[Email] florian.kluibenschedl@live.de
+\item[Phone] +43 699 16056980
 \end{description}
 }
 
@@ -189,32 +189,33 @@ Maecenas viverra ligula a risus blandit vel tincidunt est adipiscing. Suspendiss
 
 \begin{multicols}{2}
 
-\tikzstyle{decision} = [diamond, draw, fill=blue!20, text width=4.5em, text badly centered, node distance=2cm, inner sep=0pt]
-\tikzstyle{block} = [rectangle, draw, fill=blue!20, text width=5em, text centered, rounded corners, minimum height=4em]
-\tikzstyle{line} = [draw, -latex']
-\tikzstyle{cloud} = [draw, ellipse, fill=red!20, node distance=3cm, minimum height=2em]
+%\tikzstyle{decision} = [diamond, draw, fill=blue!20, text width=4.5em, text badly centered, node distance=2cm, inner sep=0pt]
+%%\tikzstyle{block} = [rectangle, draw, fill=blue!20, text width=5em, text centered, rounded corners, minimum height=4em]
+%\tikzstyle{line} = [draw, -latex']
+%\tikzstyle{cloud} = [draw, ellipse, fill=red!20, node distance=3cm, minimum height=2em]
 
-\begin{tikzpicture}[node distance = 2cm, auto]
-\node [block] (init) {Initialize Model};
-\node [cloud, left of=init] (Start) {Start};
-\node [cloud, right of=init] (Start2) {Start Two};
-\node [block, below of=init] (init2) {Initialize Two};
-\node [decision, below of=init2] (End) {End};
-\path [line] (init) -- (init2);
-\path [line] (init2) -- (End);
-\path [line, dashed] (Start) -- (init);
-\path [line, dashed] (Start2) -- (init);
-\path [line, dashed] (Start2) |- (init2);
-\end{tikzpicture}
+%\begin{tikzpicture}[node distance = 2cm, auto]
+%\node [block] (init) {Initialize Model};
+%\node [cloud, left of=init] (Start) {Start};
+%\node [cloud, right of=init] (Start2) {Start Two};
+%\node [block, below of=init] (init2) {Initialize Two};
+%\node [decision, below of=init2] (End) {End};
+%\path [line] (init) -- (init2);
+%\path [line] (init2) -- (End);
+%\path [line, dashed] (Start) -- (init);
+%\path [line, dashed] (Start2) -- (init);
+%\path [line, dashed] (Start2) |- (init2);
+%\end{tikzpicture}
 
 %------------------------------------------------
 
-\begin{itemize}\compresslist
-\item Pellentesque eget orci eros. Fusce ultricies, tellus et pellentesque fringilla, ante massa luctus libero, quis tristique purus urna nec nibh. Phasellus fermentum rutrum elementum. Nam quis justo lectus.
-\item Vestibulum sem ante, hendrerit a gravida ac, blandit quis magna.
-\item Donec sem metus, facilisis at condimentum eget, vehicula ut massa. Morbi consequat, diam sed convallis tincidunt, arcu nunc.
-\item Nunc at convallis urna. isus ante. Pellentesque condimentum dui. Etiam sagittis purus non tellus tempor volutpat. Donec et dui non massa tristique adipiscing.
-\end{itemize}
+Im Rahmen der experimentellen Untersuchungen konnte der Großteil der Forschungsfragen behandelt werden. Mit MS-Leafspray wurde eine moderne Analysemethode verwendet, die eine schnelle Identifikation der Chl-Kataboliten erlaubte. Forschungspotential noch vorhanden!
+%\begin{itemize}\compresslist
+%\item Pellentesque eget orci eros. Fusce ultricies, tellus et pellentesque fringilla, ante massa luctus libero, quis tristique purus urna nec nibh. Phasellus fermentum rutrum elementum. Nam quis justo lectus.
+%\item Vestibulum sem ante, hendrerit a gravida ac, blandit quis magna.
+%\item Donec sem metus, facilisis at condimentum eget, vehicula ut massa. Morbi consequat, diam sed convallis tincidunt, arcu nunc.
+%\item Nunc at convallis urna. isus ante. Pellentesque condimentum dui. Etiam sagittis purus non tellus tempor volutpat. Donec et dui non massa tristique adipiscing.
+%\end{itemize}
 
 \end{multicols}
 }
@@ -261,7 +262,7 @@ Im Folgenden werden alle mit den aufgelisteten Gerätschaften identifizierten Ch
 \toprule
 \textbf{Chl-Katabolit} & \textbf{Summenformel} & \textbf{[M+H]\textsuperscript{+}}\\
 \midrule
-\textit{Bo}-DYCC & \ch{C33H37O8N4} & 617.2599 \\
+\textit{Bo}-DYCC & \ch{C33H37O8N4} & 617.26 \\
 \textit{Bo}-DNCC & \ch{C33H39O8N4} & 619.28 \\
 \textit{Bo}-YCC & \ch{C34H37O9N4} & 645.26 \\
 \textit{Bo}-NCC-3 & \ch{C34H39O9N4} & 647.27 \\
@@ -274,7 +275,7 @@ Im Folgenden werden alle mit den aufgelisteten Gerätschaften identifizierten Ch
 
 Zusätzlich zu diesen Chl-Kataboliten konnten deren Reaktionsprodukte nach einer Reaktion mit Essigsäureanhydrid nachgewiesen werden. 
 
-Es handelt sich hierbei um Anhydride, wobei diese Rückschlüsse auf die Reaktivitäten von Carbonsäuren der Chl-Kataboliten zulassen.
+Es handelt sich hierbei um Anhydride, wobei die Bindungsstellen dieser Rückschlüsse auf die Reaktivitäten von Carbonsäuren der Chl-Kataboliten zulassen.
 }
 
 %----------------------------------------------------------------------------------------

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.18)  21 MAR 2018 03:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.18)  21 MAR 2018 14:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2337,10 +2337,15 @@ Missing character: There is no ; in font nullfont!
 File: figures/699CID-savgol1.png Graphic file (type png)
 
 <use figures/699CID-savgol1.png>
-Package pdftex.def Info: figures/699CID-savgol1.png used on input line 143.
-(pdftex.def)             Requested size: 175.97198pt x 117.31494pt.
+Package pdftex.def Info: figures/699CID-savgol1.png used on input line 145.
+(pdftex.def)             Requested size: 181.96707pt x 121.31131pt.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 143.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 145.
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
+
+ []
+
 
 <figures/VWA_Katabolit_699-639_MK_electronMovement.png, id=36, 271.0125pt x 319
 .1925pt>
@@ -2348,7 +2353,7 @@ File: figures/VWA_Katabolit_699-639_MK_electronMovement.png Graphic file (type
 png)
  <use figures/VWA_Katabolit_699-639_MK_electronMovement.png>
 Package pdftex.def Info: figures/VWA_Katabolit_699-639_MK_electronMovement.png 
-used on input line 143.
+used on input line 145.
 (pdftex.def)             Requested size: 175.97821pt x 197.29823pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -2358,43 +2363,46 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-LaTeX Font Info:    Try loading font information for TS1+ppl on input line 220.
 
+Underfull \hbox (badness 6725) in paragraph at lines 169--169
+[]\T1/ppl/m/n/10 Die vor-lie-gen-de Ar-beit be-schäf-tigt sich mit
+ []
+
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+Underfull \hbox (badness 1383) in paragraph at lines 250--250
+\T1/ppl/m/n/10 schen und spek-tro-me-tri-schen Un-ter-su-chun-gen
+ []
+
+LaTeX Font Info:    Try loading font information for TS1+ppl on input line 250.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-Underfull \hbox (badness 1383) in paragraph at lines 249--249
-\T1/ppl/m/n/10 schen und spek-tro-me-tri-schen Un-ter-su-chun-gen
- []
-
-
-Underfull \hbox (badness 1571) in paragraph at lines 249--249
+Underfull \hbox (badness 1571) in paragraph at lines 250--250
 []\T1/ppl/m/n/10 Das Pro-ben-ma-te-ri-al wur-de täg-lich im Gar-ten
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--249
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--249
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
 []\T1/ppl/m/n/10 Die Ana-ly-se mit MS-Leafspray er-for-der-te
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--249
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
 \T1/ppl/m/n/10 die Ent-wick-lung ei-ner be-son-de-ren Blatt-
  []
 
@@ -2402,7 +2410,17 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <7> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 278.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 279.
+
+Underfull \hbox (badness 2680) in paragraph at lines 279--279
+[]\T1/ppl/m/n/10 Es han-delt sich hier-bei um An-hy-dri-de, wo-
+ []
+
+
+Underfull \hbox (badness 1577) in paragraph at lines 279--279
+\T1/ppl/m/n/10 die Re-ak-ti-vi-tä-ten von Car-b-on-säu-ren der Chl-
+ []
+
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -2412,18 +2430,18 @@ Missing character: There is no ; in font nullfont!
 CID-savgol1.png> <./figures/VWA_Katabolit_699-639_MK_electronMovement.png>]
 (./conference_poster_4.aux) ) 
 Here is how much of TeX's memory you used:
- 31915 strings out of 494860
- 679290 string characters out of 6177601
- 750699 words of memory out of 5000000
- 34648 multiletter control sequences out of 15000+600000
- 34356 words of font info for 64 fonts, out of 8000000 for 9000
+ 31870 strings out of 494860
+ 678109 string characters out of 6177601
+ 741249 words of memory out of 5000000
+ 34589 multiletter control sequences out of 15000+600000
+ 40910 words of font info for 84 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 67i,17n,92p,10349b,1335s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,17n,92p,10349b,1019s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/bas
 e/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on conference_poster_4.pdf (1 page, 119677 bytes).
+Output written on conference_poster_4.pdf (1 page, 117812 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  28 compressed objects within 1 object stream
