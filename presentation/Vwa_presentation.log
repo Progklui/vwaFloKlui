@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.18)  23 MAR 2018 15:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.18)  23 MAR 2018 16:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1249,7 +1249,7 @@ Overfull \hbox (5.35332pt too wide) has occurred while \output is active
 
 [3
 
-] <699CID-savgol1.png, id=105, 433.62pt x 289.08pt>
+] <699CID-savgol1.png, id=106, 433.62pt x 289.08pt>
 File: 699CID-savgol1.png Graphic file (type png)
  <use 699CID-savgol1.png>
 Package pdftex.def Info: 699CID-savgol1.png used on input line 46.
@@ -1262,6 +1262,13 @@ Overfull \hbox (5.35332pt too wide) has occurred while \output is active
 [4
 
  <./699CID-savgol1.png>]
+Overfull \hbox (5.35332pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[5
+
+]
 \tf@nav=\write6
 \openout6 = `Vwa_presentation.nav'.
 
@@ -1271,11 +1278,11 @@ Overfull \hbox (5.35332pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `Vwa_presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 48.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
  (./Vwa_presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 48.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 48.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 56.
 Package rerunfilecheck Info: File `Vwa_presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1283,23 +1290,23 @@ Package rerunfilecheck Info: File `Vwa_presentation.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 48.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 56.
  ) 
 Here is how much of TeX's memory you used:
- 17457 strings out of 494860
- 327836 string characters out of 6177601
+ 17461 strings out of 494860
+ 327869 string characters out of 6177601
  405765 words of memory out of 5000000
- 20351 multiletter control sequences out of 15000+600000
+ 20353 multiletter control sequences out of 15000+600000
  8090 words of font info for 21 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  48i,17n,57p,418b,581s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/adminkluilaptop/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0600.600pk
 > </home/adminkluilaptop/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1200.600pk>
  </home/adminkluilaptop/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1728.600pk>
-Output written on Vwa_presentation.pdf (4 pages, 60694 bytes).
+Output written on Vwa_presentation.pdf (5 pages, 65406 bytes).
 PDF statistics:
- 256 PDF objects out of 1000 (max. 8388607)
- 128 compressed objects within 2 object streams
- 9 named destinations out of 1000 (max. 500000)
+ 292 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
+ 11 named destinations out of 1000 (max. 500000)
  72 words of extra memory for PDF output out of 10000 (max. 10000000)
 
