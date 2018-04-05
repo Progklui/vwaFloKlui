@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.18)  21 MAR 2018 14:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.18)  5 APR 2018 19:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2431,8 +2431,8 @@ CID-savgol1.png> <./figures/VWA_Katabolit_699-639_MK_electronMovement.png>]
 (./conference_poster_4.aux) ) 
 Here is how much of TeX's memory you used:
  31870 strings out of 494860
- 678109 string characters out of 6177601
- 741249 words of memory out of 5000000
+ 678115 string characters out of 6177601
+ 741254 words of memory out of 5000000
  34589 multiletter control sequences out of 15000+600000
  40910 words of font info for 84 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -2441,7 +2441,7 @@ Here is how much of TeX's memory you used:
 e/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on conference_poster_4.pdf (1 page, 117812 bytes).
+Output written on conference_poster_4.pdf (1 page, 115856 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  28 compressed objects within 1 object stream

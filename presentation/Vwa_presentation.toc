@@ -1,2 +1,5 @@
 \beamer@endinputifotherversion {3.36pt}
 \select@language {german}
+\beamer@sectionintoc {1}{Zielsetzung}{3}{0}{1}
+\beamer@sectionintoc {2}{Ergebnisse}{4}{0}{2}
+\beamer@sectionintoc {3}{Modell und Fragmentierungsdiagramme}{5}{0}{3}
