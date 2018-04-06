@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.18)  5 APR 2018 19:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.18)  6 APR 2018 09:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1342,9 +1342,9 @@ Here is how much of TeX's memory you used:
 > </home/adminkluilaptop/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0800.600pk>
  </home/adminkluilaptop/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1200.600pk> 
 </home/adminkluilaptop/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1728.600pk>
-Output written on Vwa_presentation.pdf (6 pages, 93926 bytes).
+Output written on Vwa_presentation.pdf (6 pages, 93621 bytes).
 PDF statistics:
- 256 PDF objects out of 1000 (max. 8388607)
+ 255 PDF objects out of 1000 (max. 8388607)
  84 compressed objects within 1 object stream
  16 named destinations out of 1000 (max. 500000)
  107 words of extra memory for PDF output out of 10000 (max. 10000000)
