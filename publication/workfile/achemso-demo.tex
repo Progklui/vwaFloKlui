@@ -1,0 +1,152 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This is a (brief) model paper using the achemso class
+%% The document class accepts keyval options, which should include
+%% the target journal and optionally the manuscript type.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[journal=jacsat,manuscript=article]{achemso}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Place any additional packages needed here.  Only include packages
+%% which are essential, to avoid problems later. Do NOT use any
+%% packages which require e-TeX (for example etoolbox): the e-TeX
+%% extensions are not currently available on the ACS conversion
+%% servers.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[version=3]{mhchem} % Formula subscripts using \ce{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% If issues arise when submitting your manuscript, you may want to
+%% un-comment the next line.  This provides information on the
+%% version of every file you have used.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\listfiles
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Place any additional macros here.  Please use \newcommand* where
+%% possible, and avoid layout-changing macros (which are not used
+%% when typesetting).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand*\mycommand[1]{\texttt{\emph{#1}}}
+\newcommand{\mylanguage}{american,ngerman}
+\newcommand{\mybiblatexdashed}{false}  %% "true" or "false"
+%% If true: replace recurring reference authors with a dash.
+
+\newcommand{\mybiblatexbackref}{true}  %% "true" or "false"
+%% If true: create backward links from reference to citations.
+
+\newcommand{\mybiblatexfile}{references-biblatex.bib}
+
+
+\usepackage[utf8]{inputenc} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Meta-data block
+%% ---------------
+%% Each author should be given as a separate \author command.
+%%
+%% Corresponding authors should have an e-mail given after the author
+%% name as an \email command. Phone and fax numbers can be given
+%% using \phone and \fax, respectively; this information is optional.
+%%
+%% The affiliation of authors is given after the authors; each
+%% \affiliation command applies to all preceding authors not already
+%% assigned an affiliation.
+%%
+%% The affiliation takes an option argument for the short name.  This
+%% will typically be something like "University of Somewhere".
+%%
+%% The \altaffiliation macro should be used for new address, etc.
+%% On the other hand, \alsoaffiliation is used on a per author basis
+%% when authors are associated with multiple institutions.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\author{Florian Kluibenschedl}
+\altaffiliation{A shared footnote}
+\author{Mathias Scherl}
+\altaffiliation{Adresse: Bahnhofstraße 10, 6410 Telfs}
+\author{Dr. Thomas Müller}
+\altaffiliation{A shared footnote}
+\email{i.k.groupleader@unknown.uu}
+\phone{+123 (0)123 4445556}
+\fax{+123 (0)123 4445557}
+\affiliation[Unknown University]
+{Department of Chemistry, Unknown University, Unknown Town}
+\alsoaffiliation[Second University]
+{Department of Chemistry, Second University, Nearby Town}
+\author{Susanne K. Laborator}
+\email{s.k.laborator@bigpharma.co}
+\affiliation[BigPharma]
+{Lead Discovery, BigPharma, Big Town, USA}
+\author{Kay T. Finally}
+\affiliation[Unknown University]
+{Department of Chemistry, Unknown University, Unknown Town}
+\alsoaffiliation[Second University]
+{Department of Chemistry, Second University, Nearby Town}
+
+
+
+\usepackage{biblatex}  %% remove, if using BibTeX instead of biblatex
+
+%\addbibresource{references-biblatex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The document title should be given as usual. Some journals require
+%% a running title from the author: this should be supplied as an
+%% optional argument to \title.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[VWA im Bereich Chemie]
+  {Direkte Analyse von Chlorophyllkataboliten}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Some journals require a list of abbreviations or keywords to be
+%% supplied. These should be set up here, and will be printed after
+%% the title and author information, if needed.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\abbreviations{IR,NMR,UV}
+\keywords{American Chemical Society, \LaTeX}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The manuscript does not need to include \maketitle, which is
+%% executed automatically.  The document should begin with an
+%% abstract, if appropriate.  If one is given and should not be, the
+%% contents will be gobbled.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+  Im Rahmen eines Praktikums am Organischen Institut der Universität Innsbruck wurden die Chlorophyll-Kataboliten frisch gepflückter Brokkoliblätter einer direkten Analyse mit MS-Leafspray unterzogen. Chlorophyll-Kataboliten sind die Endprodukte des Abbauprozesses von Chlorophyll.
+
+MS-Leafspray stellt dabei eine neue, moderne Methode der Massenspektrometrie dar, die es ermöglicht, Probenmaterial in natürlicher Umgebung zu analysieren. Nach einer Erstidentifikation über MS-Leafspray wurde das Ergebnis mit LC-MS verifiziert. Die mit beiden Methoden gefundenen Chlorophyll-Kataboliten lauten wie folgt: \textit{Bo}-NCC-1, \textit{Bo}-NCC-3, \textit{Bo}-DNCC, \textit{Bo}-DNCC-2, \textit{Bo}-DYCC und \textit{Bo}-YCC. Im Vergleich zur Brokkolifrucht konnten vier weitere Chlorophyll-Kataboliten gefunden werden, was neue Fragen in Bezug auf das Verständnis des Abbauprozesses aufwirft. 
+
+Die Reaktionsprodukte einer Reaktion am Blatt mit Essigsäureanhydrid konnten mit MS-Leafspray nachgewiesen werden. Auf Basis diverser Fragmentierungen wird vorgeschlagen, dass die Reaktion nur an einer der beiden freien Carbonsäuren der Chlorophyll-Kataboliten erfolgt. 
+
+Im Rahmen der massenspektrometrischen Analysen wurden Fragmentierungsdiagramme erstellt, von denen angesichts der Ergebnisse vermutet wird, dass sie charakteristisch für bestimmte Chlorophyll-Kataboliten sind. Eine Interpretationsmöglichkeit der Diagramme wurde vorgeschlagen. 
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Start the main part of the manuscript here.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+This is a paragraph of text to fill the introduction of the
+demonstration file.  The demonstration file attempts to show the
+modifications of the standard \LaTeX\ macros that are implemented by
+the \textsf{achemso} class.  These are mainly concerned with content,
+as opposed to appearance.\citep{MassSpectrometry}
+
+\section{Results and discussion}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The appropriate \bibliography command should be placed here.
+%% Notice that the class file automatically sets \bibliographystyle
+%% and also names the section correctly.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliography{references-biblatex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The "tocentry" environment can be used to create an entry for the
+%% graphical table of contents.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{document}

@@ -1,0 +1,273 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.6 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{none/global}
+    \entry{ChlorophyllBreakdown}{article}{}
+      \name{author}{2}{}{%
+        {{hash=10e1edebf83c1dc72586d8f452fa5f76}{%
+           family={Kräutler},
+           family_i={K\bibinitperiod},
+           given={Bernhard},
+           given_i={B\bibinitperiod}}}%
+        {{hash=012f7e6fb9b1ec11d423fd2f611c74f4}{%
+           family={Matile},
+           family_i={M\bibinitperiod},
+           given={Philippe},
+           given_i={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Chemical Society}%
+      }
+      \strng{namehash}{d2063fa23d089dd7cf121ce094101183}
+      \strng{fullhash}{d2063fa23d089dd7cf121ce094101183}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{1}
+      \field{journaltitle}{Accounts of Chemical Research}
+      \field{title}{Solving the Riddle of Chlorophyll Breakdown}
+      \field{volume}{32}
+      \field{year}{1999}
+      \field{pages}{35\bibrangedash 43}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1021/ar970225n
+      \endverb
+    \endentry
+    \entry{DegradationChlorophyll}{article}{}
+      \name{author}{3}{}{%
+        {{hash=244b0a1a74c6750be3bf76165594070a}{%
+           family={Hendry},
+           family_i={H\bibinitperiod},
+           given={George\bibnamedelimb A.\bibnamedelimi F.},
+           given_i={G\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=2dd79fda6700389a9484d60c7bff47df}{%
+           family={Houghton},
+           family_i={H\bibinitperiod},
+           given={Jennifer\bibnamedelima D.},
+           given_i={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=9a21a47ae94e9961707879868bb7ce9f}{%
+           family={Brown},
+           family_i={B\bibinitperiod},
+           given={Stanley\bibnamedelima B.},
+           given_i={S\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {WILEY-VCH Verlag}%
+      }
+      \strng{namehash}{b51d9cf11f574a22c3386146f6c31b8a}
+      \strng{fullhash}{b51d9cf11f574a22c3386146f6c31b8a}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{2}
+      \field{journaltitle}{New Phytologist}
+      \field{title}{The Degradation of Chlorophyll-a biological enigma}
+      \field{volume}{107}
+      \field{year}{1987}
+      \field{pages}{255\bibrangedash 302}
+      \range{pages}{48}
+      \verb{doi}
+      \verb 10.1111/j.1469-8137.1987.tb00181.x
+      \endverb
+    \endentry
+    \entry{ChlorophyllKatabolitenalsZeichenReifung}{article}{}
+      \name{author}{1}{}{%
+        {{hash=10e1edebf83c1dc72586d8f452fa5f76}{%
+           family={Kräutler},
+           family_i={K\bibinitperiod},
+           given={Bernhard},
+           given_i={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{10e1edebf83c1dc72586d8f452fa5f76}
+      \strng{fullhash}{10e1edebf83c1dc72586d8f452fa5f76}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{16}
+      \field{journaltitle}{Angewandte Chemie}
+      \field{title}{Der Chlorophyllabbau in höheren Pflanzen – Phyllobiline als weitverbreitete, aber kaum sichtbare Zeichen von Reifung, Seneszenz und Zelltod}
+      \field{volume}{128}
+      \field{year}{2016}
+      \field{pages}{4964\bibrangedash 4990}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1002/ange.201508928
+      \endverb
+    \endentry
+    \entry{ChlorophyllCatabolites}{article}{}
+      \name{author}{4}{}{%
+        {{hash=93dad8e7d7c585438b1e08fd57b87e52}{%
+           family={Moser},
+           family_i={M\bibinitperiod},
+           given={Simone},
+           given_i={S\bibinitperiod}}}%
+        {{hash=c2ad285eb682bccdfe2685694db2188f}{%
+           family={Müller},
+           family_i={M\bibinitperiod},
+           given={Thomas},
+           given_i={T\bibinitperiod}}}%
+        {{hash=7d5dca4bbfcafe3ffc62d69f1182f79f}{%
+           family={Oberhuber},
+           family_i={O\bibinitperiod},
+           given={Michael},
+           given_i={M\bibinitperiod}}}%
+        {{hash=10e1edebf83c1dc72586d8f452fa5f76}{%
+           family={Kräutler},
+           family_i={K\bibinitperiod},
+           given={Bernhard},
+           given_i={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {WILEY-VCH Verlag}%
+      }
+      \strng{namehash}{9bbc5697e34b96911cce5f61ff41dc40}
+      \strng{fullhash}{9bbc5697e34b96911cce5f61ff41dc40}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{1}
+      \field{journaltitle}{European Journal of Organic Chemistry}
+      \field{title}{Chlorophyll Catabolites – Chemical and Structural Footprints of a Fascinating Biological Phenomenon}
+      \field{volume}{2009}
+      \field{year}{2008}
+      \field{pages}{21\bibrangedash 31}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1002/ejoc.200800804
+      \endverb
+    \endentry
+    \entry{AmbientIonisation}{article}{}
+      \name{author}{4}{}{%
+        {{hash=72fa73985054429dcf60dbb140862210}{%
+           family={Cooks},
+           family_i={C\bibinitperiod},
+           given={R.\bibnamedelimi Graham},
+           given_i={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=e06f00fc4cb1de456cda68a83320c995}{%
+           family={Ouyang},
+           family_i={O\bibinitperiod},
+           given={Zheng},
+           given_i={Z\bibinitperiod}}}%
+        {{hash=40b99d0ec6b7cf25cf145fe1be9c9ac2}{%
+           family={Takats},
+           family_i={T\bibinitperiod},
+           given={Zoltan},
+           given_i={Z\bibinitperiod}}}%
+        {{hash=49b51c44d34b73f61e0f6707a4edaa14}{%
+           family={Wiseman},
+           family_i={W\bibinitperiod},
+           given={Justin\bibnamedelima M.},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{8303ad75cddc802ecdedf6c1a3329447}
+      \strng{fullhash}{8303ad75cddc802ecdedf6c1a3329447}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{5767}
+      \field{journaltitle}{Science}
+      \field{title}{Ambient Mass Spectrometry}
+      \field{volume}{311}
+      \field{year}{2006}
+      \field{pages}{1566\bibrangedash 1570}
+      \range{pages}{5}
+    \endentry
+    \entry{PaperSpray}{article}{}
+      \name{author}{5}{}{%
+        {{hash=09f3bb0a381bac10cf1f95927c363aba}{%
+           family={Wang},
+           family_i={W\bibinitperiod},
+           given={He},
+           given_i={H\bibinitperiod}}}%
+        {{hash=00aa7261fa25245ce0e5d52a65b4cded}{%
+           family={Liu},
+           family_i={L\bibinitperiod},
+           given={Jiangjiang},
+           given_i={J\bibinitperiod}}}%
+        {{hash=72fa73985054429dcf60dbb140862210}{%
+           family={Cooks},
+           family_i={C\bibinitperiod},
+           given={R.\bibnamedelimi Graham},
+           given_i={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=e06f00fc4cb1de456cda68a83320c995}{%
+           family={Ouyang},
+           family_i={O\bibinitperiod},
+           given={Zheng},
+           given_i={Z\bibinitperiod}}}%
+        {{hash=e073f96da948c492b3c2b233d22a9c44}{%
+           family={Zoltan},
+           family_i={Z\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {WILEY-VCH Verlag}%
+      }
+      \strng{namehash}{64c07c5b0d270f6db5b0487f4d452f56}
+      \strng{fullhash}{64c07c5b0d270f6db5b0487f4d452f56}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Internation Edition}
+      \field{issue}{5}
+      \field{journaltitle}{Angewandte Chemie}
+      \field{title}{Paper Spray for Direct Analysis of Complex Mixtures Using Mass Spectrometry}
+      \field{volume}{49}
+      \field{year}{2010}
+      \field{pages}{877\bibrangedash 880}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1002/anie.200906314
+      \endverb
+    \endentry
+    \entry{scipy}{online}{}
+      \name{author}{1}{}{%
+        {{hash=4c7e4c94b846fa41e2fc0a88e0dc656d}{%
+           family={Weckesser},
+           family_i={W\bibinitperiod},
+           given={Warren},
+           given_i={W\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {scipy}%
+      }
+      \strng{namehash}{4c7e4c94b846fa41e2fc0a88e0dc656d}
+      \strng{fullhash}{4c7e4c94b846fa41e2fc0a88e0dc656d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{savitzkygolay.py}
+      \field{version}{v0.17.1}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://github.com/scipy/scipy/blob/v0.17.1/scipy/signal/_savitzky_golay.py#L228-L349
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
