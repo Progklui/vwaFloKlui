@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.18)  27 AUG 2018 13:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.18)  2 SEP 2018 11:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2245,7 +2245,7 @@ Package: glossary-tree 2016/01/24 v4.21 (NLCT)
 \glo@main@file=\write6
 \openout6 = `main.glo'.
 
-Package glossaries Info: Writing glossary file main.glo on input line 39.
+Package glossaries Info: Writing glossary file main.glo on input line 41.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2016/03/03 v3.3 programmable bibliographies (PK/JW/AB)
@@ -2716,24 +2716,24 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 63.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    ... okay on input line 63.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -2775,7 +2775,7 @@ lations-basic-dictionary')
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 61.
+. Activating mapping `default' on line 63.
 .................................................
 
 *************************************************
@@ -2846,35 +2846,23 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 61.
-Package biblatex Info: Reference segment=0 on input line 61.
+Package biblatex Info: Reference section=0 on input line 63.
+Package biblatex Info: Reference segment=0 on input line 63.
 \c__siunitx_mathsf_int=\count441
-LaTeX Font Info:    Try loading font information for U+msa on input line 61.
+LaTeX Font Info:    Try loading font information for U+msa on input line 63.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 61.
+LaTeX Font Info:    Try loading font information for U+msb on input line 63.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \c__siunitx_mathtt_int=\count442
 
-Overfull \hbox (29.85623pt too wide) in paragraph at lines 65--66
-\T1/cmr/m/n/12 wur-den die End-pro-duk-te des Ab-bau-pro-zes-ses von Chlo-ro-ph
-yll (Chlorophyll-Kataboliten)
- []
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-
- []
-
-
-Overfull \hbox (3.48212pt too wide) in paragraph at lines 67--68
-\T1/cmr/m/n/12 YCC. Im Ver-gleich zur Brok-ko-lifrucht konn-ten vier wei-te-re 
-Chlorophyll-Kataboliten
  []
 
 [1
@@ -2884,15 +2872,15 @@ Chlorophyll-Kataboliten
 \openout5 = `main.ist'.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<figures/Kapitel2/VWA_Chl-Nummerierung.png, id=16, 359.84438pt x 339.51843pt>
+<figures/Kapitel2/VWA_Chl-Nummerierung.png, id=14, 359.84438pt x 339.51843pt>
 File: figures/Kapitel2/VWA_Chl-Nummerierung.png Graphic file (type png)
 
 <use figures/Kapitel2/VWA_Chl-Nummerierung.png>
 Package pdftex.def Info: figures/Kapitel2/VWA_Chl-Nummerierung.png used on inpu
-t line 79.
+t line 81.
 (pdftex.def)             Requested size: 179.92174pt x 169.75879pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
@@ -2903,7 +2891,7 @@ File: figures/Kapitel4/VWA_MSLeafspray_Versuchsaufbau.png Graphic file (type pn
 g)
  <use figures/Kapitel4/VWA_MSLeafspray_Versuchsaufbau.png>
 Package pdftex.def Info: figures/Kapitel4/VWA_MSLeafspray_Versuchsaufbau.png us
-ed on input line 98.
+ed on input line 100.
 (pdftex.def)             Requested size: 246.42001pt x 211.28885pt.
 
 <figures/Kapitel4/VWA_MSLeafspray_Detail1.jpg, id=22, 4047.12pt x 3035.34pt>
@@ -2911,7 +2899,7 @@ File: figures/Kapitel4/VWA_MSLeafspray_Detail1.jpg Graphic file (type jpg)
 
 <use figures/Kapitel4/VWA_MSLeafspray_Detail1.jpg>
 Package pdftex.def Info: figures/Kapitel4/VWA_MSLeafspray_Detail1.jpg used on i
-nput line 109.
+nput line 111.
 (pdftex.def)             Requested size: 209.12683pt x 156.82428pt.
 
 <figures/Kapitel4/VWA_MSLeafspray_Detail2.jpg, id=23, 4015.0pt x 3003.22pt>
@@ -2919,10 +2907,10 @@ File: figures/Kapitel4/VWA_MSLeafspray_Detail2.jpg Graphic file (type jpg)
 
 <use figures/Kapitel4/VWA_MSLeafspray_Detail2.jpg>
 Package pdftex.def Info: figures/Kapitel4/VWA_MSLeafspray_Detail2.jpg used on i
-nput line 115.
+nput line 117.
 (pdftex.def)             Requested size: 209.12683pt x 156.40205pt.
 
-Overfull \hbox (2.61047pt too wide) in paragraph at lines 108--119
+Overfull \hbox (2.61047pt too wide) in paragraph at lines 110--121
 [][]  [] 
  []
 
@@ -2930,65 +2918,65 @@ Overfull \hbox (2.61047pt too wide) in paragraph at lines 108--119
 el4/VWA_MSLeafspray_Detail1.jpg> <./figures/Kapitel4/VWA_MSLeafspray_Detail2.jp
 g>] [5]
 <figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_831.png, i
-d=38, 367.3725pt x 319.1925pt>
+d=40, 367.3725pt x 319.1925pt>
 File: figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_831.p
 ng Graphic file (type png)
 
 <use figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_831.pn
 g>
 Package pdftex.def Info: figures/Kapitel4/Kataboliten/fragmentation_structures/
-VWA_Katabolit_831.png used on input line 170.
+VWA_Katabolit_831.png used on input line 172.
 (pdftex.def)             Requested size: 209.12683pt x 181.70296pt.
 
-<figures/Kapitel4/Kataboliten/diags/831CID-savgol.png, id=39, 433.62pt x 289.08
+<figures/Kapitel4/Kataboliten/diags/831CID-savgol.png, id=41, 433.62pt x 289.08
 pt>
 File: figures/Kapitel4/Kataboliten/diags/831CID-savgol.png Graphic file (type p
 ng)
  <use figures/Kapitel4/Kataboliten/diags/831CID-savgol.png>
 Package pdftex.def Info: figures/Kapitel4/Kataboliten/diags/831CID-savgol.png u
-sed on input line 176.
+sed on input line 178.
 (pdftex.def)             Requested size: 292.77629pt x 195.19115pt.
 
-Overfull \hbox (86.25993pt too wide) in paragraph at lines 169--180
+Overfull \hbox (86.25993pt too wide) in paragraph at lines 171--182
 [][]  [] 
  []
 
 
-Underfull \hbox (badness 6893) in paragraph at lines 180--180
+Underfull \hbox (badness 6893) in paragraph at lines 182--182
 []\T1/cmr/m/n/12 Abbildung 4: |(a) Struk-tur-vor-schlag des \T1/cmr/m/it/12 Bo\
 T1/cmr/m/n/12 -NCC-1 mit Sum-men-for-mel
  []
 
 
-<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_873.png, id=40, 1129.21875pt x 1
+<figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_873.png, id=42, 1129.21875pt x 1
 039.885pt>
 File: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_873.png Graphic file (type 
 png)
  <use figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_873.png>
 Package pdftex.def Info: figures/Kapitel4/Kataboliten/VWA_MS_LeafSpray_873.png 
-used on input line 188.
+used on input line 190.
 (pdftex.def)             Requested size: 418.2524pt x 292.76842pt.
 
 <figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_873.png, i
-d=41, 367.3725pt x 349.305pt>
+d=43, 367.3725pt x 349.305pt>
 File: figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_873.p
 ng Graphic file (type png)
 
 <use figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_873.pn
 g>
 Package pdftex.def Info: figures/Kapitel4/Kataboliten/fragmentation_structures/
-VWA_Katabolit_873.png used on input line 195.
+VWA_Katabolit_873.png used on input line 197.
 (pdftex.def)             Requested size: 220.42519pt x 209.58461pt.
  [6 <./figures/Kapitel4/Kataboliten/fragmentation_structures/VWA_Katabolit_831.
 png> <./figures/Kapitel4/Kataboliten/diags/831CID-savgol.png>] [7 <./figures/Ka
 pitel4/Kataboliten/VWA_MS_LeafSpray_873.png (PNG copy)> <./figures/Kapitel4/Kat
 aboliten/fragmentation_structures/VWA_Katabolit_873.png>]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 205.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 213.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) (./main.lof [8])
+) [8] (./main.lof)
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
@@ -3010,16 +2998,16 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  43059 strings out of 494860
  850087 string characters out of 6177601
- 1254487 words of memory out of 5000000
+ 1254528 words of memory out of 5000000
  45606 multiletter control sequences out of 15000+600000
  31735 words of font info for 96 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 71i,17n,89p,10355b,1510s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,17n,89p,10355b,1400s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/adminkluilaptop/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk
 > </home/adminkluilaptop/.texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1200.600pk>
- </home/adminkluilaptop/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> 
-</home/adminkluilaptop/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk> <
-/home/adminkluilaptop/.texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk> </
+ </home/adminkluilaptop/.texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk> 
+</home/adminkluilaptop/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> <
+/home/adminkluilaptop/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk> </
 home/adminkluilaptop/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </h
 ome/adminkluilaptop/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </ho
 me/adminkluilaptop/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </hom
@@ -3030,9 +3018,9 @@ dminkluilaptop/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/ad
 minkluilaptop/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on main.pdf (9 pages, 5815017 bytes).
+Output written on main.pdf (9 pages, 5817476 bytes).
 PDF statistics:
- 440 PDF objects out of 1000 (max. 8388607)
+ 442 PDF objects out of 1000 (max. 8388607)
  84 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)

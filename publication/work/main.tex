@@ -1,4 +1,5 @@
 \documentclass[12pt,a4paper]{article}
+
 \usepackage[utf8]{inputenc}
 \usepackage[german]{babel}
 \usepackage[T1]{fontenc}
@@ -6,7 +7,8 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
-\author{Florian Kluibenschedl}
+
+\author{Florian Kluibenschedl, Mag. Mathias Scherl, Dr. Thomas Müller}
 \title{Direkte Analyse von Chlorophyllkataboliten}
 
 \usepackage{chemfig,chemmacros}
@@ -61,18 +63,18 @@ maxbibnames=100,
 \begin{document}
 \maketitle
 
-\section{Abstract}
-  Im Rahmen eines Praktikums am Organischen Institut der Universität Innsbruck wurden die Endprodukte des Abbauprozesses von Chlorophyll (Chlorophyll-Kataboliten) frisch gepflückter Brokkoliblätter einer direkten Analyse mit MS-Leafspray unterzogen.\\
+\section{Zusammenfassung und Einführung in die Methodik}
+  Im Rahmen der vorwissenschaftlichen Arbeit wurde ein Praktikum am Organischen Institut der Universität Innsbruck absolviert. Dabei konnten die Endprodukte des Abbauprozesses von Chlorophyll (Chlorophyll-Kataboliten) frisch gepflückter, gelber (und damit seneszenter) Brokkoliblätter mit einer innovativen massenspektrometrischen Methode analysiert werden.\\
 
-MS-Leafspray stellt dabei eine neue, moderne Methode der Massenspektrometrie dar, die es ermöglicht, Probenmaterial in natürlicher Umgebung zu analysieren. Nach einer Erstidentifikation über MS-Leafspray wurde das Ergebnis mit LC-MS verifiziert. Die mit beiden Methoden gefundenen Chlorophyll-Kataboliten lauten wie folgt: \textit{Bo}-NCC-1, \textit{Bo}-NCC-3, \textit{Bo}-DNCC, \textit{Bo}-DNCC-2, \textit{Bo}-DYCC und \textit{Bo}-YCC. Im Vergleich zur Brokkolifrucht konnten vier weitere Chlorophyll-Kataboliten gefunden werden, was neue Fragen in Bezug auf das Verständnis des Abbauprozesses aufwirft. 
+Die Methode trägt die Bezeichnung MS-Leafspray und ermöglicht die massenspektrometrische Analyse des Blattes ohne Vorbehandlung in seiner \textit{natürlichen} Umgebung (normaler Luftdruck). \cite{AmbientIonisation} \cite{PaperSpray} Das Blatt wird dabei in einer eigenen Apparatur vor das Massenspektrometer gehalten. Nach einer Erstidentifikation über MS-Leafspray wurde das Ergebnis mit LC-MS (liquid chromatography) verifiziert. Dabei wird ein Blattextrakt zuerst chromatographisch aufgetrennt und anschließend mit einem massenspektrometrischen Detektorsystem die Molekülmasse bestimmt. Mit beiden Methoden konnten 4 farblose und 2 farbige Chlorophyll-Kataboliten identifiziert werden. Im Vergleich zum Brokkoli-Blütenstand konnten demnach vier weitere Chlorophyll-Kataboliten gefunden werden, was neue Fragen in Bezug auf das Verständnis des Abbauprozesses aufwerfen könnte, wobei das tatsächliche Fehlen der Chlorophyll-Kataboliten im Brokkoli-Blütenstand noch zu klären ist.
 
-Ebenso konnten die Reaktionsprodukte einer Reaktion am Blatt mit Essigsäureanhydrid mithilfe von MS-Leafspray nachgewiesen werden. Auf Basis diverser Fragmentierungen wird vorgeschlagen, dass die Reaktion nur an einer der beiden freien Carbonsäuren der Chlorophyll-Kataboliten erfolgt. 
+Ebenso konnten die Reaktionsprodukte einer Reaktion im Blatt mit Essigsäureanhydrid mithilfe von MS-Leafspray nachgewiesen werden. Dabei reagiert das Anhydrid mit einer Carbonsäure zu einem gemischten Anhydrid. Neben der Molekülmasse können durch Erhöhung der Anregungsenergie Bruchstücke (sogenannte Fragmente) des Moleküls gemessen werden. Auf Basis diverser Fragmentierungen wird nun vorgeschlagen, dass die Reaktion nur an einer der beiden freien Carbonsäuren der identifizierten Chlorophyll-Kataboliten erfolgt. 
 
-Im Rahmen der massenspektrometrischen Analysen wurden Fragmentierungsdiagramme erstellt, von denen angesichts der Ergebnisse vermutet wird, dass sie charakteristisch für bestimmte Chlorophyll-Kataboliten sind. Eine Interpretationsmöglichkeit der Diagramme wurde vorgeschlagen.
+%Im Rahmen der massenspektrometrischen Analysen wurden Fragmentierungsdiagramme erstellt, von denen angesichts der Ergebnisse vermutet wird, dass sie charakteristisch für bestimmte Chlorophyll-Kataboliten sind. Eine Interpretationsmöglichkeit der Diagramme wurde vorgeschlagen.
 
-\section{Einleitung}
+\section{Einführung in den Chlorophyllabbau}
 
-Jedes Jahr werden weltweit schätzungsweise $10^{9}$ Tonnen an Chlorophyll abgebaut. Der Abbauprozess des Chlorophylls ist damit aufgrund der markanten Farbveränderungen einer der visuell am meisten wahrgenommenen biochemischen Vorgänge und kann sogar aus dem All beobachtet werden. \cite{ChlorophyllBreakdown} Die schönen, bunten Farben des Herbstlaubes werden dabei jedoch nicht primär durch die Abbauprodukte des Chlorophylls (Chlorophyll-Kataboliten) hervorgerufen  \cite{DegradationChlorophyll}, da die Endprodukte des Chlorophyllabbaus zumeist farbblos sind. \cite{ChlorophyllBreakdown} Die Abbauprodukte fallen in die Klasse der Phyllobiline (heterocyclische Tetrapyrrole) und sind Anzeichen für Reifung, Seneszenz und Zelltod. Der Abbauprozess wird unter anderem im Rahmen eines Entgiftungsprozesses begangen. \cite{ChlorophyllKatabolitenalsZeichenReifung}
+Jedes Jahr werden weltweit schätzungsweise $10^{9}$ Tonnen an Chlorophyll (Blattgrün) abgebaut. Der Abbauprozess des Chlorophylls ist damit aufgrund der markanten Farbveränderungen einer der visuell am meisten wahrgenommenen biochemischen Vorgänge und kann sogar aus dem All beobachtet werden. \cite{ChlorophyllBreakdown} Die schönen, bunten Farben des Herbstlaubes werden dabei jedoch nicht primär durch die Abbauprodukte des Chlorophylls (Chlorophyll-Kataboliten) hervorgerufen  \cite{DegradationChlorophyll}, da die Endprodukte des Chlorophyllabbaus zumeist farbblos sind. Die Farbe wird demnach von Carotinoiden hervorgerufen. \cite{ChlorophyllBreakdown} Die Abbauprodukte fallen in die Klasse der Phyllobiline (heterocyclische Tetrapyrrole) und sind Anzeichen für Reifung, Seneszenz und Zelltod. Der Abbauprozess wird unter anderem im Rahmen eines Entgiftungsprozesses begangen. \cite{ChlorophyllKatabolitenalsZeichenReifung}
 
 \begin{figure}[!hbtp]
   \centering
@@ -81,13 +83,13 @@ Jedes Jahr werden weltweit schätzungsweise $10^{9}$ Tonnen an Chlorophyll abgeb
   \label{fig:NummerierungPhyllobiline}
 \end{figure}
 
-Die unterschiedlichen Arten an Chl-Kataboliten ergeben sich durch Anlagerungen der entsprechenden funktionellen Gruppen (z. B. Zuckerring, Hydroxygruppe) an den pFCC, der ein Zwischenprodukt im komplexen Abbauprozess darstellt. \cite{ChlorophyllCatabolites} \\
+Die unterschiedlichen Arten an Chl-Kataboliten ergeben sich durch Anlagerungen der entsprechenden funktionellen Gruppen (z. B. Zuckerring, Hydroxygruppe) an ein Zwischenprodukt im komplexen Abbauprozess. \cite{ChlorophyllCatabolites} \\
 
-Das Ziel dieser Arbeit bestand darin, die Chl-Kataboliten des Brokkoliblattes mithilfe von MS-Leafspray zu analysieren. MS-Leafspray ist dabei eine massenspektrometrische Methode, Proben mithilfe von \textit{Ambient Ionization} \cite{AmbientIonisation} in ihrer \textit{natürlichen} Umgebung zu analysieren. Leaf Spray ist eine Form von Paper Spray \cite{PaperSpray}, bei der die zu analysierende Pflanze selbst als poröses Material dient. Die mit MS-Leafspray erhaltenen Ergebnisse wurden mit LC-MS und einem hochauflösendem Massenspektrometer überprüft.
+%Das Ziel dieser Arbeit bestand darin, die Chl-Kataboliten des Brokkoliblattes mithilfe von MS-Leafspray zu analysieren. MS-Leafspray ist dabei eine massenspektrometrische Methode, Proben mithilfe von \textit{Ambient Ionization} \cite{AmbientIonisation} in ihrer \textit{natürlichen} Umgebung zu analysieren. Leaf Spray ist eine Form von Paper Spray \cite{PaperSpray}, bei der die zu analysierende Pflanze selbst als poröses Material dient. Die mit MS-Leafspray erhaltenen Ergebnisse wurden mit LC-MS und einem hochauflösendem Massenspektrometer überprüft.
 
 \pagebreak
 
-\section{Experimenteller Teil}
+\section{Apparativer Aufbau und Versuchsdurchführung}
 
 \subsection{Versuchsaufbau MS-Leafspray} \label{sec:Versuchsaufbau}
 
@@ -161,7 +163,7 @@ In Tabelle \ref{tab:LCMSKatabolitenRPListe} sind alle Chl-Kataboliten aufgeliste
   \label{tab:LCMSKatabolitenRPListe}
 \end{sidewaystable*}
 
-\subsection{Chl-Kataboliten mit MS-Leafspray identifiziert}
+%\subsection{Chl-Kataboliten mit MS-Leafspray identifiziert}
 
 Mithilfe von MS-Leafspray konnten ein \textit{Bo}-NCC-1, \textit{Bo}-NCC-3 sowie ein \textit{Bo}-DNCC identifiziert werden. Die anderen in Tabelle \ref{tab:LCMSKatabolitenRPListe} aufgelisteten Verbindungen wurden mit LC-MS analysiert. Zu den besagten Chl-Kataboliten wurden sogenannte Fragmentierungsdiagramme erstellt. Bei diesen wird die gemessene Intensität der Fragmentierungen gegen die aufgewendete, normalisierte Kollisionsenergie (nKE), aufgetragen.\footnote{die erhaltenen Kurven wurden mit einem Savitzky-Golay Filter geglättet \cite{scipy}, weswegen manche Graphen der Fragmentierungen nicht im Ursprung starten} Unter anderem zeigen sie, dass ab einer bestimmten nKE (ca. 50 nKE) die Anregung so stark ist, dass das Molekül fast komplett zerfällt, weswegen fast keine Fragmente beobachtet werden können. Es bleibt noch zu klären, ob die Fragmentierungsdiagramme charakteristisch für einen Chl-Kataboliten sind. 
 
@@ -180,7 +182,7 @@ Mithilfe von MS-Leafspray konnten ein \textit{Bo}-NCC-1, \textit{Bo}-NCC-3 sowie
   \caption[Strukturvorschlag des \textit{Bo}-NCC-1 und Fragmentierungsdiagramm, Quelle: Autor]{(a) Strukturvorschlag des \textit{Bo}-NCC-1 mit Summenformel \ch{C40H48N4O13}, (b) Fragmentierungsdiagramm von \textit{Bo}-NCC-1 (blau = 831 [M+K]\textsuperscript{+}, orange = 813 [M - \ch{H2O} + K]\textsuperscript{+}, grün = 798 [M - (\ch{MeOH} - \gls{nAb}) + K]\textsuperscript{+}, rot = 787 [M - \ch{CO2} + K]\textsuperscript{+})}
 \end{figure}
 
-Die Reaktionsprodukte der Reaktion mit Essigsäureanhydrid konnten ebenfalls mit MS-Leafspray identifiziert werden, wobei Acetonitril als Lösungsmittel verwendet wurde. Mit LC-MS konnten nicht die Anhydride, sondern lediglich die Methylester beobachtet werden, da Methanol als LM verwendet wurde. 
+Die Reaktionsprodukte der Reaktion mit Essigsäureanhydrid konnten ebenfalls mit MS-Leafspray identifiziert werden, wobei Acetonitril als Lösungsmittel verwendet wurde. Mit LC-MS konnten nicht die Anhydride, sondern lediglich die Methylester beobachtet werden, da Methanol als LM verwendet wurde und mit dem reaktiven gemischtem Anhydrid reagiert. 
 
 Ein Strukturvorschlag des Reaktionsproduktes von \textit{Bo}-NCC-1 wird in Abbildung \ref{fig:873MKstructure} gemacht. Das dazugehörige Massenspektrum des [M+K]\textsuperscript{+} Ions wird in Abbildung \ref{fig:873MKLeafspray} dargestellt. Zu sehen sind die Abspaltungen von \ch{H2O} bei m/z = 855 [M - \ch{H2O} + K]\textsuperscript{+}, von Essigsäure bei m/z = 813 [M - \ch{CH3COOH} + K]\textsuperscript{+} und von \ch{CH3COOH}, Ring A, Ring D, zweimal MeOH und CO bei m/z = 309 [M - (\ch{CH3COOH}, Ring A, Ring D, 2 x MeOH, CO) + K]\textsuperscript{+}.\footnote{Die zuletzt genannte Abspaltungsfolge muss noch im Rahmen weiterer Untersuchungen bestätigt werden. Im Moment handelt es sich um einen möglichen Vorschlag.}
 
@@ -198,9 +200,15 @@ Ein Strukturvorschlag des Reaktionsproduktes von \textit{Bo}-NCC-1 wird in Abbil
 \end{figure}
 
 \pagebreak
-\subsection{Diskussion}
+\section{Diskussion}
 
-Im Rahmen der experimentellen Untersuchungen konnte somit der Großteil der Forschungsfragen behandelt werden. MS-Leafspray erwies sich dabei als eine zuverlässige, moderne Analysenmethode, die eine schnelle Identifikation der Chl-Kataboliten erlaubt. Besonders die weitere Erforschung der Fragmentierungsdiagramme zeigt sich als geeignet, die Strukturaufklärung mit dem Massenspektrometer noch weiter zu verbessern. So ist es unter anderem auch denkbar, dass man Rückschlüsse auf die exakte Stereochemie anstellen kann.
+Im Rahmen der experimentellen Untersuchungen konnte somit die Chl-Kataboliten des Brokkoliblattes identifiziert werden. MS-Leafspray erwies sich dabei als eine zuverlässige, innovative Analysenmethode, die eine schnelle und zuverlässige Identifikation der Chl-Kataboliten erlaubt. Besonders die weitere Erforschung der Fragmentierungsdiagramme zeigt sich als geeignet, die Strukturaufklärung mit dem Massenspektrometer noch weiter zu verbessern. So ist es unter anderem auch denkbar, dass man Rückschlüsse auf etwaige Stereochemie anstellen kann.
+
+Noch ein paar Worte zum zeitlichen Aspekt: die experimentellen Daten wurden im Zeitraum von einem Monat gesammelt. Die Auswertung der Daten, die unter anderem das Schreiben des Programms zur Erstellung der Fragmentierungsdiagramme umfasste, dauerte zwei Monate. Das Schreiben der eigentlichen Arbeit erfolgte anschließend in einem Monat. Der Zeitaufwand war dementsprechend groß, jedoch kann gesagt werden, dass sich jede Minute ausgezahlt hat.
+
+\section{Danksagungen}
+
+An dieser Stelle möchte ich einen großen Dank an das Sparkling Science Projekt aussprechen, das mir ermöglichte, ein Praktikum am Organischen Institut der Universität Innsbruck in der Arbeitsgruppe von Dr. Thomas Müller zu absolvieren. 
 
 \printbibliography
 \listoffigures
